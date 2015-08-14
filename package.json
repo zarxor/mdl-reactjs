@@ -1,0 +1,34 @@
+{
+  "name": "mdl-reactjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib",
+  "keywords": [
+    "React",
+    "Material Design"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johan Bostrom",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "*",
+    "lodash": "*",
+    "react": "*"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-connect": "*",
+    "gulp-react": "*",
+    "gulp-util": "*",
+    "gulp-rename": "*",
+
+    "react-router": "*",
+
+    "vinyl-source-stream2": "*",
+    "browserify": "*",
+    "watchify": "*",
+    "reactify": "*"
+  }
+}

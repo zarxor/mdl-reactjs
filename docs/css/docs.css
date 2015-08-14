@@ -1,0 +1,65 @@
+.docs-layout > header {
+  background-color: #C2185B;
+}
+
+.docs-components {
+  margin: 50px 0 30px;
+  text-align: center;
+}
+
+
+.docs-text {
+  margin: 0 50px;
+}
+.docs-text h1 {
+  font-size: 1.5em;
+}
+.docs-text--centred h2 {
+  font-size: 1.3em;
+}
+.docs-text--centred table {
+  text-align: left;
+}
+.docs-text--centred code {
+  background: #EFEFEF;
+  padding: 5px;
+}
+.docs-text--centred {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
+.docs-view {
+  padding-bottom: 100px;
+}
+.docs-view pre[class*='language-']  {
+  padding: 2em 2em 1em;
+  margin: 0;
+}
+.docs-view pre[class*='language-']:hover {
+  background-color: rgb(255,223,234);
+}
+.docs-view-code {
+  position: relative;
+}
+.docs-view-code__title  {
+  font-size: 1em;
+  display: inline-block;
+  margin: 0;
+  background-color: #DDD;
+  padding: 0 10px;
+  line-height: inherit;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+
+.docs-component {
+  display: inline-block;padding: 10px 20px;
+}
+.docs-component__caption {
+  margin-top: 20px;
+  background-color: rgba(0,0,0,0.1);
+  padding: 10px 20px;
+  border-radius: 3px;
+}
