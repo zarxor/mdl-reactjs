@@ -3,6 +3,8 @@ module.exports = {
   Badges: require('./badges.jsx'),
   Buttons: require('./buttons.jsx'),
   Cards: require('./cards.jsx'),
+  Loading: require('./loading.jsx'),
+  Menus: require('./menus.jsx'),
   /*
   CardActions: require('./CardActions.jsx'),
   CardMedia: require('./CardMedia.jsx'),

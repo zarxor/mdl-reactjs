@@ -1,8 +1,9 @@
 module.exports = {
   Badge: require('./badge.jsx'),
   Button: require('./button.jsx'),
-  Menu: require('./Menu.jsx'),
-  MenuItem: require('./MenuItem.jsx'),
+  Icon: require('./icon.jsx'),
+  Menu: require('./menu.jsx'),
+  MenuItem: require('./menuItem.jsx'),
   Progress: require('./Progress.jsx'),
   Slider: require('./Slider.jsx'),
   Spinner: require('./Spinner.jsx'),
@@ -22,6 +23,7 @@ module.exports = {
   LayoutDrawer: require('./layout/layoutDrawer.jsx'),
   LayoutHeader: require('./layout/layoutHeader.jsx'),
   LayoutHeaderRow: require('./layout/LayoutHeaderRow.jsx'),
+  LayoutSpacer: require('./layout/LayoutSpacer.jsx'),
   LayoutTitle: require('./layout/LayoutTitle.jsx'),
 
   // Navigation

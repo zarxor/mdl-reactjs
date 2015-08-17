@@ -18,18 +18,18 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Colored FAB">
-							<MDL.Button isFab={true} isColored={true} isRipple={false} icon="add" />
+							<MDL.Button fab colored icon="add" />
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="With ripple">
-							<MDL.Button isFab={true} isColored={true} isRipple={true} icon="add" />
+							<MDL.Button fab colored ripple icon="add" />
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Colored FAB button">
-						{'<MDL.Button isFab={true} isColored={true} isRipple={false} icon="add" />'}
+						{'<MDL.Button fab colored icon="add" />'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Colored FAB button with ripple">
-						{'<MDL.Button isFab={true} isColored={true} isRipple={true} icon="add" />'}
+						{'<MDL.Button fab colored ripple icon="add" />'}
 					</DOCS.DocCode>
 
 					{/*
@@ -37,24 +37,24 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Plain FAB">
-							<MDL.Button isFab={true} isRipple={false} icon="add" />
+							<MDL.Button fab icon="add" />
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="With ripple">
-							<MDL.Button isFab={true} isRipple={true} icon="add" />
+							<MDL.Button fab ripple icon="add" />
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="Disabled">
-							<MDL.Button isFab={true} isRipple={true} icon="add" disabled />
+							<MDL.Button fab ripple icon="add" disabled />
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="FAB button">
-						{'<MDL.Button isFab={true} isRipple={false} icon="add" />'}
+						{'<MDL.Button fab icon="add" />'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="FAB button with ripple">
-						{'<MDL.Button isFab={true} isRipple={true} icon="add" />'}
+						{'<MDL.Button fab ripple icon="add" />'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Disabled FAB button">
-						{'<MDL.Button isFab={true} isRipple={true} icon="add" disabled />'}
+						{'<MDL.Button fab ripple icon="add" disabled />'}
 					</DOCS.DocCode>
 
 					{/*
@@ -62,24 +62,24 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Raised button">
-							<MDL.Button isRaised={true} isRipple={false}>Button</MDL.Button>
+							<MDL.Button raised>Button</MDL.Button>
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="With ripple">
-							<MDL.Button isRaised={true} isRipple={true}>Button</MDL.Button>
+							<MDL.Button raised ripple>Button</MDL.Button>
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="Disabled">
-							<MDL.Button isRaised={true} isRipple={true} disabled>Button</MDL.Button>
+							<MDL.Button raised ripple disabled>Button</MDL.Button>
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Raised button">
-						{'<MDL.Button isRaised={true} isRipple={false}>Button</MDL.Button>'}
+						{'<MDL.Button raised>Button</MDL.Button>'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Raised button with ripple">
-						{'<MDL.Button isRaised={true} isRipple={true}>Button</MDL.Button>'}
+						{'<MDL.Button raised ripple>Button</MDL.Button>'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Raised disabled button">
-						{'<MDL.Button isRaised={true} isRipple={true} disabled>Button</MDL.Button>'}
+						{'<MDL.Button raised ripple disabled>Button</MDL.Button>'}
 					</DOCS.DocCode>
 
 					{/*
@@ -87,24 +87,24 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Raised button">
-							<MDL.Button isRaised={true} isColored={true} isRipple={false}>Button</MDL.Button>
+							<MDL.Button raised colored>Button</MDL.Button>
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="Accent color">
-							<MDL.Button isRaised={true} isColored={true} isAccent={true} isRipple={false}>Button</MDL.Button>
+							<MDL.Button raised colored accent>Button</MDL.Button>
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="With ripple">
-							<MDL.Button isRaised={true} isColored={true} isAccent={true} isRipple={true}>Button</MDL.Button>
+							<MDL.Button raised colored accent ripple>Button</MDL.Button>
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Colored raised button">
-						{'<MDL.Button isRaised={true} isColored={true} isRipple={false}>Button</MDL.Button>'}
+						{'<MDL.Button raised colored>Button</MDL.Button>'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Accent-colored raised button">
-						{'<MDL.Button isRaised={true} isColored={true} isAccent={true} isRipple={false}>Button</MDL.Button>'}
+						{'<MDL.Button raised colored accent>Button</MDL.Button>'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Accent-colored raised button with ripple">
-						{'<MDL.Button isRaised={true} isColored={true} isAccent={true} isRipple={true}>Button</MDL.Button>'}
+						{'<MDL.Button raised colored accent ripple>Button</MDL.Button>'}
 					</DOCS.DocCode>
 
 					{/*
@@ -112,10 +112,10 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Flat button">
-							<MDL.Button isRipple={false}>Button</MDL.Button>
+							<MDL.Button>Button</MDL.Button>
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="With ripple">
-							<MDL.Button>Button</MDL.Button>
+							<MDL.Button ripple>Button</MDL.Button>
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="Disabled">
 							<MDL.Button disabled>Button</MDL.Button>
@@ -123,10 +123,10 @@ module.exports = React.createClass({
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Flat button">
-						{'<MDL.Button isRipple={false}>Button</MDL.Button>'}
+						{'<MDL.Button>Button</MDL.Button>'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Flat button with ripple">
-						{'<MDL.Button>Button</MDL.Button>'}
+						{'<MDL.Button ripple>Button</MDL.Button>'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Disabled flat button">
 						{'<MDL.Button disabled>Button</MDL.Button>'}
@@ -137,18 +137,18 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Primary colored flat">
-							<MDL.Button isPrimary={true} isRipple={false}>Button</MDL.Button>
+							<MDL.Button primary>Button</MDL.Button>
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="Accent colored flat">
-							<MDL.Button isAccent={true} isRipple={false}>Button</MDL.Button>
+							<MDL.Button accent>Button</MDL.Button>
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Primary-colored flat button">
-						{'<MDL.Button isPrimary={true} isRipple={false}>Button</MDL.Button>'}
+						{'<MDL.Button primary>Button</MDL.Button>'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Accent-colored flat button">
-						{'<MDL.Button isAccent={true} isRipple={false}>Button</MDL.Button>'}
+						{'<MDL.Button accent>Button</MDL.Button>'}
 					</DOCS.DocCode>
 
 					{/*
@@ -156,18 +156,18 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Icon button">
-							<MDL.Button isRipple={false} icon="mood" />
+							<MDL.Button icon="mood" />
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="Colored">
-							<MDL.Button isColored={true} isRipple={false} icon="mood" />
+							<MDL.Button colored icon="mood" />
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Icon button">
-						{'<MDL.Button isRipple={false} icon="mood" />'}
+						{'<MDL.Button icon="mood" />'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Colored icon button">
-						{'<MDL.Button isColored={true} isRipple={false} icon="mood" />'}
+						{'<MDL.Button colored icon="mood" />'}
 					</DOCS.DocCode>
 
 					{/*
@@ -175,18 +175,18 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Mini FAB">
-							<MDL.Button isFab={true} size="mini" isRipple={false} icon="add" />
+							<MDL.Button fab size="mini" icon="add" />
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="Colored">
-							<MDL.Button isFab={true} size="mini" isColored={true} isRipple={false} icon="add" />
+							<MDL.Button fab size="mini" colored icon="add" />
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Mini FAB button">
-						{'<MDL.Button isFab={true} size="mini" isRipple={false} icon="add" />'}
+						{'<MDL.Button fab size="mini" icon="add" />'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Colored mini FAB button">
-						{'<MDL.Button isFab={true} size="mini" isColored={true} isRipple={false} icon="add" />'}
+						{'<MDL.Button fab size="mini" colored icon="add" />'}
 					</DOCS.DocCode>
 
 					<div className="docs-text--centred">
@@ -204,12 +204,12 @@ module.exports = React.createClass({
 							</thead>
 							<tbody>
 								<tr>
-									<td>isRipple</td>
+									<td>ripple</td>
 									<td>Applies ripple display effect</td>
 									<td>boolean</td>
 								</tr>
 								<tr>
-									<td>isFab</td>
+									<td>fab</td>
 									<td>Applies fab (circular) display effect</td>
 									<td>boolean</td>
 								</tr>

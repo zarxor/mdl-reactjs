@@ -39,7 +39,7 @@ module.exports = React.createClass({
   render: function () {
     var element = this._getElement();
     var classname = element.props.className || '';
-		
+
     var newProps = {
 			className : classname + ' ' + this._getClasses(),
 			disabled : this.props.disabled,

@@ -15,6 +15,5 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
 	}
 });

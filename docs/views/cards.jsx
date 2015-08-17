@@ -31,7 +31,7 @@ module.exports = React.createClass({
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     							Mauris sagittis pellentesque lacus eleifend lacinia...
 								</MDL.CardSupportingText>
-								<MDL.CardActions border={true}>
+								<MDL.CardActions border>
 									<MDL.Button>Get started</MDL.Button>
 								</MDL.CardActions>
 								<MDL.CardMenu style={{color: 'white'}}>
@@ -41,7 +41,7 @@ module.exports = React.createClass({
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
-					<DOCS.DocCode title="Number badge on icon">
+					<DOCS.DocCode title="Wide card">
 						{
 							'<MDL.Card style={{width: 517}}>\n' +
 							'	<MDL.CardTitle style={{\n' +
@@ -55,7 +55,7 @@ module.exports = React.createClass({
 							'		Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n' +
 							'		Mauris sagittis pellentesque lacus eleifend lacinia...\n' +
 							'	</MDL.CardSupportingText>\n' +
-							'	<MDL.CardActions border={true}>\n' +
+							'	<MDL.CardActions border>\n' +
 							'		<MDL.Button>Get started</MDL.Button>\n' +
 							'	</MDL.CardActions>\n' +
 							'	<MDL.CardMenu style={{color: \'white\'}}>\n' +
@@ -84,14 +84,14 @@ module.exports = React.createClass({
 								<MDL.CardSupportingText>
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 								</MDL.CardSupportingText>
-								<MDL.CardActions border={true}>
+								<MDL.CardActions border>
 									<MDL.Button>View updates</MDL.Button>
 								</MDL.CardActions>
 							</MDL.Card>
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
-					<DOCS.DocCode title="Number badge on icon">
+					<DOCS.DocCode title="Square card">
 						{
 							'<MDL.Card style={{>\n' +
 							'	height: 320,\n' +
@@ -107,10 +107,70 @@ module.exports = React.createClass({
 							'	<MDL.CardSupportingText>\n' +
 							'		Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n' +
 							'	</MDL.CardSupportingText>\n' +
-							'	<MDL.CardActions border={true}>\n' +
+							'	<MDL.CardActions border>\n' +
 							'		<MDL.Button>View updates</MDL.Button>\n' +
 							'	</MDL.CardActions>\n' +
 							'</MDL.Card>'
+						}
+					</DOCS.DocCode>
+
+					{/*
+						Square
+						*/}
+					<DOCS.DocComponents>
+						<DOCS.DocComponent caption="Image">
+							<MDL.Card style={{
+								height: 256,
+								width: 256,
+								background: 'url(\'/img/bg_1.png\')'
+							}} shadow={2}>
+								<MDL.CardTitle expand />
+								<MDL.CardActions border style={{
+										background: 'rgba(0, 0, 0, 0.2)',
+										padding: 16,
+										color: '#FFF'
+									}}>
+									Image.jpg
+								</MDL.CardActions>
+							</MDL.Card>
+						</DOCS.DocComponent>
+						<DOCS.DocComponent caption="Event">
+							<MDL.Card style={{
+								height: 256,
+								width: 256,
+								background: '#3E4EB8',
+								color: '#fff'
+							}} shadow={2}>
+								<MDL.CardTitle expand style={{'align-items': 'flex-start'}}>
+									<h4 style={{color: '#FFF', padding: 10, margin: 0}}>
+										Featured event:<br />
+							      May 24, 2016<br />
+							      7-11pm
+									</h4>
+								</MDL.CardTitle>
+								<MDL.CardActions border style={{
+										display: 'flex',
+										boxSizing: 'border-box',
+										alignItems: 'center'
+									}}>
+									<MDL.Button colored ripple style={{color: '#fff'}}>
+										Add to calendar
+									</MDL.Button>
+									<MDL.LayoutSpacer />
+									<MDL.Icon>event</MDL.Icon>
+								</MDL.CardActions>
+							</MDL.Card>
+						</DOCS.DocComponent>
+					</DOCS.DocComponents>
+
+					<DOCS.DocCode title="Image card">
+						{
+							'Comming...'
+						}
+					</DOCS.DocCode>
+					<DOCS.DocCode title="Event card">
+						{
+							'Comming...'
 						}
 					</DOCS.DocCode>
 
@@ -121,7 +181,7 @@ module.exports = React.createClass({
 					<div className="docs-text--centred">
 						<h2>CONFIGURATION OPTIONS</h2>
 						<p>
-							Down below you can find all the attributes that can be applied to the <code>&lt;button /&gt;</code> component
+							Down below you can find all the attributes that can be applied to the	component
 						</p>
 						<table style={{width:"100%"}}>
 							<thead>
@@ -133,14 +193,9 @@ module.exports = React.createClass({
 							</thead>
 							<tbody>
 								<tr>
-									<td>isRipple</td>
-									<td>Applies ripple display effect</td>
-									<td>boolean</td>
-								</tr>
-								<tr>
-									<td>isFab</td>
-									<td>Applies fab (circular) display effect</td>
-									<td>boolean</td>
+									<td>Attribute</td>
+									<td>Effect</td>
+									<td>Values</td>
 								</tr>
 							</tbody>
 						</table>

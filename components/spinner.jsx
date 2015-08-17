@@ -12,7 +12,7 @@ module.exports = React.createClass({
 
   getDefaultProps: function() {
 		return {
-			isActive: false,
+			active: false,
 			singleColor: false,
 			tag: 'div'
 		};
@@ -22,7 +22,7 @@ module.exports = React.createClass({
 		var classes = {
 			'mdl-spinner': true,
 			'mdl-js-spinner': true,
-			'is-active': this.props.isActive,
+			'is-active': this.props.active,
 			'mdl-spinner--single-color': this.props.singleColor
 		};
 		return cx(classes);

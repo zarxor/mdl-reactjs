@@ -13,10 +13,10 @@ var navRoutes = [
 	{ name: "home", to: "/", text: "Home", icon: "domain", view: Views.Start },
 	{ name: "badges", to: "/badges", text: "Badges", icon: "chat_bubble", view: Views.Badges },
 	{ name: "buttons", to: "/buttons", text: "Buttons", icon: "chevron_right", view: Views.Buttons },
-	{ name: "cards", to: "/cards", text: "Cards (todo)", icon: "web", view: Views.Cards },
+	{ name: "cards", to: "/cards", text: "Cards (partial)", icon: "web", view: Views.Cards },
 	{ name: "", to: "/", text: "Layout (todo)", icon: "view_quilt" },
-	{ name: "", to: "/", text: "Loading (todo)", icon: "replay" },
-	{ name: "", to: "/", text: "Menus (todo)", icon: "format_align_justify" },
+	{ name: "loading", to: "/loading", text: "Loading (partial)", icon: "replay", view: Views.Loading },
+	{ name: "menus", to: "/menus", text: "Menus (partial)", icon: "format_align_justify", view: Views.Menus },
 	{ name: "", to: "/", text: "Sliders (todo)", icon: "tune" },
 	{ name: "", to: "/", text: "Togglers (todo)", icon: "exposure" },
 	{ name: "", to: "/", text: "Tables (todo)", icon: "view_list" },
@@ -29,7 +29,7 @@ var App = React.createClass({
 		return _.map(navRoutes, function (item) {
       return (
 				<Link className="mdl-navigation__link" to={item.to}>
-					<MDL.Button icon={item.icon} isColored={true} isFab={true} style={{marginRight: 10}} size="mini" /> {item.text}
+					<MDL.Button icon={item.icon} colored fab style={{marginRight: 10}} size="mini" /> {item.text}
 				</Link>
     	);
 		});
@@ -40,7 +40,9 @@ var App = React.createClass({
 			<MDL.Layout isFixedDrawer={true} className="docs-layout">
 				<MDL.LayoutHeader>
 					<MDL.LayoutHeaderRow>
-						<MDL.LayoutTitle>MDL components for ReactJS</MDL.LayoutTitle>
+						<MDL.LayoutTitle>
+							Material Design Lite components for ReactJS
+						</MDL.LayoutTitle>
 					</MDL.LayoutHeaderRow>
 				</MDL.LayoutHeader>
 				<MDL.LayoutDrawer>

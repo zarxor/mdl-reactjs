@@ -12,7 +12,6 @@ module.exports = React.createClass({
 
   getDefaultProps: function() {
 		return {
-			isExpand: false,
 			useChild: false,
 			textTag: 'h2',
 			textTagOff: false,
@@ -23,7 +22,7 @@ module.exports = React.createClass({
   _getClasses: function() {
 		var classes = {
 			'mdl-card__title': true,
-			'mdl-card--expand': this.props.isExpand,
+			'mdl-card--expand': this.props.expand,
 			'mdl-card--border': this.props.border
 		};
 		return cx(classes);

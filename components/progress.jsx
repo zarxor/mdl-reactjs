@@ -12,9 +12,18 @@ module.exports = React.createClass({
 
   getDefaultProps: function() {
 		return {
-			indeterminate: false
+			indeterminate: false,
+			progress: 0,
+			buffer: -1,
 		};
 	},
+
+	getInitialState: function() {
+    return {
+			progress: this.props.progress,
+			buffer: this.props.buffer
+		};
+  },
 
   _getClasses: function() {
 		var classes = {
@@ -30,6 +39,7 @@ module.exports = React.createClass({
   },
 
   render: function () {
+
     var element = this._getElement();
     var classname = element.props.className || '';
 
@@ -42,7 +52,23 @@ module.exports = React.createClass({
     return React.cloneElement(element, newProps);
   },
 
+	_refreshProgress: function () {
+		var element = React.findDOMNode(this);
+		element.MaterialProgress.setProgress(this.props.progress);
+		if (this.props.buffer > -1) {
+			element.MaterialProgress.setBuffer(this.props.buffer);
+		}
+	},
+
+
+
+	componentDidUpdate: function () {
+		this._refreshProgress();
+	},
+
   componentDidMount: function() {
+		var element = React.findDOMNode(this);
 		componentHandler.upgradeDom();
+		this._refreshProgress();
 	}
 });

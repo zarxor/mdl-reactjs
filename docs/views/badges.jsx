@@ -18,18 +18,18 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Number">
-							<MDL.Badge isIcon={true} data="1">account_box</MDL.Badge>
+							<MDL.Badge isIcon data="1">account_box</MDL.Badge>
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="Icon">
-							<MDL.Badge isIcon={true} data="♥">account_box</MDL.Badge>
+							<MDL.Badge isIcon data="♥">account_box</MDL.Badge>
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Number badge on icon">
-						{'<MDL.Badge isIcon={true} data="1">account_box</MDL.Badge>'}
+						{'<MDL.Badge isIcon data="1">account_box</MDL.Badge>'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Icon badge on icon">
-						{'<MDL.Badge isIcon={true} data="♥">account_box</MDL.Badge>'}
+						{'<MDL.Badge isIcon data="♥">account_box</MDL.Badge>'}
 					</DOCS.DocCode>
 
 					{/*
@@ -39,7 +39,7 @@ module.exports = React.createClass({
 					<div className="docs-text--centred">
 						<h2>CONFIGURATION OPTIONS</h2>
 						<p>
-							Down below you can find all the attributes that can be applied to the <code>&lt;button /&gt;</code> component
+							Down below you can find all the attributes that can be applied to the component
 						</p>
 						<table style={{width:"100%"}}>
 							<thead>
@@ -51,14 +51,9 @@ module.exports = React.createClass({
 							</thead>
 							<tbody>
 								<tr>
-									<td>isRipple</td>
-									<td>Applies ripple display effect</td>
-									<td>boolean</td>
-								</tr>
-								<tr>
-									<td>isFab</td>
-									<td>Applies fab (circular) display effect</td>
-									<td>boolean</td>
+									<td>Attribute</td>
+									<td>Effect</td>
+									<td>Values</td>
 								</tr>
 							</tbody>
 						</table>

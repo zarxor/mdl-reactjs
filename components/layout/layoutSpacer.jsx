@@ -4,32 +4,22 @@ var cx = require('classnames');
 var _ = require('lodash');
 
 module.exports = React.createClass({
-	displayName : 'MDL.LayoutTitle',
-
-	propTypes: {
-
-	},
+	displayName : 'MDL.LayoutSpacer',
 
   getDefaultProps: function() {
 		return {
-			tag: 'div',
-			isTransparent: false
 		};
 	},
 
   _getClasses: function() {
 		var classes = {
-			'mdl-layout-title': true
+      'mdl-layout-spacer': true
 		};
 		return cx(classes);
 	},
 
   _getElement: function() {
-		var element = React.createElement(this.props.tag, {
-			children: this.props.children
-		});;
-
-		return element;
+    return <div>{this.props.children}</div>
   },
 
   render: function () {
@@ -38,6 +28,7 @@ module.exports = React.createClass({
 
     var newProps = {
 			className : classname + ' ' + this._getClasses(),
+			disabled : this.props.disabled,
 			style : _.extend(element.props.style || {}, this.props.style),
 			id : this.props.id,
 		};

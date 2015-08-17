@@ -29,7 +29,7 @@
 .docs-text h1 {
   font-size: 1.5em;
 }
-.docs-text--centred h2 {
+.docs-text h2, .docs-text--centred h2 {
   font-size: 1.3em;
 }
 .docs-text--centred table {
