@@ -4,30 +4,29 @@ var React = require('react');
 var Router = require('react-router');
 var MDL = require('../components');
 var Link = Router.Link;
+var _ = require('lodash');
 
 // Views
 var Views = require('./views');
 
-console.log(Views);
+var navRoutes = [
+	{ name: "home", to: "/", text: "Home", icon: "domain", view: Views.Start },
+	{ name: "badges", to: "/badges", text: "Badges", icon: "chat_bubble", view: Views.Badges },
+	{ name: "buttons", to: "/buttons", text: "Buttons", icon: "chevron_right", view: Views.Buttons },
+	{ name: "cards", to: "/cards", text: "Cards (todo)", icon: "web", view: Views.Cards },
+	{ name: "", to: "/", text: "Layout (todo)", icon: "view_quilt" },
+	{ name: "", to: "/", text: "Loading (todo)", icon: "replay" },
+	{ name: "", to: "/", text: "Menus (todo)", icon: "format_align_justify" },
+	{ name: "", to: "/", text: "Sliders (todo)", icon: "tune" },
+	{ name: "", to: "/", text: "Togglers (todo)", icon: "exposure" },
+	{ name: "", to: "/", text: "Tables (todo)", icon: "view_list" },
+	{ name: "", to: "/", text: "Text fields (todo)", icon: "font_download" },
+	{ name: "", to: "/", text: "Tooltips (todo)", icon: "beenhere" },
+];
 
 var App = React.createClass({
-	nav: [
-		{ to: "/", text: "Home", icon: "domain" },
-		{ to: "/badges", text: "Badges", icon: "chat_bubble" },
-		{ to: "/buttons", text: "Buttons", icon: "chevron_right" },
-		{ to: "/", text: "Cards (todo)", icon: "web" },
-		{ to: "/", text: "Layout (todo)", icon: "view_quilt" },
-		{ to: "/", text: "Loading (todo)", icon: "replay" },
-		{ to: "/", text: "Menus (todo)", icon: "format_align_justify" },
-		{ to: "/", text: "Sliders (todo)", icon: "tune" },
-		{ to: "/", text: "Togglers (todo)", icon: "exposure" },
-		{ to: "/", text: "Tables (todo)", icon: "view_list" },
-		{ to: "/", text: "Text fields (todo)", icon: "font_download" },
-		{ to: "/", text: "Tooltips (todo)", icon: "beenhere" },
-	],
-
 	getNav: function () {
-		return this.nav.map(function (item) {
+		return _.map(navRoutes, function (item) {
       return (
 				<Link className="mdl-navigation__link" to={item.to}>
 					<MDL.Button icon={item.icon} isColored={true} isFab={true} style={{marginRight: 10}} size="mini" /> {item.text}
@@ -61,9 +60,12 @@ var App = React.createClass({
 
 var routes = (
 	<Router.Route handler={App} >
-		<Router.DefaultRoute name='start' handler={Views.Start} />
-		<Router.Route name='badges' path='badges' handler={Views.Badges} />
-		<Router.Route name='buttons' path='buttons' handler={Views.Buttons} />
+		<Router.DefaultRoute name={navRoutes[0].name} handler={navRoutes[0].view} />
+		{_.map(navRoutes, function (route) {
+			if (route.to.length > 1) {
+				return <Router.Route key={route.name} name={route.name} path={route.to} handler={route.view} />
+			}
+		})}
 	</Router.Route>
 );
 

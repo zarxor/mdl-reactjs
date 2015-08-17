@@ -7,6 +7,21 @@
   text-align: center;
 }
 
+.docs-component {
+  display: inline-block;padding: 10px 20px;
+}
+
+.docs-component__body > * {
+  text-align: left;
+}
+
+.docs-component__caption {
+  margin-top: 20px;
+  background-color: rgba(0,0,0,0.1);
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
 
 .docs-text {
   margin: 0 50px;
@@ -52,14 +67,4 @@
   top: 0px;
   left: 0px;
   position: absolute;
-}
-
-.docs-component {
-  display: inline-block;padding: 10px 20px;
-}
-.docs-component__caption {
-  margin-top: 20px;
-  background-color: rgba(0,0,0,0.1);
-  padding: 10px 20px;
-  border-radius: 3px;
 }

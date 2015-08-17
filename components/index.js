@@ -1,17 +1,20 @@
 module.exports = {
   Badge: require('./badge.jsx'),
   Button: require('./button.jsx'),
-  Card: require('./card.jsx'),
-  CardActions: require('./CardActions.jsx'),
-  CardMedia: require('./CardMedia.jsx'),
-  CardSupportingText: require('./CardSupportingText.jsx'),
-  CardTitle: require('./CardTitle.jsx'),
   Menu: require('./Menu.jsx'),
   MenuItem: require('./MenuItem.jsx'),
   Progress: require('./Progress.jsx'),
   Slider: require('./Slider.jsx'),
   Spinner: require('./Spinner.jsx'),
   Textfield: require('./Textfield.jsx'),
+
+  // Card
+  Card: require('./card/card.jsx'),
+  CardActions: require('./card/CardActions.jsx'),
+  CardMedia: require('./card/CardMedia.jsx'),
+  CardMenu: require('./card/CardMenu.jsx'),
+  CardSupportingText: require('./card/CardSupportingText.jsx'),
+  CardTitle: require('./card/CardTitle.jsx'),
 
   // Layout
   Layout: require('./layout/layout.jsx'),

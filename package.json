@@ -1,7 +1,7 @@
 {
   "name": "mdl-reactjs",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "React implementation of googles Material Design Lite (http://getmdl.io)",
   "main": "./lib",
   "keywords": [
     "React",
@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Johan Bostrom",
-  "license": "ISC",
+  "license": "GPL",
   "dependencies": {
     "classnames": "*",
     "lodash": "*",
@@ -23,12 +23,17 @@
     "gulp-react": "*",
     "gulp-util": "*",
     "gulp-rename": "*",
-
     "react-router": "*",
-
     "vinyl-source-stream2": "*",
     "browserify": "*",
     "watchify": "*",
     "reactify": "*"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zarxor/mdl-reactjs.git"
   }
 }
