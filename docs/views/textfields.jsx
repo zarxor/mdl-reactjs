@@ -59,31 +59,10 @@ module.exports = React.createClass({
 						<DOCS.DocComponent caption="Multiple line">
 							<MDL.Textfield label="Text..." multiline rows={3} />
 						</DOCS.DocComponent>
-						<DOCS.DocComponent caption="Numeric with floating label">
-							<MDL.Textfield label="Expandable input" icon="search" expandable id="sample2" />
-						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
-					<!-- Expandable Textfield -->
-					<form action="#">
-					  <div className="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-					    <label className="mdl-button mdl-js-button mdl-button--icon" for="sample6">
-					      <i className="material-icons">search</i>
-					    </label>
-					    <div className="mdl-textfield__expandable-holder">
-					      <input className="mdl-textfield__input" type="text" id="sample6" />
-					      <label className="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
-					    </div>
-					  </div>
-					</form>
-					<script>componentHandler.upgradeDom();</script>
-
 					<DOCS.DocCode title="Text with floating label">
-						{'<MDL.Textfield label="Text..." floatingLabel />'}
-					</DOCS.DocCode>
-
-					<DOCS.DocCode title="Numeric with floating label">
-						{'<MDL.Textfield label="Number..." pattern="-?[0-9]*(\.[0-9]+)?" error="Input is not a number!" id="text_sample_2" floatingLabel />'}
+						{'<MDL.Textfield label="Text..." multiline rows={3} />'}
 					</DOCS.DocCode>
 
 					{/*

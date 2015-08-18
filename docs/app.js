@@ -2539,30 +2539,11 @@ module.exports = React.createClass({displayName: "exports",
 					React.createElement(DOCS.DocComponents, null, 
 						React.createElement(DOCS.DocComponent, {caption: "Multiple line"}, 
 							React.createElement(MDL.Textfield, {label: "Text...", multiline: true, rows: 3})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Numeric with floating label"}, 
-							React.createElement(MDL.Textfield, {label: "Expandable input", icon: "search", expandable: true, id: "sample2"})
 						)
 					), 
 
-					React.createElement("form", {action: "#"}, 
-						React.createElement("div", {className: "mdl-textfield mdl-js-textfield mdl-textfield--expandable"}, 
-						    React.createElement("label", {className: "mdl-button mdl-js-button mdl-button--icon", for: "sample6"}, 
-						      React.createElement("i", {className: "material-icons"}, "search")
-						    ), 
-						    React.createElement("div", {className: "mdl-textfield__expandable-holder"}, 
-						      React.createElement("input", {className: "mdl-textfield__input", type: "text", id: "sample6"}), 
-						      React.createElement("label", {className: "mdl-textfield__label", for: "sample-expandable"}, "Expandable Input")
-						    )
-					  	)
-					), 
-
 					React.createElement(DOCS.DocCode, {title: "Text with floating label"}, 
-						'<MDL.Textfield label="Text..." floatingLabel />'
-					), 
-
-					React.createElement(DOCS.DocCode, {title: "Numeric with floating label"}, 
-						'<MDL.Textfield label="Number..." pattern="-?[0-9]*(\.[0-9]+)?" error="Input is not a number!" id="text_sample_2" floatingLabel />'
+						'<MDL.Textfield label="Text..." multiline rows={3} />'
 					), 
 
 					/*
