@@ -5,7 +5,29 @@
   "main": "./lib",
   "keywords": [
     "React",
-    "Material Design"
+    "Material Design",
+    "mdl",
+    "material-design",
+    "badge",
+    "button",
+    "card",
+    "layout",
+    "loading",
+    "spinner",
+    "menu",
+    "slider",
+    "toggles",
+    "textfield",
+    "fab-button",
+    "icon",
+    "icon-button",
+    "switch",
+    "progress",
+    "progress bar",
+    "tooltip",
+    "dropdown",
+    "grid",
+    "tabs"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

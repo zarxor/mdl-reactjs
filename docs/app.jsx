@@ -10,28 +10,28 @@ var _ = require('lodash');
 var Views = require('./views');
 
 var navRoutes = [
-	{ name: "home", to: "/", text: "Home", icon: "domain", view: Views.Start },
-	{ name: "badges", to: "/badges", text: "Badges", icon: "chat_bubble", view: Views.Badges },
-	{ name: "buttons", to: "/buttons", text: "Buttons", icon: "chevron_right", view: Views.Buttons },
-	{ name: "cards", to: "/cards", text: "Cards (partial)", icon: "web", view: Views.Cards },
-	{ name: "", to: "/", text: "Layout (todo)", icon: "view_quilt" },
-	{ name: "loading", to: "/loading", text: "Loading (partial)", icon: "replay", view: Views.Loading },
-	{ name: "menus", to: "/menus", text: "Menus (partial)", icon: "format_align_justify", view: Views.Menus },
-	{ name: "", to: "/", text: "Sliders (todo)", icon: "tune" },
-	{ name: "", to: "/", text: "Togglers (todo)", icon: "exposure" },
-	{ name: "", to: "/", text: "Tables (todo)", icon: "view_list" },
-	{ name: "", to: "/", text: "Text fields (todo)", icon: "font_download" },
-	{ name: "", to: "/", text: "Tooltips (todo)", icon: "beenhere" },
+	{ name: "home", 		to: "/", 			text: "Home", 				icon: "domain", 				view: Views.Start },
+	{ name: "badges", 		to: "/badges", 		text: "Badges", 			icon: "chat_bubble", 			view: Views.Badges },
+	{ name: "buttons", 		to: "/buttons", 	text: "Buttons", 			icon: "chevron_right", 			view: Views.Buttons },
+	{ name: "cards", 		to: "/cards", 		text: "Cards (partial)", 	icon: "web", 					view: Views.Cards },
+	{ name: "", 			to: "/", 			text: "Layout (todo)", 		icon: "view_quilt" },
+	{ name: "loading", 		to: "/loading", 	text: "Loading (partial)", 	icon: "replay", 				view: Views.Loading },
+	{ name: "menus", 		to: "/menus", 		text: "Menus (partial)", 	icon: "format_align_justify", 	view: Views.Menus },
+	{ name: "sliders", 		to: "/sliders", 	text: "Sliders (partial)", 	icon: "tune", 					view: Views.Sliders },
+	{ name: "toggles", 		to: "/toggles", 	text: "Toggles (todo)", 	icon: "exposure", 				view: Views.Toggles },
+	{ name: "", 			to: "/", 			text: "Tables (todo)", 		icon: "view_list" },
+	{ name: "textfields", 	to: "/textfields", 	text: "Text fields (todo)", icon: "font_download", 			view: Views.Textfields },
+	{ name: "", 			to: "/", 			text: "Tooltips (todo)", 	icon: "beenhere" },
 ];
 
 var App = React.createClass({
 	getNav: function () {
 		return _.map(navRoutes, function (item) {
-      return (
+	      	return (
 				<Link className="mdl-navigation__link" to={item.to}>
 					<MDL.Button icon={item.icon} colored fab style={{marginRight: 10}} size="mini" /> {item.text}
 				</Link>
-    	);
+	    	);
 		});
 	},
 
