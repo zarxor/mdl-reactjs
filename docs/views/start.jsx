@@ -4,13 +4,28 @@
 var React = require('react');
 
 module.exports = React.createClass({
+	getInitialState: function() {
+    return {
+      readme: '',
+    };
+  },
+
+	componentDidMount: function() {
+    $.get('README.html', function(result) {
+      var lastGist = result[0];
+      if (this.isMounted()) {
+        this.setState({
+          readme: result
+        });
+      }
+    }.bind(this));
+  },
 
 	render: function() {
 		return (
-		    <div>
-          <h1>Home!</h1>
+		    <div className="docs-view">
+					<div className="docs-text" dangerouslySetInnerHTML={{__html: this.state.readme}}></div>
 		    </div>
 		);
 	},
-
 });

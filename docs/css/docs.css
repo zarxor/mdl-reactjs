@@ -35,7 +35,7 @@
 .docs-text--centred table {
   text-align: left;
 }
-.docs-text--centred code {
+.docs-text--centred code, .docs-text pre {
   background: #EFEFEF;
   padding: 5px;
 }
@@ -51,6 +51,7 @@
   padding: 2em 2em 1em;
   margin: 0;
 }
+
 .docs-view pre[class*='language-']:hover {
   background-color: rgb(255,223,234);
 }

@@ -2,21 +2,26 @@
 var React = require("react");
 var cx = require('classnames');
 var _ = require('lodash');
+var MDLFunc = require('../functions');
+
+var _defaultProps = {
+	ripple: false,
+	fab: false,
+	size: false,
+	icon: '',
+	useChild: false,
+	colored: false,
+	raised: false,
+	primary: false,
+	accent: false,
+	children: {}
+};
 
 module.exports = React.createClass({
 	displayName : 'MDL.Button',
 
   getDefaultProps: function() {
-		return {
-			ripple: false,
-			fab: false,
-
-			size: 'normal',
-
-      icon: '',
-
-      useChild: false
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -46,23 +51,15 @@ module.exports = React.createClass({
     if (this.props.useChild && child && !_.isString(child)) {
       return child;
     } else if (this.props.icon.length > 0) {
-      return <button className={this.props.className || ''}><i className="material-icons">{this.props.icon}</i>{this.props.children}</button>
+      return <button><i className="material-icons">{this.props.icon}</i>{this.props.children}</button>
 		} else {
-      return <button className={this.props.className || ''}>{this.props.children}</button>
+      return <button>{this.props.children}</button>
     }
   },
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			disabled : this.props.disabled,
-			onClick : this.props.onClick,
-			style : _.extend(element.props.style || {}, this.props.style),
-			id : this.props.id,
-		};
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },

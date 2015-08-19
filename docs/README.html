@@ -1,0 +1,58 @@
+<h1 id="material-design-lite-for-react-js">Material Design Lite for React JS</h1>
+<p>This project is under development and will be breaking.</p>
+<p><strong>Do not use in production!</strong></p>
+<p><a href="https://zarxor.github.io/mdl-reactjs/docs/">You can find documentation and examples here</a></p>
+<h2 id="usage">Usage</h2>
+<p>To install run</p>
+<pre><code class="lang-jsx">npm install mdl-reactjs
+</code></pre>
+<p>Then include by using</p>
+<pre><code class="lang-jsx">var MDL = require(&#39;mdl-reactjs&#39;);
+</code></pre>
+<p>Include the MDL css and js in your project</p>
+<pre><code>&lt;!-- Material design lite stylesheet --&gt;
+&lt;!-- You can generate your own at (http://www.getmdl.io/customize/index.html) --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;//storage.googleapis.com/code.getmdl.io/1.0.3/material.indigo-pink.min.css&quot;&gt;
+
+&lt;!-- Material design lite icons --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;//fonts.googleapis.com/icon?family=Material+Icons&quot;&gt;
+
+&lt;!-- Material design lite script --&gt;
+&lt;script src=&quot;//storage.googleapis.com/code.getmdl.io/1.0.3/material.min.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>Current supported components:</p>
+<pre><code>&lt;MDL.Badge /&gt;
+&lt;MDL.Button /&gt;
+&lt;MDL.Progress /&gt;
+&lt;MDL.Slider /&gt;
+&lt;MDL.Spinner /&gt;
+&lt;MDL.Icon /&gt;
+&lt;MDL.Textfield /&gt;
+
+&lt;MDL.Card&gt;
+    &lt;MDL.CardTitle /&gt;
+    &lt;MDL.CardSupportingText /&gt;
+    &lt;MDL.CardActions /&gt;
+    &lt;MDL.CardMenu /&gt;
+&lt;/MDL.Card&gt;
+
+&lt;MDL.Layout&gt;
+    &lt;MDL.LayoutHeader&gt;
+        &lt;MDL.LayoutHeaderRow /&gt;
+    &lt;/MDL.LayoutHeader&gt;
+    &lt;MDL.LayoutDrawer&gt;
+        &lt;MDL.LayoutTitle /&gt;
+    &lt;/MDL.LayoutDrawer&gt;
+    &lt;MDL.LayoutContent /&gt;
+    &lt;MDL.CardMenu /&gt;
+&lt;/MDL.Layout&gt;
+
+&lt;MDL.Navigation&gt;
+    &lt;MDL.NavigationLink /&gt;
+    ...
+&lt;/MDL.Navigation&gt;
+
+&lt;MDL.Menu&gt;
+    &lt;MDL.MenuItem /&gt;
+    ...
+&lt;/MDL.Menu&gt;
+</code></pre>

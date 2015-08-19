@@ -14,7 +14,7 @@ module.exports = React.createClass({
 						<p>Textual input components.</p>
 					</div>
 					{/*
-						
+
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Text">
@@ -33,7 +33,7 @@ module.exports = React.createClass({
 					</DOCS.DocCode>
 
 					{/*
-						
+
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Text with floating label">
@@ -53,16 +53,22 @@ module.exports = React.createClass({
 					</DOCS.DocCode>
 
 					{/*
-						
+
 						*/}
 					<DOCS.DocComponents>
-						<DOCS.DocComponent caption="Multiple line">
+						<DOCS.DocComponent caption="Multiple lines">
 							<MDL.Textfield label="Text..." multiline rows={3} />
 						</DOCS.DocComponent>
+							<DOCS.DocComponent caption="Expandable">
+								<MDL.Textfield label="Text..." icon="search" expandable id="sample_expand" />
+							</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Text with floating label">
 						{'<MDL.Textfield label="Text..." multiline rows={3} />'}
+					</DOCS.DocCode>
+					<DOCS.DocCode title="Expandable with icon">
+						{'<MDL.Textfield label="Text..." icon="search" expandable id="sample_expand" />'}
 					</DOCS.DocCode>
 
 					{/*

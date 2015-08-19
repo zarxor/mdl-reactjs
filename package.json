@@ -45,6 +45,7 @@
     "gulp-react": "~3.0.1",
     "gulp-util": "~3.0.6",
     "gulp-rename": "~1.2.2",
+    "gulp-markdown": "~1.0.0",
     "react-router": "~0.13.3",
     "vinyl-source-stream2": "*",
     "browserify": "~11.0.1",

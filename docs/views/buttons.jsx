@@ -13,6 +13,7 @@ module.exports = React.createClass({
 						<h1>Buttons</h1>
 						<p>Variations on Material Design buttons.</p>
 					</div>
+
 					{/*
 						Colored FAB
 						*/}

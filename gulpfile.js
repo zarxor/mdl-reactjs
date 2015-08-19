@@ -3,6 +3,7 @@ var browserify = require('browserify'),
     react = require('gulp-react'),
     gutil = require('gulp-util'),
     rename = require("gulp-rename"),
+    markdown = require('gulp-markdown'),
 
     source = require('vinyl-source-stream2'),
     watchify = require('watchify'),
@@ -44,6 +45,10 @@ function build(path, dest, name, isWatch) {
 		gulp.src('components/**/*.jsx')
 			.pipe(react())
 			.pipe(gulp.dest('lib'));
+
+    gulp.src('README.md')
+      .pipe(markdown())
+      .pipe(gulp.dest('docs'));
 	}
 }
 
