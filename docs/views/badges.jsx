@@ -2,7 +2,7 @@
 "use strict";
 
 var React = require('react');
-var MDL = require('../../components');
+var MDL = require('../../components/');
 var DOCS = require('../components');
 
 module.exports = React.createClass({

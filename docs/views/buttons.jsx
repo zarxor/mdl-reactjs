@@ -19,7 +19,7 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Colored FAB">
-							<MDL.Button fab colored icon="add" />
+							<MDL.Button fab colored icon="add" test />
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="With ripple">
 							<MDL.Button fab colored ripple icon="add" />

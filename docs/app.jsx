@@ -2,7 +2,7 @@
 
 var React = require('react');
 var Router = require('react-router');
-var MDL = require('../components');
+var MDL = require('../components/');
 var Link = Router.Link;
 var _ = require('lodash');
 
