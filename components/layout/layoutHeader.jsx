@@ -13,14 +13,18 @@ module.exports = React.createClass({
   getDefaultProps: function() {
 		return {
 			tag: 'header',
-			isTransparent: false
+			transparent: false,
+			scroll: false,
+			waterfall: false,
 		};
 	},
 
   _getClasses: function() {
 		var classes = {
 			'mdl-layout__header': true,
-			'mdl-layout__header--transparent': this.props.isTransparent
+			'mdl-layout__header--transparent': this.props.transparent,
+			'mdl-layout__header--scroll': this.props.scroll,
+			'mdl-layout__header--waterfall': this.props.waterfall,
 		};
 		return cx(classes);
 	},
