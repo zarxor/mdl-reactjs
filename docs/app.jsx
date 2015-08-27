@@ -18,20 +18,20 @@ var navRoutes = [
 	{ name: "loading", 		to: "/loading", 	text: "Loading (partial)", 	icon: "replay", 				view: Views.Loading },
 	{ name: "menus", 		to: "/menus", 		text: "Menus (partial)", 	icon: "format_align_justify", 	view: Views.Menus },
 	{ name: "sliders", 		to: "/sliders", 	text: "Sliders (partial)", 	icon: "tune", 					view: Views.Sliders },
-	{ name: "toggles", 		to: "/toggles", 	text: "Toggles (todo)", 	icon: "exposure", 				view: Views.Toggles },
-	{ name: "", 			to: "/", 			text: "Tables (todo)", 		icon: "view_list" },
-	{ name: "textfields", 	to: "/textfields", 	text: "Text fields (todo)", icon: "font_download", 			view: Views.Textfields },
+	{ name: "toggles", 		to: "/toggles", 	text: "Toggles (partial)", 	icon: "exposure", 				view: Views.Toggles },
+	{ name: "tables", 			to: "/tables", 			text: "Tables (todo)", 		icon: "view_list", view: Views.Tables },
+	{ name: "textfields", 	to: "/textfields", 	text: "Text fields (partial)", icon: "font_download", 			view: Views.Textfields },
 	{ name: "", 			to: "/", 			text: "Tooltips (todo)", 	icon: "beenhere" },
 ];
 
 var App = React.createClass({
 	getNav: function () {
-		return _.map(navRoutes, function (item) {
-	      	return (
-				<Link className="mdl-navigation__link" to={item.to}>
+		return navRoutes.map(function (item, i) {
+    	return (
+				<Link className="mdl-navigation__link" to={item.to} key={i}>
 					<MDL.Button icon={item.icon} colored fab style={{marginRight: 10}} size="mini" /> {item.text}
 				</Link>
-	    	);
+    	);
 		});
 	},
 
@@ -47,7 +47,7 @@ var App = React.createClass({
 				</MDL.LayoutHeader>
 				<MDL.LayoutDrawer>
 					<MDL.LayoutTitle>MDL-REACTJS</MDL.LayoutTitle>
-					<MDL.Navigation>
+					<MDL.Navigation id="docs-navigation">
 						{this.getNav()}
 					</MDL.Navigation>
 				</MDL.LayoutDrawer>

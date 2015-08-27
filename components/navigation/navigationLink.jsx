@@ -3,6 +3,12 @@ var React = require("react");
 var cx = require('classnames');
 var _ = require('lodash');
 
+var MDLFunc = require('../../functions');
+
+var _defaultProps = {
+	tag: 'a'
+};
+
 module.exports = React.createClass({
 	displayName : 'MDL.NavigationLink',
 
@@ -11,10 +17,7 @@ module.exports = React.createClass({
 	},
 
   getDefaultProps: function() {
-		return {
-			tag: 'a',
-			href: '',
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -26,22 +29,15 @@ module.exports = React.createClass({
 
   _getElement: function() {
 		var element = React.createElement(this.props.tag, {
-			children: this.props.children,
-			href: this.props.href
-		});;
+			children: this.props.children
+		});
 
 		return element;
   },
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			id : this.props.id,
-		};
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },

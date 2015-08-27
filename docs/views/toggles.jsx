@@ -6,6 +6,12 @@ var MDL = require('../../components');
 var DOCS = require('../components');
 
 module.exports = React.createClass({
+	handleChange: function (name, e) {
+    console.log('change');
+  },
+	handleEvent: function (e) {
+    console.log(e);
+  },
 	render: function() {
 		return (
 		    <div className="docs-view">
@@ -15,15 +21,79 @@ module.exports = React.createClass({
 						<h2>Checkbox</h2>
 					</div>
 					{/*
-						Colored FAB
+
 						*/}
 					<DOCS.DocComponents>
-						<DOCS.DocComponent caption="Default slider">
+						<DOCS.DocComponent caption="Check on">
+							<MDL.Toggle type="checkbox" label="Checkbox" ripple checked />
+						</DOCS.DocComponent>
+						<DOCS.DocComponent caption="Check off">
+							<MDL.Toggle type="checkbox" label="Checkbox" ripple />
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
-					<DOCS.DocCode title="Default checkbox">
-						{'<MDL.Checkbox />'}
+					<DOCS.DocCode title="Check on">
+						{'<MDL.Toggle type="checkbox" label="Checkbox" ripple checked />'}
+					</DOCS.DocCode>
+					<DOCS.DocCode title="Check off">
+						{'<MDL.Toggle type="checkbox" label="Checkbox" ripple />'}
+					</DOCS.DocCode>
+
+					{/*
+
+						*/}
+					<DOCS.DocComponents>
+						<DOCS.DocComponent caption="Radio on">
+							<MDL.Toggle type="radio" label="First" name="options" ripple checked />
+						</DOCS.DocComponent>
+						<DOCS.DocComponent caption="Radio off">
+							<MDL.Toggle type="radio" label="Second" name="options" ripple />
+						</DOCS.DocComponent>
+					</DOCS.DocComponents>
+
+					<DOCS.DocCode title="Radio on">
+						{'<MDL.Toggle type="radio" label="First" name="options" ripple checked />'}
+					</DOCS.DocCode>
+					<DOCS.DocCode title="Radio off">
+						{'<MDL.Toggle type="radio" label="First" name="options" ripple />'}
+					</DOCS.DocCode>
+
+					{/*
+
+						*/}
+					<DOCS.DocComponents>
+						<DOCS.DocComponent caption="Icon on">
+							<MDL.Toggle type="icon-toggle" ripple checked>format_bold</MDL.Toggle>
+						</DOCS.DocComponent>
+						<DOCS.DocComponent caption="Icon off">
+							<MDL.Toggle type="icon-toggle" ripple>format_italic</MDL.Toggle>
+						</DOCS.DocComponent>
+					</DOCS.DocComponents>
+
+					<DOCS.DocCode title="Icon on">
+						{'<MDL.Toggle type="icon-toggle" ripple checked>format_bold</MDL.Toggle>'}
+					</DOCS.DocCode>
+					<DOCS.DocCode title="Icon off">
+						{'<MDL.Toggle type="icon-toggle" ripple>format_italic</MDL.Toggle>'}
+					</DOCS.DocCode>
+
+					{/*
+
+						*/}
+					<DOCS.DocComponents>
+						<DOCS.DocComponent caption="Switch on">
+							<MDL.Toggle type="switch" ripple checked />
+						</DOCS.DocComponent>
+						<DOCS.DocComponent caption="Switch off">
+							<MDL.Toggle type="switch" ripple />
+						</DOCS.DocComponent>
+					</DOCS.DocComponents>
+
+					<DOCS.DocCode title="Switch on">
+						{'<MDL.Toggle type="switch" ripple checked />'}
+					</DOCS.DocCode>
+					<DOCS.DocCode title="Switch off">
+						{'<MDL.Toggle type="switch" ripple />'}
 					</DOCS.DocCode>
 
 					{/*

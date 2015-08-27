@@ -69,3 +69,7 @@
   left: 0px;
   position: absolute;
 }
+
+#docs-navigation > .mdl-navigation__link {
+  padding: 8px 20px;
+}

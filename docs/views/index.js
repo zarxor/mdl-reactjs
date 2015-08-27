@@ -5,9 +5,10 @@ module.exports = {
   Cards: require('./cards.jsx'),
   Loading: require('./loading.jsx'),
   Menus: require('./menus.jsx'),
-  Sliders: require('./sliders.jsx'), 
-  Toggles: require('./toggles.jsx'), 
-  Textfields: require('./textfields.jsx'), 
+  Sliders: require('./sliders.jsx'),
+  Tables: require('./tables.jsx'),
+  Toggles: require('./toggles.jsx'),
+  Textfields: require('./textfields.jsx'),
   /*
   CardActions: require('./CardActions.jsx'),
   CardMedia: require('./CardMedia.jsx'),

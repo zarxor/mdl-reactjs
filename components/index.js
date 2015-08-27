@@ -8,6 +8,8 @@ module.exports = {
   Slider: require('./Slider.jsx'),
   Spinner: require('./Spinner.jsx'),
   Textfield: require('./Textfield.jsx'),
+  Toggle: require('./toggle.jsx'),
+  Table: require('./table.jsx'),
 
   // Card
   Card: require('./card/card.jsx'),
