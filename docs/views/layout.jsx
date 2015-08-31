@@ -13,83 +13,77 @@ module.exports = React.createClass({
     console.log(e);
   },
 	render: function() {
+		console.log(MDL);
 		return (
 		    <div className="docs-view">
 				<div className="docs-text">
-					<h1>TOGGLES</h1>
-					<p>Choose between states.</p>
-					<h2>Checkbox</h2>
+					<h1>Layout</h1>
+					<p>Building blocks for constructing a page layout.</p>
+					<h2>Grid</h2>
 				</div>
 				{/*
 
 					*/}
-				<DOCS.DocComponents>
-					<DOCS.DocComponent caption="Check on">
-						<MDL.Grid>
-						</MDL.Grid>
-						<MDL.Toggle type="checkbox" label="Checkbox" ripple checked />
-					</DOCS.DocComponent>
-				</DOCS.DocComponents>
+				<MDL.Grid>
+					<MDL.GridCell>1</MDL.GridCell>
+					<MDL.GridCell>1</MDL.GridCell>
+					<MDL.GridCell>1</MDL.GridCell>
+					<MDL.GridCell>1</MDL.GridCell>
+					<MDL.GridCell>1</MDL.GridCell>
+					<MDL.GridCell>1</MDL.GridCell>
+					<MDL.GridCell>1</MDL.GridCell>
+					<MDL.GridCell>1</MDL.GridCell>
+					<MDL.GridCell>1</MDL.GridCell>
+					<MDL.GridCell>1</MDL.GridCell>
+					<MDL.GridCell>1</MDL.GridCell>
+					<MDL.GridCell>1</MDL.GridCell>
+				</MDL.Grid>
+				<MDL.Grid>
+					<MDL.GridCell col={4}>4</MDL.GridCell>
+					<MDL.GridCell col={4}>4</MDL.GridCell>
+					<MDL.GridCell col={4}>4</MDL.GridCell>
+				</MDL.Grid>
+				<MDL.Grid>
+					<MDL.GridCell col={6}>6</MDL.GridCell>
+					<MDL.GridCell col={4}>4</MDL.GridCell>
+					<MDL.GridCell col={2}>2</MDL.GridCell>
+				</MDL.Grid>
+				<MDL.Grid>
+					<MDL.GridCell col={6} colTablet={8}>6 (8 tablet)</MDL.GridCell>
+					<MDL.GridCell col={4} colTablet={6}>4 (6 tablet)</MDL.GridCell>
+					<MDL.GridCell col={2} colPhone={4}>2 (4 phone)</MDL.GridCell>
+				</MDL.Grid>
 
-				<DOCS.DocCode title="Check on">
-					{'<MDL.Toggle type="checkbox" label="Checkbox" ripple checked />'}
-				</DOCS.DocCode>
-
-				{/*
-
-					*/}
-				<DOCS.DocComponents>
-					<DOCS.DocComponent caption="Radio on">
-						<MDL.Toggle type="radio" label="First" name="options" ripple checked />
-					</DOCS.DocComponent>
-					<DOCS.DocComponent caption="Radio off">
-						<MDL.Toggle type="radio" label="Second" name="options" ripple />
-					</DOCS.DocComponent>
-				</DOCS.DocComponents>
-
-				<DOCS.DocCode title="Radio on">
-					{'<MDL.Toggle type="radio" label="First" name="options" ripple checked />'}
-				</DOCS.DocCode>
-				<DOCS.DocCode title="Radio off">
-					{'<MDL.Toggle type="radio" label="First" name="options" ripple />'}
-				</DOCS.DocCode>
-
-				{/*
-
-					*/}
-				<DOCS.DocComponents>
-					<DOCS.DocComponent caption="Icon on">
-						<MDL.Toggle type="icon-toggle" ripple checked>format_bold</MDL.Toggle>
-					</DOCS.DocComponent>
-					<DOCS.DocComponent caption="Icon off">
-						<MDL.Toggle type="icon-toggle" ripple>format_italic</MDL.Toggle>
-					</DOCS.DocComponent>
-				</DOCS.DocComponents>
-
-				<DOCS.DocCode title="Icon on">
-					{'<MDL.Toggle type="icon-toggle" ripple checked>format_bold</MDL.Toggle>'}
-				</DOCS.DocCode>
-				<DOCS.DocCode title="Icon off">
-					{'<MDL.Toggle type="icon-toggle" ripple>format_italic</MDL.Toggle>'}
-				</DOCS.DocCode>
-
-				{/*
-
-					*/}
-				<DOCS.DocComponents>
-					<DOCS.DocComponent caption="Switch on">
-						<MDL.Toggle type="switch" ripple checked />
-					</DOCS.DocComponent>
-					<DOCS.DocComponent caption="Switch off">
-						<MDL.Toggle type="switch" ripple />
-					</DOCS.DocComponent>
-				</DOCS.DocComponents>
-
-				<DOCS.DocCode title="Switch on">
-					{'<MDL.Toggle type="switch" ripple checked />'}
-				</DOCS.DocCode>
-				<DOCS.DocCode title="Switch off">
-					{'<MDL.Toggle type="switch" ripple />'}
+				<DOCS.DocCode title="Grid">
+				{'	<MDL.Grid>'}{'\n'}
+				{'		<MDL.GridCell>1</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell>1</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell>1</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell>1</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell>1</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell>1</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell>1</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell>1</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell>1</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell>1</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell>1</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell>1</MDL.GridCell>'}{'\n'}
+				{'	<MDL.Grid>'}{'\n'}
+				{'	</MDL.Grid>'}{'\n'}
+				{'		<MDL.GridCell col={4}>4</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell col={4}>4</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell col={4}>4</MDL.GridCell>'}{'\n'}
+				{'	</MDL.Grid>'}{'\n'}
+				{'	<MDL.Grid>'}{'\n'}
+				{'		<MDL.GridCell col={6}>6</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell col={4}>4</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell col={2}>2</MDL.GridCell>'}{'\n'}
+				{'	</MDL.Grid>'}{'\n'}
+				{'	<MDL.Grid>'}{'\n'}
+				{'		<MDL.GridCell col={6} colTablet={8}>6 (8 tablet)</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell col={4} colTablet={6}>4 (6 tablet)</MDL.GridCell>'}{'\n'}
+				{'		<MDL.GridCell col={2} colPhone={4}>2 (4 phone)</MDL.GridCell>'}{'\n'}
+				{'	</MDL.Grid>'}
 				</DOCS.DocCode>
 
 				{/*
@@ -99,7 +93,7 @@ module.exports = React.createClass({
 				<div className="docs-text--centred">
 					<h2>CONFIGURATION OPTIONS</h2>
 					<p>
-						Down below you can find all the attributes that can be applied to the component
+						Down below you can find all the attributes that can be applied to the component GridCell
 					</p>
 					<table style={{width:"100%"}}>
 						<thead>
@@ -111,9 +105,49 @@ module.exports = React.createClass({
 						</thead>
 						<tbody>
 							<tr>
-								<td>Attribute</td>
-								<td>Effect</td>
-								<td>Values</td>
+								<td>col</td>
+								<td>Sets the column size for the cell</td>
+								<td>INT [1-12]</td>
+							</tr>
+							<tr>
+								<td>colDesktop</td>
+								<td>Sets the column size for the cell for desktop mode only</td>
+								<td>INT [1-12]</td>
+							</tr>
+							<tr>
+								<td>colTablet</td>
+								<td>Sets the column size for the cell for tablet mode only</td>
+								<td>INT [1-12]</td>
+							</tr>
+							<tr>
+								<td>colPhone</td>
+								<td>Sets the column size for the cell for phone mode only</td>
+								<td>INT [1-12]</td>
+							</tr>
+							<tr>
+								<td>hideDesktop</td>
+								<td>Hides the cell when in desktop mode</td>
+								<td>boolean</td>
+							</tr>
+							<tr>
+								<td>hideTablet</td>
+								<td>Hides the cell when in tablet mode</td>
+								<td>boolean</td>
+							</tr>
+							<tr>
+								<td>hidePhone</td>
+								<td>Hides the cell when in phone mode</td>
+								<td>boolean</td>
+							</tr>
+							<tr>
+								<td>stretch</td>
+								<td>Stretches the cell vertically to fill the parent</td>
+								<td>boolean</td>
+							</tr>
+							<tr>
+								<td>align</td>
+								<td>Defines tow the cell alignes to the parent</td>
+								<td>[left/right/top/bottom]</td>
 							</tr>
 						</tbody>
 					</table>

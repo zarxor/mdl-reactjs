@@ -70,6 +70,15 @@
   position: absolute;
 }
 
+/*
+  Layout
+*/
+.docs-view .mdl-cell {
+  background: #999;
+  padding: 10px;
+  color: #FFF;
+}
+
 #docs-navigation > .mdl-navigation__link {
   padding: 8px 20px;
 }

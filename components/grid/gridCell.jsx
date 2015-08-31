@@ -18,6 +18,8 @@ var _defaultProps = {
 	spacing: true,
 	stretch: false,
 	align: '',
+
+	tag: 'div'
 };
 
 module.exports = React.createClass({

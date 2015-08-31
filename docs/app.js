@@ -73,7 +73,6 @@ module.exports = React.createClass({
 		this._refreshProgress();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],2:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -136,7 +135,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],3:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -189,7 +187,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],4:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -331,7 +328,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],6:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -403,7 +399,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"../functions":47,"classnames":49,"lodash":50,"react":244}],7:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -455,7 +450,6 @@ module.exports = React.createClass({
 		//componentHandler.upgradeElement();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],8:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -517,7 +511,6 @@ module.exports = React.createClass({
 		//componentHandler.upgradeElement();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],9:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -566,7 +559,6 @@ module.exports = React.createClass({
 		//componentHandler.upgradeElement();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],10:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -617,7 +609,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],11:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -684,7 +675,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],12:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -742,7 +732,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],13:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
@@ -752,6 +741,7 @@ var React = require("react"),
 var MDLFunc = require('../../functions');
 
 var _defaultProps = {
+	tag: 'div'
 };
 
 module.exports = React.createClass({
@@ -782,7 +772,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-	var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -812,6 +802,8 @@ var _defaultProps = {
 	spacing: true,
 	stretch: false,
 	align: '',
+
+	tag: 'div'
 };
 
 module.exports = React.createClass({
@@ -907,7 +899,6 @@ module.exports = React.createClass({
 		//componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],16:[function(require,module,exports){
 module.exports = {
   Badge: require('./badge.jsx'),
@@ -999,7 +990,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],18:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1043,7 +1033,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],19:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1096,7 +1085,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],20:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1138,7 +1126,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],21:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1190,7 +1177,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],22:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1239,7 +1225,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"../../functions":47,"classnames":49,"lodash":50,"react":244}],23:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1295,7 +1280,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"../../functions":47,"classnames":49,"lodash":50,"react":244}],24:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1356,7 +1340,6 @@ module.exports = React.createClass({
 		//componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],25:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1405,7 +1388,6 @@ module.exports = React.createClass({
 		//componentHandler.upgradeDom();
 	}
 });
-
 },{"classnames":49,"lodash":50,"react":244}],26:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1455,7 +1437,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"../../functions":47,"classnames":49,"lodash":50,"react":244}],27:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1505,7 +1486,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"../../functions":47,"classnames":49,"lodash":50,"react":244}],28:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1651,7 +1631,6 @@ module.exports = React.createClass({
         return foundElements;
     }
 });
-
 },{"../functions":47,"classnames":49,"lodash":50,"react":244}],29:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1743,7 +1722,6 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-
 },{"../functions":47,"classnames":49,"lodash":50,"react":244}],30:[function(require,module,exports){
 "use strict";
 
@@ -1854,7 +1832,6 @@ module.exports = React.createClass({displayName: "exports",
     Prism.highlightAll();
 	}
 });
-
 },{"react":244}],32:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1881,7 +1858,6 @@ module.exports = React.createClass({displayName: "exports",
   componentDidMount: function() {
 	}
 });
-
 },{"react":244}],33:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1902,7 +1878,6 @@ module.exports = React.createClass({displayName: "exports",
   componentDidMount: function() {
 	}
 });
-
 },{"react":244}],34:[function(require,module,exports){
 module.exports = {
   DocCode: require('./docCode.jsx'),
@@ -1974,7 +1949,6 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-
 },{"../../components/":16,"../components":34,"react":244}],36:[function(require,module,exports){
 
 "use strict";
@@ -2199,7 +2173,6 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-
 },{"../../components":16,"../components":34,"react":244}],37:[function(require,module,exports){
 
 "use strict";
@@ -2461,83 +2434,77 @@ module.exports = React.createClass({displayName: "exports",
     console.log(e);
   },
 	render: function() {
+		console.log(MDL);
 		return (
 		    React.createElement("div", {className: "docs-view"}, 
 				React.createElement("div", {className: "docs-text"}, 
-					React.createElement("h1", null, "TOGGLES"), 
-					React.createElement("p", null, "Choose between states."), 
-					React.createElement("h2", null, "Checkbox")
+					React.createElement("h1", null, "Layout"), 
+					React.createElement("p", null, "Building blocks for constructing a page layout."), 
+					React.createElement("h2", null, "Grid")
 				), 
 				/*
 
 					*/
-				React.createElement(DOCS.DocComponents, null, 
-					React.createElement(DOCS.DocComponent, {caption: "Check on"}, 
-						React.createElement(MDL.Grid, null
-						), 
-						React.createElement(MDL.Toggle, {type: "checkbox", label: "Checkbox", ripple: true, checked: true})
-					)
+				React.createElement(MDL.Grid, null, 
+					React.createElement(MDL.GridCell, null, "1"), 
+					React.createElement(MDL.GridCell, null, "1"), 
+					React.createElement(MDL.GridCell, null, "1"), 
+					React.createElement(MDL.GridCell, null, "1"), 
+					React.createElement(MDL.GridCell, null, "1"), 
+					React.createElement(MDL.GridCell, null, "1"), 
+					React.createElement(MDL.GridCell, null, "1"), 
+					React.createElement(MDL.GridCell, null, "1"), 
+					React.createElement(MDL.GridCell, null, "1"), 
+					React.createElement(MDL.GridCell, null, "1"), 
+					React.createElement(MDL.GridCell, null, "1"), 
+					React.createElement(MDL.GridCell, null, "1")
+				), 
+				React.createElement(MDL.Grid, null, 
+					React.createElement(MDL.GridCell, {col: 4}, "4"), 
+					React.createElement(MDL.GridCell, {col: 4}, "4"), 
+					React.createElement(MDL.GridCell, {col: 4}, "4")
+				), 
+				React.createElement(MDL.Grid, null, 
+					React.createElement(MDL.GridCell, {col: 6}, "6"), 
+					React.createElement(MDL.GridCell, {col: 4}, "4"), 
+					React.createElement(MDL.GridCell, {col: 2}, "2")
+				), 
+				React.createElement(MDL.Grid, null, 
+					React.createElement(MDL.GridCell, {col: 6, colTablet: 8}, "6 (8 tablet)"), 
+					React.createElement(MDL.GridCell, {col: 4, colTablet: 6}, "4 (6 tablet)"), 
+					React.createElement(MDL.GridCell, {col: 2, colPhone: 4}, "2 (4 phone)")
 				), 
 
-				React.createElement(DOCS.DocCode, {title: "Check on"}, 
-					'<MDL.Toggle type="checkbox" label="Checkbox" ripple checked />'
-				), 
-
-				/*
-
-					*/
-				React.createElement(DOCS.DocComponents, null, 
-					React.createElement(DOCS.DocComponent, {caption: "Radio on"}, 
-						React.createElement(MDL.Toggle, {type: "radio", label: "First", name: "options", ripple: true, checked: true})
-					), 
-					React.createElement(DOCS.DocComponent, {caption: "Radio off"}, 
-						React.createElement(MDL.Toggle, {type: "radio", label: "Second", name: "options", ripple: true})
-					)
-				), 
-
-				React.createElement(DOCS.DocCode, {title: "Radio on"}, 
-					'<MDL.Toggle type="radio" label="First" name="options" ripple checked />'
-				), 
-				React.createElement(DOCS.DocCode, {title: "Radio off"}, 
-					'<MDL.Toggle type="radio" label="First" name="options" ripple />'
-				), 
-
-				/*
-
-					*/
-				React.createElement(DOCS.DocComponents, null, 
-					React.createElement(DOCS.DocComponent, {caption: "Icon on"}, 
-						React.createElement(MDL.Toggle, {type: "icon-toggle", ripple: true, checked: true}, "format_bold")
-					), 
-					React.createElement(DOCS.DocComponent, {caption: "Icon off"}, 
-						React.createElement(MDL.Toggle, {type: "icon-toggle", ripple: true}, "format_italic")
-					)
-				), 
-
-				React.createElement(DOCS.DocCode, {title: "Icon on"}, 
-					'<MDL.Toggle type="icon-toggle" ripple checked>format_bold</MDL.Toggle>'
-				), 
-				React.createElement(DOCS.DocCode, {title: "Icon off"}, 
-					'<MDL.Toggle type="icon-toggle" ripple>format_italic</MDL.Toggle>'
-				), 
-
-				/*
-
-					*/
-				React.createElement(DOCS.DocComponents, null, 
-					React.createElement(DOCS.DocComponent, {caption: "Switch on"}, 
-						React.createElement(MDL.Toggle, {type: "switch", ripple: true, checked: true})
-					), 
-					React.createElement(DOCS.DocComponent, {caption: "Switch off"}, 
-						React.createElement(MDL.Toggle, {type: "switch", ripple: true})
-					)
-				), 
-
-				React.createElement(DOCS.DocCode, {title: "Switch on"}, 
-					'<MDL.Toggle type="switch" ripple checked />'
-				), 
-				React.createElement(DOCS.DocCode, {title: "Switch off"}, 
-					'<MDL.Toggle type="switch" ripple />'
+				React.createElement(DOCS.DocCode, {title: "Grid"}, 
+				'	<MDL.Grid>', '\n', 
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
+				'	<MDL.Grid>', '\n', 
+				'	</MDL.Grid>', '\n', 
+				'		<MDL.GridCell col={4}>4</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell col={4}>4</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell col={4}>4</MDL.GridCell>', '\n', 
+				'	</MDL.Grid>', '\n', 
+				'	<MDL.Grid>', '\n', 
+				'		<MDL.GridCell col={6}>6</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell col={4}>4</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell col={2}>2</MDL.GridCell>', '\n', 
+				'	</MDL.Grid>', '\n', 
+				'	<MDL.Grid>', '\n', 
+				'		<MDL.GridCell col={6} colTablet={8}>6 (8 tablet)</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell col={4} colTablet={6}>4 (6 tablet)</MDL.GridCell>', '\n', 
+				'		<MDL.GridCell col={2} colPhone={4}>2 (4 phone)</MDL.GridCell>', '\n', 
+				'	</MDL.Grid>'
 				), 
 
 				/*
@@ -2547,7 +2514,7 @@ module.exports = React.createClass({displayName: "exports",
 				React.createElement("div", {className: "docs-text--centred"}, 
 					React.createElement("h2", null, "CONFIGURATION OPTIONS"), 
 					React.createElement("p", null, 
-						"Down below you can find all the attributes that can be applied to the component"
+						"Down below you can find all the attributes that can be applied to the component GridCell"
 					), 
 					React.createElement("table", {style: {width:"100%"}}, 
 						React.createElement("thead", null, 
@@ -2559,9 +2526,49 @@ module.exports = React.createClass({displayName: "exports",
 						), 
 						React.createElement("tbody", null, 
 							React.createElement("tr", null, 
-								React.createElement("td", null, "Attribute"), 
-								React.createElement("td", null, "Effect"), 
-								React.createElement("td", null, "Values")
+								React.createElement("td", null, "col"), 
+								React.createElement("td", null, "Sets the column size for the cell"), 
+								React.createElement("td", null, "INT [1-12]")
+							), 
+							React.createElement("tr", null, 
+								React.createElement("td", null, "colDesktop"), 
+								React.createElement("td", null, "Sets the column size for the cell for desktop mode only"), 
+								React.createElement("td", null, "INT [1-12]")
+							), 
+							React.createElement("tr", null, 
+								React.createElement("td", null, "colTablet"), 
+								React.createElement("td", null, "Sets the column size for the cell for tablet mode only"), 
+								React.createElement("td", null, "INT [1-12]")
+							), 
+							React.createElement("tr", null, 
+								React.createElement("td", null, "colPhone"), 
+								React.createElement("td", null, "Sets the column size for the cell for phone mode only"), 
+								React.createElement("td", null, "INT [1-12]")
+							), 
+							React.createElement("tr", null, 
+								React.createElement("td", null, "hideDesktop"), 
+								React.createElement("td", null, "Hides the cell when in desktop mode"), 
+								React.createElement("td", null, "boolean")
+							), 
+							React.createElement("tr", null, 
+								React.createElement("td", null, "hideTablet"), 
+								React.createElement("td", null, "Hides the cell when in tablet mode"), 
+								React.createElement("td", null, "boolean")
+							), 
+							React.createElement("tr", null, 
+								React.createElement("td", null, "hidePhone"), 
+								React.createElement("td", null, "Hides the cell when in phone mode"), 
+								React.createElement("td", null, "boolean")
+							), 
+							React.createElement("tr", null, 
+								React.createElement("td", null, "stretch"), 
+								React.createElement("td", null, "Stretches the cell vertically to fill the parent"), 
+								React.createElement("td", null, "boolean")
+							), 
+							React.createElement("tr", null, 
+								React.createElement("td", null, "align"), 
+								React.createElement("td", null, "Defines tow the cell alignes to the parent"), 
+								React.createElement("td", null, "[left/right/top/bottom]")
 							)
 						)
 					)
@@ -2723,7 +2730,6 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-
 },{"../../components":16,"../components":34,"react":244}],41:[function(require,module,exports){
 
 "use strict";
@@ -2840,7 +2846,6 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-
 },{"../../components":16,"../components":34,"react":244}],42:[function(require,module,exports){
 
 "use strict";
@@ -2939,7 +2944,6 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-
 },{"react":244}],44:[function(require,module,exports){
 
 "use strict";
@@ -3270,7 +3274,6 @@ module.exports = {
 		});
   }
 }
-
 },{"lodash":50}],48:[function(require,module,exports){
 // shim for using process in browser
 
