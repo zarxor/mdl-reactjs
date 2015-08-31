@@ -46,7 +46,7 @@ Include the MDL css and js in your project
 	- [x] Title
 	- [x] Content
 	- [x] Navigation + Links
-	- [ ] Grid
+	- [x] Grid
 	- [ ] Layout Tabs
 	- [ ] Tabs
 	- [ ] Footer

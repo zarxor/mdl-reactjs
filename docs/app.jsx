@@ -14,7 +14,7 @@ var navRoutes = [
 	{ name: "badges", 		to: "/badges", 		text: "Badges", 			icon: "chat_bubble", 			view: Views.Badges },
 	{ name: "buttons", 		to: "/buttons", 	text: "Buttons", 			icon: "chevron_right", 			view: Views.Buttons },
 	{ name: "cards", 		to: "/cards", 		text: "Cards (partial)", 	icon: "web", 					view: Views.Cards },
-	{ name: "", 			to: "/", 			text: "Layout (todo)", 		icon: "view_quilt" },
+	{ name: "layout", 		to: "/layout", 		text: "Layout (partial)", 	icon: "view_quilt", 			view: Views.Layout },
 	{ name: "loading", 		to: "/loading", 	text: "Loading (partial)", 	icon: "replay", 				view: Views.Loading },
 	{ name: "menus", 		to: "/menus", 		text: "Menus (partial)", 	icon: "format_align_justify", 	view: Views.Menus },
 	{ name: "sliders", 		to: "/sliders", 	text: "Sliders (partial)", 	icon: "tune", 					view: Views.Sliders },

@@ -31,4 +31,8 @@ module.exports = {
   // Navigation
   Navigation: require('./navigation/navigation.jsx'),
   NavigationLink: require('./navigation/navigationLink.jsx'),
+
+  // Grid
+  Grid: require('./grid/grid.jsx'),
+  GridCell: require('./grid/gridCell.jsx'),
 };
