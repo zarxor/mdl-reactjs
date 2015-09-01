@@ -1,7 +1,13 @@
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+	cx = require('classnames'),
+	_ = require('lodash');
+
+var MDLFunc = require('../../functions');
+
+var _defaultProps = {
+	tag: 'main'
+};
 
 module.exports = React.createClass({
 	displayName : 'MDL.Layout',
@@ -11,9 +17,7 @@ module.exports = React.createClass({
 	},
 
   getDefaultProps: function() {
-		return {
-			tag: 'main'
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -24,22 +28,12 @@ module.exports = React.createClass({
 	},
 
   _getElement: function() {
-		var element = React.createElement(this.props.tag, {
-			children: this.props.children
-		});;
-
-		return element;
+		return React.createElement(this.props.tag, {}, this.props.children);
   },
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			id : this.props.id,
-		};
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
