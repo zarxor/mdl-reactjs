@@ -273,9 +273,18 @@ module.exports = React.createClass({
 });
 },{"classnames":49,"lodash":50,"react":244}],5:[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+		cx = require('classnames'),
+		_ = require('lodash');
+
+var MDLFunc = require('../functions');
+
+var _defaultProps = {
+	isIcon: false,
+	tag: 'span',
+	data: '',
+	background: true
+};
 
 module.exports = React.createClass({
 	displayName : 'MDL.Badge',
@@ -285,12 +294,7 @@ module.exports = React.createClass({
 	},
 
   getDefaultProps: function() {
-		return {
-			isIcon: false,
-			tag: 'span',
-			data: '',
-			background: true
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -304,22 +308,15 @@ module.exports = React.createClass({
 
   _getElement: function() {
 		var element = React.createElement(this.props.tag, {
-			children: this.props.children,
 			'data-badge': this.props.data
-		});;
+		}, this.props.children);
 
 		return element;
   },
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			id : this.props.id,
-		};
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -328,7 +325,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"classnames":49,"lodash":50,"react":244}],6:[function(require,module,exports){
+},{"../functions":47,"classnames":49,"lodash":50,"react":244}],6:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -780,8 +777,8 @@ module.exports = React.createClass({
 },{"../../functions":47,"classnames":49,"lodash":50,"react":244}],14:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
-	cx = require('classnames'),
-	_ = require('lodash');
+		cx = require('classnames'),
+		_ = require('lodash');
 
 var MDLFunc = require('../../functions');
 
@@ -843,7 +840,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-	var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },

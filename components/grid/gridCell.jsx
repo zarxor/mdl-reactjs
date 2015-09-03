@@ -1,7 +1,7 @@
 /** @jsx React.DOM */
 var React = require("react"),
-	cx = require('classnames'),
-	_ = require('lodash');
+		cx = require('classnames'),
+		_ = require('lodash');
 
 var MDLFunc = require('../../functions');
 
@@ -63,7 +63,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-	var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
