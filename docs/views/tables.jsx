@@ -26,7 +26,7 @@ module.exports = React.createClass({
                   { label: 'Quantity', key: 'qty', isNumeric: true },
                   { label: 'Unit price', key: 'price', isNumeric: true, prefix: "$", decimal: 2 }
                 ]} data={[
-                  { material: "Acrylic (Transparent)", qty: 25, price: 2.90 },
+                  { material: "Acrylic (Transparent)", qty: 25, price: 2.90, color: "blue-grey", textColor: "white" },
                   { material: "Plywood (Birch)", qty: 50, price: 1.25 },
                   { material: "Laminate (Gold on Blue)", qty: 10, price: 2.35 },
                 ]} selectable onChange={this.handleEvent} />

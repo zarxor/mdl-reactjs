@@ -1,22 +1,31 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+		cx = require('classnames'),
+		_ = require('lodash');
+
+var MDLFunc = require('../functions');
+
+var _generalProps = {
+			shadow: true,
+		};
+
+var _defaultProps = MDLFunc.makeDefaultProps({
+			indeterminate: false,
+			progress: 0,
+			buffer: -1,
+		},_generalProps),
+		_propTypes = MDLFunc.makeDefaultPropTypes({
+			id: React.PropTypes.string.isRequired,
+		},_generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.Progress',
 
-	propTypes: {
-		id: React.PropTypes.string.isRequired,
-	},
+	propTypes: _propTypes,
 
   getDefaultProps: function() {
-		return {
-			indeterminate: false,
-			progress: 0,
-			buffer: -1,
-		};
+		return _defaultProps;
 	},
 
 	getInitialState: function() {
@@ -73,7 +82,8 @@ module.exports = React.createClass({
 		this._refreshProgress();
 	}
 });
-},{"classnames":49,"lodash":50,"react":244}],2:[function(require,module,exports){
+
+},{"../functions":47,"classnames":49,"lodash":50,"react":244}],2:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -135,6 +145,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
+
 },{"classnames":49,"lodash":50,"react":244}],3:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -187,6 +198,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
+
 },{"classnames":49,"lodash":50,"react":244}],4:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
@@ -323,10 +335,14 @@ module.exports = React.createClass({
 });
 },{"../functions":47,"classnames":49,"lodash":50,"react":244}],6:[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
-var MDLFunc = require('../functions');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash'),
+    MDLFunc = require('../functions');
+
+var _generalProps = {
+	colors: true,
+};
 
 var _defaultProps = MDLFunc.makeDefaultProps({
 	ripple: false,
@@ -340,12 +356,15 @@ var _defaultProps = MDLFunc.makeDefaultProps({
 	accent: false,
 
 	children: {}
-}, {
-	colors: true
-});
+}, _generalProps);
+
+var _propTypes = MDLFunc.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.Button',
+
+	propTypes: _propTypes,
 
   getDefaultProps: function() {
 		return _defaultProps;
@@ -368,7 +387,7 @@ module.exports = React.createClass({
 			'mdl-js-ripple-effect': this.props.ripple
 		};
 
-		classes = MDLFunc.addColorClasses(classes, this.props.color, this.props.colorSpectrum, this.props.textColor, this.props.textColorSpectrum);
+		classes = MDLFunc.addGeneralClasses(classes, this.props);
 
 		return cx(classes);
 	},
@@ -389,7 +408,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-	var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -449,6 +468,7 @@ module.exports = React.createClass({
 		//componentHandler.upgradeElement();
 	}
 });
+
 },{"classnames":49,"lodash":50,"react":244}],8:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -510,6 +530,7 @@ module.exports = React.createClass({
 		//componentHandler.upgradeElement();
 	}
 });
+
 },{"classnames":49,"lodash":50,"react":244}],9:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -558,6 +579,7 @@ module.exports = React.createClass({
 		//componentHandler.upgradeElement();
 	}
 });
+
 },{"classnames":49,"lodash":50,"react":244}],10:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -608,6 +630,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
+
 },{"classnames":49,"lodash":50,"react":244}],11:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -674,6 +697,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
+
 },{"classnames":49,"lodash":50,"react":244}],12:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
@@ -681,28 +705,34 @@ var React = require("react"),
     _ = require('lodash'),
     MDLFunc = require('../../functions');
 
+var _generalProps = {
+  shadow: true
+};
+
 var _defaultProps = MDLFunc.makeDefaultProps({
 	shadow: 2,
 	useChild: false
-});
+}, _generalProps);
+
+var _propTypes = MDLFunc.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.Card',
 
-	propTypes: {
-			shadow : React.PropTypes.oneOf([ 2, 3, 4, 6, 8, 16 ]),
-	},
+	propTypes: _propTypes,
 
   getDefaultProps: function() {
-		return {
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
 		var classes = {
 			'mdl-card': true
 		};
-		classes['mdl-shadow--' + this.props.shadow + 'dp'] = true;
+
+    classes = MDLFunc.addGeneralClasses(classes, this.props);
+
 		return cx(classes);
 	},
 
@@ -986,6 +1016,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
+
 },{"classnames":49,"lodash":50,"react":244}],18:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1029,6 +1060,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
+
 },{"classnames":49,"lodash":50,"react":244}],19:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1081,6 +1113,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
+
 },{"classnames":49,"lodash":50,"react":244}],20:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
@@ -1224,6 +1257,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
+
 },{"../../functions":47,"classnames":49,"lodash":50,"react":244}],23:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1279,6 +1313,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
+
 },{"../../functions":47,"classnames":49,"lodash":50,"react":244}],24:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
@@ -1427,6 +1462,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
+
 },{"../../functions":47,"classnames":49,"lodash":50,"react":244}],27:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1476,6 +1512,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
+
 },{"../../functions":47,"classnames":49,"lodash":50,"react":244}],28:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
@@ -1483,12 +1520,15 @@ var React = require("react"),
     _ = require('lodash'),
     MDLFunc = require('../functions');
 
-var _defaultProps = {
+var _defaultProps = MDLFunc.makeDefaultProps({
   columns: null,
   data: null,
   shadow: 2,
   selectable: false,
-};
+}, {
+	colors: true,
+  shadow: true,
+});
 
 module.exports = React.createClass({
 	displayName : 'MDL.Table',
@@ -1522,14 +1562,13 @@ module.exports = React.createClass({
 			'mdl-data-table--selectable': this.props.selectable,
 		};
 
-		classes['mdl-shadow--' + this.props.shadow + 'dp'] = true;
+		classes = MDLFunc.addGeneralClasses(classes, this.props);
 
 		return cx(classes);
 	},
 
 	_handleChange: function () {
 		this.setState({ isChecked: !this.state.isChecked });
-		console.log(!this.state.isChecked);
 		if (!this.state.isChecked) {
 			// todo: implement onChecked event
 		} else {
@@ -1538,11 +1577,13 @@ module.exports = React.createClass({
 	},
 
   _getCellClasses: function (column) {
-    var classes = {
+    return cx(MDLFunc.addGeneralClasses({
       'mdl-data-table__cell--non-numeric' : !column.isNumeric,
-		};
+		}, column));
+  },
 
-		return cx(classes);
+  _getRowClasses: function (row) {
+		return cx(MDLFunc.addGeneralClasses({}, row));
   },
 
   _rowClicked: function (row, i) {
@@ -1566,7 +1607,7 @@ module.exports = React.createClass({
         React.createElement("tbody", null, 
           this.props.data.map(function (row, i) {
             return (
-              React.createElement("tr", {key: i}, 
+              React.createElement("tr", {key: i, className: this._getRowClasses(row)}, 
                   this.props.columns.map(function (column) {
                     return (
                       React.createElement("td", {key: column.key, className: this._getCellClasses(column)}, column.prefix, row[column.key], column.suffix)
@@ -1711,6 +1752,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
+
 },{"../functions":47,"classnames":49,"lodash":50,"react":244}],30:[function(require,module,exports){
 "use strict";
 
@@ -1821,6 +1863,7 @@ module.exports = React.createClass({displayName: "exports",
     Prism.highlightAll();
 	}
 });
+
 },{"react":244}],32:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1847,6 +1890,7 @@ module.exports = React.createClass({displayName: "exports",
   componentDidMount: function() {
 	}
 });
+
 },{"react":244}],33:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
@@ -1867,6 +1911,7 @@ module.exports = React.createClass({displayName: "exports",
   componentDidMount: function() {
 	}
 });
+
 },{"react":244}],34:[function(require,module,exports){
 module.exports = {
   DocCode: require('./docCode.jsx'),
@@ -1938,6 +1983,7 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
+
 },{"../../components/":16,"../components":34,"react":244}],36:[function(require,module,exports){
 
 "use strict";
@@ -1960,7 +2006,7 @@ module.exports = React.createClass({displayName: "exports",
 						*/
 					React.createElement(DOCS.DocComponents, null, 
 						React.createElement(DOCS.DocComponent, {caption: "Colored FAB"}, 
-							React.createElement(MDL.Button, {fab: true, colored: true, icon: "add", color: "blue-grey"})
+							React.createElement(MDL.Button, {fab: true, colored: true, icon: "add"})
 						), 
 						React.createElement(DOCS.DocComponent, {caption: "With ripple"}, 
 							React.createElement(MDL.Button, {fab: true, colored: true, ripple: true, icon: "add"})
@@ -2719,6 +2765,7 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
+
 },{"../../components":16,"../components":34,"react":244}],41:[function(require,module,exports){
 
 "use strict";
@@ -2835,6 +2882,7 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
+
 },{"../../components":16,"../components":34,"react":244}],42:[function(require,module,exports){
 
 "use strict";
@@ -2933,6 +2981,7 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
+
 },{"react":244}],44:[function(require,module,exports){
 
 "use strict";
@@ -2962,7 +3011,7 @@ module.exports = React.createClass({displayName: "exports",
                   { label: 'Quantity', key: 'qty', isNumeric: true },
                   { label: 'Unit price', key: 'price', isNumeric: true, prefix: "$", decimal: 2 }
                 ], data: [
-                  { material: "Acrylic (Transparent)", qty: 25, price: 2.90 },
+                  { material: "Acrylic (Transparent)", qty: 25, price: 2.90, color: "blue-grey", textColor: "white" },
                   { material: "Plywood (Birch)", qty: 50, price: 1.25 },
                   { material: "Laminate (Gold on Blue)", qty: 10, price: 2.35 },
                 ], selectable: true, onChange: this.handleEvent})
@@ -3237,7 +3286,8 @@ module.exports = React.createClass({displayName: "exports",
 	},
 });
 },{"../../components":16,"../components":34,"react":244}],47:[function(require,module,exports){
-var _ = require('lodash');
+var _ = require('lodash'),
+    React = require('react');
 
 module.exports = {
   objDiff: function (obj1, obj2) {
@@ -3282,22 +3332,65 @@ module.exports = {
     return classArray;
   },
 
-  makeDefaultProps: function (props, settings) {    
+  addShadowClasses: function (classArray, depth) {
+    if (depth && depth > 0) {
+	    classArray['mdl-shadow--' + depth + 'dp'] = true;
+    }
+
+    return classArray;
+  },
+
+  addGeneralClasses: function (classArray, props) {
+    classArray = this.addColorClasses(classArray, props.color, props.colorSpectrum, props.textColor, props.textColorSpectrum);
+    classArray = this.addShadowClasses(classArray, props.shadow);
+
+    return classArray;
+  },
+
+  makeDefaultProps: function (props, settings) {
     settings = _.assign({
-      colors: false
+      colors: false,
+      shadow: false,
     }, settings);
 
     props = settings.colors ? _.assign({
       color: '',
-      colorSpectrum: null,
+      colorSpectrum: '',
       textColor: '',
-      textColorSpectrum: null,
+      textColorSpectrum: '',
+    }, props) : props;
+
+    props = settings.shadow ? _.assign({
+      shadow: 2
     }, props) : props;
 
     return props;
-  }
+  },
+
+  makeDefaultPropTypes: function (props, settings) {
+    settings = _.assign({
+      colors: false,
+      shadow: false,
+    }, settings);
+
+    _colors = ['', 'red','pink','purple','deep-purple','indigo','blue','light-blue','cyan','teal','green','light-green','lime','yellow','amber','orange','deep-orange','brown','grey','blue-grey'];
+    _spectrums = ['', 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 'A100', 'A200', 'A400', 'A700'];
+
+    props = settings.colors ? _.assign({
+      color: React.PropTypes.oneOf(_colors),
+      colorSpectrum: React.PropTypes.oneOf(_spectrums),
+      textColor: React.PropTypes.oneOf(_colors),
+      textColorSpectrum: React.PropTypes.oneOf(_spectrums),
+    }, props) : props;
+
+    props = settings.shadow ? _.assign({
+      shadow: React.PropTypes.oneOf([ 2, 3, 4, 6, 8, 16 ]),
+    }, props) : props;
+
+    return props;
+  },
 }
-},{"lodash":50}],48:[function(require,module,exports){
+},{"lodash":50,"react":244}],48:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -3330,9 +3423,7 @@ function drainQueue() {
         currentQueue = queue;
         queue = [];
         while (++queueIndex < len) {
-            if (currentQueue) {
-                currentQueue[queueIndex].run();
-            }
+            currentQueue[queueIndex].run();
         }
         queueIndex = -1;
         len = queue.length;
@@ -3384,6 +3475,7 @@ process.binding = function (name) {
     throw new Error('process.binding is not supported');
 };
 
+// TODO(shtylman)
 process.cwd = function () { return '/' };
 process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');

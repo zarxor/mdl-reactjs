@@ -1,8 +1,12 @@
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
-var MDLFunc = require('../functions');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash'),
+    MDLFunc = require('../functions');
+
+var _generalProps = {
+	colors: true,
+};
 
 var _defaultProps = MDLFunc.makeDefaultProps({
 	ripple: false,
@@ -16,12 +20,15 @@ var _defaultProps = MDLFunc.makeDefaultProps({
 	accent: false,
 
 	children: {}
-}, {
-	colors: true
-});
+}, _generalProps);
+
+var _propTypes = MDLFunc.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.Button',
+
+	propTypes: _propTypes,
 
   getDefaultProps: function() {
 		return _defaultProps;
@@ -44,7 +51,7 @@ module.exports = React.createClass({
 			'mdl-js-ripple-effect': this.props.ripple
 		};
 
-		classes = MDLFunc.addColorClasses(classes, this.props.color, this.props.colorSpectrum, this.props.textColor, this.props.textColorSpectrum);
+		classes = MDLFunc.addGeneralClasses(classes, this.props);
 
 		return cx(classes);
 	},
@@ -65,7 +72,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-	var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
