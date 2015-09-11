@@ -4,7 +4,7 @@ var cx = require('classnames');
 var _ = require('lodash');
 var MDLFunc = require('../functions');
 
-var _defaultProps = {
+var _defaultProps = MDLFunc.makeDefaultProps({
 	ripple: false,
 	fab: false,
 	size: false,
@@ -14,8 +14,11 @@ var _defaultProps = {
 	raised: false,
 	primary: false,
 	accent: false,
+
 	children: {}
-};
+}, {
+	colors: true
+});
 
 module.exports = React.createClass({
 	displayName : 'MDL.Button',
@@ -40,6 +43,9 @@ module.exports = React.createClass({
 			'mdl-js-button': true,
 			'mdl-js-ripple-effect': this.props.ripple
 		};
+
+		classes = MDLFunc.addColorClasses(classes, this.props.color, this.props.colorSpectrum, this.props.textColor, this.props.textColorSpectrum);
+
 		return cx(classes);
 	},
 

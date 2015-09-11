@@ -1,7 +1,13 @@
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash'),
+    MDLFunc = require('../../functions');
+
+var _defaultProps = MDLFunc.makeDefaultProps({
+	shadow: 2,
+	useChild: false
+});
 
 module.exports = React.createClass({
 	displayName : 'MDL.Card',
@@ -12,8 +18,6 @@ module.exports = React.createClass({
 
   getDefaultProps: function() {
 		return {
-			shadow: 2,
-			useChild: false
 		};
 	},
 

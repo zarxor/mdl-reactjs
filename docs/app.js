@@ -189,9 +189,19 @@ module.exports = React.createClass({
 });
 },{"classnames":49,"lodash":50,"react":244}],4:[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash'),
+    MDLFunc = require('../functions');
+
+var _defaultProps = {
+	floatingLabel: false,
+	expandable: false,
+	multiline: false,
+	icon: "",
+	label: "",
+	error: ""
+};
 
 module.exports = React.createClass({
 	displayName : 'MDL.Textfield',
@@ -201,14 +211,7 @@ module.exports = React.createClass({
 	},
 
   getDefaultProps: function() {
-		return {
-			floatingLabel: false,
-			expandable: false,
-			multiline: false,
-			icon: "",
-			label: "",
-			error: ""
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -256,14 +259,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			id : this.props.id,
-		};
-
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
     return React.cloneElement(element, newProps);
   },
 
@@ -271,7 +267,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"classnames":49,"lodash":50,"react":244}],5:[function(require,module,exports){
+},{"../functions":47,"classnames":49,"lodash":50,"react":244}],5:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
 		cx = require('classnames'),
@@ -332,7 +328,7 @@ var cx = require('classnames');
 var _ = require('lodash');
 var MDLFunc = require('../functions');
 
-var _defaultProps = {
+var _defaultProps = MDLFunc.makeDefaultProps({
 	ripple: false,
 	fab: false,
 	size: false,
@@ -342,8 +338,11 @@ var _defaultProps = {
 	raised: false,
 	primary: false,
 	accent: false,
+
 	children: {}
-};
+}, {
+	colors: true
+});
 
 module.exports = React.createClass({
 	displayName : 'MDL.Button',
@@ -368,6 +367,9 @@ module.exports = React.createClass({
 			'mdl-js-button': true,
 			'mdl-js-ripple-effect': this.props.ripple
 		};
+
+		classes = MDLFunc.addColorClasses(classes, this.props.color, this.props.colorSpectrum, this.props.textColor, this.props.textColorSpectrum);
+
 		return cx(classes);
 	},
 
@@ -674,9 +676,15 @@ module.exports = React.createClass({
 });
 },{"classnames":49,"lodash":50,"react":244}],12:[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash'),
+    MDLFunc = require('../../functions');
+
+var _defaultProps = MDLFunc.makeDefaultProps({
+	shadow: 2,
+	useChild: false
+});
 
 module.exports = React.createClass({
 	displayName : 'MDL.Card',
@@ -687,8 +695,6 @@ module.exports = React.createClass({
 
   getDefaultProps: function() {
 		return {
-			shadow: 2,
-			useChild: false
 		};
 	},
 
@@ -729,7 +735,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"classnames":49,"lodash":50,"react":244}],13:[function(require,module,exports){
+},{"../../functions":47,"classnames":49,"lodash":50,"react":244}],13:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
 	cx = require('classnames'),
@@ -1275,9 +1281,16 @@ module.exports = React.createClass({
 });
 },{"../../functions":47,"classnames":49,"lodash":50,"react":244}],24:[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash'),
+    MDLFunc = require('../functions');
+
+var _defaultProps = {
+	isRipple: true,
+	position: 'bottom-left'
+};
+
 
 module.exports = React.createClass({
 	displayName : 'MDL.Menu',
@@ -1292,10 +1305,7 @@ module.exports = React.createClass({
 	},
 
 	getDefaultProps: function() {
-		return {
-			isRipple: true,
-			position: 'bottom-left'
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -1316,15 +1326,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			disabled : this.props.disabled,
-			htmlFor : this.props.htmlFor,
-			id : this.props.id
-		};
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -1333,11 +1335,16 @@ module.exports = React.createClass({
 		//componentHandler.upgradeDom();
 	}
 });
-},{"classnames":49,"lodash":50,"react":244}],25:[function(require,module,exports){
+},{"../functions":47,"classnames":49,"lodash":50,"react":244}],25:[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash'),
+    MDLFunc = require('../functions');
+
+var _defaultProps = {
+};
+
 
 module.exports = React.createClass({
 	displayName : 'MDL.MenuItem',
@@ -1347,9 +1354,7 @@ module.exports = React.createClass({
 	},
 
 	getDefaultProps: function() {
-		return {
-			//disabled: false
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -1365,15 +1370,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			disabled : this.props.disabled,
-			id : this.props.id
-		};
-
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
     return React.cloneElement(element, newProps);
   },
 
@@ -1381,7 +1378,7 @@ module.exports = React.createClass({
 		//componentHandler.upgradeDom();
 	}
 });
-},{"classnames":49,"lodash":50,"react":244}],26:[function(require,module,exports){
+},{"../functions":47,"classnames":49,"lodash":50,"react":244}],26:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -1481,10 +1478,10 @@ module.exports = React.createClass({
 });
 },{"../../functions":47,"classnames":49,"lodash":50,"react":244}],28:[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
-var MDLFunc = require('../functions');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash'),
+    MDLFunc = require('../functions');
 
 var _defaultProps = {
   columns: null,
@@ -1561,7 +1558,7 @@ module.exports = React.createClass({
           React.createElement("tr", null, 
             this.props.columns.map(function (column) {
               return (
-                React.createElement("th", {key: column.key, className: this._getCellClasses(column)}, column.label)
+                React.createElement("th", {key: column.key, className: this._getCellClasses(column), style: column.style}, column.label)
               );
             }.bind(this))
           )
@@ -1586,8 +1583,7 @@ module.exports = React.createClass({
   render: function () {
     var element = this._getElement();
 		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
-    this.clone = React.cloneElement(element, newProps);
-    return this.clone;
+    return React.cloneElement(element, newProps);
   },
 
   componentDidMount: function() {
@@ -1964,7 +1960,7 @@ module.exports = React.createClass({displayName: "exports",
 						*/
 					React.createElement(DOCS.DocComponents, null, 
 						React.createElement(DOCS.DocComponent, {caption: "Colored FAB"}, 
-							React.createElement(MDL.Button, {fab: true, colored: true, icon: "add"})
+							React.createElement(MDL.Button, {fab: true, colored: true, icon: "add", color: "blue-grey"})
 						), 
 						React.createElement(DOCS.DocComponent, {caption: "With ripple"}, 
 							React.createElement(MDL.Button, {fab: true, colored: true, ripple: true, icon: "add"})
@@ -2960,7 +2956,7 @@ module.exports = React.createClass({displayName: "exports",
 
 						*/
 					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Check on"}, 
+						React.createElement(DOCS.DocComponent, {caption: "Table"}, 
 							React.createElement(MDL.Table, {columns: [
                   { label: 'Material', key: 'material', isNumeric: false },
                   { label: 'Quantity', key: 'qty', isNumeric: true },
@@ -2973,11 +2969,8 @@ module.exports = React.createClass({displayName: "exports",
 						)
 					), 
 
-					React.createElement(DOCS.DocCode, {title: "Check on"}, 
-						'<MDL.Toggle type="checkbox" label="Checkbox" ripple checked />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Check off"}, 
-						'<MDL.Toggle type="checkbox" label="Checkbox" ripple />'
+					React.createElement(DOCS.DocCode, {title: "Table"}, 
+						'Comming...'
 					), 
 
 					/*
@@ -3259,12 +3252,49 @@ module.exports = {
 			return _(_keysDiff).indexOf(key) != -1;
 		});
   },
+
   joinProps: function (defaultProps, currentProps, elementProps, classes) {
     var diffedProps = this.objDiff(defaultProps, currentProps);
     var joinedProps = _.assign(diffedProps, elementProps);
     return _.assign(joinedProps, {
 			className: _.trimLeft((currentProps.className || '') + ' ' + (elementProps.className || '') + ' ' + classes)
 		});
+  },
+
+  addColorClasses: function (classArray, color, colorSpectrum, textColor, textColorSpectrum) {
+    colorSpectrum = colorSpectrum || 400;
+    textColorSpectrum = textColorSpectrum || 400;
+
+		if (color && color.length) {
+			if (color == "white" || color == "black") {
+        classArray["mdl-color--" + color] = true;
+      } else {
+        classArray["mdl-color--" + color + "-" + colorSpectrum] = true;
+      }
+		}
+		if (textColor && textColor.length) {
+			if (textColor == "white" || textColor == "black") {
+        classArray["mdl-color-text--" + textColor] = true;
+      } else {
+        classArray["mdl-color-text--" + textColor + "-" + textColorSpectrum] = true;
+      }
+		}
+    return classArray;
+  },
+
+  makeDefaultProps: function (props, settings) {    
+    settings = _.assign({
+      colors: false
+    }, settings);
+
+    props = settings.colors ? _.assign({
+      color: '',
+      colorSpectrum: null,
+      textColor: '',
+      textColorSpectrum: null,
+    }, props) : props;
+
+    return props;
   }
 }
 },{"lodash":50}],48:[function(require,module,exports){
@@ -3300,7 +3330,9 @@ function drainQueue() {
         currentQueue = queue;
         queue = [];
         while (++queueIndex < len) {
-            currentQueue[queueIndex].run();
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
         }
         queueIndex = -1;
         len = queue.length;
@@ -3352,7 +3384,6 @@ process.binding = function (name) {
     throw new Error('process.binding is not supported');
 };
 
-// TODO(shtylman)
 process.cwd = function () { return '/' };
 process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');

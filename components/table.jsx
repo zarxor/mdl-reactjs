@@ -1,8 +1,8 @@
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
-var MDLFunc = require('../functions');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash'),
+    MDLFunc = require('../functions');
 
 var _defaultProps = {
   columns: null,
@@ -79,7 +79,7 @@ module.exports = React.createClass({
           <tr>
             {this.props.columns.map(function (column) {
               return (
-                <th key={column.key} className={this._getCellClasses(column)}>{column.label}</th>
+                <th key={column.key} className={this._getCellClasses(column)} style={column.style}>{column.label}</th>
               );
             }.bind(this))}
           </tr>
@@ -104,8 +104,7 @@ module.exports = React.createClass({
   render: function () {
     var element = this._getElement();
 		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
-    this.clone = React.cloneElement(element, newProps);
-    return this.clone;
+    return React.cloneElement(element, newProps);
   },
 
   componentDidMount: function() {

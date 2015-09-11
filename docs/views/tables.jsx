@@ -20,7 +20,7 @@ module.exports = React.createClass({
 
 						*/}
 					<DOCS.DocComponents>
-						<DOCS.DocComponent caption="Check on">
+						<DOCS.DocComponent caption="Table">
 							<MDL.Table columns={[
                   { label: 'Material', key: 'material', isNumeric: false },
                   { label: 'Quantity', key: 'qty', isNumeric: true },
@@ -33,11 +33,8 @@ module.exports = React.createClass({
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
-					<DOCS.DocCode title="Check on">
-						{'<MDL.Toggle type="checkbox" label="Checkbox" ripple checked />'}
-					</DOCS.DocCode>
-					<DOCS.DocCode title="Check off">
-						{'<MDL.Toggle type="checkbox" label="Checkbox" ripple />'}
+					<DOCS.DocCode title="Table">
+						{'Comming...'}
 					</DOCS.DocCode>
 
 					{/*

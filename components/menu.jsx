@@ -1,7 +1,14 @@
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash'),
+    MDLFunc = require('../functions');
+
+var _defaultProps = {
+	isRipple: true,
+	position: 'bottom-left'
+};
+
 
 module.exports = React.createClass({
 	displayName : 'MDL.Menu',
@@ -16,10 +23,7 @@ module.exports = React.createClass({
 	},
 
 	getDefaultProps: function() {
-		return {
-			isRipple: true,
-			position: 'bottom-left'
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -40,15 +44,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			disabled : this.props.disabled,
-			htmlFor : this.props.htmlFor,
-			id : this.props.id
-		};
+		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
