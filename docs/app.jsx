@@ -26,13 +26,15 @@ var navRoutes = [
 
 var App = React.createClass({
 	getNav: function () {
-		return navRoutes.map(function (item, i) {
-    	return (
-				<Link className="mdl-navigation__link" to={item.to} key={i}>
-					<MDL.Button icon={item.icon} colored fab style={{marginRight: 10}} size="mini" /> {item.text}
-				</Link>
-    	);
-		});
+		return (<MDL.Navigation id="docs-navigation">
+			{navRoutes.map(function (item, i) {
+	    	return (
+					<Link className="mdl-navigation__link" to={item.to} key={i}>
+						<MDL.Button icon={item.icon} colored fab style={{marginRight: 10}} size="mini" /> {item.text}
+					</Link>
+	    	);
+			})}
+		</MDL.Navigation>);
 	},
 
 	render : function() {
@@ -47,9 +49,7 @@ var App = React.createClass({
 				</MDL.LayoutHeader>
 				<MDL.LayoutDrawer>
 					<MDL.LayoutTitle>MDL-REACTJS</MDL.LayoutTitle>
-					<MDL.Navigation id="docs-navigation">
-						{this.getNav()}
-					</MDL.Navigation>
+					{this.getNav()}
 				</MDL.LayoutDrawer>
 				<MDL.LayoutContent>
 					<Router.RouteHandler />
@@ -62,7 +62,7 @@ var App = React.createClass({
 
 var routes = (
 	<Router.Route handler={App} >
-		<Router.DefaultRoute name={navRoutes[0].name} handler={navRoutes[0].view} />
+		<Router.DefaultRoute key="default" name={navRoutes[0].name} handler={navRoutes[0].view} />
 		{_.map(navRoutes, function (route) {
 			if (route.to.length > 1) {
 				return <Router.Route key={route.name} name={route.name} path={route.to} handler={route.view} />

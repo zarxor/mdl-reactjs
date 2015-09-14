@@ -28,6 +28,10 @@ module.exports = {
   LayoutSpacer: require('./layout/LayoutSpacer.jsx'),
   LayoutTitle: require('./layout/LayoutTitle.jsx'),
 
+  // Tabs
+  Tabs: require('./tabs/tabs.jsx'),
+  TabsPanel: require('./tabs/tabsPanel.jsx'),
+
   // Navigation
   Navigation: require('./navigation/navigation.jsx'),
   NavigationLink: require('./navigation/navigationLink.jsx'),

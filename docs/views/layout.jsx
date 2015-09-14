@@ -13,9 +13,8 @@ module.exports = React.createClass({
     console.log(e);
   },
 	render: function() {
-		console.log(MDL);
 		return (
-		    <div className="docs-view">
+	    <div className="docs-view">
 				<div className="docs-text">
 					<h1>Layout</h1>
 					<p>Building blocks for constructing a page layout.</p>
@@ -152,7 +151,31 @@ module.exports = React.createClass({
 						</tbody>
 					</table>
 				</div>
-		    </div>
+
+				<div className="docs-text">
+					<h2>Tabs</h2>
+				</div>
+				{/*
+
+					*/}
+
+					{/*
+						Wide
+						*/}
+					<DOCS.DocComponents>
+						<DOCS.DocComponent caption="Tabs with content">
+							<MDL.Tabs>
+								<MDL.TabsPanel id="content-tab-1" title="ContentTab 1" style={{padding: '10px 0'}} active={true}>
+									This is the content of the first tab!
+								</MDL.TabsPanel>
+								<MDL.TabsPanel id="content-tab-2" title="ContentTab 2" style={{padding: '10px 0'}}>
+									And here you have the content of the second tab...
+								</MDL.TabsPanel>
+							</MDL.Tabs>
+						</DOCS.DocComponent>
+					</DOCS.DocComponents>
+
+	    </div>
 		);
 	},
 });

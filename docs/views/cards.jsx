@@ -22,7 +22,7 @@ module.exports = React.createClass({
 							<MDL.Card style={{width: 517}}>
 								<MDL.CardTitle style={{
 									height: 140,
-									background: "url('img/bg_1.png');",
+									background: "url('img/bg_1.png')",
 									color: 'white',
 								}}>
 									Welcome
@@ -46,7 +46,7 @@ module.exports = React.createClass({
 							'<MDL.Card style={{width: 517}}>\n' +
 							'	<MDL.CardTitle style={{\n' +
 							'		height: 140,\n' +
-							'		background: "url(\'img/bg_1.png\');",\n' +
+							'		background: "url(\'img/bg_1.png\')",\n' +
 							'		color: \'white\',\n' +
 							'	}}>\n' +
 							'		Welcome\n' +
@@ -75,7 +75,7 @@ module.exports = React.createClass({
 								width: 320
 							}}>
 								<MDL.CardTitle style={{
-									background: "url('img/bg_1.png');",
+									background: "url('img/bg_1.png')",
 									color: 'white',
 									height: 200
 								}}>
@@ -98,7 +98,7 @@ module.exports = React.createClass({
 							'	width: 320\n' +
 							'}}>\n' +
 							'	<MDL.CardTitle style={{\n' +
-							'		background: "url(\'img/bg_1.png\');",\n' +
+							'		background: "url(\'img/bg_1.png\')",\n' +
 							'		color: \'white\',\n' +
 							'		height: 200,\n' +
 							'	}}>\n' +
@@ -141,7 +141,7 @@ module.exports = React.createClass({
 								background: '#3E4EB8',
 								color: '#fff'
 							}} shadow={2}>
-								<MDL.CardTitle expand style={{'align-items': 'flex-start'}}>
+								<MDL.CardTitle expand style={{alignItems: 'flex-start'}}>
 									<h4 style={{color: '#FFF', padding: 10, margin: 0}}>
 										Featured event:<br />
 							      May 24, 2016<br />
