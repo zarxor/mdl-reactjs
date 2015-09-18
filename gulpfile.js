@@ -42,10 +42,6 @@ function build(path, dest, name, isWatch) {
 	return bundle;
 
 	function release() {
-		gulp.src('components/**/*.jsx')
-			.pipe(react())
-			.pipe(gulp.dest('lib'));
-
     gulp.src('README.md')
       .pipe(markdown())
       .pipe(gulp.dest('docs'));
