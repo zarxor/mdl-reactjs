@@ -5,7 +5,7 @@ var React = require("react"),
     MDLFunc = require('../functions');
 
 var _defaultProps = {
-	isRipple: true,
+	ripple: true,
 	position: 'bottom-left'
 };
 
@@ -30,7 +30,7 @@ module.exports = React.createClass({
 		var classes = {
 			'mdl-menu': true,
 			'mdl-js-menu': true,
-			'mdl-js-ripple-effect': this.props.isRipple
+			'mdl-js-ripple-effect': this.props.ripple
 		};
 
 		classes['mdl-menu--' + this.props.position] = true;
