@@ -10,7 +10,10 @@ var _defaultProps = {
 	multiline: false,
 	icon: "",
 	label: "",
-	error: ""
+	error: "",
+  onChange: null,
+  autogrow: false,
+  rows: 1
 };
 
 module.exports = React.createClass({
@@ -34,6 +37,17 @@ module.exports = React.createClass({
 		return cx(classes);
 	},
 
+  change: function (a,b,c) {
+    if (this.props.onChange) {
+      this.props.onChange(a,b,c);
+    }
+    if (this.props.multiline && this.props.autogrow) {
+      var element = React.findDOMNode(this.refs.mdlTextfield);
+      element.style.height = 'auto';
+      element.style.height = element.scrollHeight+'px';
+    }
+  },
+
   _getElement: function() {
 		var children = {};
 		var tag = this.props.multiline ? 'textarea' : 'input';
@@ -47,6 +61,8 @@ module.exports = React.createClass({
 			type : "text",
 			pattern : this.props.pattern,
 			disabled : this.props.disabled,
+      onChange : this.change,
+      ref: 'mdlTextfield'
 		}) });
 
 		if (this.props.label.length > 0) {

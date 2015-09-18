@@ -212,7 +212,10 @@ var _defaultProps = {
 	multiline: false,
 	icon: "",
 	label: "",
-	error: ""
+	error: "",
+  onChange: null,
+  autogrow: false,
+  rows: 1
 };
 
 module.exports = React.createClass({
@@ -236,6 +239,17 @@ module.exports = React.createClass({
 		return cx(classes);
 	},
 
+  change: function (a,b,c) {
+    if (this.props.onChange) {
+      this.props.onChange(a,b,c);
+    }
+    if (this.props.multiline && this.props.autogrow) {
+      var element = React.findDOMNode(this.refs.mdlTextfield);
+      element.style.height = 'auto';
+      element.style.height = element.scrollHeight+'px';
+    }
+  },
+
   _getElement: function() {
 		var children = {};
 		var tag = this.props.multiline ? 'textarea' : 'input';
@@ -249,6 +263,8 @@ module.exports = React.createClass({
 			type : "text",
 			pattern : this.props.pattern,
 			disabled : this.props.disabled,
+      onChange : this.change,
+      ref: 'mdlTextfield'
 		}) });
 
 		if (this.props.label.length > 0) {
@@ -1324,7 +1340,7 @@ var React = require("react"),
     MDLFunc = require('../functions');
 
 var _defaultProps = {
-	isRipple: true,
+	ripple: true,
 	position: 'bottom-left'
 };
 
@@ -1349,7 +1365,7 @@ module.exports = React.createClass({
 		var classes = {
 			'mdl-menu': true,
 			'mdl-js-menu': true,
-			'mdl-js-ripple-effect': this.props.isRipple
+			'mdl-js-ripple-effect': this.props.ripple
 		};
 
 		classes['mdl-menu--' + this.props.position] = true;
@@ -1629,7 +1645,7 @@ module.exports = React.createClass({
       var elem = React.findDOMNode(this);
       var selectBoxes = this._findElementsByClass(elem, "mdl-checkbox__input");
       for (var i = 0; i < selectBoxes.length; i++) {
-        selectBoxes[i].addEventListener("change", this.props.onChange.bind(null, this));
+        selectBoxes[i].addEventListener("change", this.props.onChange);
       }
     }
 	},
@@ -3213,7 +3229,7 @@ module.exports = React.createClass({displayName: "exports",
 						*/
 					React.createElement(DOCS.DocComponents, null, 
 						React.createElement(DOCS.DocComponent, {caption: "Multiple lines"}, 
-							React.createElement(MDL.Textfield, {label: "Text...", multiline: true, rows: 3})
+							React.createElement(MDL.Textfield, {label: "Text...", multiline: true, rows: 3, autogrow: true})
 						), 
 							React.createElement(DOCS.DocComponent, {caption: "Expandable"}, 
 								React.createElement(MDL.Textfield, {label: "Text...", icon: "search", expandable: true, id: "sample_expand"})

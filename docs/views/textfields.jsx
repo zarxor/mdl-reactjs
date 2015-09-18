@@ -57,7 +57,7 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Multiple lines">
-							<MDL.Textfield label="Text..." multiline rows={3} />
+							<MDL.Textfield label="Text..." multiline rows={3} autogrow />
 						</DOCS.DocComponent>
 							<DOCS.DocComponent caption="Expandable">
 								<MDL.Textfield label="Text..." icon="search" expandable id="sample_expand" />

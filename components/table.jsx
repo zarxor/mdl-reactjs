@@ -114,7 +114,7 @@ module.exports = React.createClass({
       var elem = React.findDOMNode(this);
       var selectBoxes = this._findElementsByClass(elem, "mdl-checkbox__input");
       for (var i = 0; i < selectBoxes.length; i++) {
-        selectBoxes[i].addEventListener("change", this.props.onChange.bind(null, this));
+        selectBoxes[i].addEventListener("change", this.props.onChange);
       }
     }
 	},
