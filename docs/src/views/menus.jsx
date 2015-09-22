@@ -42,10 +42,10 @@ module.exports = React.createClass({
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Lower left">
-						{'Comming...'}
+						{'See docs source code..'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Lower right">
-						{'Comming...'}
+						{'See docs source code..'}
 					</DOCS.DocCode>
 
 					{/*
@@ -77,10 +77,10 @@ module.exports = React.createClass({
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Top left">
-						{'Comming...'}
+						{'See docs source code..'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Top right">
-						{'Comming...'}
+						{'See docs source code..'}
 					</DOCS.DocCode>
 
 					{/*

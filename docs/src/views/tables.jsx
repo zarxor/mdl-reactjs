@@ -34,7 +34,7 @@ module.exports = React.createClass({
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Table">
-						{'Comming...'}
+						{'See docs source code..'}
 					</DOCS.DocCode>
 
 					{/*

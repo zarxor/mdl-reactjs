@@ -165,12 +165,12 @@ module.exports = React.createClass({
 
 					<DOCS.DocCode title="Image card">
 						{
-							'Comming...'
+							'See docs source code..'
 						}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Event card">
 						{
-							'Comming...'
+							'See docs source code..'
 						}
 					</DOCS.DocCode>
 
