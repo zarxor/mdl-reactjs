@@ -2,7 +2,7 @@
 "use strict";
 
 var React = require('react');
-var MDL = require('../../components/');
+var MDL = require('../../../components/');
 var DOCS = require('../components');
 
 module.exports = React.createClass({
@@ -10,26 +10,26 @@ module.exports = React.createClass({
 		return (
 		    <div className="docs-view">
 					<div className="docs-text">
-						<h1>Badges</h1>
-						<p>Small status descriptors for UI elements.</p>
+						<h1>SLIDERS</h1>
+						<p>Selecting a value out of a range.</p>
 					</div>
 					{/*
 						Colored FAB
 						*/}
 					<DOCS.DocComponents>
-						<DOCS.DocComponent caption="Number">
-							<MDL.Badge isIcon data="1">account_box</MDL.Badge>
+						<DOCS.DocComponent caption="Default slider">
+							<MDL.Slider min={0} max={100} defaultValue={0} />
 						</DOCS.DocComponent>
-						<DOCS.DocComponent caption="Icon">
-							<MDL.Badge isIcon data="♥">account_box</MDL.Badge>
+						<DOCS.DocComponent caption="Starting value">
+							<MDL.Slider min={0} max={100} defaultValue={25} />
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
-					<DOCS.DocCode title="Number badge on icon">
-						{'<MDL.Badge isIcon data="1">account_box</MDL.Badge>'}
+					<DOCS.DocCode title="Default slider">
+						{'<MDL.Slider min={0} max={100} defaultValue={0} />'}
 					</DOCS.DocCode>
-					<DOCS.DocCode title="Icon badge on icon">
-						{'<MDL.Badge isIcon data="♥">account_box</MDL.Badge>'}
+					<DOCS.DocCode title="Slider with Starting Value">
+						{'<MDL.Slider min={0} max={100} defaultValue={25} />'}
 					</DOCS.DocCode>
 
 					{/*

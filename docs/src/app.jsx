@@ -1,27 +1,32 @@
 "use strict";
 
 var React = require('react');
-var Router = require('react-router');
-var MDL = require('../components/');
-var Link = Router.Link;
+
+var ReactRouter = require('react-router');
+var Router = ReactRouter.Router;
+var Route = ReactRouter.Route;
+var IndexRoute = ReactRouter.IndexRoute;
+var Link = ReactRouter.Link;
+
+var MDL = require('../../components/');
 var _ = require('lodash');
 
 // Views
 var Views = require('./views');
 
 var navRoutes = [
-	{ name: "home", 		to: "/", 			text: "Home", 				icon: "domain", 				view: Views.Start },
+	{ name: "home", 			to: "/", 			text: "Home", 				icon: "domain", 				view: Views.Start },
 	{ name: "badges", 		to: "/badges", 		text: "Badges", 			icon: "chat_bubble", 			view: Views.Badges },
 	{ name: "buttons", 		to: "/buttons", 	text: "Buttons", 			icon: "chevron_right", 			view: Views.Buttons },
-	{ name: "cards", 		to: "/cards", 		text: "Cards (partial)", 	icon: "web", 					view: Views.Cards },
+	{ name: "cards", 			to: "/cards", 		text: "Cards (partial)", 	icon: "web", 					view: Views.Cards },
 	{ name: "layout", 		to: "/layout", 		text: "Layout (partial)", 	icon: "view_quilt", 			view: Views.Layout },
 	{ name: "loading", 		to: "/loading", 	text: "Loading (partial)", 	icon: "replay", 				view: Views.Loading },
-	{ name: "menus", 		to: "/menus", 		text: "Menus (partial)", 	icon: "format_align_justify", 	view: Views.Menus },
+	{ name: "menus", 			to: "/menus", 		text: "Menus (partial)", 	icon: "format_align_justify", 	view: Views.Menus },
 	{ name: "sliders", 		to: "/sliders", 	text: "Sliders (partial)", 	icon: "tune", 					view: Views.Sliders },
 	{ name: "toggles", 		to: "/toggles", 	text: "Toggles (partial)", 	icon: "exposure", 				view: Views.Toggles },
-	{ name: "tables", 			to: "/tables", 			text: "Tables (todo)", 		icon: "view_list", view: Views.Tables },
-	{ name: "textfields", 	to: "/textfields", 	text: "Text fields (partial)", icon: "font_download", 			view: Views.Textfields },
-	{ name: "", 			to: "/", 			text: "Tooltips (todo)", 	icon: "beenhere" },
+	{ name: "tables", 		to: "/tables", 			text: "Tables (todo)", 		icon: "view_list", view: Views.Tables },
+	{ name: "textfields", to: "/textfields", 	text: "Text fields (partial)", icon: "font_download", 			view: Views.Textfields },
+	//{ name: "", 					to: "/", 			text: "Tooltips (todo)", 	icon: "beenhere" },
 ];
 
 var App = React.createClass({
@@ -52,25 +57,26 @@ var App = React.createClass({
 					{this.getNav()}
 				</MDL.LayoutDrawer>
 				<MDL.LayoutContent>
-					<Router.RouteHandler />
+					{this.props.children}
 				</MDL.LayoutContent>
 			</MDL.Layout>
 		);
 	},
 });
 
+var routes = (<Route path="/" component={App} >
+	<IndexRoute key="default" name={navRoutes[0].name} component={navRoutes[0].view} />
+	{_.map(navRoutes, function (route) {
+		if (route.to.length > 0) {
+			return <Route key={route.name} name={route.name} path={route.to} component={route.view} />
+		}
+	})}
+</Route>);
 
-var routes = (
-	<Router.Route handler={App} >
-		<Router.DefaultRoute key="default" name={navRoutes[0].name} handler={navRoutes[0].view} />
-		{_.map(navRoutes, function (route) {
-			if (route.to.length > 1) {
-				return <Router.Route key={route.name} name={route.name} path={route.to} handler={route.view} />
-			}
-		})}
-	</Router.Route>
-);
+	console.log(routes);
+React.render((<Router>{routes}</Router>), document.body);
 
+/*
 Router.create({
 	routes: routes,
 	location: Router.HashLocation,
@@ -82,3 +88,4 @@ Router.create({
 		document.body
 	);
 });
+*/

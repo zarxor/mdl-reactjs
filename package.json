@@ -1,6 +1,6 @@
 {
   "name": "mdl-reactjs",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "React implementation of googles Material Design Lite (http://getmdl.io)",
   "main": "./lib",
   "keywords": [
@@ -45,11 +45,12 @@
     "gulp-react": "~3.0.1",
     "gulp-util": "~3.0.6",
     "gulp-rename": "~1.2.2",
+    "gulp-replace": "~0.5.4",
     "gulp-markdown": "~1.0.0",
-    "react-router": "~0.13.3",
+    "react-router": "~1.0.0-rc1",
     "vinyl-source-stream2": "*",
-    "browserify": "~11.0.1",
-    "watchify": "~3.3.1",
+    "browserify": "~11.1.0",
+    "watchify": "~3.4.0",
     "reactify": "~1.1.1"
   },
   "directories": {

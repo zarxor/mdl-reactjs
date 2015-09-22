@@ -1,21 +1,19 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\Progress.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
 		cx = require('classnames'),
 		_ = require('lodash');
 
-var MDLFunc = require('../functions');
-
 var _generalProps = {
 			shadow: true,
 		};
 
-var _defaultProps = MDLFunc.makeDefaultProps({
+var _defaultProps = __functions.makeDefaultProps({
 			indeterminate: false,
 			progress: 0,
 			buffer: -1,
 		},_generalProps),
-		_propTypes = MDLFunc.makeDefaultPropTypes({
+		_propTypes = __functions.makeDefaultPropTypes({
 			id: React.PropTypes.string.isRequired,
 		},_generalProps);
 
@@ -83,7 +81,7 @@ module.exports = React.createClass({
 	}
 });
 
-},{"../functions":49,"classnames":51,"lodash":52,"react":246}],2:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\Slider.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -146,7 +144,7 @@ module.exports = React.createClass({
 	}
 });
 
-},{"classnames":51,"lodash":52,"react":246}],3:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\Spinner.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -199,12 +197,11 @@ module.exports = React.createClass({
 	}
 });
 
-},{"classnames":51,"lodash":52,"react":246}],4:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\Textfield.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
     cx = require('classnames'),
-    _ = require('lodash'),
-    MDLFunc = require('../functions');
+    _ = require('lodash');
 
 var _defaultProps = {
 	floatingLabel: false,
@@ -287,7 +284,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
     return React.cloneElement(element, newProps);
   },
 
@@ -295,13 +292,11 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"../functions":49,"classnames":51,"lodash":52,"react":246}],5:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\badge.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
 		cx = require('classnames'),
 		_ = require('lodash');
-
-var MDLFunc = require('../functions');
 
 var _defaultProps = {
 	isIcon: false,
@@ -340,7 +335,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -349,18 +344,17 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"../functions":49,"classnames":51,"lodash":52,"react":246}],6:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\button.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
     cx = require('classnames'),
-    _ = require('lodash'),
-    MDLFunc = require('../functions');
+    _ = require('lodash');
 
 var _generalProps = {
 	colors: true,
 };
 
-var _defaultProps = MDLFunc.makeDefaultProps({
+var _defaultProps = __functions.makeDefaultProps({
 	ripple: false,
 	fab: false,
 	size: false,
@@ -374,7 +368,7 @@ var _defaultProps = MDLFunc.makeDefaultProps({
 	children: {}
 }, _generalProps);
 
-var _propTypes = MDLFunc.makeDefaultPropTypes({
+var _propTypes = __functions.makeDefaultPropTypes({
 }, _generalProps);
 
 module.exports = React.createClass({
@@ -403,7 +397,7 @@ module.exports = React.createClass({
 			'mdl-js-ripple-effect': this.props.ripple
 		};
 
-		classes = MDLFunc.addGeneralClasses(classes, this.props);
+		classes = __functions.addGeneralClasses(classes, this.props);
 
 		return cx(classes);
 	},
@@ -424,7 +418,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -433,7 +427,7 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"../functions":49,"classnames":51,"lodash":52,"react":246}],7:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardActions.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -485,7 +479,7 @@ module.exports = React.createClass({
 	}
 });
 
-},{"classnames":51,"lodash":52,"react":246}],8:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardMedia.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -547,7 +541,7 @@ module.exports = React.createClass({
 	}
 });
 
-},{"classnames":51,"lodash":52,"react":246}],9:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardMenu.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -596,7 +590,7 @@ module.exports = React.createClass({
 	}
 });
 
-},{"classnames":51,"lodash":52,"react":246}],10:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardSupportingText.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -647,7 +641,7 @@ module.exports = React.createClass({
 	}
 });
 
-},{"classnames":51,"lodash":52,"react":246}],11:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardTitle.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -714,23 +708,22 @@ module.exports = React.createClass({
 	}
 });
 
-},{"classnames":51,"lodash":52,"react":246}],12:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\card.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
     cx = require('classnames'),
-    _ = require('lodash'),
-    MDLFunc = require('../../functions');
+    _ = require('lodash');
 
 var _generalProps = {
   shadow: true
 };
 
-var _defaultProps = MDLFunc.makeDefaultProps({
+var _defaultProps = __functions.makeDefaultProps({
 	shadow: 2,
 	useChild: false
 }, _generalProps);
 
-var _propTypes = MDLFunc.makeDefaultPropTypes({
+var _propTypes = __functions.makeDefaultPropTypes({
 }, _generalProps);
 
 module.exports = React.createClass({
@@ -747,7 +740,7 @@ module.exports = React.createClass({
 			'mdl-card': true
 		};
 
-    classes = MDLFunc.addGeneralClasses(classes, this.props);
+    classes = __functions.addGeneralClasses(classes, this.props);
 
 		return cx(classes);
 	},
@@ -781,13 +774,11 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"../../functions":49,"classnames":51,"lodash":52,"react":246}],13:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\grid\\grid.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
 	cx = require('classnames'),
 	_ = require('lodash');
-
-var MDLFunc = require('../../functions');
 
 var _defaultProps = {
 	tag: 'div'
@@ -817,7 +808,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -826,13 +817,11 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"../../functions":49,"classnames":51,"lodash":52,"react":246}],14:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\grid\\gridCell.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
 		cx = require('classnames'),
 		_ = require('lodash');
-
-var MDLFunc = require('../../functions');
 
 var _defaultProps = {
 	col: 1,
@@ -892,7 +881,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -901,13 +890,11 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"../../functions":49,"classnames":51,"lodash":52,"react":246}],15:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\icon.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
 var _ = require('lodash');
-
-var MDLFunc = require('../functions');
 
 var _defaultProps =  {
 };
@@ -932,7 +919,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -941,7 +928,110 @@ module.exports = React.createClass({
 		//componentHandler.upgradeDom();
 	}
 });
-},{"../functions":49,"classnames":51,"lodash":52,"react":246}],16:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\index.js":[function(require,module,exports){
+(function (global){
+global.__functions = {
+  objDiff: function (obj1, obj2) {
+    var _keysObj1 = _.keys(obj1);
+		var _keysObj2 = _.keys(obj2);
+
+		var _keysDiff = _.remove(_keysObj2, function(n) {
+		  return (_(_keysObj1).indexOf(n) == -1);
+		});
+
+		return _.pick(obj2, function (value, key) {
+			return _(_keysDiff).indexOf(key) != -1;
+		});
+  },
+
+  joinProps: function (defaultProps, currentProps, elementProps, classes) {
+    var diffedProps = this.objDiff(defaultProps, currentProps);
+    var joinedProps = _.assign(diffedProps, elementProps);
+    return _.assign(joinedProps, {
+			className: _.trimLeft((currentProps.className || '') + ' ' + (elementProps.className || '') + ' ' + classes)
+		});
+  },
+
+  addColorClasses: function (classArray, color, colorSpectrum, textColor, textColorSpectrum) {
+    colorSpectrum = colorSpectrum || 400;
+    textColorSpectrum = textColorSpectrum || 400;
+
+		if (color && color.length) {
+			if (color == "white" || color == "black") {
+        classArray["mdl-color--" + color] = true;
+      } else {
+        classArray["mdl-color--" + color + "-" + colorSpectrum] = true;
+      }
+		}
+		if (textColor && textColor.length) {
+			if (textColor == "white" || textColor == "black") {
+        classArray["mdl-color-text--" + textColor] = true;
+      } else {
+        classArray["mdl-color-text--" + textColor + "-" + textColorSpectrum] = true;
+      }
+		}
+    return classArray;
+  },
+
+  addShadowClasses: function (classArray, depth) {
+    if (depth && depth > 0) {
+	    classArray['mdl-shadow--' + depth + 'dp'] = true;
+    }
+
+    return classArray;
+  },
+
+  addGeneralClasses: function (classArray, props) {
+    classArray = this.addColorClasses(classArray, props.color, props.colorSpectrum, props.textColor, props.textColorSpectrum);
+    classArray = this.addShadowClasses(classArray, props.shadow);
+
+    return classArray;
+  },
+
+  makeDefaultProps: function (props, settings) {
+    settings = _.assign({
+      colors: false,
+      shadow: false,
+    }, settings);
+
+    props = settings.colors ? _.assign({
+      color: '',
+      colorSpectrum: '',
+      textColor: '',
+      textColorSpectrum: '',
+    }, props) : props;
+
+    props = settings.shadow ? _.assign({
+      shadow: 2
+    }, props) : props;
+
+    return props;
+  },
+
+  makeDefaultPropTypes: function (props, settings) {
+    settings = _.assign({
+      colors: false,
+      shadow: false,
+    }, settings);
+
+    _colors = ['', 'red','pink','purple','deep-purple','indigo','blue','light-blue','cyan','teal','green','light-green','lime','yellow','amber','orange','deep-orange','brown','grey','blue-grey'];
+    _spectrums = ['', 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 'A100', 'A200', 'A400', 'A700'];
+
+    props = settings.colors ? _.assign({
+      color: React.PropTypes.oneOf(_colors),
+      colorSpectrum: React.PropTypes.oneOf(_spectrums),
+      textColor: React.PropTypes.oneOf(_colors),
+      textColorSpectrum: React.PropTypes.oneOf(_spectrums),
+    }, props) : props;
+
+    props = settings.shadow ? _.assign({
+      shadow: React.PropTypes.oneOf([ 2, 3, 4, 6, 8, 16 ]),
+    }, props) : props;
+
+    return props;
+  },
+};
+
 module.exports = {
   Badge: require('./badge.jsx'),
   Button: require('./button.jsx'),
@@ -984,7 +1074,8 @@ module.exports = {
   Grid: require('./grid/grid.jsx'),
   GridCell: require('./grid/gridCell.jsx'),
 };
-},{"./Progress.jsx":1,"./Slider.jsx":2,"./Spinner.jsx":3,"./Textfield.jsx":4,"./badge.jsx":5,"./button.jsx":6,"./card/CardActions.jsx":7,"./card/CardMedia.jsx":8,"./card/CardMenu.jsx":9,"./card/CardSupportingText.jsx":10,"./card/CardTitle.jsx":11,"./card/card.jsx":12,"./grid/grid.jsx":13,"./grid/gridCell.jsx":14,"./icon.jsx":15,"./layout/LayoutHeaderRow.jsx":17,"./layout/LayoutSpacer.jsx":18,"./layout/LayoutTitle.jsx":19,"./layout/layout.jsx":20,"./layout/layoutContent.jsx":21,"./layout/layoutDrawer.jsx":22,"./layout/layoutHeader.jsx":23,"./menu.jsx":24,"./menuItem.jsx":25,"./navigation/navigation.jsx":26,"./navigation/navigationLink.jsx":27,"./table.jsx":28,"./tabs/tabs.jsx":29,"./tabs/tabsPanel.jsx":30,"./toggle.jsx":31}],17:[function(require,module,exports){
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"./Progress.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\Progress.jsx","./Slider.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\Slider.jsx","./Spinner.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\Spinner.jsx","./Textfield.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\Textfield.jsx","./badge.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\badge.jsx","./button.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\button.jsx","./card/CardActions.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardActions.jsx","./card/CardMedia.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardMedia.jsx","./card/CardMenu.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardMenu.jsx","./card/CardSupportingText.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardSupportingText.jsx","./card/CardTitle.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardTitle.jsx","./card/card.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\card.jsx","./grid/grid.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\grid\\grid.jsx","./grid/gridCell.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\grid\\gridCell.jsx","./icon.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\icon.jsx","./layout/LayoutHeaderRow.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\LayoutHeaderRow.jsx","./layout/LayoutSpacer.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\LayoutSpacer.jsx","./layout/LayoutTitle.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\LayoutTitle.jsx","./layout/layout.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\layout.jsx","./layout/layoutContent.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\layoutContent.jsx","./layout/layoutDrawer.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\layoutDrawer.jsx","./layout/layoutHeader.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\layoutHeader.jsx","./menu.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\menu.jsx","./menuItem.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\menuItem.jsx","./navigation/navigation.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\navigation\\navigation.jsx","./navigation/navigationLink.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\navigation\\navigationLink.jsx","./table.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\table.jsx","./tabs/tabs.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\tabs\\tabs.jsx","./tabs/tabsPanel.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\tabs\\tabsPanel.jsx","./toggle.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\toggle.jsx"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\LayoutHeaderRow.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -1037,7 +1128,7 @@ module.exports = React.createClass({
 	}
 });
 
-},{"classnames":51,"lodash":52,"react":246}],18:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\LayoutSpacer.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -1081,7 +1172,7 @@ module.exports = React.createClass({
 	}
 });
 
-},{"classnames":51,"lodash":52,"react":246}],19:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\LayoutTitle.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
@@ -1134,13 +1225,11 @@ module.exports = React.createClass({
 	}
 });
 
-},{"classnames":51,"lodash":52,"react":246}],20:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\layout.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
 		cx = require('classnames'),
 		_ = require('lodash');
-
-var MDLFunc = require('../../functions');
 
 var _defaultProps = {
 	tag: 'div',
@@ -1175,7 +1264,7 @@ module.exports = React.createClass({
 
   render: function () {
 		var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.createElement("div", {className: "mdl-layout__container--root"}, React.cloneElement(element, newProps));
   },
@@ -1184,13 +1273,11 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"../../functions":49,"classnames":51,"lodash":52,"react":246}],21:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\layoutContent.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
 	cx = require('classnames'),
 	_ = require('lodash');
-
-var MDLFunc = require('../../functions');
 
 var _defaultProps = {
 	tag: 'main'
@@ -1220,7 +1307,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -1229,12 +1316,11 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"../../functions":49,"classnames":51,"lodash":52,"react":246}],22:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\layoutDrawer.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
 var _ = require('lodash');
-var MDLFunc = require('../../functions');
 
 var _defaultProps = {
 	tag: 'div'
@@ -1266,7 +1352,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -1276,13 +1362,11 @@ module.exports = React.createClass({
 	}
 });
 
-},{"../../functions":49,"classnames":51,"lodash":52,"react":246}],23:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\layout\\layoutHeader.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
 var _ = require('lodash');
-
-var MDLFunc = require('../../functions');
 
 var _defaultProps =  {
 	tag: 'header',
@@ -1322,7 +1406,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -1332,12 +1416,11 @@ module.exports = React.createClass({
 	}
 });
 
-},{"../../functions":49,"classnames":51,"lodash":52,"react":246}],24:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\menu.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
     cx = require('classnames'),
-    _ = require('lodash'),
-    MDLFunc = require('../functions');
+    _ = require('lodash');
 
 var _defaultProps = {
 	ripple: true,
@@ -1379,7 +1462,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -1388,12 +1471,11 @@ module.exports = React.createClass({
 		//componentHandler.upgradeDom();
 	}
 });
-},{"../functions":49,"classnames":51,"lodash":52,"react":246}],25:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\menuItem.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
     cx = require('classnames'),
-    _ = require('lodash'),
-    MDLFunc = require('../functions');
+    _ = require('lodash');
 
 var _defaultProps = {
 };
@@ -1423,7 +1505,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
     return React.cloneElement(element, newProps);
   },
 
@@ -1431,13 +1513,11 @@ module.exports = React.createClass({
 		//componentHandler.upgradeDom();
 	}
 });
-},{"../functions":49,"classnames":51,"lodash":52,"react":246}],26:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\navigation\\navigation.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
 var _ = require('lodash');
-
-var MDLFunc = require('../../functions');
 
 var _defaultProps = {
 	tag: 'nav',
@@ -1468,7 +1548,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -1478,13 +1558,11 @@ module.exports = React.createClass({
 	}
 });
 
-},{"../../functions":49,"classnames":51,"lodash":52,"react":246}],27:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\navigation\\navigationLink.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
 var _ = require('lodash');
-
-var MDLFunc = require('../../functions');
 
 var _defaultProps = {
 	tag: 'a'
@@ -1518,7 +1596,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -1528,14 +1606,13 @@ module.exports = React.createClass({
 	}
 });
 
-},{"../../functions":49,"classnames":51,"lodash":52,"react":246}],28:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\table.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
     cx = require('classnames'),
-    _ = require('lodash'),
-    MDLFunc = require('../functions');
+    _ = require('lodash');
 
-var _defaultProps = MDLFunc.makeDefaultProps({
+var _defaultProps = __functions.makeDefaultProps({
   columns: null,
   data: null,
   shadow: 2,
@@ -1577,7 +1654,7 @@ module.exports = React.createClass({
 			'mdl-data-table--selectable': this.props.selectable,
 		};
 
-		classes = MDLFunc.addGeneralClasses(classes, this.props);
+		classes = __functions.addGeneralClasses(classes, this.props);
 
 		return cx(classes);
 	},
@@ -1592,13 +1669,13 @@ module.exports = React.createClass({
 	},
 
   _getCellClasses: function (column) {
-    return cx(MDLFunc.addGeneralClasses({
+    return cx(__functions.addGeneralClasses({
       'mdl-data-table__cell--non-numeric' : !column.isNumeric,
 		}, column));
   },
 
   _getRowClasses: function (row) {
-		return cx(MDLFunc.addGeneralClasses({}, row));
+		return cx(__functions.addGeneralClasses({}, row));
   },
 
   _rowClicked: function (row, i) {
@@ -1635,7 +1712,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
     return React.cloneElement(element, newProps);
   },
 
@@ -1673,13 +1750,11 @@ module.exports = React.createClass({
         return foundElements;
     }
 });
-},{"../functions":49,"classnames":51,"lodash":52,"react":246}],29:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\tabs\\tabs.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
   	cx = require('classnames'),
   	_ = require('lodash');
-
-var MDLFunc = require('../../functions');
 
 var _defaultProps = {
 	tag: 'div',
@@ -1708,7 +1783,7 @@ module.exports = React.createClass({
 	},
 
   _getTabBar: function (panels) {
-    var tabBarProps = MDLFunc.joinProps({}, this.props.tabBarProps, {}, "mdl-tabs__tab-bar"),
+    var tabBarProps = __functions.joinProps({}, this.props.tabBarProps, {}, "mdl-tabs__tab-bar"),
         tabBarTabs = panels.map(function (panel, panelKey) {
           return (React.createElement("a", {key: panelKey, href: "#" + panel.props.id, className: "mdl-tabs__tab" + (panel.props.active ? " is-active" : "")}, panel.props.title));
         });
@@ -1724,7 +1799,7 @@ module.exports = React.createClass({
 
   render: function () {
 		var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
     return React.cloneElement(element, newProps);
   },
 
@@ -1732,13 +1807,11 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"../../functions":49,"classnames":51,"lodash":52,"react":246}],30:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\tabs\\tabsPanel.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react"),
   	cx = require('classnames'),
   	_ = require('lodash');
-
-var MDLFunc = require('../../functions');
 
 var _defaultProps = {
 	tag: 'div',
@@ -1771,7 +1844,7 @@ module.exports = React.createClass({
 
   render: function () {
 		var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
     return React.cloneElement(element, newProps);
   },
 
@@ -1779,12 +1852,11 @@ module.exports = React.createClass({
 		componentHandler.upgradeDom();
 	}
 });
-},{"../../functions":49,"classnames":51,"lodash":52,"react":246}],31:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\toggle.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 var cx = require('classnames');
 var _ = require('lodash');
-var MDLFunc = require('../functions');
 
 var _defaultProps = {
 	ripple: false,
@@ -1861,7 +1933,7 @@ module.exports = React.createClass({
 
   render: function () {
     var element = this._getElement();
-		var newProps = MDLFunc.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -1871,31 +1943,36 @@ module.exports = React.createClass({
 	}
 });
 
-},{"../functions":49,"classnames":51,"lodash":52,"react":246}],32:[function(require,module,exports){
+},{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\app.jsx":[function(require,module,exports){
 "use strict";
 
 var React = require('react');
-var Router = require('react-router');
-var MDL = require('../components/');
-var Link = Router.Link;
+
+var ReactRouter = require('react-router');
+var Router = ReactRouter.Router;
+var Route = ReactRouter.Route;
+var IndexRoute = ReactRouter.IndexRoute;
+var Link = ReactRouter.Link;
+
+var MDL = require('../../components/');
 var _ = require('lodash');
 
 // Views
 var Views = require('./views');
 
 var navRoutes = [
-	{ name: "home", 		to: "/", 			text: "Home", 				icon: "domain", 				view: Views.Start },
+	{ name: "home", 			to: "/", 			text: "Home", 				icon: "domain", 				view: Views.Start },
 	{ name: "badges", 		to: "/badges", 		text: "Badges", 			icon: "chat_bubble", 			view: Views.Badges },
 	{ name: "buttons", 		to: "/buttons", 	text: "Buttons", 			icon: "chevron_right", 			view: Views.Buttons },
-	{ name: "cards", 		to: "/cards", 		text: "Cards (partial)", 	icon: "web", 					view: Views.Cards },
+	{ name: "cards", 			to: "/cards", 		text: "Cards (partial)", 	icon: "web", 					view: Views.Cards },
 	{ name: "layout", 		to: "/layout", 		text: "Layout (partial)", 	icon: "view_quilt", 			view: Views.Layout },
 	{ name: "loading", 		to: "/loading", 	text: "Loading (partial)", 	icon: "replay", 				view: Views.Loading },
-	{ name: "menus", 		to: "/menus", 		text: "Menus (partial)", 	icon: "format_align_justify", 	view: Views.Menus },
+	{ name: "menus", 			to: "/menus", 		text: "Menus (partial)", 	icon: "format_align_justify", 	view: Views.Menus },
 	{ name: "sliders", 		to: "/sliders", 	text: "Sliders (partial)", 	icon: "tune", 					view: Views.Sliders },
 	{ name: "toggles", 		to: "/toggles", 	text: "Toggles (partial)", 	icon: "exposure", 				view: Views.Toggles },
-	{ name: "tables", 			to: "/tables", 			text: "Tables (todo)", 		icon: "view_list", view: Views.Tables },
-	{ name: "textfields", 	to: "/textfields", 	text: "Text fields (partial)", icon: "font_download", 			view: Views.Textfields },
-	{ name: "", 			to: "/", 			text: "Tooltips (todo)", 	icon: "beenhere" },
+	{ name: "tables", 		to: "/tables", 			text: "Tables (todo)", 		icon: "view_list", view: Views.Tables },
+	{ name: "textfields", to: "/textfields", 	text: "Text fields (partial)", icon: "font_download", 			view: Views.Textfields },
+	//{ name: "", 					to: "/", 			text: "Tooltips (todo)", 	icon: "beenhere" },
 ];
 
 var App = React.createClass({displayName: "App",
@@ -1926,37 +2003,39 @@ var App = React.createClass({displayName: "App",
 					this.getNav()
 				), 
 				React.createElement(MDL.LayoutContent, null, 
-					React.createElement(Router.RouteHandler, null)
+					this.props.children
 				)
 			)
 		);
 	},
 });
 
+var routes = (React.createElement(Route, {path: "/", component: App}, 
+	React.createElement(IndexRoute, {key: "default", name: navRoutes[0].name, component: navRoutes[0].view}), 
+	_.map(navRoutes, function (route) {
+		if (route.to.length > 0) {
+			return React.createElement(Route, {key: route.name, name: route.name, path: route.to, component: route.view})
+		}
+	})
+));
 
-var routes = (
-	React.createElement(Router.Route, {handler: App}, 
-		React.createElement(Router.DefaultRoute, {key: "default", name: navRoutes[0].name, handler: navRoutes[0].view}), 
-		_.map(navRoutes, function (route) {
-			if (route.to.length > 1) {
-				return React.createElement(Router.Route, {key: route.name, name: route.name, path: route.to, handler: route.view})
-			}
-		})
-	)
-);
+	console.log(routes);
+React.render((React.createElement(Router, null, routes)), document.body);
 
+/*
 Router.create({
 	routes: routes,
 	location: Router.HashLocation,
 }).run(function (Handler) {
 	React.render(
-		React.createElement("div", {className: "wrapper"}, 
-			React.createElement(Handler, null)
-		),
+		<div className="wrapper">
+			<Handler />
+		</div>,
 		document.body
 	);
 });
-},{"../components/":16,"./views":40,"lodash":52,"react":246,"react-router":77}],33:[function(require,module,exports){
+*/
+},{"../../components/":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\index.js","./views":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js","react-router":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\index.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\docCode.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 
@@ -1982,7 +2061,7 @@ module.exports = React.createClass({displayName: "exports",
 	}
 });
 
-},{"react":246}],34:[function(require,module,exports){
+},{"react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\docComponent.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 
@@ -2009,7 +2088,7 @@ module.exports = React.createClass({displayName: "exports",
 	}
 });
 
-},{"react":246}],35:[function(require,module,exports){
+},{"react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\docComponents.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require("react");
 
@@ -2030,18 +2109,18 @@ module.exports = React.createClass({displayName: "exports",
 	}
 });
 
-},{"react":246}],36:[function(require,module,exports){
+},{"react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\index.js":[function(require,module,exports){
 module.exports = {
   DocCode: require('./docCode.jsx'),
   DocComponent: require('./docComponent.jsx'),
   DocComponents: require('./docComponents.jsx'),
 };
-},{"./docCode.jsx":33,"./docComponent.jsx":34,"./docComponents.jsx":35}],37:[function(require,module,exports){
+},{"./docCode.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\docCode.jsx","./docComponent.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\docComponent.jsx","./docComponents.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\docComponents.jsx"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\badges.jsx":[function(require,module,exports){
 
 "use strict";
 
 var React = require('react');
-var MDL = require('../../components/');
+var MDL = require('../../../components/');
 var DOCS = require('../components');
 
 module.exports = React.createClass({displayName: "exports",
@@ -2102,12 +2181,12 @@ module.exports = React.createClass({displayName: "exports",
 	},
 });
 
-},{"../../components/":16,"../components":36,"react":246}],38:[function(require,module,exports){
+},{"../../../components/":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\index.js","../components":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\buttons.jsx":[function(require,module,exports){
 
 "use strict";
 
 var React = require('react');
-var MDL = require('../../components');
+var MDL = require('../../../components/');
 var DOCS = require('../components');
 
 module.exports = React.createClass({displayName: "exports",
@@ -2326,12 +2405,12 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-},{"../../components":16,"../components":36,"react":246}],39:[function(require,module,exports){
+},{"../../../components/":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\index.js","../components":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\cards.jsx":[function(require,module,exports){
 
 "use strict";
 
 var React = require('react');
-var MDL = require('../../components');
+var MDL = require('../../../components/');
 var DOCS = require('../components');
 
 module.exports = React.createClass({displayName: "exports",
@@ -2533,7 +2612,7 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-},{"../../components":16,"../components":36,"react":246}],40:[function(require,module,exports){
+},{"../../../components/":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\index.js","../components":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\index.js":[function(require,module,exports){
 module.exports = {
   Start: require('./start.jsx'),
   Badges: require('./badges.jsx'),
@@ -2547,12 +2626,12 @@ module.exports = {
   Toggles: require('./toggles.jsx'),
   Textfields: require('./textfields.jsx'),
 };
-},{"./badges.jsx":37,"./buttons.jsx":38,"./cards.jsx":39,"./layout.jsx":41,"./loading.jsx":42,"./menus.jsx":43,"./sliders.jsx":44,"./start.jsx":45,"./tables.jsx":46,"./textfields.jsx":47,"./toggles.jsx":48}],41:[function(require,module,exports){
+},{"./badges.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\badges.jsx","./buttons.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\buttons.jsx","./cards.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\cards.jsx","./layout.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\layout.jsx","./loading.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\loading.jsx","./menus.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\menus.jsx","./sliders.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\sliders.jsx","./start.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\start.jsx","./tables.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\tables.jsx","./textfields.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\textfields.jsx","./toggles.jsx":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\toggles.jsx"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\layout.jsx":[function(require,module,exports){
 
 "use strict";
 
 var React = require('react');
-var MDL = require('../../components');
+var MDL = require('../../../components/');
 var DOCS = require('../components');
 
 module.exports = React.createClass({displayName: "exports",
@@ -2729,12 +2808,12 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-},{"../../components":16,"../components":36,"react":246}],42:[function(require,module,exports){
+},{"../../../components/":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\index.js","../components":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\loading.jsx":[function(require,module,exports){
 
 "use strict";
 
 var React = require('react');
-var MDL = require('../../components');
+var MDL = require('../../../components/');
 var DOCS = require('../components');
 
 module.exports = React.createClass({displayName: "exports",
@@ -2823,7 +2902,7 @@ module.exports = React.createClass({displayName: "exports",
 							)
 						)
 					), 
-          
+
           /*
             Titles
             */
@@ -2883,12 +2962,12 @@ module.exports = React.createClass({displayName: "exports",
 	},
 });
 
-},{"../../components":16,"../components":36,"react":246}],43:[function(require,module,exports){
+},{"../../../components/":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\index.js","../components":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\menus.jsx":[function(require,module,exports){
 
 "use strict";
 
 var React = require('react');
-var MDL = require('../../components');
+var MDL = require('../../../components/');
 var DOCS = require('../components');
 
 module.exports = React.createClass({displayName: "exports",
@@ -3000,12 +3079,12 @@ module.exports = React.createClass({displayName: "exports",
 	},
 });
 
-},{"../../components":16,"../components":36,"react":246}],44:[function(require,module,exports){
+},{"../../../components/":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\index.js","../components":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\sliders.jsx":[function(require,module,exports){
 
 "use strict";
 
 var React = require('react');
-var MDL = require('../../components');
+var MDL = require('../../../components/');
 var DOCS = require('../components');
 
 module.exports = React.createClass({displayName: "exports",
@@ -3065,8 +3144,7 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-
-},{"../../components":16,"../components":36,"react":246}],45:[function(require,module,exports){
+},{"../../../components/":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\index.js","../components":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\start.jsx":[function(require,module,exports){
 
 "use strict";
 
@@ -3099,12 +3177,12 @@ module.exports = React.createClass({displayName: "exports",
 	},
 });
 
-},{"react":246}],46:[function(require,module,exports){
+},{"react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\tables.jsx":[function(require,module,exports){
 
 "use strict";
 
 var React = require('react');
-var MDL = require('../../components');
+var MDL = require('../../../components/');
 var DOCS = require('../components');
 
 module.exports = React.createClass({displayName: "exports",
@@ -3169,12 +3247,12 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-},{"../../components":16,"../components":36,"react":246}],47:[function(require,module,exports){
+},{"../../../components/":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\index.js","../components":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\textfields.jsx":[function(require,module,exports){
 
 "use strict";
 
 var React = require('react');
-var MDL = require('../../components');
+var MDL = require('../../../components/');
 var DOCS = require('../components');
 
 module.exports = React.createClass({displayName: "exports",
@@ -3273,12 +3351,12 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-},{"../../components":16,"../components":36,"react":246}],48:[function(require,module,exports){
+},{"../../../components/":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\index.js","../components":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\views\\toggles.jsx":[function(require,module,exports){
 
 "use strict";
 
 var React = require('react');
-var MDL = require('../../components');
+var MDL = require('../../../components/');
 var DOCS = require('../components');
 
 module.exports = React.createClass({displayName: "exports",
@@ -3402,112 +3480,7 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-},{"../../components":16,"../components":36,"react":246}],49:[function(require,module,exports){
-var _ = require('lodash'),
-    React = require('react');
-
-module.exports = {
-  objDiff: function (obj1, obj2) {
-    var _keysObj1 = _.keys(obj1);
-		var _keysObj2 = _.keys(obj2);
-
-		var _keysDiff = _.remove(_keysObj2, function(n) {
-		  return (_(_keysObj1).indexOf(n) == -1);
-		});
-
-		return _.pick(obj2, function (value, key) {
-			return _(_keysDiff).indexOf(key) != -1;
-		});
-  },
-
-  joinProps: function (defaultProps, currentProps, elementProps, classes) {
-    var diffedProps = this.objDiff(defaultProps, currentProps);
-    var joinedProps = _.assign(diffedProps, elementProps);
-    return _.assign(joinedProps, {
-			className: _.trimLeft((currentProps.className || '') + ' ' + (elementProps.className || '') + ' ' + classes)
-		});
-  },
-
-  addColorClasses: function (classArray, color, colorSpectrum, textColor, textColorSpectrum) {
-    colorSpectrum = colorSpectrum || 400;
-    textColorSpectrum = textColorSpectrum || 400;
-
-		if (color && color.length) {
-			if (color == "white" || color == "black") {
-        classArray["mdl-color--" + color] = true;
-      } else {
-        classArray["mdl-color--" + color + "-" + colorSpectrum] = true;
-      }
-		}
-		if (textColor && textColor.length) {
-			if (textColor == "white" || textColor == "black") {
-        classArray["mdl-color-text--" + textColor] = true;
-      } else {
-        classArray["mdl-color-text--" + textColor + "-" + textColorSpectrum] = true;
-      }
-		}
-    return classArray;
-  },
-
-  addShadowClasses: function (classArray, depth) {
-    if (depth && depth > 0) {
-	    classArray['mdl-shadow--' + depth + 'dp'] = true;
-    }
-
-    return classArray;
-  },
-
-  addGeneralClasses: function (classArray, props) {
-    classArray = this.addColorClasses(classArray, props.color, props.colorSpectrum, props.textColor, props.textColorSpectrum);
-    classArray = this.addShadowClasses(classArray, props.shadow);
-
-    return classArray;
-  },
-
-  makeDefaultProps: function (props, settings) {
-    settings = _.assign({
-      colors: false,
-      shadow: false,
-    }, settings);
-
-    props = settings.colors ? _.assign({
-      color: '',
-      colorSpectrum: '',
-      textColor: '',
-      textColorSpectrum: '',
-    }, props) : props;
-
-    props = settings.shadow ? _.assign({
-      shadow: 2
-    }, props) : props;
-
-    return props;
-  },
-
-  makeDefaultPropTypes: function (props, settings) {
-    settings = _.assign({
-      colors: false,
-      shadow: false,
-    }, settings);
-
-    _colors = ['', 'red','pink','purple','deep-purple','indigo','blue','light-blue','cyan','teal','green','light-green','lime','yellow','amber','orange','deep-orange','brown','grey','blue-grey'];
-    _spectrums = ['', 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 'A100', 'A200', 'A400', 'A700'];
-
-    props = settings.colors ? _.assign({
-      color: React.PropTypes.oneOf(_colors),
-      colorSpectrum: React.PropTypes.oneOf(_spectrums),
-      textColor: React.PropTypes.oneOf(_colors),
-      textColorSpectrum: React.PropTypes.oneOf(_spectrums),
-    }, props) : props;
-
-    props = settings.shadow ? _.assign({
-      shadow: React.PropTypes.oneOf([ 2, 3, 4, 6, 8, 16 ]),
-    }, props) : props;
-
-    return props;
-  },
-}
-},{"lodash":52,"react":246}],50:[function(require,module,exports){
+},{"../../../components/":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\index.js","../components":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\components\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js":[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -3540,7 +3513,9 @@ function drainQueue() {
         currentQueue = queue;
         queue = [];
         while (++queueIndex < len) {
-            currentQueue[queueIndex].run();
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
         }
         queueIndex = -1;
         len = queue.length;
@@ -3592,14 +3567,13 @@ process.binding = function (name) {
     throw new Error('process.binding is not supported');
 };
 
-// TODO(shtylman)
 process.cwd = function () { return '/' };
 process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 process.umask = function() { return 0; };
 
-},{}],51:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js":[function(require,module,exports){
 /*!
   Copyright (c) 2015 Jed Watson.
   Licensed under the MIT License (MIT), see
@@ -3650,7 +3624,7 @@ process.umask = function() { return 0; };
 
 }());
 
-},{}],52:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js":[function(require,module,exports){
 (function (global){
 /**
  * @license
@@ -16005,992 +15979,239 @@ process.umask = function() { return 0; };
 }.call(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],53:[function(require,module,exports){
-/**
- * Represents a cancellation caused by navigating away
- * before the previous transition has fully resolved.
- */
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\AsyncUtils.js":[function(require,module,exports){
 "use strict";
 
-function Cancellation() {}
+exports.__esModule = true;
+exports.loopAsync = loopAsync;
+exports.mapAsync = mapAsync;
 
-module.exports = Cancellation;
-},{}],54:[function(require,module,exports){
+function loopAsync(turns, work, callback) {
+  var currentTurn = 0;
+  var isDone = false;
+
+  function done() {
+    isDone = true;
+    callback.apply(this, arguments);
+  }
+
+  function next() {
+    if (isDone) return;
+
+    if (currentTurn < turns) {
+      work.call(this, currentTurn++, next, done);
+    } else {
+      done.apply(this, arguments);
+    }
+  }
+
+  next();
+}
+
+function mapAsync(array, work, callback) {
+  var length = array.length;
+  var values = [];
+
+  if (length === 0) return callback(null, values);
+
+  var isDone = false;
+  var doneCount = 0;
+
+  function done(index, error, value) {
+    if (isDone) return;
+
+    if (error) {
+      isDone = true;
+      callback(error);
+    } else {
+      values[index] = value;
+
+      isDone = ++doneCount === length;
+
+      if (isDone) callback(null, values);
+    }
+  }
+
+  array.forEach(function (item, index) {
+    work(item, index, function (error, value) {
+      done(index, error, value);
+    });
+  });
+}
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\History.js":[function(require,module,exports){
 'use strict';
 
-var invariant = require('react/lib/invariant');
-var canUseDOM = require('react/lib/ExecutionEnvironment').canUseDOM;
+exports.__esModule = true;
+
+var _PropTypes = require('./PropTypes');
 
 var History = {
 
-  /**
-   * The current number of entries in the history.
-   *
-   * Note: This property is read-only.
-   */
-  length: 1,
+  contextTypes: { history: _PropTypes.history },
 
-  /**
-   * Sends the browser back one entry in the history.
-   */
-  back: function back() {
-    invariant(canUseDOM, 'Cannot use History.back without a DOM');
-
-    // Do this first so that History.length will
-    // be accurate in location change listeners.
-    History.length -= 1;
-
-    window.history.back();
+  componentWillMount: function componentWillMount() {
+    this.history = this.context.history;
   }
 
 };
 
-module.exports = History;
-},{"react/lib/ExecutionEnvironment":111,"react/lib/invariant":226}],55:[function(require,module,exports){
+exports['default'] = History;
+module.exports = exports['default'];
+},{"./PropTypes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PropTypes.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\IndexRoute.js":[function(require,module,exports){
 'use strict';
 
-var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
+exports.__esModule = true;
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-/* jshint -W084 */
-var PathUtils = require('./PathUtils');
+var _react = require('react');
 
-function deepSearch(route, pathname, query) {
-  // Check the subtree first to find the most deeply-nested match.
-  var childRoutes = route.childRoutes;
-  if (childRoutes) {
-    var match, childRoute;
-    for (var i = 0, len = childRoutes.length; i < len; ++i) {
-      childRoute = childRoutes[i];
+var _react2 = _interopRequireDefault(_react);
 
-      if (childRoute.isDefault || childRoute.isNotFound) continue; // Check these in order later.
+var _invariant = require('invariant');
 
-      if (match = deepSearch(childRoute, pathname, query)) {
-        // A route in the subtree matched! Add this route and we're done.
-        match.routes.unshift(route);
-        return match;
-      }
-    }
-  }
+var _invariant2 = _interopRequireDefault(_invariant);
 
-  // No child routes matched; try the default route.
-  var defaultRoute = route.defaultRoute;
-  if (defaultRoute && (params = PathUtils.extractParams(defaultRoute.path, pathname))) {
-    return new Match(pathname, params, query, [route, defaultRoute]);
-  } // Does the "not found" route match?
-  var notFoundRoute = route.notFoundRoute;
-  if (notFoundRoute && (params = PathUtils.extractParams(notFoundRoute.path, pathname))) {
-    return new Match(pathname, params, query, [route, notFoundRoute]);
-  } // Last attempt: check this route.
-  var params = PathUtils.extractParams(route.path, pathname);
-  if (params) {
-    return new Match(pathname, params, query, [route]);
-  }return null;
-}
+var _warning = require('warning');
 
-var Match = (function () {
-  function Match(pathname, params, query, routes) {
-    _classCallCheck(this, Match);
+var _warning2 = _interopRequireDefault(_warning);
 
-    this.pathname = pathname;
-    this.params = params;
-    this.query = query;
-    this.routes = routes;
-  }
+var _RouteUtils = require('./RouteUtils');
 
-  _createClass(Match, null, [{
-    key: 'findMatch',
+var _PropTypes = require('./PropTypes');
 
-    /**
-     * Attempts to match depth-first a route in the given route's
-     * subtree against the given path and returns the match if it
-     * succeeds, null if no match can be made.
-     */
-    value: function findMatch(routes, path) {
-      var pathname = PathUtils.withoutQuery(path);
-      var query = PathUtils.extractQuery(path);
-      var match = null;
-
-      for (var i = 0, len = routes.length; match == null && i < len; ++i) match = deepSearch(routes[i], pathname, query);
-
-      return match;
-    }
-  }]);
-
-  return Match;
-})();
-
-module.exports = Match;
-},{"./PathUtils":57}],56:[function(require,module,exports){
-'use strict';
-
-var PropTypes = require('./PropTypes');
+var _React$PropTypes = _react2['default'].PropTypes;
+var bool = _React$PropTypes.bool;
+var func = _React$PropTypes.func;
 
 /**
- * A mixin for components that modify the URL.
- *
- * Example:
- *
- *   var MyLink = React.createClass({
- *     mixins: [ Router.Navigation ],
- *     handleClick(event) {
- *       event.preventDefault();
- *       this.transitionTo('aRoute', { the: 'params' }, { the: 'query' });
- *     },
- *     render() {
- *       return (
- *         <a onClick={this.handleClick}>Click me!</a>
- *       );
- *     }
- *   });
+ * An <IndexRoute> is used to specify its parent's <Route indexRoute> in
+ * a JSX route config.
  */
-var Navigation = {
-
-  contextTypes: {
-    router: PropTypes.router.isRequired
-  },
-
-  /**
-   * Returns an absolute URL path created from the given route
-   * name, URL parameters, and query values.
-   */
-  makePath: function makePath(to, params, query) {
-    return this.context.router.makePath(to, params, query);
-  },
-
-  /**
-   * Returns a string that may safely be used as the href of a
-   * link to the route with the given name.
-   */
-  makeHref: function makeHref(to, params, query) {
-    return this.context.router.makeHref(to, params, query);
-  },
-
-  /**
-   * Transitions to the URL specified in the arguments by pushing
-   * a new URL onto the history stack.
-   */
-  transitionTo: function transitionTo(to, params, query) {
-    this.context.router.transitionTo(to, params, query);
-  },
-
-  /**
-   * Transitions to the URL specified in the arguments by replacing
-   * the current URL in the history stack.
-   */
-  replaceWith: function replaceWith(to, params, query) {
-    this.context.router.replaceWith(to, params, query);
-  },
-
-  /**
-   * Transitions to the previous URL.
-   */
-  goBack: function goBack() {
-    return this.context.router.goBack();
-  }
-
-};
-
-module.exports = Navigation;
-},{"./PropTypes":58}],57:[function(require,module,exports){
-'use strict';
-
-var invariant = require('react/lib/invariant');
-var assign = require('object-assign');
-var qs = require('qs');
-
-var paramCompileMatcher = /:([a-zA-Z_$][a-zA-Z0-9_$]*)|[*.()\[\]\\+|{}^$]/g;
-var paramInjectMatcher = /:([a-zA-Z_$][a-zA-Z0-9_$?]*[?]?)|[*]/g;
-var paramInjectTrailingSlashMatcher = /\/\/\?|\/\?\/|\/\?/g;
-var queryMatcher = /\?(.*)$/;
-
-var _compiledPatterns = {};
-
-function compilePattern(pattern) {
-  if (!(pattern in _compiledPatterns)) {
-    var paramNames = [];
-    var source = pattern.replace(paramCompileMatcher, function (match, paramName) {
-      if (paramName) {
-        paramNames.push(paramName);
-        return '([^/?#]+)';
-      } else if (match === '*') {
-        paramNames.push('splat');
-        return '(.*?)';
-      } else {
-        return '\\' + match;
-      }
-    });
-
-    _compiledPatterns[pattern] = {
-      matcher: new RegExp('^' + source + '$', 'i'),
-      paramNames: paramNames
-    };
-  }
-
-  return _compiledPatterns[pattern];
-}
-
-var PathUtils = {
-
-  /**
-   * Returns true if the given path is absolute.
-   */
-  isAbsolute: function isAbsolute(path) {
-    return path.charAt(0) === '/';
-  },
-
-  /**
-   * Joins two URL paths together.
-   */
-  join: function join(a, b) {
-    return a.replace(/\/*$/, '/') + b;
-  },
-
-  /**
-   * Returns an array of the names of all parameters in the given pattern.
-   */
-  extractParamNames: function extractParamNames(pattern) {
-    return compilePattern(pattern).paramNames;
-  },
-
-  /**
-   * Extracts the portions of the given URL path that match the given pattern
-   * and returns an object of param name => value pairs. Returns null if the
-   * pattern does not match the given path.
-   */
-  extractParams: function extractParams(pattern, path) {
-    var _compilePattern = compilePattern(pattern);
-
-    var matcher = _compilePattern.matcher;
-    var paramNames = _compilePattern.paramNames;
-
-    var match = path.match(matcher);
-
-    if (!match) {
-      return null;
-    }var params = {};
-
-    paramNames.forEach(function (paramName, index) {
-      params[paramName] = match[index + 1];
-    });
-
-    return params;
-  },
-
-  /**
-   * Returns a version of the given route path with params interpolated. Throws
-   * if there is a dynamic segment of the route path for which there is no param.
-   */
-  injectParams: function injectParams(pattern, params) {
-    params = params || {};
-
-    var splatIndex = 0;
-
-    return pattern.replace(paramInjectMatcher, function (match, paramName) {
-      paramName = paramName || 'splat';
-
-      // If param is optional don't check for existence
-      if (paramName.slice(-1) === '?') {
-        paramName = paramName.slice(0, -1);
-
-        if (params[paramName] == null) return '';
-      } else {
-        invariant(params[paramName] != null, 'Missing "%s" parameter for path "%s"', paramName, pattern);
-      }
-
-      var segment;
-      if (paramName === 'splat' && Array.isArray(params[paramName])) {
-        segment = params[paramName][splatIndex++];
-
-        invariant(segment != null, 'Missing splat # %s for path "%s"', splatIndex, pattern);
-      } else {
-        segment = params[paramName];
-      }
-
-      return segment;
-    }).replace(paramInjectTrailingSlashMatcher, '/');
-  },
-
-  /**
-   * Returns an object that is the result of parsing any query string contained
-   * in the given path, null if the path contains no query string.
-   */
-  extractQuery: function extractQuery(path) {
-    var match = path.match(queryMatcher);
-    return match && qs.parse(match[1]);
-  },
-
-  /**
-   * Returns a version of the given path without the query string.
-   */
-  withoutQuery: function withoutQuery(path) {
-    return path.replace(queryMatcher, '');
-  },
-
-  /**
-   * Returns a version of the given path with the parameters in the given
-   * query merged into the query string.
-   */
-  withQuery: function withQuery(path, query) {
-    var existingQuery = PathUtils.extractQuery(path);
-
-    if (existingQuery) query = query ? assign(existingQuery, query) : existingQuery;
-
-    var queryString = qs.stringify(query, { arrayFormat: 'brackets' });
-
-    if (queryString) {
-      return PathUtils.withoutQuery(path) + '?' + queryString;
-    }return PathUtils.withoutQuery(path);
-  }
-
-};
-
-module.exports = PathUtils;
-},{"object-assign":86,"qs":87,"react/lib/invariant":226}],58:[function(require,module,exports){
-'use strict';
-
-var assign = require('react/lib/Object.assign');
-var ReactPropTypes = require('react').PropTypes;
-var Route = require('./Route');
-
-var PropTypes = assign({}, ReactPropTypes, {
-
-  /**
-   * Indicates that a prop should be falsy.
-   */
-  falsy: function falsy(props, propName, componentName) {
-    if (props[propName]) {
-      return new Error('<' + componentName + '> should not have a "' + propName + '" prop');
-    }
-  },
-
-  /**
-   * Indicates that a prop should be a Route object.
-   */
-  route: ReactPropTypes.instanceOf(Route),
-
-  /**
-   * Indicates that a prop should be a Router object.
-   */
-  //router: ReactPropTypes.instanceOf(Router) // TODO
-  router: ReactPropTypes.func
-
-});
-
-module.exports = PropTypes;
-},{"./Route":60,"react":246,"react/lib/Object.assign":117}],59:[function(require,module,exports){
-/**
- * Encapsulates a redirect to the given route.
- */
-"use strict";
-
-function Redirect(to, params, query) {
-  this.to = to;
-  this.params = params;
-  this.query = query;
-}
-
-module.exports = Redirect;
-},{}],60:[function(require,module,exports){
-'use strict';
-
-var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
-
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var assign = require('react/lib/Object.assign');
-var invariant = require('react/lib/invariant');
-var warning = require('react/lib/warning');
-var PathUtils = require('./PathUtils');
-
-var _currentRoute;
-
-var Route = (function () {
-  function Route(name, path, ignoreScrollBehavior, isDefault, isNotFound, onEnter, onLeave, handler) {
-    _classCallCheck(this, Route);
-
-    this.name = name;
-    this.path = path;
-    this.paramNames = PathUtils.extractParamNames(this.path);
-    this.ignoreScrollBehavior = !!ignoreScrollBehavior;
-    this.isDefault = !!isDefault;
-    this.isNotFound = !!isNotFound;
-    this.onEnter = onEnter;
-    this.onLeave = onLeave;
-    this.handler = handler;
-  }
-
-  _createClass(Route, [{
-    key: 'appendChild',
-
-    /**
-     * Appends the given route to this route's child routes.
-     */
-    value: function appendChild(route) {
-      invariant(route instanceof Route, 'route.appendChild must use a valid Route');
-
-      if (!this.childRoutes) this.childRoutes = [];
-
-      this.childRoutes.push(route);
-    }
-  }, {
-    key: 'toString',
-    value: function toString() {
-      var string = '<Route';
-
-      if (this.name) string += ' name="' + this.name + '"';
-
-      string += ' path="' + this.path + '">';
-
-      return string;
-    }
-  }], [{
-    key: 'createRoute',
-
-    /**
-     * Creates and returns a new route. Options may be a URL pathname string
-     * with placeholders for named params or an object with any of the following
-     * properties:
-     *
-     * - name                     The name of the route. This is used to lookup a
-     *                            route relative to its parent route and should be
-     *                            unique among all child routes of the same parent
-     * - path                     A URL pathname string with optional placeholders
-     *                            that specify the names of params to extract from
-     *                            the URL when the path matches. Defaults to `/${name}`
-     *                            when there is a name given, or the path of the parent
-     *                            route, or /
-     * - ignoreScrollBehavior     True to make this route (and all descendants) ignore
-     *                            the scroll behavior of the router
-     * - isDefault                True to make this route the default route among all
-     *                            its siblings
-     * - isNotFound               True to make this route the "not found" route among
-     *                            all its siblings
-     * - onEnter                  A transition hook that will be called when the
-     *                            router is going to enter this route
-     * - onLeave                  A transition hook that will be called when the
-     *                            router is going to leave this route
-     * - handler                  A React component that will be rendered when
-     *                            this route is active
-     * - parentRoute              The parent route to use for this route. This option
-     *                            is automatically supplied when creating routes inside
-     *                            the callback to another invocation of createRoute. You
-     *                            only ever need to use this when declaring routes
-     *                            independently of one another to manually piece together
-     *                            the route hierarchy
-     *
-     * The callback may be used to structure your route hierarchy. Any call to
-     * createRoute, createDefaultRoute, createNotFoundRoute, or createRedirect
-     * inside the callback automatically uses this route as its parent.
-     */
-    value: function createRoute(options, callback) {
-      options = options || {};
-
-      if (typeof options === 'string') options = { path: options };
-
-      var parentRoute = _currentRoute;
-
-      if (parentRoute) {
-        warning(options.parentRoute == null || options.parentRoute === parentRoute, 'You should not use parentRoute with createRoute inside another route\'s child callback; it is ignored');
-      } else {
-        parentRoute = options.parentRoute;
-      }
-
-      var name = options.name;
-      var path = options.path || name;
-
-      if (path && !(options.isDefault || options.isNotFound)) {
-        if (PathUtils.isAbsolute(path)) {
-          if (parentRoute) {
-            invariant(path === parentRoute.path || parentRoute.paramNames.length === 0, 'You cannot nest path "%s" inside "%s"; the parent requires URL parameters', path, parentRoute.path);
-          }
-        } else if (parentRoute) {
-          // Relative paths extend their parent.
-          path = PathUtils.join(parentRoute.path, path);
-        } else {
-          path = '/' + path;
-        }
-      } else {
-        path = parentRoute ? parentRoute.path : '/';
-      }
-
-      if (options.isNotFound && !/\*$/.test(path)) path += '*'; // Auto-append * to the path of not found routes.
-
-      var route = new Route(name, path, options.ignoreScrollBehavior, options.isDefault, options.isNotFound, options.onEnter, options.onLeave, options.handler);
-
-      if (parentRoute) {
-        if (route.isDefault) {
-          invariant(parentRoute.defaultRoute == null, '%s may not have more than one default route', parentRoute);
-
-          parentRoute.defaultRoute = route;
-        } else if (route.isNotFound) {
-          invariant(parentRoute.notFoundRoute == null, '%s may not have more than one not found route', parentRoute);
-
-          parentRoute.notFoundRoute = route;
-        }
-
-        parentRoute.appendChild(route);
-      }
-
-      // Any routes created in the callback
-      // use this route as their parent.
-      if (typeof callback === 'function') {
-        var currentRoute = _currentRoute;
-        _currentRoute = route;
-        callback.call(route, route);
-        _currentRoute = currentRoute;
-      }
-
-      return route;
-    }
-  }, {
-    key: 'createDefaultRoute',
-
-    /**
-     * Creates and returns a route that is rendered when its parent matches
-     * the current URL.
-     */
-    value: function createDefaultRoute(options) {
-      return Route.createRoute(assign({}, options, { isDefault: true }));
-    }
-  }, {
-    key: 'createNotFoundRoute',
-
-    /**
-     * Creates and returns a route that is rendered when its parent matches
-     * the current URL but none of its siblings do.
-     */
-    value: function createNotFoundRoute(options) {
-      return Route.createRoute(assign({}, options, { isNotFound: true }));
-    }
-  }, {
-    key: 'createRedirect',
-
-    /**
-     * Creates and returns a route that automatically redirects the transition
-     * to another route. In addition to the normal options to createRoute, this
-     * function accepts the following options:
-     *
-     * - from         An alias for the `path` option. Defaults to *
-     * - to           The path/route/route name to redirect to
-     * - params       The params to use in the redirect URL. Defaults
-     *                to using the current params
-     * - query        The query to use in the redirect URL. Defaults
-     *                to using the current query
-     */
-    value: function createRedirect(options) {
-      return Route.createRoute(assign({}, options, {
-        path: options.path || options.from || '*',
-        onEnter: function onEnter(transition, params, query) {
-          transition.redirect(options.to, options.params || params, options.query || query);
-        }
-      }));
-    }
-  }]);
-
-  return Route;
-})();
-
-module.exports = Route;
-},{"./PathUtils":57,"react/lib/Object.assign":117,"react/lib/invariant":226,"react/lib/warning":245}],61:[function(require,module,exports){
-'use strict';
-
-var invariant = require('react/lib/invariant');
-var canUseDOM = require('react/lib/ExecutionEnvironment').canUseDOM;
-var getWindowScrollPosition = require('./getWindowScrollPosition');
-
-function shouldUpdateScroll(state, prevState) {
-  if (!prevState) {
-    return true;
-  } // Don't update scroll position when only the query has changed.
-  if (state.pathname === prevState.pathname) {
-    return false;
-  }var routes = state.routes;
-  var prevRoutes = prevState.routes;
-
-  var sharedAncestorRoutes = routes.filter(function (route) {
-    return prevRoutes.indexOf(route) !== -1;
-  });
-
-  return !sharedAncestorRoutes.some(function (route) {
-    return route.ignoreScrollBehavior;
-  });
-}
-
-/**
- * Provides the router with the ability to manage window scroll position
- * according to its scroll behavior.
- */
-var ScrollHistory = {
+var IndexRoute = _react2['default'].createClass({
+  displayName: 'IndexRoute',
 
   statics: {
 
-    /**
-     * Records curent scroll position as the last known position for the given URL path.
-     */
-    recordScrollPosition: function recordScrollPosition(path) {
-      if (!this.scrollHistory) this.scrollHistory = {};
-
-      this.scrollHistory[path] = getWindowScrollPosition();
-    },
-
-    /**
-     * Returns the last known scroll position for the given URL path.
-     */
-    getScrollPosition: function getScrollPosition(path) {
-      if (!this.scrollHistory) this.scrollHistory = {};
-
-      return this.scrollHistory[path] || null;
+    createRouteFromReactElement: function createRouteFromReactElement(element, parentRoute) {
+      if (parentRoute) {
+        parentRoute.indexRoute = _RouteUtils.createRouteFromReactElement(element);
+      } else {
+        _warning2['default'](false, 'An <IndexRoute> does not make sense at the root of your route config');
+      }
     }
 
+  },
+
+  propTypes: {
+    path: _PropTypes.falsy,
+    ignoreScrollBehavior: bool,
+    component: _PropTypes.component,
+    components: _PropTypes.components,
+    getComponents: func
+  },
+
+  render: function render() {
+    _invariant2['default'](false, '<IndexRoute> elements are for router configuration only and should not be rendered');
+  }
+
+});
+
+exports['default'] = IndexRoute;
+module.exports = exports['default'];
+},{"./PropTypes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PropTypes.js","./RouteUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RouteUtils.js","invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\invariant\\browser.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js","warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\warning\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\Lifecycle.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _invariant = require('invariant');
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var object = _react2['default'].PropTypes.object;
+
+/**
+ * The Lifecycle mixin adds the routerWillLeave lifecycle method
+ * to a component that may be used to cancel a transition or prompt
+ * the user for confirmation.
+ *
+ * On standard transitions, routerWillLeave receives a single argument: the
+ * location we're transitioning to. To cancel the transition, return false.
+ * To prompt the user for confirmation, return a prompt message (string).
+ *
+ * routerWillLeave does not receive a location object during the beforeunload
+ * event in web browsers (assuming you're using the useBeforeUnload history
+ * enhancer). In this case, it is not possible for us to know the location
+ * we're transitioning to so routerWillLeave must return a prompt message to
+ * prevent the user from closing the tab.
+ */
+var Lifecycle = {
+
+  propTypes: {
+    // Route components receive the route object as a prop.
+    route: object
+  },
+
+  contextTypes: {
+    history: object.isRequired,
+    // Nested children receive the route as context, either
+    // set by the route component using the RouteContext mixin
+    // or by some other ancestor.
+    route: object
+  },
+
+  _getRoute: function _getRoute() {
+    var route = this.props.route || this.context.route;
+
+    _invariant2['default'](route, 'The Lifecycle mixin needs to be used either on 1) a <Route component> or ' + '2) a descendant of a <Route component> that uses the RouteContext mixin');
+
+    return route;
   },
 
   componentWillMount: function componentWillMount() {
-    invariant(this.constructor.getScrollBehavior() == null || canUseDOM, 'Cannot use scroll behavior without a DOM');
+    _invariant2['default'](this.routerWillLeave, 'The Lifecycle mixin requires you to define a routerWillLeave method');
+
+    this.context.history.registerRouteHook(this._getRoute(), this.routerWillLeave);
   },
 
-  componentDidMount: function componentDidMount() {
-    this._updateScroll();
-  },
-
-  componentDidUpdate: function componentDidUpdate(prevProps, prevState) {
-    this._updateScroll(prevState);
-  },
-
-  _updateScroll: function _updateScroll(prevState) {
-    if (!shouldUpdateScroll(this.state, prevState)) {
-      return;
-    }var scrollBehavior = this.constructor.getScrollBehavior();
-
-    if (scrollBehavior) scrollBehavior.updateScrollPosition(this.constructor.getScrollPosition(this.state.path), this.state.action);
+  componentWillUnmount: function componentWillUnmount() {
+    this.context.history.unregisterRouteHook(this._getRoute(), this.routerWillLeave);
   }
 
 };
 
-module.exports = ScrollHistory;
-},{"./getWindowScrollPosition":76,"react/lib/ExecutionEnvironment":111,"react/lib/invariant":226}],62:[function(require,module,exports){
+exports['default'] = Lifecycle;
+module.exports = exports['default'];
+},{"invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\invariant\\browser.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\Link.js":[function(require,module,exports){
 'use strict';
 
-var PropTypes = require('./PropTypes');
+exports.__esModule = true;
 
-/**
- * A mixin for components that need to know the path, routes, URL
- * params and query that are currently active.
- *
- * Example:
- *
- *   var AboutLink = React.createClass({
- *     mixins: [ Router.State ],
- *     render() {
- *       var className = this.props.className;
- *
- *       if (this.isActive('about'))
- *         className += ' is-active';
- *
- *       return React.DOM.a({ className: className }, this.props.children);
- *     }
- *   });
- */
-var State = {
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-  contextTypes: {
-    router: PropTypes.router.isRequired
-  },
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-  /**
-   * Returns the current URL path.
-   */
-  getPath: function getPath() {
-    return this.context.router.getCurrentPath();
-  },
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-  /**
-   * Returns the current URL path without the query string.
-   */
-  getPathname: function getPathname() {
-    return this.context.router.getCurrentPathname();
-  },
+var _react = require('react');
 
-  /**
-   * Returns an object of the URL params that are currently active.
-   */
-  getParams: function getParams() {
-    return this.context.router.getCurrentParams();
-  },
+var _react2 = _interopRequireDefault(_react);
 
-  /**
-   * Returns an object of the query params that are currently active.
-   */
-  getQuery: function getQuery() {
-    return this.context.router.getCurrentQuery();
-  },
+var _warning = require('warning');
 
-  /**
-   * Returns an array of the routes that are currently active.
-   */
-  getRoutes: function getRoutes() {
-    return this.context.router.getCurrentRoutes();
-  },
+var _warning2 = _interopRequireDefault(_warning);
 
-  /**
-   * A helper method to determine if a given route, params, and query
-   * are active.
-   */
-  isActive: function isActive(to, params, query) {
-    return this.context.router.isActive(to, params, query);
-  }
-
-};
-
-module.exports = State;
-},{"./PropTypes":58}],63:[function(require,module,exports){
-/* jshint -W058 */
-
-'use strict';
-
-var Cancellation = require('./Cancellation');
-var Redirect = require('./Redirect');
-
-/**
- * Encapsulates a transition to a given path.
- *
- * The willTransitionTo and willTransitionFrom handlers receive
- * an instance of this class as their first argument.
- */
-function Transition(path, retry) {
-  this.path = path;
-  this.abortReason = null;
-  // TODO: Change this to router.retryTransition(transition)
-  this.retry = retry.bind(this);
-}
-
-Transition.prototype.abort = function (reason) {
-  if (this.abortReason == null) this.abortReason = reason || 'ABORT';
-};
-
-Transition.prototype.redirect = function (to, params, query) {
-  this.abort(new Redirect(to, params, query));
-};
-
-Transition.prototype.cancel = function () {
-  this.abort(new Cancellation());
-};
-
-Transition.from = function (transition, routes, components, callback) {
-  routes.reduce(function (callback, route, index) {
-    return function (error) {
-      if (error || transition.abortReason) {
-        callback(error);
-      } else if (route.onLeave) {
-        try {
-          route.onLeave(transition, components[index], callback);
-
-          // If there is no callback in the argument list, call it automatically.
-          if (route.onLeave.length < 3) callback();
-        } catch (e) {
-          callback(e);
-        }
-      } else {
-        callback();
-      }
-    };
-  }, callback)();
-};
-
-Transition.to = function (transition, routes, params, query, callback) {
-  routes.reduceRight(function (callback, route) {
-    return function (error) {
-      if (error || transition.abortReason) {
-        callback(error);
-      } else if (route.onEnter) {
-        try {
-          route.onEnter(transition, params, query, callback);
-
-          // If there is no callback in the argument list, call it automatically.
-          if (route.onEnter.length < 4) callback();
-        } catch (e) {
-          callback(e);
-        }
-      } else {
-        callback();
-      }
-    };
-  }, callback)();
-};
-
-module.exports = Transition;
-},{"./Cancellation":53,"./Redirect":59}],64:[function(require,module,exports){
-/**
- * Actions that modify the URL.
- */
-'use strict';
-
-var LocationActions = {
-
-  /**
-   * Indicates a new location is being pushed to the history stack.
-   */
-  PUSH: 'push',
-
-  /**
-   * Indicates the current location should be replaced.
-   */
-  REPLACE: 'replace',
-
-  /**
-   * Indicates the most recent entry should be removed from the history stack.
-   */
-  POP: 'pop'
-
-};
-
-module.exports = LocationActions;
-},{}],65:[function(require,module,exports){
-'use strict';
-
-var LocationActions = require('../actions/LocationActions');
-
-/**
- * A scroll behavior that attempts to imitate the default behavior
- * of modern browsers.
- */
-var ImitateBrowserBehavior = {
-
-  updateScrollPosition: function updateScrollPosition(position, actionType) {
-    switch (actionType) {
-      case LocationActions.PUSH:
-      case LocationActions.REPLACE:
-        window.scrollTo(0, 0);
-        break;
-      case LocationActions.POP:
-        if (position) {
-          window.scrollTo(position.x, position.y);
-        } else {
-          window.scrollTo(0, 0);
-        }
-        break;
-    }
-  }
-
-};
-
-module.exports = ImitateBrowserBehavior;
-},{"../actions/LocationActions":64}],66:[function(require,module,exports){
-/**
- * A scroll behavior that always scrolls to the top of the page
- * after a transition.
- */
-"use strict";
-
-var ScrollToTopBehavior = {
-
-  updateScrollPosition: function updateScrollPosition() {
-    window.scrollTo(0, 0);
-  }
-
-};
-
-module.exports = ScrollToTopBehavior;
-},{}],67:[function(require,module,exports){
-'use strict';
-
-var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
-
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _inherits = function (subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; };
-
-/**
- * This component is necessary to get around a context warning
- * present in React 0.13.0. It sovles this by providing a separation
- * between the "owner" and "parent" contexts.
- */
-
-var React = require('react');
-
-var ContextWrapper = (function (_React$Component) {
-  function ContextWrapper() {
-    _classCallCheck(this, ContextWrapper);
-
-    if (_React$Component != null) {
-      _React$Component.apply(this, arguments);
-    }
-  }
-
-  _inherits(ContextWrapper, _React$Component);
-
-  _createClass(ContextWrapper, [{
-    key: 'render',
-    value: function render() {
-      return this.props.children;
-    }
-  }]);
-
-  return ContextWrapper;
-})(React.Component);
-
-module.exports = ContextWrapper;
-},{"react":246}],68:[function(require,module,exports){
-'use strict';
-
-var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
-
-var _inherits = function (subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; };
-
-var PropTypes = require('../PropTypes');
-var RouteHandler = require('./RouteHandler');
-var Route = require('./Route');
-
-/**
- * A <DefaultRoute> component is a special kind of <Route> that
- * renders when its parent matches but none of its siblings do.
- * Only one such route may be used at any given level in the
- * route hierarchy.
- */
-
-var DefaultRoute = (function (_Route) {
-  function DefaultRoute() {
-    _classCallCheck(this, DefaultRoute);
-
-    if (_Route != null) {
-      _Route.apply(this, arguments);
-    }
-  }
-
-  _inherits(DefaultRoute, _Route);
-
-  return DefaultRoute;
-})(Route);
-
-// TODO: Include these in the above class definition
-// once we can use ES7 property initializers.
-// https://github.com/babel/babel/issues/619
-
-DefaultRoute.propTypes = {
-  name: PropTypes.string,
-  path: PropTypes.falsy,
-  children: PropTypes.falsy,
-  handler: PropTypes.func.isRequired
-};
-
-DefaultRoute.defaultProps = {
-  handler: RouteHandler
-};
-
-module.exports = DefaultRoute;
-},{"../PropTypes":58,"./Route":72,"./RouteHandler":73}],69:[function(require,module,exports){
-'use strict';
-
-var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
-
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _inherits = function (subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; };
-
-var React = require('react');
-var assign = require('react/lib/Object.assign');
-var PropTypes = require('../PropTypes');
+var _React$PropTypes = _react2['default'].PropTypes;
+var bool = _React$PropTypes.bool;
+var object = _React$PropTypes.object;
+var string = _React$PropTypes.string;
+var func = _React$PropTypes.func;
 
 function isLeftClickEvent(event) {
   return event.button === 0;
@@ -17000,943 +16221,579 @@ function isModifiedEvent(event) {
   return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
 }
 
+function isEmptyObject(object) {
+  for (var p in object) if (object.hasOwnProperty(p)) return false;
+
+  return true;
+}
+
 /**
- * <Link> components are used to create an <a> element that links to a route.
- * When that route is active, the link gets an "active" class name (or the
- * value of its `activeClassName` prop).
+ * A <Link> is used to create an <a> element that links to a route.
+ * When that route is active, the link gets an "active" class name
+ * (or the value of its `activeClassName` prop).
  *
  * For example, assuming you have the following route:
  *
- *   <Route name="showPost" path="/posts/:postID" handler={Post}/>
+ *   <Route path="/posts/:postID" component={Post} />
  *
  * You could use the following component to link to that route:
  *
- *   <Link to="showPost" params={{ postID: "123" }} />
+ *   <Link to={`/posts/${post.id}`} />
  *
- * In addition to params, links may pass along query string parameters
- * using the `query` prop.
+ * Links may pass along location state and/or query string parameters
+ * in the state/query props, respectively.
  *
- *   <Link to="showPost" params={{ postID: "123" }} query={{ show:true }}/>
+ *   <Link ... query={{ show: true }} state={{ the: 'state' }} />
+ */
+var Link = _react2['default'].createClass({
+  displayName: 'Link',
+
+  contextTypes: {
+    history: object
+  },
+
+  propTypes: {
+    activeStyle: object,
+    activeClassName: string,
+    onlyActiveOnIndex: bool.isRequired,
+    to: string.isRequired,
+    query: object,
+    state: object,
+    onClick: func
+  },
+
+  getDefaultProps: function getDefaultProps() {
+    return {
+      onlyActiveOnIndex: false,
+      className: '',
+      style: {}
+    };
+  },
+
+  handleClick: function handleClick(event) {
+    var allowTransition = true;
+    var clickResult;
+
+    if (this.props.onClick) clickResult = this.props.onClick(event);
+
+    if (isModifiedEvent(event) || !isLeftClickEvent(event)) return;
+
+    if (clickResult === false || event.defaultPrevented === true) allowTransition = false;
+
+    event.preventDefault();
+
+    if (allowTransition) this.context.history.pushState(this.props.state, this.props.to, this.props.query);
+  },
+
+  componentWillMount: function componentWillMount() {
+    _warning2['default'](this.context.history, 'A <Link> should not be rendered outside the context of history; ' + 'some features including real hrefs, active styling, and navigation ' + 'will not function correctly');
+  },
+
+  render: function render() {
+    var history = this.context.history;
+    var _props = this.props;
+    var activeClassName = _props.activeClassName;
+    var activeStyle = _props.activeStyle;
+    var onlyActiveOnIndex = _props.onlyActiveOnIndex;
+    var to = _props.to;
+    var query = _props.query;
+    var state = _props.state;
+    var onClick = _props.onClick;
+
+    var props = _objectWithoutProperties(_props, ['activeClassName', 'activeStyle', 'onlyActiveOnIndex', 'to', 'query', 'state', 'onClick']);
+
+    props.onClick = this.handleClick;
+
+    // Ignore if rendered outside the context
+    // of history, simplifies unit testing.
+    if (history) {
+      props.href = history.createHref(to, query);
+
+      if (activeClassName || activeStyle != null && !isEmptyObject(activeStyle)) {
+        if (history.isActive(to, query, onlyActiveOnIndex)) {
+          if (activeClassName) props.className += props.className === '' ? activeClassName : ' ' + activeClassName;
+
+          if (activeStyle) props.style = _extends({}, props.style, activeStyle);
+        }
+      }
+    }
+
+    return _react2['default'].createElement('a', props);
+  }
+
+});
+
+exports['default'] = Link;
+module.exports = exports['default'];
+},{"react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js","warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\warning\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PatternUtils.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+exports.compilePattern = compilePattern;
+exports.matchPattern = matchPattern;
+exports.getParamNames = getParamNames;
+exports.getParams = getParams;
+exports.formatPattern = formatPattern;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _invariant = require('invariant');
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function escapeSource(string) {
+  return escapeRegExp(string).replace(/\/+/g, '/+');
+}
+
+function _compilePattern(pattern) {
+  var regexpSource = '';
+  var paramNames = [];
+  var tokens = [];
+
+  var match,
+      lastIndex = 0,
+      matcher = /:([a-zA-Z_$][a-zA-Z0-9_$]*)|\*|\(|\)/g;
+  while (match = matcher.exec(pattern)) {
+    if (match.index !== lastIndex) {
+      tokens.push(pattern.slice(lastIndex, match.index));
+      regexpSource += escapeSource(pattern.slice(lastIndex, match.index));
+    }
+
+    if (match[1]) {
+      regexpSource += '([^/?#]+)';
+      paramNames.push(match[1]);
+    } else if (match[0] === '*') {
+      regexpSource += '([\\s\\S]*?)';
+      paramNames.push('splat');
+    } else if (match[0] === '(') {
+      regexpSource += '(?:';
+    } else if (match[0] === ')') {
+      regexpSource += ')?';
+    }
+
+    tokens.push(match[0]);
+
+    lastIndex = matcher.lastIndex;
+  }
+
+  if (lastIndex !== pattern.length) {
+    tokens.push(pattern.slice(lastIndex, pattern.length));
+    regexpSource += escapeSource(pattern.slice(lastIndex, pattern.length));
+  }
+
+  return {
+    pattern: pattern,
+    regexpSource: regexpSource,
+    paramNames: paramNames,
+    tokens: tokens
+  };
+}
+
+var CompiledPatternsCache = {};
+
+function compilePattern(pattern) {
+  if (!(pattern in CompiledPatternsCache)) CompiledPatternsCache[pattern] = _compilePattern(pattern);
+
+  return CompiledPatternsCache[pattern];
+}
+
+/**
+ * Attempts to match a pattern on the given pathname. Patterns may use
+ * the following special characters:
+ *
+ * - :paramName     Matches a URL segment up to the next /, ?, or #. The
+ *                  captured string is considered a "param"
+ * - ()             Wraps a segment of the URL that is optional
+ * - *              Consumes (non-greedy) all characters up to the next
+ *                  character in the pattern, or to the end of the URL if
+ *                  there is none
+ *
+ * The return value is an object with the following properties:
+ *
+ * - remainingPathname
+ * - paramNames
+ * - paramValues
  */
 
-var Link = (function (_React$Component) {
-  function Link() {
-    _classCallCheck(this, Link);
+function matchPattern(pattern, pathname) {
+  var _compilePattern2 = compilePattern(pattern);
 
-    if (_React$Component != null) {
-      _React$Component.apply(this, arguments);
+  var regexpSource = _compilePattern2.regexpSource;
+  var paramNames = _compilePattern2.paramNames;
+  var tokens = _compilePattern2.tokens;
+
+  regexpSource += '/*'; // Ignore trailing slashes
+
+  var captureRemaining = tokens[tokens.length - 1] !== '*';
+
+  if (captureRemaining) regexpSource += '([\\s\\S]*?)';
+
+  var match = pathname.match(new RegExp('^' + regexpSource + '$', 'i'));
+
+  var remainingPathname, paramValues;
+  if (match != null) {
+    paramValues = Array.prototype.slice.call(match, 1).map(function (v) {
+      return v != null ? decodeURIComponent(v.replace(/\+/g, '%20')) : v;
+    });
+
+    if (captureRemaining) {
+      remainingPathname = paramValues.pop();
+    } else {
+      remainingPathname = pathname.replace(match[0], '');
+    }
+  } else {
+    remainingPathname = paramValues = null;
+  }
+
+  return {
+    remainingPathname: remainingPathname,
+    paramNames: paramNames,
+    paramValues: paramValues
+  };
+}
+
+function getParamNames(pattern) {
+  return compilePattern(pattern).paramNames;
+}
+
+function getParams(pattern, pathname) {
+  var _matchPattern = matchPattern(pattern, pathname);
+
+  var paramNames = _matchPattern.paramNames;
+  var paramValues = _matchPattern.paramValues;
+
+  if (paramValues != null) {
+    return paramNames.reduce(function (memo, paramName, index) {
+      memo[paramName] = paramValues[index];
+      return memo;
+    }, {});
+  }
+
+  return null;
+}
+
+/**
+ * Returns a version of the given pattern with params interpolated. Throws
+ * if there is a dynamic segment of the pattern for which there is no param.
+ */
+
+function formatPattern(pattern, params) {
+  params = params || {};
+
+  var _compilePattern3 = compilePattern(pattern);
+
+  var tokens = _compilePattern3.tokens;
+
+  var parenCount = 0,
+      pathname = '',
+      splatIndex = 0;
+
+  var token, paramName, paramValue;
+  for (var i = 0, len = tokens.length; i < len; ++i) {
+    token = tokens[i];
+
+    if (token === '*') {
+      paramValue = Array.isArray(params.splat) ? params.splat[splatIndex++] : params.splat;
+
+      _invariant2['default'](paramValue != null || parenCount > 0, 'Missing splat #%s for path "%s"', splatIndex, pattern);
+
+      if (paramValue != null) pathname += encodeURI(paramValue).replace(/%20/g, '+');
+    } else if (token === '(') {
+      parenCount += 1;
+    } else if (token === ')') {
+      parenCount -= 1;
+    } else if (token.charAt(0) === ':') {
+      paramName = token.substring(1);
+      paramValue = params[paramName];
+
+      _invariant2['default'](paramValue != null || parenCount > 0, 'Missing "%s" parameter for path "%s"', paramName, pattern);
+
+      if (paramValue != null) pathname += encodeURIComponent(paramValue).replace(/%20/g, '+');
+    } else {
+      pathname += token;
     }
   }
 
-  _inherits(Link, _React$Component);
-
-  _createClass(Link, [{
-    key: 'handleClick',
-    value: function handleClick(event) {
-      var allowTransition = true;
-      var clickResult;
-
-      if (this.props.onClick) clickResult = this.props.onClick(event);
-
-      if (isModifiedEvent(event) || !isLeftClickEvent(event)) {
-        return;
-      }if (clickResult === false || event.defaultPrevented === true) allowTransition = false;
-
-      event.preventDefault();
-
-      if (allowTransition) this.context.router.transitionTo(this.props.to, this.props.params, this.props.query);
-    }
-  }, {
-    key: 'getHref',
-
-    /**
-     * Returns the value of the "href" attribute to use on the DOM element.
-     */
-    value: function getHref() {
-      return this.context.router.makeHref(this.props.to, this.props.params, this.props.query);
-    }
-  }, {
-    key: 'getClassName',
-
-    /**
-     * Returns the value of the "class" attribute to use on the DOM element, which contains
-     * the value of the activeClassName property when this <Link> is active.
-     */
-    value: function getClassName() {
-      var className = this.props.className;
-
-      if (this.getActiveState()) className += ' ' + this.props.activeClassName;
-
-      return className;
-    }
-  }, {
-    key: 'getActiveState',
-    value: function getActiveState() {
-      return this.context.router.isActive(this.props.to, this.props.params, this.props.query);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var props = assign({}, this.props, {
-        href: this.getHref(),
-        className: this.getClassName(),
-        onClick: this.handleClick.bind(this)
-      });
-
-      if (props.activeStyle && this.getActiveState()) props.style = props.activeStyle;
-
-      return React.DOM.a(props, this.props.children);
-    }
-  }]);
-
-  return Link;
-})(React.Component);
-
-// TODO: Include these in the above class definition
-// once we can use ES7 property initializers.
-// https://github.com/babel/babel/issues/619
-
-Link.contextTypes = {
-  router: PropTypes.router.isRequired
-};
-
-Link.propTypes = {
-  activeClassName: PropTypes.string.isRequired,
-  to: PropTypes.oneOfType([PropTypes.string, PropTypes.route]).isRequired,
-  params: PropTypes.object,
-  query: PropTypes.object,
-  activeStyle: PropTypes.object,
-  onClick: PropTypes.func
-};
-
-Link.defaultProps = {
-  activeClassName: 'active',
-  className: ''
-};
-
-module.exports = Link;
-},{"../PropTypes":58,"react":246,"react/lib/Object.assign":117}],70:[function(require,module,exports){
+  return pathname.replace(/\/+/g, '/');
+}
+},{"invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\invariant\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PropTypes.js":[function(require,module,exports){
 'use strict';
 
-var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
+exports.__esModule = true;
+exports.falsy = falsy;
 
-var _inherits = function (subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; };
+var _react = require('react');
 
-var PropTypes = require('../PropTypes');
-var RouteHandler = require('./RouteHandler');
-var Route = require('./Route');
+var func = _react.PropTypes.func;
+var object = _react.PropTypes.object;
+var arrayOf = _react.PropTypes.arrayOf;
+var oneOfType = _react.PropTypes.oneOfType;
+var element = _react.PropTypes.element;
+var shape = _react.PropTypes.shape;
+var string = _react.PropTypes.string;
+
+function falsy(props, propName, componentName) {
+  if (props[propName]) return new Error('<' + componentName + '> should not have a "' + propName + '" prop');
+}
+
+var history = shape({
+  listen: func.isRequired,
+  pushState: func.isRequired,
+  replaceState: func.isRequired,
+  go: func.isRequired
+});
+
+exports.history = history;
+var location = shape({
+  pathname: string.isRequired,
+  search: string.isRequired,
+  state: object,
+  action: string.isRequired,
+  key: string
+});
+
+exports.location = location;
+var component = oneOfType([func, string]);
+exports.component = component;
+var components = oneOfType([component, object]);
+exports.components = components;
+var route = oneOfType([object, element]);
+exports.route = route;
+var routes = oneOfType([route, arrayOf(route)]);
+
+exports.routes = routes;
+exports['default'] = {
+  falsy: falsy,
+  history: history,
+  location: location,
+  component: component,
+  components: components,
+  route: route
+};
+},{"react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\Redirect.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _invariant = require('invariant');
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _RouteUtils = require('./RouteUtils');
+
+var _PatternUtils = require('./PatternUtils');
+
+var _PropTypes = require('./PropTypes');
+
+var _React$PropTypes = _react2['default'].PropTypes;
+var string = _React$PropTypes.string;
+var object = _React$PropTypes.object;
 
 /**
- * A <NotFoundRoute> is a special kind of <Route> that
- * renders when the beginning of its parent's path matches
- * but none of its siblings do, including any <DefaultRoute>.
- * Only one such route may be used at any given level in the
- * route hierarchy.
+ * A <Redirect> is used to declare another URL path a client should be sent
+ * to when they request a given URL.
+ *
+ * Redirects are placed alongside routes in the route configuration and are
+ * traversed in the same manner.
  */
+var Redirect = _react2['default'].createClass({
+  displayName: 'Redirect',
 
-var NotFoundRoute = (function (_Route) {
-  function NotFoundRoute() {
-    _classCallCheck(this, NotFoundRoute);
+  statics: {
 
-    if (_Route != null) {
-      _Route.apply(this, arguments);
+    createRouteFromReactElement: function createRouteFromReactElement(element) {
+      var route = _RouteUtils.createRouteFromReactElement(element);
+
+      if (route.from) route.path = route.from;
+
+      // TODO: Handle relative pathnames, see #1658
+      _invariant2['default'](route.to.charAt(0) === '/', '<Redirect to> must be an absolute path. This should be fixed in the future');
+
+      route.onEnter = function (nextState, replaceState) {
+        var location = nextState.location;
+        var params = nextState.params;
+
+        var pathname = route.to ? _PatternUtils.formatPattern(route.to, params) : location.pathname;
+
+        replaceState(route.state || location.state, pathname, route.query || location.query);
+      };
+
+      return route;
     }
+
+  },
+
+  propTypes: {
+    path: string,
+    from: string, // Alias for path
+    to: string.isRequired,
+    query: object,
+    state: object,
+    onEnter: _PropTypes.falsy,
+    children: _PropTypes.falsy
+  },
+
+  render: function render() {
+    _invariant2['default'](false, '<Redirect> elements are for router configuration only and should not be rendered');
   }
 
-  _inherits(NotFoundRoute, _Route);
+});
 
-  return NotFoundRoute;
-})(Route);
-
-// TODO: Include these in the above class definition
-// once we can use ES7 property initializers.
-// https://github.com/babel/babel/issues/619
-
-NotFoundRoute.propTypes = {
-  name: PropTypes.string,
-  path: PropTypes.falsy,
-  children: PropTypes.falsy,
-  handler: PropTypes.func.isRequired
-};
-
-NotFoundRoute.defaultProps = {
-  handler: RouteHandler
-};
-
-module.exports = NotFoundRoute;
-},{"../PropTypes":58,"./Route":72,"./RouteHandler":73}],71:[function(require,module,exports){
+exports['default'] = Redirect;
+module.exports = exports['default'];
+},{"./PatternUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PatternUtils.js","./PropTypes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PropTypes.js","./RouteUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RouteUtils.js","invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\invariant\\browser.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\Route.js":[function(require,module,exports){
 'use strict';
 
-var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
+exports.__esModule = true;
 
-var _inherits = function (subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; };
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var PropTypes = require('../PropTypes');
-var Route = require('./Route');
+var _react = require('react');
 
-/**
- * A <Redirect> component is a special kind of <Route> that always
- * redirects to another route when it matches.
- */
+var _react2 = _interopRequireDefault(_react);
 
-var Redirect = (function (_Route) {
-  function Redirect() {
-    _classCallCheck(this, Redirect);
+var _warning = require('warning');
 
-    if (_Route != null) {
-      _Route.apply(this, arguments);
-    }
-  }
+var _warning2 = _interopRequireDefault(_warning);
 
-  _inherits(Redirect, _Route);
+var _invariant = require('invariant');
 
-  return Redirect;
-})(Route);
+var _invariant2 = _interopRequireDefault(_invariant);
 
-// TODO: Include these in the above class definition
-// once we can use ES7 property initializers.
-// https://github.com/babel/babel/issues/619
+var _RouteUtils = require('./RouteUtils');
 
-Redirect.propTypes = {
-  path: PropTypes.string,
-  from: PropTypes.string, // Alias for path.
-  to: PropTypes.string,
-  handler: PropTypes.falsy
-};
+var _PropTypes = require('./PropTypes');
 
-// Redirects should not have a default handler
-Redirect.defaultProps = {};
-
-module.exports = Redirect;
-},{"../PropTypes":58,"./Route":72}],72:[function(require,module,exports){
-'use strict';
-
-var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
-
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _inherits = function (subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; };
-
-var React = require('react');
-var invariant = require('react/lib/invariant');
-var PropTypes = require('../PropTypes');
-var RouteHandler = require('./RouteHandler');
+var _React$PropTypes = _react2['default'].PropTypes;
+var string = _React$PropTypes.string;
+var bool = _React$PropTypes.bool;
+var func = _React$PropTypes.func;
 
 /**
- * <Route> components specify components that are rendered to the page when the
- * URL matches a given pattern.
+ * A <Route> is used to declare which components are rendered to the page when
+ * the URL matches a given pattern.
  *
  * Routes are arranged in a nested tree structure. When a new URL is requested,
  * the tree is searched depth-first to find a route whose path matches the URL.
  * When one is found, all routes in the tree that lead to it are considered
  * "active" and their components are rendered into the DOM, nested in the same
  * order as they are in the tree.
- *
- * The preferred way to configure a router is using JSX. The XML-like syntax is
- * a great way to visualize how routes are laid out in an application.
- *
- *   var routes = [
- *     <Route handler={App}>
- *       <Route name="login" handler={Login}/>
- *       <Route name="logout" handler={Logout}/>
- *       <Route name="about" handler={About}/>
- *     </Route>
- *   ];
- *   
- *   Router.run(routes, function (Handler) {
- *     React.render(<Handler/>, document.body);
- *   });
- *
- * Handlers for Route components that contain children can render their active
- * child route using a <RouteHandler> element.
- *
- *   var App = React.createClass({
- *     render: function () {
- *       return (
- *         <div class="application">
- *           <RouteHandler/>
- *         </div>
- *       );
- *     }
- *   });
- *
- * If no handler is provided for the route, it will render a matched child route.
  */
+var Route = _react2['default'].createClass({
+  displayName: 'Route',
 
-var Route = (function (_React$Component) {
-  function Route() {
-    _classCallCheck(this, Route);
+  statics: {
 
-    if (_React$Component != null) {
-      _React$Component.apply(this, arguments);
-    }
-  }
+    createRouteFromReactElement: function createRouteFromReactElement(element) {
+      var route = _RouteUtils.createRouteFromReactElement(element);
 
-  _inherits(Route, _React$Component);
+      if (route.handler) {
+        _warning2['default'](false, '<Route handler> is deprecated, use <Route component> instead');
 
-  _createClass(Route, [{
-    key: 'render',
-    value: function render() {
-      invariant(false, '%s elements are for router configuration only and should not be rendered', this.constructor.name);
-    }
-  }]);
-
-  return Route;
-})(React.Component);
-
-// TODO: Include these in the above class definition
-// once we can use ES7 property initializers.
-// https://github.com/babel/babel/issues/619
-
-Route.propTypes = {
-  name: PropTypes.string,
-  path: PropTypes.string,
-  handler: PropTypes.func,
-  ignoreScrollBehavior: PropTypes.bool
-};
-
-Route.defaultProps = {
-  handler: RouteHandler
-};
-
-module.exports = Route;
-},{"../PropTypes":58,"./RouteHandler":73,"react":246,"react/lib/invariant":226}],73:[function(require,module,exports){
-'use strict';
-
-var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
-
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _inherits = function (subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; };
-
-var React = require('react');
-var ContextWrapper = require('./ContextWrapper');
-var assign = require('react/lib/Object.assign');
-var PropTypes = require('../PropTypes');
-
-var REF_NAME = '__routeHandler__';
-
-/**
- * A <RouteHandler> component renders the active child route handler
- * when routes are nested.
- */
-
-var RouteHandler = (function (_React$Component) {
-  function RouteHandler() {
-    _classCallCheck(this, RouteHandler);
-
-    if (_React$Component != null) {
-      _React$Component.apply(this, arguments);
-    }
-  }
-
-  _inherits(RouteHandler, _React$Component);
-
-  _createClass(RouteHandler, [{
-    key: 'getChildContext',
-    value: function getChildContext() {
-      return {
-        routeDepth: this.context.routeDepth + 1
-      };
-    }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this._updateRouteComponent(this.refs[REF_NAME]);
-    }
-  }, {
-    key: 'componentDidUpdate',
-    value: function componentDidUpdate() {
-      this._updateRouteComponent(this.refs[REF_NAME]);
-    }
-  }, {
-    key: 'componentWillUnmount',
-    value: function componentWillUnmount() {
-      this._updateRouteComponent(null);
-    }
-  }, {
-    key: '_updateRouteComponent',
-    value: function _updateRouteComponent(component) {
-      this.context.router.setRouteComponentAtDepth(this.getRouteDepth(), component);
-    }
-  }, {
-    key: 'getRouteDepth',
-    value: function getRouteDepth() {
-      return this.context.routeDepth;
-    }
-  }, {
-    key: 'createChildRouteHandler',
-    value: function createChildRouteHandler(props) {
-      var route = this.context.router.getRouteAtDepth(this.getRouteDepth());
-
-      if (route == null) {
-        return null;
-      }var childProps = assign({}, props || this.props, {
-        ref: REF_NAME,
-        params: this.context.router.getCurrentParams(),
-        query: this.context.router.getCurrentQuery()
-      });
-
-      return React.createElement(route.handler, childProps);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var handler = this.createChildRouteHandler();
-      // <script/> for things like <CSSTransitionGroup/> that don't like null
-      return handler ? React.createElement(
-        ContextWrapper,
-        null,
-        handler
-      ) : React.createElement('script', null);
-    }
-  }]);
-
-  return RouteHandler;
-})(React.Component);
-
-// TODO: Include these in the above class definition
-// once we can use ES7 property initializers.
-// https://github.com/babel/babel/issues/619
-
-RouteHandler.contextTypes = {
-  routeDepth: PropTypes.number.isRequired,
-  router: PropTypes.router.isRequired
-};
-
-RouteHandler.childContextTypes = {
-  routeDepth: PropTypes.number.isRequired
-};
-
-module.exports = RouteHandler;
-},{"../PropTypes":58,"./ContextWrapper":67,"react":246,"react/lib/Object.assign":117}],74:[function(require,module,exports){
-(function (process){
-/* jshint -W058 */
-'use strict';
-
-var React = require('react');
-var warning = require('react/lib/warning');
-var invariant = require('react/lib/invariant');
-var canUseDOM = require('react/lib/ExecutionEnvironment').canUseDOM;
-var LocationActions = require('./actions/LocationActions');
-var ImitateBrowserBehavior = require('./behaviors/ImitateBrowserBehavior');
-var HashLocation = require('./locations/HashLocation');
-var HistoryLocation = require('./locations/HistoryLocation');
-var RefreshLocation = require('./locations/RefreshLocation');
-var StaticLocation = require('./locations/StaticLocation');
-var ScrollHistory = require('./ScrollHistory');
-var createRoutesFromReactChildren = require('./createRoutesFromReactChildren');
-var isReactChildren = require('./isReactChildren');
-var Transition = require('./Transition');
-var PropTypes = require('./PropTypes');
-var Redirect = require('./Redirect');
-var History = require('./History');
-var Cancellation = require('./Cancellation');
-var Match = require('./Match');
-var Route = require('./Route');
-var supportsHistory = require('./supportsHistory');
-var PathUtils = require('./PathUtils');
-
-/**
- * The default location for new routers.
- */
-var DEFAULT_LOCATION = canUseDOM ? HashLocation : '/';
-
-/**
- * The default scroll behavior for new routers.
- */
-var DEFAULT_SCROLL_BEHAVIOR = canUseDOM ? ImitateBrowserBehavior : null;
-
-function hasProperties(object, properties) {
-  for (var propertyName in properties) if (properties.hasOwnProperty(propertyName) && object[propertyName] !== properties[propertyName]) {
-    return false;
-  }return true;
-}
-
-function hasMatch(routes, route, prevParams, nextParams, prevQuery, nextQuery) {
-  return routes.some(function (r) {
-    if (r !== route) return false;
-
-    var paramNames = route.paramNames;
-    var paramName;
-
-    // Ensure that all params the route cares about did not change.
-    for (var i = 0, len = paramNames.length; i < len; ++i) {
-      paramName = paramNames[i];
-
-      if (nextParams[paramName] !== prevParams[paramName]) return false;
-    }
-
-    // Ensure the query hasn't changed.
-    return hasProperties(prevQuery, nextQuery) && hasProperties(nextQuery, prevQuery);
-  });
-}
-
-function addRoutesToNamedRoutes(routes, namedRoutes) {
-  var route;
-  for (var i = 0, len = routes.length; i < len; ++i) {
-    route = routes[i];
-
-    if (route.name) {
-      invariant(namedRoutes[route.name] == null, 'You may not have more than one route named "%s"', route.name);
-
-      namedRoutes[route.name] = route;
-    }
-
-    if (route.childRoutes) addRoutesToNamedRoutes(route.childRoutes, namedRoutes);
-  }
-}
-
-function routeIsActive(activeRoutes, routeName) {
-  return activeRoutes.some(function (route) {
-    return route.name === routeName;
-  });
-}
-
-function paramsAreActive(activeParams, params) {
-  for (var property in params) if (String(activeParams[property]) !== String(params[property])) {
-    return false;
-  }return true;
-}
-
-function queryIsActive(activeQuery, query) {
-  for (var property in query) if (String(activeQuery[property]) !== String(query[property])) {
-    return false;
-  }return true;
-}
-
-/**
- * Creates and returns a new router using the given options. A router
- * is a ReactComponent class that knows how to react to changes in the
- * URL and keep the contents of the page in sync.
- *
- * Options may be any of the following:
- *
- * - routes           (required) The route config
- * - location         The location to use. Defaults to HashLocation when
- *                    the DOM is available, "/" otherwise
- * - scrollBehavior   The scroll behavior to use. Defaults to ImitateBrowserBehavior
- *                    when the DOM is available, null otherwise
- * - onError          A function that is used to handle errors
- * - onAbort          A function that is used to handle aborted transitions
- *
- * When rendering in a server-side environment, the location should simply
- * be the URL path that was used in the request, including the query string.
- */
-function createRouter(options) {
-  options = options || {};
-
-  if (isReactChildren(options)) options = { routes: options };
-
-  var mountedComponents = [];
-  var location = options.location || DEFAULT_LOCATION;
-  var scrollBehavior = options.scrollBehavior || DEFAULT_SCROLL_BEHAVIOR;
-  var state = {};
-  var nextState = {};
-  var pendingTransition = null;
-  var dispatchHandler = null;
-
-  if (typeof location === 'string') location = new StaticLocation(location);
-
-  if (location instanceof StaticLocation) {
-    warning(!canUseDOM || process.env.NODE_ENV === 'test', 'You should not use a static location in a DOM environment because ' + 'the router will not be kept in sync with the current URL');
-  } else {
-    invariant(canUseDOM || location.needsDOM === false, 'You cannot use %s without a DOM', location);
-  }
-
-  // Automatically fall back to full page refreshes in
-  // browsers that don't support the HTML history API.
-  if (location === HistoryLocation && !supportsHistory()) location = RefreshLocation;
-
-  var Router = React.createClass({
-
-    displayName: 'Router',
-
-    statics: {
-
-      isRunning: false,
-
-      cancelPendingTransition: function cancelPendingTransition() {
-        if (pendingTransition) {
-          pendingTransition.cancel();
-          pendingTransition = null;
-        }
-      },
-
-      clearAllRoutes: function clearAllRoutes() {
-        Router.cancelPendingTransition();
-        Router.namedRoutes = {};
-        Router.routes = [];
-      },
-
-      /**
-       * Adds routes to this router from the given children object (see ReactChildren).
-       */
-      addRoutes: function addRoutes(routes) {
-        if (isReactChildren(routes)) routes = createRoutesFromReactChildren(routes);
-
-        addRoutesToNamedRoutes(routes, Router.namedRoutes);
-
-        Router.routes.push.apply(Router.routes, routes);
-      },
-
-      /**
-       * Replaces routes of this router from the given children object (see ReactChildren).
-       */
-      replaceRoutes: function replaceRoutes(routes) {
-        Router.clearAllRoutes();
-        Router.addRoutes(routes);
-        Router.refresh();
-      },
-
-      /**
-       * Performs a match of the given path against this router and returns an object
-       * with the { routes, params, pathname, query } that match. Returns null if no
-       * match can be made.
-       */
-      match: function match(path) {
-        return Match.findMatch(Router.routes, path);
-      },
-
-      /**
-       * Returns an absolute URL path created from the given route
-       * name, URL parameters, and query.
-       */
-      makePath: function makePath(to, params, query) {
-        var path;
-        if (PathUtils.isAbsolute(to)) {
-          path = to;
-        } else {
-          var route = to instanceof Route ? to : Router.namedRoutes[to];
-
-          invariant(route instanceof Route, 'Cannot find a route named "%s"', to);
-
-          path = route.path;
-        }
-
-        return PathUtils.withQuery(PathUtils.injectParams(path, params), query);
-      },
-
-      /**
-       * Returns a string that may safely be used as the href of a link
-       * to the route with the given name, URL parameters, and query.
-       */
-      makeHref: function makeHref(to, params, query) {
-        var path = Router.makePath(to, params, query);
-        return location === HashLocation ? '#' + path : path;
-      },
-
-      /**
-       * Transitions to the URL specified in the arguments by pushing
-       * a new URL onto the history stack.
-       */
-      transitionTo: function transitionTo(to, params, query) {
-        var path = Router.makePath(to, params, query);
-
-        if (pendingTransition) {
-          // Replace so pending location does not stay in history.
-          location.replace(path);
-        } else {
-          location.push(path);
-        }
-      },
-
-      /**
-       * Transitions to the URL specified in the arguments by replacing
-       * the current URL in the history stack.
-       */
-      replaceWith: function replaceWith(to, params, query) {
-        location.replace(Router.makePath(to, params, query));
-      },
-
-      /**
-       * Transitions to the previous URL if one is available. Returns true if the
-       * router was able to go back, false otherwise.
-       *
-       * Note: The router only tracks history entries in your application, not the
-       * current browser session, so you can safely call this function without guarding
-       * against sending the user back to some other site. However, when using
-       * RefreshLocation (which is the fallback for HistoryLocation in browsers that
-       * don't support HTML5 history) this method will *always* send the client back
-       * because we cannot reliably track history length.
-       */
-      goBack: function goBack() {
-        if (History.length > 1 || location === RefreshLocation) {
-          location.pop();
-          return true;
-        }
-
-        warning(false, 'goBack() was ignored because there is no router history');
-
-        return false;
-      },
-
-      handleAbort: options.onAbort || function (abortReason) {
-        if (location instanceof StaticLocation) throw new Error('Unhandled aborted transition! Reason: ' + abortReason);
-
-        if (abortReason instanceof Cancellation) {
-          return;
-        } else if (abortReason instanceof Redirect) {
-          location.replace(Router.makePath(abortReason.to, abortReason.params, abortReason.query));
-        } else {
-          location.pop();
-        }
-      },
-
-      handleError: options.onError || function (error) {
-        // Throw so we don't silently swallow async errors.
-        throw error; // This error probably originated in a transition hook.
-      },
-
-      handleLocationChange: function handleLocationChange(change) {
-        Router.dispatch(change.path, change.type);
-      },
-
-      /**
-       * Performs a transition to the given path and calls callback(error, abortReason)
-       * when the transition is finished. If both arguments are null the router's state
-       * was updated. Otherwise the transition did not complete.
-       *
-       * In a transition, a router first determines which routes are involved by beginning
-       * with the current route, up the route tree to the first parent route that is shared
-       * with the destination route, and back down the tree to the destination route. The
-       * willTransitionFrom hook is invoked on all route handlers we're transitioning away
-       * from, in reverse nesting order. Likewise, the willTransitionTo hook is invoked on
-       * all route handlers we're transitioning to.
-       *
-       * Both willTransitionFrom and willTransitionTo hooks may either abort or redirect the
-       * transition. To resolve asynchronously, they may use the callback argument. If no
-       * hooks wait, the transition is fully synchronous.
-       */
-      dispatch: function dispatch(path, action) {
-        Router.cancelPendingTransition();
-
-        var prevPath = state.path;
-        var isRefreshing = action == null;
-
-        if (prevPath === path && !isRefreshing) {
-          return;
-        } // Nothing to do!
-
-        // Record the scroll position as early as possible to
-        // get it before browsers try update it automatically.
-        if (prevPath && action === LocationActions.PUSH) Router.recordScrollPosition(prevPath);
-
-        var match = Router.match(path);
-
-        warning(match != null, 'No route matches path "%s". Make sure you have <Route path="%s"> somewhere in your routes', path, path);
-
-        if (match == null) match = {};
-
-        var prevRoutes = state.routes || [];
-        var prevParams = state.params || {};
-        var prevQuery = state.query || {};
-
-        var nextRoutes = match.routes || [];
-        var nextParams = match.params || {};
-        var nextQuery = match.query || {};
-
-        var fromRoutes, toRoutes;
-        if (prevRoutes.length) {
-          fromRoutes = prevRoutes.filter(function (route) {
-            return !hasMatch(nextRoutes, route, prevParams, nextParams, prevQuery, nextQuery);
-          });
-
-          toRoutes = nextRoutes.filter(function (route) {
-            return !hasMatch(prevRoutes, route, prevParams, nextParams, prevQuery, nextQuery);
-          });
-        } else {
-          fromRoutes = [];
-          toRoutes = nextRoutes;
-        }
-
-        var transition = new Transition(path, Router.replaceWith.bind(Router, path));
-        pendingTransition = transition;
-
-        var fromComponents = mountedComponents.slice(prevRoutes.length - fromRoutes.length);
-
-        Transition.from(transition, fromRoutes, fromComponents, function (error) {
-          if (error || transition.abortReason) return dispatchHandler.call(Router, error, transition); // No need to continue.
-
-          Transition.to(transition, toRoutes, nextParams, nextQuery, function (error) {
-            dispatchHandler.call(Router, error, transition, {
-              path: path,
-              action: action,
-              pathname: match.pathname,
-              routes: nextRoutes,
-              params: nextParams,
-              query: nextQuery
-            });
-          });
-        });
-      },
-
-      /**
-       * Starts this router and calls callback(router, state) when the route changes.
-       *
-       * If the router's location is static (i.e. a URL path in a server environment)
-       * the callback is called only once. Otherwise, the location should be one of the
-       * Router.*Location objects (e.g. Router.HashLocation or Router.HistoryLocation).
-       */
-      run: function run(callback) {
-        invariant(!Router.isRunning, 'Router is already running');
-
-        dispatchHandler = function (error, transition, newState) {
-          if (error) Router.handleError(error);
-
-          if (pendingTransition !== transition) return;
-
-          pendingTransition = null;
-
-          if (transition.abortReason) {
-            Router.handleAbort(transition.abortReason);
-          } else {
-            callback.call(Router, Router, nextState = newState);
-          }
-        };
-
-        if (!(location instanceof StaticLocation)) {
-          if (location.addChangeListener) location.addChangeListener(Router.handleLocationChange);
-
-          Router.isRunning = true;
-        }
-
-        // Bootstrap using the current path.
-        Router.refresh();
-      },
-
-      refresh: function refresh() {
-        Router.dispatch(location.getCurrentPath(), null);
-      },
-
-      stop: function stop() {
-        Router.cancelPendingTransition();
-
-        if (location.removeChangeListener) location.removeChangeListener(Router.handleLocationChange);
-
-        Router.isRunning = false;
-      },
-
-      getLocation: function getLocation() {
-        return location;
-      },
-
-      getScrollBehavior: function getScrollBehavior() {
-        return scrollBehavior;
-      },
-
-      getRouteAtDepth: function getRouteAtDepth(routeDepth) {
-        var routes = state.routes;
-        return routes && routes[routeDepth];
-      },
-
-      setRouteComponentAtDepth: function setRouteComponentAtDepth(routeDepth, component) {
-        mountedComponents[routeDepth] = component;
-      },
-
-      /**
-       * Returns the current URL path + query string.
-       */
-      getCurrentPath: function getCurrentPath() {
-        return state.path;
-      },
-
-      /**
-       * Returns the current URL path without the query string.
-       */
-      getCurrentPathname: function getCurrentPathname() {
-        return state.pathname;
-      },
-
-      /**
-       * Returns an object of the currently active URL parameters.
-       */
-      getCurrentParams: function getCurrentParams() {
-        return state.params;
-      },
-
-      /**
-       * Returns an object of the currently active query parameters.
-       */
-      getCurrentQuery: function getCurrentQuery() {
-        return state.query;
-      },
-
-      /**
-       * Returns an array of the currently active routes.
-       */
-      getCurrentRoutes: function getCurrentRoutes() {
-        return state.routes;
-      },
-
-      /**
-       * Returns true if the given route, params, and query are active.
-       */
-      isActive: function isActive(to, params, query) {
-        if (PathUtils.isAbsolute(to)) {
-          return to === state.path;
-        }return routeIsActive(state.routes, to) && paramsAreActive(state.params, params) && (query == null || queryIsActive(state.query, query));
+        route.component = route.handler;
+        delete route.handler;
       }
 
-    },
-
-    mixins: [ScrollHistory],
-
-    propTypes: {
-      children: PropTypes.falsy
-    },
-
-    childContextTypes: {
-      routeDepth: PropTypes.number.isRequired,
-      router: PropTypes.router.isRequired
-    },
-
-    getChildContext: function getChildContext() {
-      return {
-        routeDepth: 1,
-        router: Router
-      };
-    },
-
-    getInitialState: function getInitialState() {
-      return state = nextState;
-    },
-
-    componentWillReceiveProps: function componentWillReceiveProps() {
-      this.setState(state = nextState);
-    },
-
-    componentWillUnmount: function componentWillUnmount() {
-      Router.stop();
-    },
-
-    render: function render() {
-      var route = Router.getRouteAtDepth(0);
-      return route ? React.createElement(route.handler, this.props) : null;
+      return route;
     }
 
-  });
+  },
 
-  Router.clearAllRoutes();
+  propTypes: {
+    path: string,
+    ignoreScrollBehavior: bool,
+    handler: // deprecated
+    _PropTypes.component, component: _PropTypes.component,
+    components: _PropTypes.components,
+    getComponents: func
+  },
 
-  if (options.routes) Router.addRoutes(options.routes);
+  render: function render() {
+    _invariant2['default'](false, '<Route> elements are for router configuration only and should not be rendered');
+  }
 
-  return Router;
-}
+});
 
-module.exports = createRouter;
-}).call(this,require('_process'))
-},{"./Cancellation":53,"./History":54,"./Match":55,"./PathUtils":57,"./PropTypes":58,"./Redirect":59,"./Route":60,"./ScrollHistory":61,"./Transition":63,"./actions/LocationActions":64,"./behaviors/ImitateBrowserBehavior":65,"./createRoutesFromReactChildren":75,"./isReactChildren":78,"./locations/HashLocation":79,"./locations/HistoryLocation":80,"./locations/RefreshLocation":81,"./locations/StaticLocation":82,"./supportsHistory":85,"_process":50,"react":246,"react/lib/ExecutionEnvironment":111,"react/lib/invariant":226,"react/lib/warning":245}],75:[function(require,module,exports){
-/* jshint -W084 */
+exports['default'] = Route;
+module.exports = exports['default'];
+},{"./PropTypes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PropTypes.js","./RouteUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RouteUtils.js","invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\invariant\\browser.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js","warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\warning\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RouteContext.js":[function(require,module,exports){
 'use strict';
 
-var React = require('react');
-var assign = require('react/lib/Object.assign');
-var warning = require('react/lib/warning');
-var DefaultRoute = require('./components/DefaultRoute');
-var NotFoundRoute = require('./components/NotFoundRoute');
-var Redirect = require('./components/Redirect');
-var Route = require('./Route');
+exports.__esModule = true;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var object = _react2['default'].PropTypes.object;
+
+/**
+ * The RouteContext mixin provides a convenient way for route
+ * components to set the route in context. This is needed for
+ * routes that render elements that want to use the Lifecycle
+ * mixin to prevent transitions.
+ */
+var RouteContext = {
+
+  propTypes: {
+    route: object.isRequired
+  },
+
+  childContextTypes: {
+    route: object.isRequired
+  },
+
+  getChildContext: function getChildContext() {
+    return {
+      route: this.props.route
+    };
+  }
+
+};
+
+exports['default'] = RouteContext;
+module.exports = exports['default'];
+},{"react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RouteUtils.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.isReactChildren = isReactChildren;
+exports.createRouteFromReactElement = createRouteFromReactElement;
+exports.createRoutesFromReactChildren = createRoutesFromReactChildren;
+exports.createRoutes = createRoutes;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+function isValidChild(object) {
+  return object == null || _react2['default'].isValidElement(object);
+}
+
+function isReactChildren(object) {
+  return isValidChild(object) || Array.isArray(object) && object.every(isValidChild);
+}
 
 function checkPropTypes(componentName, propTypes, props) {
   componentName = componentName || 'UnknownComponent';
@@ -17945,570 +16802,1284 @@ function checkPropTypes(componentName, propTypes, props) {
     if (propTypes.hasOwnProperty(propName)) {
       var error = propTypes[propName](props, propName, componentName);
 
-      if (error instanceof Error) warning(false, error.message);
+      if (error instanceof Error) _warning2['default'](false, error.message);
     }
   }
 }
 
-function createRouteOptions(props) {
-  var options = assign({}, props);
-  var handler = options.handler;
-
-  if (handler) {
-    options.onEnter = handler.willTransitionTo;
-    options.onLeave = handler.willTransitionFrom;
-  }
-
-  return options;
+function createRoute(defaultProps, props) {
+  return _extends({}, defaultProps, props);
 }
 
 function createRouteFromReactElement(element) {
-  if (!React.isValidElement(element)) {
-    return;
-  }var type = element.type;
-  var props = assign({}, type.defaultProps, element.props);
+  var type = element.type;
+  var route = createRoute(type.defaultProps, element.props);
 
-  if (type.propTypes) checkPropTypes(type.displayName, type.propTypes, props);
+  if (type.propTypes) checkPropTypes(type.displayName || type.name, type.propTypes, route);
 
-  if (type === DefaultRoute) {
-    return Route.createDefaultRoute(createRouteOptions(props));
-  }if (type === NotFoundRoute) {
-    return Route.createNotFoundRoute(createRouteOptions(props));
-  }if (type === Redirect) {
-    return Route.createRedirect(createRouteOptions(props));
-  }return Route.createRoute(createRouteOptions(props), function () {
-    if (props.children) createRoutesFromReactChildren(props.children);
-  });
+  if (route.children) {
+    var childRoutes = createRoutesFromReactChildren(route.children, route);
+
+    if (childRoutes.length) route.childRoutes = childRoutes;
+
+    delete route.children;
+  }
+
+  return route;
 }
 
 /**
- * Creates and returns an array of routes created from the given
- * ReactChildren, all of which should be one of <Route>, <DefaultRoute>,
- * <NotFoundRoute>, or <Redirect>, e.g.:
+ * Creates and returns a routes object from the given ReactChildren. JSX
+ * provides a convenient way to visualize how routes in the hierarchy are
+ * nested.
  *
- *   var { createRoutesFromReactChildren, Route, Redirect } = require('react-router');
- *
+ *   import { Route, createRoutesFromReactChildren } from 'react-router';
+ *   
  *   var routes = createRoutesFromReactChildren(
- *     <Route path="/" handler={App}>
- *       <Route name="user" path="/user/:userId" handler={User}>
- *         <Route name="task" path="tasks/:taskId" handler={Task}/>
- *         <Redirect from="todos/:taskId" to="task"/>
- *       </Route>
+ *     <Route component={App}>
+ *       <Route path="home" component={Dashboard}/>
+ *       <Route path="news" component={NewsFeed}/>
  *     </Route>
  *   );
+ *
+ * Note: This method is automatically used when you provide <Route> children
+ * to a <Router> component.
  */
-function createRoutesFromReactChildren(children) {
+
+function createRoutesFromReactChildren(children, parentRoute) {
   var routes = [];
 
-  React.Children.forEach(children, function (child) {
-    if (child = createRouteFromReactElement(child)) routes.push(child);
+  _react2['default'].Children.forEach(children, function (element) {
+    if (_react2['default'].isValidElement(element)) {
+      // Component classes may have a static create* method.
+      if (element.type.createRouteFromReactElement) {
+        var route = element.type.createRouteFromReactElement(element, parentRoute);
+
+        if (route) routes.push(route);
+      } else {
+        routes.push(createRouteFromReactElement(element));
+      }
+    }
   });
 
   return routes;
 }
 
-module.exports = createRoutesFromReactChildren;
-},{"./Route":60,"./components/DefaultRoute":68,"./components/NotFoundRoute":70,"./components/Redirect":71,"react":246,"react/lib/Object.assign":117,"react/lib/warning":245}],76:[function(require,module,exports){
+/**
+ * Creates and returns an array of routes from the given object which
+ * may be a JSX route, a plain object route, or an array of either.
+ */
+
+function createRoutes(routes) {
+  if (isReactChildren(routes)) {
+    routes = createRoutesFromReactChildren(routes);
+  } else if (!Array.isArray(routes)) {
+    routes = [routes];
+  }
+
+  return routes;
+}
+},{"react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js","warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\warning\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\Router.js":[function(require,module,exports){
 'use strict';
 
-var invariant = require('react/lib/invariant');
-var canUseDOM = require('react/lib/ExecutionEnvironment').canUseDOM;
+exports.__esModule = true;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _historyLibCreateHashHistory = require('history/lib/createHashHistory');
+
+var _historyLibCreateHashHistory2 = _interopRequireDefault(_historyLibCreateHashHistory);
+
+var _RouteUtils = require('./RouteUtils');
+
+var _RoutingContext = require('./RoutingContext');
+
+var _RoutingContext2 = _interopRequireDefault(_RoutingContext);
+
+var _useRoutes = require('./useRoutes');
+
+var _useRoutes2 = _interopRequireDefault(_useRoutes);
+
+var _PropTypes = require('./PropTypes');
+
+var _React$PropTypes = _react2['default'].PropTypes;
+var func = _React$PropTypes.func;
+var object = _React$PropTypes.object;
 
 /**
- * Returns the current scroll position of the window as { x, y }.
+ * A <Router> is a high-level API for automatically setting up
+ * a router that renders a <RoutingContext> with all the props
+ * it needs each time the URL changes.
  */
-function getWindowScrollPosition() {
-  invariant(canUseDOM, 'Cannot get current scroll position without a DOM');
+var Router = _react2['default'].createClass({
+  displayName: 'Router',
 
-  return {
-    x: window.pageXOffset || document.documentElement.scrollLeft,
-    y: window.pageYOffset || document.documentElement.scrollTop
+  propTypes: {
+    history: object,
+    children: _PropTypes.routes,
+    routes: _PropTypes.routes, // alias for children
+    createElement: func,
+    onError: func,
+    onUpdate: func,
+    parseQueryString: func,
+    stringifyQuery: func
+  },
+
+  getInitialState: function getInitialState() {
+    return {
+      location: null,
+      routes: null,
+      params: null,
+      components: null
+    };
+  },
+
+  handleError: function handleError(error) {
+    if (this.props.onError) {
+      this.props.onError.call(this, error);
+    } else {
+      // Throw errors by default so we don't silently swallow them!
+      throw error; // This error probably occurred in getChildRoutes or getComponents.
+    }
+  },
+
+  componentWillMount: function componentWillMount() {
+    var _this = this;
+
+    var _props = this.props;
+    var history = _props.history;
+    var children = _props.children;
+    var routes = _props.routes;
+    var parseQueryString = _props.parseQueryString;
+    var stringifyQuery = _props.stringifyQuery;
+
+    var createHistory = history ? function () {
+      return history;
+    } : _historyLibCreateHashHistory2['default'];
+
+    this.history = _useRoutes2['default'](createHistory)({
+      routes: _RouteUtils.createRoutes(routes || children),
+      parseQueryString: parseQueryString,
+      stringifyQuery: stringifyQuery
+    });
+
+    this._unlisten = this.history.listen(function (error, state) {
+      if (error) {
+        _this.handleError(error);
+      } else {
+        _this.setState(state, _this.props.onUpdate);
+      }
+    });
+  },
+
+  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+    _warning2['default'](nextProps.history === this.props.history, "The `history` provided to <Router/> has changed, it will be ignored.");
+  },
+
+  componentWillUnmount: function componentWillUnmount() {
+    if (this._unlisten) this._unlisten();
+  },
+
+  render: function render() {
+    var _state = this.state;
+    var location = _state.location;
+    var routes = _state.routes;
+    var params = _state.params;
+    var components = _state.components;
+    var createElement = this.props.createElement;
+
+    if (location == null) return null; // Async match
+
+    return _react2['default'].createElement(_RoutingContext2['default'], {
+      history: this.history,
+      createElement: createElement,
+      location: location,
+      routes: routes,
+      params: params,
+      components: components
+    });
+  }
+
+});
+
+exports['default'] = Router;
+module.exports = exports['default'];
+},{"./PropTypes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PropTypes.js","./RouteUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RouteUtils.js","./RoutingContext":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RoutingContext.js","./useRoutes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\useRoutes.js","history/lib/createHashHistory":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createHashHistory.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js","warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\warning\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RoutingContext.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _invariant = require('invariant');
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _getRouteParams = require('./getRouteParams');
+
+var _getRouteParams2 = _interopRequireDefault(_getRouteParams);
+
+var _React$PropTypes = _react2['default'].PropTypes;
+var array = _React$PropTypes.array;
+var func = _React$PropTypes.func;
+var object = _React$PropTypes.object;
+
+/**
+ * A <RoutingContext> renders the component tree for a given router state
+ * and sets the history object and the current location in context.
+ */
+var RoutingContext = _react2['default'].createClass({
+  displayName: 'RoutingContext',
+
+  propTypes: {
+    history: object.isRequired,
+    createElement: func.isRequired,
+    location: object.isRequired,
+    routes: array.isRequired,
+    params: object.isRequired,
+    components: array.isRequired
+  },
+
+  getDefaultProps: function getDefaultProps() {
+    return {
+      createElement: _react2['default'].createElement
+    };
+  },
+
+  childContextTypes: {
+    history: object.isRequired,
+    location: object.isRequired
+  },
+
+  getChildContext: function getChildContext() {
+    return {
+      history: this.props.history,
+      location: this.props.location
+    };
+  },
+
+  createElement: function createElement(component, props) {
+    return component == null ? null : this.props.createElement(component, props);
+  },
+
+  render: function render() {
+    var _this = this;
+
+    var _props = this.props;
+    var history = _props.history;
+    var location = _props.location;
+    var routes = _props.routes;
+    var params = _props.params;
+    var components = _props.components;
+
+    var element = null;
+
+    if (components) {
+      element = components.reduceRight(function (element, components, index) {
+        if (components == null) return element; // Don't create new children; use the grandchildren.
+
+        var route = routes[index];
+        var routeParams = _getRouteParams2['default'](route, params);
+        var props = {
+          history: history,
+          location: location,
+          params: params,
+          route: route,
+          routeParams: routeParams,
+          routes: routes
+        };
+
+        if (element) props.children = element;
+
+        if (typeof components === 'object') {
+          var elements = {};
+
+          for (var key in components) if (components.hasOwnProperty(key)) elements[key] = _this.createElement(components[key], props);
+
+          return elements;
+        }
+
+        return _this.createElement(components, props);
+      }, element);
+    }
+
+    _invariant2['default'](element === null || element === false || _react2['default'].isValidElement(element), 'The root route must render a single element');
+
+    return element;
+  }
+
+});
+
+exports['default'] = RoutingContext;
+module.exports = exports['default'];
+},{"./getRouteParams":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\getRouteParams.js","invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\invariant\\browser.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\TransitionUtils.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+exports.runEnterHooks = runEnterHooks;
+exports.runLeaveHooks = runLeaveHooks;
+
+var _AsyncUtils = require('./AsyncUtils');
+
+function createEnterHook(hook, route) {
+  return function (a, b, callback) {
+    hook.apply(route, arguments);
+
+    if (hook.length < 3) {
+      // Assume hook executes synchronously and
+      // automatically call the callback.
+      callback();
+    }
   };
 }
 
-module.exports = getWindowScrollPosition;
-},{"react/lib/ExecutionEnvironment":111,"react/lib/invariant":226}],77:[function(require,module,exports){
-'use strict';
+function getEnterHooks(routes) {
+  return routes.reduce(function (hooks, route) {
+    if (route.onEnter) hooks.push(createEnterHook(route.onEnter, route));
 
-exports.DefaultRoute = require('./components/DefaultRoute');
-exports.Link = require('./components/Link');
-exports.NotFoundRoute = require('./components/NotFoundRoute');
-exports.Redirect = require('./components/Redirect');
-exports.Route = require('./components/Route');
-exports.ActiveHandler = require('./components/RouteHandler');
-exports.RouteHandler = exports.ActiveHandler;
-
-exports.HashLocation = require('./locations/HashLocation');
-exports.HistoryLocation = require('./locations/HistoryLocation');
-exports.RefreshLocation = require('./locations/RefreshLocation');
-exports.StaticLocation = require('./locations/StaticLocation');
-exports.TestLocation = require('./locations/TestLocation');
-
-exports.ImitateBrowserBehavior = require('./behaviors/ImitateBrowserBehavior');
-exports.ScrollToTopBehavior = require('./behaviors/ScrollToTopBehavior');
-
-exports.History = require('./History');
-exports.Navigation = require('./Navigation');
-exports.State = require('./State');
-
-exports.createRoute = require('./Route').createRoute;
-exports.createDefaultRoute = require('./Route').createDefaultRoute;
-exports.createNotFoundRoute = require('./Route').createNotFoundRoute;
-exports.createRedirect = require('./Route').createRedirect;
-exports.createRoutesFromReactChildren = require('./createRoutesFromReactChildren');
-
-exports.create = require('./createRouter');
-exports.run = require('./runRouter');
-},{"./History":54,"./Navigation":56,"./Route":60,"./State":62,"./behaviors/ImitateBrowserBehavior":65,"./behaviors/ScrollToTopBehavior":66,"./components/DefaultRoute":68,"./components/Link":69,"./components/NotFoundRoute":70,"./components/Redirect":71,"./components/Route":72,"./components/RouteHandler":73,"./createRouter":74,"./createRoutesFromReactChildren":75,"./locations/HashLocation":79,"./locations/HistoryLocation":80,"./locations/RefreshLocation":81,"./locations/StaticLocation":82,"./locations/TestLocation":83,"./runRouter":84}],78:[function(require,module,exports){
-'use strict';
-
-var React = require('react');
-
-function isValidChild(object) {
-  return object == null || React.isValidElement(object);
+    return hooks;
+  }, []);
 }
 
-function isReactChildren(object) {
-  return isValidChild(object) || Array.isArray(object) && object.every(isValidChild);
+/**
+ * Runs all onEnter hooks in the given array of routes in order
+ * with onEnter(nextState, replaceState, callback) and calls
+ * callback(error, redirectInfo) when finished. The first hook
+ * to use replaceState short-circuits the loop.
+ *
+ * If a hook needs to run asynchronously, it may use the callback
+ * function. However, doing so will cause the transition to pause,
+ * which could lead to a non-responsive UI if the hook is slow.
+ */
+
+function runEnterHooks(routes, nextState, callback) {
+  var hooks = getEnterHooks(routes);
+
+  if (!hooks.length) {
+    callback();
+    return;
+  }
+
+  var redirectInfo;
+  function replaceState(state, pathname, query) {
+    redirectInfo = { pathname: pathname, query: query, state: state };
+  }
+
+  _AsyncUtils.loopAsync(hooks.length, function (index, next, done) {
+    hooks[index](nextState, replaceState, function (error) {
+      if (error || redirectInfo) {
+        done(error, redirectInfo); // No need to continue.
+      } else {
+          next();
+        }
+    });
+  }, callback);
 }
 
-module.exports = isReactChildren;
-},{"react":246}],79:[function(require,module,exports){
+/**
+ * Runs all onLeave hooks in the given array of routes in order.
+ */
+
+function runLeaveHooks(routes) {
+  for (var i = 0, len = routes.length; i < len; ++i) if (routes[i].onLeave) routes[i].onLeave.call(routes[i]);
+}
+},{"./AsyncUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\AsyncUtils.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\computeChangedRoutes.js":[function(require,module,exports){
 'use strict';
 
-var LocationActions = require('../actions/LocationActions');
-var History = require('../History');
+exports.__esModule = true;
 
-var _listeners = [];
-var _isListening = false;
-var _actionType;
+var _PatternUtils = require('./PatternUtils');
 
-function notifyChange(type) {
-  if (type === LocationActions.PUSH) History.length += 1;
+function routeParamsChanged(route, prevState, nextState) {
+  if (!route.path) return false;
 
-  var change = {
-    path: HashLocation.getCurrentPath(),
-    type: type
-  };
+  var paramNames = _PatternUtils.getParamNames(route.path);
 
-  _listeners.forEach(function (listener) {
-    listener.call(HashLocation, change);
+  return paramNames.some(function (paramName) {
+    return prevState.params[paramName] !== nextState.params[paramName];
   });
 }
 
-function ensureSlash() {
-  var path = HashLocation.getCurrentPath();
+/**
+ * Returns an object of { leaveRoutes, enterRoutes } determined by
+ * the change from prevState to nextState. We leave routes if either
+ * 1) they are not in the next state or 2) they are in the next state
+ * but their params have changed (i.e. /users/123 => /users/456).
+ *
+ * leaveRoutes are ordered starting at the leaf route of the tree
+ * we're leaving up to the common parent route. enterRoutes are ordered
+ * from the top of the tree we're entering down to the leaf route.
+ */
+function computeChangedRoutes(prevState, nextState) {
+  var prevRoutes = prevState && prevState.routes;
+  var nextRoutes = nextState.routes;
 
-  if (path.charAt(0) === '/') {
-    return true;
-  }HashLocation.replace('/' + path);
+  var leaveRoutes, enterRoutes;
+  if (prevRoutes) {
+    leaveRoutes = prevRoutes.filter(function (route) {
+      return nextRoutes.indexOf(route) === -1 || routeParamsChanged(route, prevState, nextState);
+    });
+
+    // onLeave hooks start at the leaf route.
+    leaveRoutes.reverse();
+
+    enterRoutes = nextRoutes.filter(function (route) {
+      return prevRoutes.indexOf(route) === -1 || leaveRoutes.indexOf(route) !== -1;
+    });
+  } else {
+    leaveRoutes = [];
+    enterRoutes = nextRoutes;
+  }
+
+  return {
+    leaveRoutes: leaveRoutes,
+    enterRoutes: enterRoutes
+  };
+}
+
+exports['default'] = computeChangedRoutes;
+module.exports = exports['default'];
+},{"./PatternUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PatternUtils.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\getComponents.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _AsyncUtils = require('./AsyncUtils');
+
+function getComponentsForRoute(location, route, callback) {
+  if (route.component || route.components) {
+    callback(null, route.component || route.components);
+  } else if (route.getComponent) {
+    route.getComponent(location, callback);
+  } else if (route.getComponents) {
+    route.getComponents(location, callback);
+  } else {
+    callback();
+  }
+}
+
+/**
+ * Asynchronously fetches all components needed for the given router
+ * state and calls callback(error, components) when finished.
+ *
+ * Note: This operation may finish synchronously if no routes have an
+ * asynchronous getComponents method.
+ */
+function getComponents(nextState, callback) {
+  _AsyncUtils.mapAsync(nextState.routes, function (route, index, callback) {
+    getComponentsForRoute(nextState.location, route, callback);
+  }, callback);
+}
+
+exports['default'] = getComponents;
+module.exports = exports['default'];
+},{"./AsyncUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\AsyncUtils.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\getRouteParams.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _PatternUtils = require('./PatternUtils');
+
+/**
+ * Extracts an object of params the given route cares about from
+ * the given params object.
+ */
+function getRouteParams(route, params) {
+  var routeParams = {};
+
+  if (!route.path) return routeParams;
+
+  var paramNames = _PatternUtils.getParamNames(route.path);
+
+  for (var p in params) if (params.hasOwnProperty(p) && paramNames.indexOf(p) !== -1) routeParams[p] = params[p];
+
+  return routeParams;
+}
+
+exports['default'] = getRouteParams;
+module.exports = exports['default'];
+},{"./PatternUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PatternUtils.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\index.js":[function(require,module,exports){
+/* components */
+'use strict';
+
+exports.__esModule = true;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _Router2 = require('./Router');
+
+var _Router3 = _interopRequireDefault(_Router2);
+
+exports.Router = _Router3['default'];
+
+var _Link2 = require('./Link');
+
+var _Link3 = _interopRequireDefault(_Link2);
+
+exports.Link = _Link3['default'];
+
+/* components (configuration) */
+
+var _IndexRoute2 = require('./IndexRoute');
+
+var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
+
+exports.IndexRoute = _IndexRoute3['default'];
+
+var _Redirect2 = require('./Redirect');
+
+var _Redirect3 = _interopRequireDefault(_Redirect2);
+
+exports.Redirect = _Redirect3['default'];
+
+var _Route2 = require('./Route');
+
+var _Route3 = _interopRequireDefault(_Route2);
+
+exports.Route = _Route3['default'];
+
+/* mixins */
+
+var _History2 = require('./History');
+
+var _History3 = _interopRequireDefault(_History2);
+
+exports.History = _History3['default'];
+
+var _Lifecycle2 = require('./Lifecycle');
+
+var _Lifecycle3 = _interopRequireDefault(_Lifecycle2);
+
+exports.Lifecycle = _Lifecycle3['default'];
+
+var _RouteContext2 = require('./RouteContext');
+
+var _RouteContext3 = _interopRequireDefault(_RouteContext2);
+
+exports.RouteContext = _RouteContext3['default'];
+
+/* utils */
+
+var _useRoutes2 = require('./useRoutes');
+
+var _useRoutes3 = _interopRequireDefault(_useRoutes2);
+
+exports.useRoutes = _useRoutes3['default'];
+
+var _RouteUtils = require('./RouteUtils');
+
+exports.createRoutes = _RouteUtils.createRoutes;
+
+var _RoutingContext2 = require('./RoutingContext');
+
+var _RoutingContext3 = _interopRequireDefault(_RoutingContext2);
+
+exports.RoutingContext = _RoutingContext3['default'];
+
+var _PropTypes2 = require('./PropTypes');
+
+var _PropTypes3 = _interopRequireDefault(_PropTypes2);
+
+exports.PropTypes = _PropTypes3['default'];
+
+var _match2 = require('./match');
+
+var _match3 = _interopRequireDefault(_match2);
+
+exports.match = _match3['default'];
+
+var _Router4 = _interopRequireDefault(_Router2);
+
+exports['default'] = _Router4['default'];
+},{"./History":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\History.js","./IndexRoute":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\IndexRoute.js","./Lifecycle":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\Lifecycle.js","./Link":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\Link.js","./PropTypes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PropTypes.js","./Redirect":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\Redirect.js","./Route":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\Route.js","./RouteContext":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RouteContext.js","./RouteUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RouteUtils.js","./Router":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\Router.js","./RoutingContext":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RoutingContext.js","./match":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\match.js","./useRoutes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\useRoutes.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\isActive.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _PatternUtils = require('./PatternUtils');
+
+/**
+ * Returns true if a route and params that match the given
+ * pathname are currently active.
+ */
+function pathnameIsActive(pathname, activePathname, activeRoutes, activeParams) {
+  if (pathname === activePathname || activePathname.indexOf(pathname + '/') === 0) return true;
+
+  var route, pattern;
+  var basename = '';
+  for (var i = 0, len = activeRoutes.length; i < len; ++i) {
+    route = activeRoutes[i];
+    if (!route.path) return false;
+    pattern = route.path || '';
+
+    if (pattern.indexOf('/') !== 0) pattern = basename.replace(/\/*$/, '/') + pattern; // Relative paths build on the parent's path.
+
+    var _matchPattern = _PatternUtils.matchPattern(pattern, pathname);
+
+    var remainingPathname = _matchPattern.remainingPathname;
+    var paramNames = _matchPattern.paramNames;
+    var paramValues = _matchPattern.paramValues;
+
+    if (remainingPathname === '') {
+      return paramNames.every(function (paramName, index) {
+        return String(paramValues[index]) === String(activeParams[paramName]);
+      });
+    }
+
+    basename = pattern;
+  }
 
   return false;
 }
 
-function onHashChange() {
-  if (ensureSlash()) {
-    // If we don't have an _actionType then all we know is the hash
-    // changed. It was probably caused by the user clicking the Back
-    // button, but may have also been the Forward button or manual
-    // manipulation. So just guess 'pop'.
-    var curActionType = _actionType;
-    _actionType = null;
-    notifyChange(curActionType || LocationActions.POP);
-  }
+/**
+ * Returns true if all key/value pairs in the given query are
+ * currently active.
+ */
+function queryIsActive(query, activeQuery) {
+  if (activeQuery == null) return query == null;
+
+  if (query == null) return true;
+
+  for (var p in query) if (query.hasOwnProperty(p) && String(query[p]) !== String(activeQuery[p])) return false;
+
+  return true;
 }
 
 /**
- * A Location that uses `window.location.hash`.
+ * Returns true if a <Link> to the given pathname/query combination is
+ * currently active.
  */
-var HashLocation = {
+function isActive(pathname, query, indexOnly, location, routes, params) {
+  if (location == null) return false;
 
-  addChangeListener: function addChangeListener(listener) {
-    _listeners.push(listener);
+  if (indexOnly && (routes.length < 2 || routes[routes.length - 2].indexRoute !== routes[routes.length - 1])) return false;
 
-    // Do this BEFORE listening for hashchange.
-    ensureSlash();
+  return pathnameIsActive(pathname, location.pathname, routes, params) && queryIsActive(query, location.query);
+}
 
-    if (!_isListening) {
-      if (window.addEventListener) {
-        window.addEventListener('hashchange', onHashChange, false);
-      } else {
-        window.attachEvent('onhashchange', onHashChange);
-      }
-
-      _isListening = true;
-    }
-  },
-
-  removeChangeListener: function removeChangeListener(listener) {
-    _listeners = _listeners.filter(function (l) {
-      return l !== listener;
-    });
-
-    if (_listeners.length === 0) {
-      if (window.removeEventListener) {
-        window.removeEventListener('hashchange', onHashChange, false);
-      } else {
-        window.removeEvent('onhashchange', onHashChange);
-      }
-
-      _isListening = false;
-    }
-  },
-
-  push: function push(path) {
-    _actionType = LocationActions.PUSH;
-    window.location.hash = path;
-  },
-
-  replace: function replace(path) {
-    _actionType = LocationActions.REPLACE;
-    window.location.replace(window.location.pathname + window.location.search + '#' + path);
-  },
-
-  pop: function pop() {
-    _actionType = LocationActions.POP;
-    History.back();
-  },
-
-  getCurrentPath: function getCurrentPath() {
-    return decodeURI(
-    // We can't use window.location.hash here because it's not
-    // consistent across browsers - Firefox will pre-decode it!
-    window.location.href.split('#')[1] || '');
-  },
-
-  toString: function toString() {
-    return '<HashLocation>';
-  }
-
-};
-
-module.exports = HashLocation;
-},{"../History":54,"../actions/LocationActions":64}],80:[function(require,module,exports){
+exports['default'] = isActive;
+module.exports = exports['default'];
+},{"./PatternUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PatternUtils.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\match.js":[function(require,module,exports){
 'use strict';
 
-var LocationActions = require('../actions/LocationActions');
-var History = require('../History');
+exports.__esModule = true;
 
-var _listeners = [];
-var _isListening = false;
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-function notifyChange(type) {
-  var change = {
-    path: HistoryLocation.getCurrentPath(),
-    type: type
-  };
+exports['default'] = match;
 
-  _listeners.forEach(function (listener) {
-    listener.call(HistoryLocation, change);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _historyLibCreateMemoryHistory = require('history/lib/createMemoryHistory');
+
+var _historyLibCreateMemoryHistory2 = _interopRequireDefault(_historyLibCreateMemoryHistory);
+
+var _useRoutes = require('./useRoutes');
+
+var _useRoutes2 = _interopRequireDefault(_useRoutes);
+
+var _RouteUtils = require('./RouteUtils');
+
+function match(_ref, cb) {
+  var routes = _ref.routes;
+  var history = _ref.history;
+  var location = _ref.location;
+  var parseQueryString = _ref.parseQueryString;
+  var stringifyQuery = _ref.stringifyQuery;
+
+  var createHistory = history ? function () {
+    return history;
+  } : _historyLibCreateMemoryHistory2['default'];
+
+  var staticHistory = _useRoutes2['default'](createHistory)({
+    routes: _RouteUtils.createRoutes(routes),
+    parseQueryString: parseQueryString,
+    stringifyQuery: stringifyQuery
+  });
+
+  staticHistory.match(location, function (error, nextLocation, nextState) {
+    var renderProps = nextState ? _extends({}, nextState, { history: staticHistory }) : null;
+    cb(error, nextLocation, renderProps);
   });
 }
 
-function onPopState(event) {
-  if (event.state === undefined) {
-    return;
-  } // Ignore extraneous popstate events in WebKit.
+module.exports = exports['default'];
+},{"./RouteUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RouteUtils.js","./useRoutes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\useRoutes.js","history/lib/createMemoryHistory":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createMemoryHistory.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\matchRoutes.js":[function(require,module,exports){
+'use strict';
 
-  notifyChange(LocationActions.POP);
-}
+exports.__esModule = true;
 
-/**
- * A Location that uses HTML5 history.
- */
-var HistoryLocation = {
+var _AsyncUtils = require('./AsyncUtils');
 
-  addChangeListener: function addChangeListener(listener) {
-    _listeners.push(listener);
+var _PatternUtils = require('./PatternUtils');
 
-    if (!_isListening) {
-      if (window.addEventListener) {
-        window.addEventListener('popstate', onPopState, false);
-      } else {
-        window.attachEvent('onpopstate', onPopState);
-      }
+var _RouteUtils = require('./RouteUtils');
 
-      _isListening = true;
-    }
-  },
-
-  removeChangeListener: function removeChangeListener(listener) {
-    _listeners = _listeners.filter(function (l) {
-      return l !== listener;
+function getChildRoutes(route, location, callback) {
+  if (route.childRoutes) {
+    callback(null, route.childRoutes);
+  } else if (route.getChildRoutes) {
+    route.getChildRoutes(location, function (error, childRoutes) {
+      callback(error, !error && _RouteUtils.createRoutes(childRoutes));
     });
+  } else {
+    callback();
+  }
+}
 
-    if (_listeners.length === 0) {
-      if (window.addEventListener) {
-        window.removeEventListener('popstate', onPopState, false);
-      } else {
-        window.removeEvent('onpopstate', onPopState);
-      }
+function getIndexRoute(route, location, callback) {
+  if (route.indexRoute) {
+    callback(null, route.indexRoute);
+  } else if (route.getIndexRoute) {
+    route.getIndexRoute(location, function (error, indexRoute) {
+      callback(error, !error && _RouteUtils.createRoutes(indexRoute)[0]);
+    });
+  } else {
+    callback();
+  }
+}
 
-      _isListening = false;
+function assignParams(params, paramNames, paramValues) {
+  return paramNames.reduceRight(function (params, paramName, index) {
+    var paramValue = paramValues && paramValues[index];
+
+    if (Array.isArray(params[paramName])) {
+      params[paramName].unshift(paramValue);
+    } else if (paramName in params) {
+      params[paramName] = [paramValue, params[paramName]];
+    } else {
+      params[paramName] = paramValue;
     }
-  },
 
-  push: function push(path) {
-    window.history.pushState({ path: path }, '', path);
-    History.length += 1;
-    notifyChange(LocationActions.PUSH);
-  },
+    return params;
+  }, params);
+}
 
-  replace: function replace(path) {
-    window.history.replaceState({ path: path }, '', path);
-    notifyChange(LocationActions.REPLACE);
-  },
+function createParams(paramNames, paramValues) {
+  return assignParams({}, paramNames, paramValues);
+}
 
-  pop: History.back,
+function matchRouteDeep(basename, route, location, callback) {
+  var pattern = route.path || '';
 
-  getCurrentPath: function getCurrentPath() {
-    return decodeURI(window.location.pathname + window.location.search);
-  },
+  if (pattern.indexOf('/') !== 0) pattern = basename.replace(/\/*$/, '/') + pattern; // Relative paths build on the parent's path.
 
-  toString: function toString() {
-    return '<HistoryLocation>';
+  var _matchPattern = _PatternUtils.matchPattern(pattern, location.pathname);
+
+  var remainingPathname = _matchPattern.remainingPathname;
+  var paramNames = _matchPattern.paramNames;
+  var paramValues = _matchPattern.paramValues;
+
+  var isExactMatch = remainingPathname === '';
+
+  if (isExactMatch && route.path) {
+    var match = {
+      routes: [route],
+      params: createParams(paramNames, paramValues)
+    };
+
+    getIndexRoute(route, location, function (error, indexRoute) {
+      if (error) {
+        callback(error);
+      } else {
+        if (indexRoute) match.routes.push(indexRoute);
+
+        callback(null, match);
+      }
+    });
+  } else if (remainingPathname != null || route.childRoutes) {
+    // Either a) this route matched at least some of the path or b)
+    // we don't have to load this route's children asynchronously. In
+    // either case continue checking for matches in the subtree.
+    getChildRoutes(route, location, function (error, childRoutes) {
+      if (error) {
+        callback(error);
+      } else if (childRoutes) {
+        // Check the child routes to see if any of them match.
+        matchRoutes(childRoutes, location, function (error, match) {
+          if (error) {
+            callback(error);
+          } else if (match) {
+            // A child route matched! Augment the match and pass it up the stack.
+            match.routes.unshift(route);
+            callback(null, match);
+          } else {
+            callback();
+          }
+        }, pattern);
+      } else {
+        callback();
+      }
+    });
+  } else {
+    callback();
   }
-
-};
-
-module.exports = HistoryLocation;
-},{"../History":54,"../actions/LocationActions":64}],81:[function(require,module,exports){
-'use strict';
-
-var HistoryLocation = require('./HistoryLocation');
-var History = require('../History');
-
-/**
- * A Location that uses full page refreshes. This is used as
- * the fallback for HistoryLocation in browsers that do not
- * support the HTML5 history API.
- */
-var RefreshLocation = {
-
-  push: function push(path) {
-    window.location = path;
-  },
-
-  replace: function replace(path) {
-    window.location.replace(path);
-  },
-
-  pop: History.back,
-
-  getCurrentPath: HistoryLocation.getCurrentPath,
-
-  toString: function toString() {
-    return '<RefreshLocation>';
-  }
-
-};
-
-module.exports = RefreshLocation;
-},{"../History":54,"./HistoryLocation":80}],82:[function(require,module,exports){
-'use strict';
-
-var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
-
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var invariant = require('react/lib/invariant');
-
-function throwCannotModify() {
-  invariant(false, 'You cannot modify a static location');
 }
 
 /**
- * A location that only ever contains a single path. Useful in
- * stateless environments like servers where there is no path history,
- * only the path that was used in the request.
+ * Asynchronously matches the given location to a set of routes and calls
+ * callback(error, state) when finished. The state object will have the
+ * following properties:
+ *
+ * - routes       An array of routes that matched, in hierarchical order
+ * - params       An object of URL parameters
+ *
+ * Note: This operation may finish synchronously if no routes have an
+ * asynchronous getChildRoutes method.
  */
+function matchRoutes(routes, location, callback) {
+  var basename = arguments.length <= 3 || arguments[3] === undefined ? '' : arguments[3];
 
-var StaticLocation = (function () {
-  function StaticLocation(path) {
-    _classCallCheck(this, StaticLocation);
+  _AsyncUtils.loopAsync(routes.length, function (index, next, done) {
+    matchRouteDeep(basename, routes[index], location, function (error, match) {
+      if (error || match) {
+        done(error, match);
+      } else {
+        next();
+      }
+    });
+  }, callback);
+}
 
-    this.path = path;
-  }
-
-  _createClass(StaticLocation, [{
-    key: 'getCurrentPath',
-    value: function getCurrentPath() {
-      return this.path;
-    }
-  }, {
-    key: 'toString',
-    value: function toString() {
-      return '<StaticLocation path="' + this.path + '">';
-    }
-  }]);
-
-  return StaticLocation;
-})();
-
-// TODO: Include these in the above class definition
-// once we can use ES7 property initializers.
-// https://github.com/babel/babel/issues/619
-
-StaticLocation.prototype.push = throwCannotModify;
-StaticLocation.prototype.replace = throwCannotModify;
-StaticLocation.prototype.pop = throwCannotModify;
-
-module.exports = StaticLocation;
-},{"react/lib/invariant":226}],83:[function(require,module,exports){
+exports['default'] = matchRoutes;
+module.exports = exports['default'];
+},{"./AsyncUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\AsyncUtils.js","./PatternUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\PatternUtils.js","./RouteUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\RouteUtils.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\useRoutes.js":[function(require,module,exports){
 'use strict';
 
-var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
+exports.__esModule = true;
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var invariant = require('react/lib/invariant');
-var LocationActions = require('../actions/LocationActions');
-var History = require('../History');
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _historyLibActions = require('history/lib/Actions');
+
+var _historyLibUseQueries = require('history/lib/useQueries');
+
+var _historyLibUseQueries2 = _interopRequireDefault(_historyLibUseQueries);
+
+var _historyLibCreateLocation = require('history/lib/createLocation');
+
+var _historyLibCreateLocation2 = _interopRequireDefault(_historyLibCreateLocation);
+
+var _computeChangedRoutes2 = require('./computeChangedRoutes');
+
+var _computeChangedRoutes3 = _interopRequireDefault(_computeChangedRoutes2);
+
+var _TransitionUtils = require('./TransitionUtils');
+
+var _isActive2 = require('./isActive');
+
+var _isActive3 = _interopRequireDefault(_isActive2);
+
+var _getComponents = require('./getComponents');
+
+var _getComponents2 = _interopRequireDefault(_getComponents);
+
+var _matchRoutes = require('./matchRoutes');
+
+var _matchRoutes2 = _interopRequireDefault(_matchRoutes);
+
+function hasAnyProperties(object) {
+  for (var p in object) if (object.hasOwnProperty(p)) return true;
+
+  return false;
+}
 
 /**
- * A location that is convenient for testing and does not require a DOM.
+ * Returns a new createHistory function that may be used to create
+ * history objects that know about routing.
+ *
+ * - isActive(pathname, query)
+ * - registerRouteHook(route, (location) => {})
+ * - unregisterRouteHook(route, (location) => {})
+ * - match(location, (error, nextState, nextLocation) => {})
+ * - listen((error, nextState) => {})
  */
+function useRoutes(createHistory) {
+  return function () {
+    var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+    var routes = options.routes;
 
-var TestLocation = (function () {
-  function TestLocation(history) {
-    _classCallCheck(this, TestLocation);
+    var historyOptions = _objectWithoutProperties(options, ['routes']);
 
-    this.history = history || [];
-    this.listeners = [];
-    this._updateHistoryLength();
-  }
+    var history = _historyLibUseQueries2['default'](createHistory)(historyOptions);
+    var state = {};
 
-  _createClass(TestLocation, [{
-    key: 'needsDOM',
-    get: function () {
-      return false;
-    }
-  }, {
-    key: '_updateHistoryLength',
-    value: function _updateHistoryLength() {
-      History.length = this.history.length;
-    }
-  }, {
-    key: '_notifyChange',
-    value: function _notifyChange(type) {
-      var change = {
-        path: this.getCurrentPath(),
-        type: type
-      };
+    function isActive(pathname, query) {
+      var indexOnly = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];
 
-      for (var i = 0, len = this.listeners.length; i < len; ++i) this.listeners[i].call(this, change);
+      return _isActive3['default'](pathname, query, indexOnly, state.location, state.routes, state.params);
     }
-  }, {
-    key: 'addChangeListener',
-    value: function addChangeListener(listener) {
-      this.listeners.push(listener);
+
+    var partialNextState = undefined;
+
+    function match(location, callback) {
+      if (partialNextState && partialNextState.location === location) {
+        // Continue from where we left off.
+        finishMatch(partialNextState, callback);
+      } else {
+        _matchRoutes2['default'](routes, location, function (error, nextState) {
+          if (error) {
+            callback(error, null, null);
+          } else if (nextState) {
+            finishMatch(_extends({}, nextState, { location: location }), function (err, nextLocation, nextState) {
+              if (nextState) state = nextState;
+              callback(err, nextLocation, nextState);
+            });
+          } else {
+            callback(null, null, null);
+          }
+        });
+      }
     }
-  }, {
-    key: 'removeChangeListener',
-    value: function removeChangeListener(listener) {
-      this.listeners = this.listeners.filter(function (l) {
-        return l !== listener;
+
+    function createLocationFromRedirectInfo(_ref) {
+      var pathname = _ref.pathname;
+      var query = _ref.query;
+      var state = _ref.state;
+
+      return _historyLibCreateLocation2['default'](history.createPath(pathname, query), state, _historyLibActions.REPLACE, history.createKey());
+    }
+
+    function finishMatch(nextState, callback) {
+      var _computeChangedRoutes = _computeChangedRoutes3['default'](state, nextState);
+
+      var leaveRoutes = _computeChangedRoutes.leaveRoutes;
+      var enterRoutes = _computeChangedRoutes.enterRoutes;
+
+      _TransitionUtils.runLeaveHooks(leaveRoutes);
+
+      _TransitionUtils.runEnterHooks(enterRoutes, nextState, function (error, redirectInfo) {
+        if (error) {
+          callback(error);
+        } else if (redirectInfo) {
+          callback(null, createLocationFromRedirectInfo(redirectInfo), null);
+        } else {
+          // TODO: Fetch components after state is updated.
+          _getComponents2['default'](nextState, function (error, components) {
+            if (error) {
+              callback(error);
+            } else {
+              callback(null, null, _extends({}, nextState, { components: components }));
+            }
+          });
+        }
       });
     }
-  }, {
-    key: 'push',
-    value: function push(path) {
-      this.history.push(path);
-      this._updateHistoryLength();
-      this._notifyChange(LocationActions.PUSH);
+
+    var RouteHooks = {};
+
+    var RouteGuid = 1;
+
+    function getRouteID(route) {
+      return route.__id__ || (route.__id__ = RouteGuid++);
     }
-  }, {
-    key: 'replace',
-    value: function replace(path) {
-      invariant(this.history.length, 'You cannot replace the current path with no history');
 
-      this.history[this.history.length - 1] = path;
-
-      this._notifyChange(LocationActions.REPLACE);
+    function getRouteHooksForRoutes(routes) {
+      return routes.reduce(function (hooks, route) {
+        hooks.push.apply(hooks, RouteHooks[getRouteID(route)]);
+        return hooks;
+      }, []);
     }
-  }, {
-    key: 'pop',
-    value: function pop() {
-      this.history.pop();
-      this._updateHistoryLength();
-      this._notifyChange(LocationActions.POP);
+
+    function transitionHook(location, callback) {
+      _matchRoutes2['default'](routes, location, function (error, nextState) {
+        if (nextState == null) {
+          // TODO: We didn't actually match anything, but hang
+          // onto error/nextState so we don't have to matchRoutes
+          // again in the listen callback.
+          callback();
+          return;
+        }
+
+        // Cache some state here so we don't have to
+        // matchRoutes() again in the listen callback.
+        partialNextState = _extends({}, nextState, { location: location });
+
+        var hooks = getRouteHooksForRoutes(_computeChangedRoutes3['default'](state, nextState).leaveRoutes);
+
+        var result = undefined;
+        for (var i = 0, len = hooks.length; result == null && i < len; ++i) {
+          // Passing the location arg here indicates to
+          // the user that this is a transition hook.
+          result = hooks[i](location);
+        }
+
+        callback(result);
+      });
     }
-  }, {
-    key: 'getCurrentPath',
-    value: function getCurrentPath() {
-      return this.history[this.history.length - 1];
+
+    function beforeUnloadHook() {
+      // Synchronously check to see if any route hooks want to
+      // prevent the current window/tab from closing.
+      if (state.routes) {
+        var hooks = getRouteHooksForRoutes(state.routes);
+
+        var message = undefined;
+        for (var i = 0, len = hooks.length; typeof message !== 'string' && i < len; ++i) {
+          // Passing no args indicates to the user that this is a
+          // beforeunload hook. We don't know the next location.
+          message = hooks[i]();
+        }
+
+        return message;
+      }
     }
-  }, {
-    key: 'toString',
-    value: function toString() {
-      return '<TestLocation>';
+
+    function registerRouteHook(route, hook) {
+      // TODO: Warn if they register for a route that isn't currently
+      // active. They're probably doing something wrong, like re-creating
+      // route objects on every location change.
+      var routeID = getRouteID(route);
+      var hooks = RouteHooks[routeID];
+
+      if (hooks == null) {
+        var thereWereNoRouteHooks = !hasAnyProperties(RouteHooks);
+
+        hooks = RouteHooks[routeID] = [hook];
+
+        if (thereWereNoRouteHooks) {
+          history.registerTransitionHook(transitionHook);
+
+          if (history.registerBeforeUnloadHook) history.registerBeforeUnloadHook(beforeUnloadHook);
+        }
+      } else if (hooks.indexOf(hook) === -1) {
+        hooks.push(hook);
+      }
     }
-  }]);
 
-  return TestLocation;
-})();
+    function unregisterRouteHook(route, hook) {
+      var routeID = getRouteID(route);
+      var hooks = RouteHooks[routeID];
 
-module.exports = TestLocation;
-},{"../History":54,"../actions/LocationActions":64,"react/lib/invariant":226}],84:[function(require,module,exports){
-'use strict';
+      if (hooks != null) {
+        var newHooks = hooks.filter(function (item) {
+          return item !== hook;
+        });
 
-var createRouter = require('./createRouter');
+        if (newHooks.length === 0) {
+          delete RouteHooks[routeID];
 
-/**
- * A high-level convenience method that creates, configures, and
- * runs a router in one shot. The method signature is:
- *
- *   Router.run(routes[, location ], callback);
- *
- * Using `window.location.hash` to manage the URL, you could do:
- *
- *   Router.run(routes, function (Handler) {
- *     React.render(<Handler/>, document.body);
- *   });
- * 
- * Using HTML5 history and a custom "cursor" prop:
- * 
- *   Router.run(routes, Router.HistoryLocation, function (Handler) {
- *     React.render(<Handler cursor={cursor}/>, document.body);
- *   });
- *
- * Returns the newly created router.
- *
- * Note: If you need to specify further options for your router such
- * as error/abort handling or custom scroll behavior, use Router.create
- * instead.
- *
- *   var router = Router.create(options);
- *   router.run(function (Handler) {
- *     // ...
- *   });
- */
-function runRouter(routes, location, callback) {
-  if (typeof location === 'function') {
-    callback = location;
-    location = null;
-  }
+          if (!hasAnyProperties(RouteHooks)) {
+            history.unregisterTransitionHook(transitionHook);
 
-  var router = createRouter({
-    routes: routes,
-    location: location
-  });
+            if (history.unregisterBeforeUnloadHook) history.unregisterBeforeUnloadHook(beforeUnloadHook);
+          }
+        } else {
+          RouteHooks[routeID] = newHooks;
+        }
+      }
+    }
 
-  router.run(callback);
+    /**
+     * This is the API for stateful environments. As the location changes,
+     * we update state and call the listener. Benefits of this API are:
+     *
+     * - We automatically manage state on the client
+     * - We automatically handle redirects on the client
+     * - We warn when the location doesn't match any routes
+     */
+    function listen(listener) {
+      return history.listen(function (location) {
+        if (state.location === location) {
+          listener(null, state);
+        } else {
+          match(location, function (error, nextLocation, nextState) {
+            if (error) {
+              listener(error);
+            } else if (nextState) {
+              listener(null, state); // match mutates state to nextState
+            } else if (nextLocation) {
+                history.transitionTo(nextLocation);
+              } else {
+                _warning2['default'](false, 'Location "%s" did not match any routes', location.pathname + location.search);
+              }
+          });
+        }
+      });
+    }
 
-  return router;
+    return _extends({}, history, {
+      isActive: isActive,
+      registerRouteHook: registerRouteHook,
+      unregisterRouteHook: unregisterRouteHook,
+      listen: listen,
+      match: match
+    });
+  };
 }
 
-module.exports = runRouter;
-},{"./createRouter":74}],85:[function(require,module,exports){
+exports['default'] = useRoutes;
+module.exports = exports['default'];
+},{"./TransitionUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\TransitionUtils.js","./computeChangedRoutes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\computeChangedRoutes.js","./getComponents":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\getComponents.js","./isActive":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\isActive.js","./matchRoutes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\lib\\matchRoutes.js","history/lib/Actions":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\Actions.js","history/lib/createLocation":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createLocation.js","history/lib/useQueries":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\useQueries.js","warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\warning\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\Actions.js":[function(require,module,exports){
+/**
+ * Indicates that navigation was caused by a call to history.push.
+ */
 'use strict';
 
+exports.__esModule = true;
+var PUSH = 'PUSH';
+
+exports.PUSH = PUSH;
+/**
+ * Indicates that navigation was caused by a call to history.replace.
+ */
+var REPLACE = 'REPLACE';
+
+exports.REPLACE = REPLACE;
+/**
+ * Indicates that navigation was caused by some other action such
+ * as using a browser's back/forward buttons and/or manually manipulating
+ * the URL in a browser's location bar. This is the default.
+ *
+ * See https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onpopstate
+ * for more information.
+ */
+var POP = 'POP';
+
+exports.POP = POP;
+exports['default'] = {
+  PUSH: PUSH,
+  REPLACE: REPLACE,
+  POP: POP
+};
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\AsyncUtils.js":[function(require,module,exports){
+"use strict";
+
+exports.__esModule = true;
+exports.loopAsync = loopAsync;
+
+function loopAsync(turns, work, callback) {
+  var currentTurn = 0;
+  var isDone = false;
+
+  function done() {
+    isDone = true;
+    callback.apply(this, arguments);
+  }
+
+  function next() {
+    if (isDone) return;
+
+    if (currentTurn < turns) {
+      work.call(this, currentTurn++, next, done);
+    } else {
+      done.apply(this, arguments);
+    }
+  }
+
+  next();
+}
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\DOMStateStorage.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+exports.saveState = saveState;
+exports.readState = readState;
+var KeyPrefix = '@@History/';
+
+function createKey(key) {
+  return KeyPrefix + key;
+}
+
+function saveState(key, state) {
+  window.sessionStorage.setItem(createKey(key), JSON.stringify(state));
+}
+
+function readState(key) {
+  var json = window.sessionStorage.getItem(createKey(key));
+
+  if (json) {
+    try {
+      return JSON.parse(json);
+    } catch (error) {
+      // Ignore invalid JSON.
+    }
+  }
+
+  return null;
+}
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\DOMUtils.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+exports.addEventListener = addEventListener;
+exports.removeEventListener = removeEventListener;
+exports.getHashPath = getHashPath;
+exports.replaceHashPath = replaceHashPath;
+exports.getWindowPath = getWindowPath;
+exports.go = go;
+exports.getUserConfirmation = getUserConfirmation;
+exports.supportsHistory = supportsHistory;
+exports.supportsGoWithoutReloadUsingHash = supportsGoWithoutReloadUsingHash;
+
+function addEventListener(node, event, listener) {
+  if (node.addEventListener) {
+    node.addEventListener(event, listener, false);
+  } else {
+    node.attachEvent('on' + event, listener);
+  }
+}
+
+function removeEventListener(node, event, listener) {
+  if (node.removeEventListener) {
+    node.removeEventListener(event, listener, false);
+  } else {
+    node.detachEvent('on' + event, listener);
+  }
+}
+
+function getHashPath() {
+  // We can't use window.location.hash here because it's not
+  // consistent across browsers - Firefox will pre-decode it!
+  return window.location.href.split('#')[1] || '';
+}
+
+function replaceHashPath(path) {
+  window.location.replace(window.location.pathname + window.location.search + '#' + path);
+}
+
+function getWindowPath() {
+  return window.location.pathname + window.location.search;
+}
+
+function go(n) {
+  if (n) window.history.go(n);
+}
+
+function getUserConfirmation(message, callback) {
+  callback(window.confirm(message));
+}
+
+/**
+ * Returns true if the HTML5 history API is supported. Taken from modernizr.
+ *
+ * https://github.com/Modernizr/Modernizr/blob/master/LICENSE
+ * https://github.com/Modernizr/Modernizr/blob/master/feature-detects/history.js
+ * changed to avoid false negatives for Windows Phones: https://github.com/rackt/react-router/issues/586
+ */
+
 function supportsHistory() {
-  /*! taken from modernizr
-   * https://github.com/Modernizr/Modernizr/blob/master/LICENSE
-   * https://github.com/Modernizr/Modernizr/blob/master/feature-detects/history.js
-   * changed to avoid false negatives for Windows Phones: https://github.com/rackt/react-router/issues/586
-   */
   var ua = navigator.userAgent;
   if ((ua.indexOf('Android 2.') !== -1 || ua.indexOf('Android 4.0') !== -1) && ua.indexOf('Mobile Safari') !== -1 && ua.indexOf('Chrome') === -1 && ua.indexOf('Windows Phone') === -1) {
     return false;
@@ -18516,39 +18087,914 @@ function supportsHistory() {
   return window.history && 'pushState' in window.history;
 }
 
-module.exports = supportsHistory;
-},{}],86:[function(require,module,exports){
+/**
+ * Returns false if using go(n) with hash history causes a full page reload.
+ */
+
+function supportsGoWithoutReloadUsingHash() {
+  var ua = navigator.userAgent;
+  return ua.indexOf('Firefox') === -1;
+}
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\ExecutionEnvironment.js":[function(require,module,exports){
 'use strict';
 
-function ToObject(val) {
-	if (val == null) {
-		throw new TypeError('Object.assign cannot be called with null or undefined');
-	}
+exports.__esModule = true;
+var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+exports.canUseDOM = canUseDOM;
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createDOMHistory.js":[function(require,module,exports){
+'use strict';
 
-	return Object(val);
+exports.__esModule = true;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _invariant = require('invariant');
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _ExecutionEnvironment = require('./ExecutionEnvironment');
+
+var _DOMUtils = require('./DOMUtils');
+
+var _createHistory = require('./createHistory');
+
+var _createHistory2 = _interopRequireDefault(_createHistory);
+
+function createDOMHistory(options) {
+  var history = _createHistory2['default'](_extends({
+    getUserConfirmation: _DOMUtils.getUserConfirmation
+  }, options, {
+    go: _DOMUtils.go
+  }));
+
+  function listen(listener) {
+    _invariant2['default'](_ExecutionEnvironment.canUseDOM, 'DOM history needs a DOM');
+
+    return history.listen(listener);
+  }
+
+  return _extends({}, history, {
+    listen: listen
+  });
 }
 
-module.exports = Object.assign || function (target, source) {
-	var from;
-	var keys;
-	var to = ToObject(target);
+exports['default'] = createDOMHistory;
+module.exports = exports['default'];
+},{"./DOMUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\DOMUtils.js","./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\ExecutionEnvironment.js","./createHistory":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createHistory.js","invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\invariant\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createHashHistory.js":[function(require,module,exports){
+'use strict';
 
-	for (var s = 1; s < arguments.length; s++) {
-		from = arguments[s];
-		keys = Object.keys(Object(from));
+exports.__esModule = true;
 
-		for (var i = 0; i < keys.length; i++) {
-			to[keys[i]] = from[keys[i]];
-		}
-	}
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	return to;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _invariant = require('invariant');
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _Actions = require('./Actions');
+
+var _ExecutionEnvironment = require('./ExecutionEnvironment');
+
+var _DOMUtils = require('./DOMUtils');
+
+var _DOMStateStorage = require('./DOMStateStorage');
+
+var _createDOMHistory = require('./createDOMHistory');
+
+var _createDOMHistory2 = _interopRequireDefault(_createDOMHistory);
+
+var _createLocation = require('./createLocation');
+
+var _createLocation2 = _interopRequireDefault(_createLocation);
+
+function isAbsolutePath(path) {
+  return typeof path === 'string' && path.charAt(0) === '/';
+}
+
+function ensureSlash() {
+  var path = _DOMUtils.getHashPath();
+
+  if (isAbsolutePath(path)) return true;
+
+  _DOMUtils.replaceHashPath('/' + path);
+
+  return false;
+}
+
+function addQueryStringValueToPath(path, key, value) {
+  return path + (path.indexOf('?') === -1 ? '?' : '&') + (key + '=' + value);
+}
+
+function stripQueryStringValueFromPath(path, key) {
+  return path.replace(new RegExp('[?&]?' + key + '=[a-zA-Z0-9]+'), '');
+}
+
+function getQueryStringValueFromPath(path, key) {
+  var match = path.match(new RegExp('\\?.*?\\b' + key + '=(.+?)\\b'));
+  return match && match[1];
+}
+
+var DefaultQueryKey = '_k';
+
+function createHashHistory() {
+  var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+
+  _invariant2['default'](_ExecutionEnvironment.canUseDOM, 'Hash history needs a DOM');
+
+  var queryKey = options.queryKey;
+
+  if (queryKey === undefined || !!queryKey) queryKey = typeof queryKey === 'string' ? queryKey : DefaultQueryKey;
+
+  function getCurrentLocation() {
+    var path = _DOMUtils.getHashPath();
+
+    var key = undefined,
+        state = undefined;
+    if (queryKey) {
+      key = getQueryStringValueFromPath(path, queryKey);
+      path = stripQueryStringValueFromPath(path, queryKey);
+
+      if (key) {
+        state = _DOMStateStorage.readState(key);
+      } else {
+        state = null;
+        key = history.createKey();
+        _DOMUtils.replaceHashPath(addQueryStringValueToPath(path, queryKey, key));
+      }
+    }
+
+    return _createLocation2['default'](path, state, undefined, key);
+  }
+
+  function startHashChangeListener(_ref) {
+    var transitionTo = _ref.transitionTo;
+
+    function hashChangeListener() {
+      if (!ensureSlash()) return; // Always make sure hashes are preceeded with a /.
+
+      transitionTo(getCurrentLocation());
+    }
+
+    ensureSlash();
+    _DOMUtils.addEventListener(window, 'hashchange', hashChangeListener);
+
+    return function () {
+      _DOMUtils.removeEventListener(window, 'hashchange', hashChangeListener);
+    };
+  }
+
+  function finishTransition(location) {
+    var pathname = location.pathname;
+    var search = location.search;
+    var state = location.state;
+    var action = location.action;
+    var key = location.key;
+
+    if (action === _Actions.POP) return; // Nothing to do.
+
+    var path = pathname + search;
+
+    if (queryKey) path = addQueryStringValueToPath(path, queryKey, key);
+
+    if (path === _DOMUtils.getHashPath()) {
+      _warning2['default'](false, 'You cannot %s the same path using hash history', action);
+    } else {
+      if (queryKey) {
+        _DOMStateStorage.saveState(key, state);
+      } else {
+        // Drop key and state.
+        location.key = location.state = null;
+      }
+
+      if (action === _Actions.PUSH) {
+        window.location.hash = path;
+      } else {
+        // REPLACE
+        _DOMUtils.replaceHashPath(path);
+      }
+    }
+  }
+
+  var history = _createDOMHistory2['default'](_extends({}, options, {
+    getCurrentLocation: getCurrentLocation,
+    finishTransition: finishTransition,
+    saveState: _DOMStateStorage.saveState
+  }));
+
+  var listenerCount = 0,
+      stopHashChangeListener = undefined;
+
+  function listen(listener) {
+    if (++listenerCount === 1) stopHashChangeListener = startHashChangeListener(history);
+
+    var unlisten = history.listen(listener);
+
+    return function () {
+      unlisten();
+
+      if (--listenerCount === 0) stopHashChangeListener();
+    };
+  }
+
+  function pushState(state, path) {
+    _warning2['default'](queryKey || state == null, 'You cannot use state without a queryKey it will be dropped');
+
+    history.pushState(state, path);
+  }
+
+  function replaceState(state, path) {
+    _warning2['default'](queryKey || state == null, 'You cannot use state without a queryKey it will be dropped');
+
+    history.replaceState(state, path);
+  }
+
+  var goIsSupportedWithoutReload = _DOMUtils.supportsGoWithoutReloadUsingHash();
+
+  function go(n) {
+    _warning2['default'](goIsSupportedWithoutReload, 'Hash history go(n) causes a full page reload in this browser');
+
+    history.go(n);
+  }
+
+  function createHref(path) {
+    return '#' + history.createHref(path);
+  }
+
+  return _extends({}, history, {
+    listen: listen,
+    pushState: pushState,
+    replaceState: replaceState,
+    go: go,
+    createHref: createHref
+  });
+}
+
+exports['default'] = createHashHistory;
+module.exports = exports['default'];
+},{"./Actions":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\Actions.js","./DOMStateStorage":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\DOMStateStorage.js","./DOMUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\DOMUtils.js","./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\ExecutionEnvironment.js","./createDOMHistory":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createDOMHistory.js","./createLocation":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createLocation.js","invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\invariant\\browser.js","warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\warning\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createHistory.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _invariant = require('invariant');
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _deepEqual = require('deep-equal');
+
+var _deepEqual2 = _interopRequireDefault(_deepEqual);
+
+var _AsyncUtils = require('./AsyncUtils');
+
+var _Actions = require('./Actions');
+
+var _createLocation = require('./createLocation');
+
+var _createLocation2 = _interopRequireDefault(_createLocation);
+
+function createRandomKey(length) {
+  return Math.random().toString(36).substr(2, length);
+}
+
+function locationsAreEqual(a, b) {
+  return a.pathname === b.pathname && a.search === b.search &&
+  //a.action === b.action && // Different action !== location change.
+  a.key === b.key && _deepEqual2['default'](a.state, b.state);
+}
+
+var DefaultKeyLength = 6;
+
+function createHistory() {
+  var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+  var getCurrentLocation = options.getCurrentLocation;
+  var finishTransition = options.finishTransition;
+  var saveState = options.saveState;
+  var go = options.go;
+  var keyLength = options.keyLength;
+  var getUserConfirmation = options.getUserConfirmation;
+
+  if (typeof keyLength !== 'number') keyLength = DefaultKeyLength;
+
+  var transitionHooks = [];
+  var changeListeners = [];
+  var location = undefined;
+
+  var allKeys = [];
+
+  function getCurrent() {
+    if (pendingLocation && pendingLocation.action === _Actions.POP) {
+      return allKeys.indexOf(pendingLocation.key);
+    } else if (location) {
+      return allKeys.indexOf(location.key);
+    } else {
+      return -1;
+    }
+  }
+
+  function updateLocation(newLocation) {
+    var current = getCurrent();
+
+    location = newLocation;
+
+    if (location.action === _Actions.PUSH) {
+      allKeys = [].concat(allKeys.slice(0, current + 1), [location.key]);
+    } else if (location.action === _Actions.REPLACE) {
+      allKeys[current] = location.key;
+    }
+
+    changeListeners.forEach(function (listener) {
+      listener(location);
+    });
+  }
+
+  function addChangeListener(listener) {
+    changeListeners.push(listener);
+  }
+
+  function removeChangeListener(listener) {
+    changeListeners = changeListeners.filter(function (item) {
+      return item !== listener;
+    });
+  }
+
+  function listen(listener) {
+    addChangeListener(listener);
+
+    if (location) {
+      listener(location);
+    } else {
+      var _location = getCurrentLocation();
+      allKeys = [_location.key];
+      updateLocation(_location);
+    }
+
+    return function () {
+      removeChangeListener(listener);
+    };
+  }
+
+  function registerTransitionHook(hook) {
+    if (transitionHooks.indexOf(hook) === -1) transitionHooks.push(hook);
+  }
+
+  function unregisterTransitionHook(hook) {
+    transitionHooks = transitionHooks.filter(function (item) {
+      return item !== hook;
+    });
+  }
+
+  function runTransitionHook(hook, location, callback) {
+    var result = hook(location, callback);
+
+    if (hook.length < 2) {
+      // Assume the hook runs synchronously and automatically
+      // call the callback with the return value.
+      callback(result);
+    } else {
+      _warning2['default'](result === undefined, 'You should not "return" in a transition hook with a callback argument call the callback instead');
+    }
+  }
+
+  function confirmTransitionTo(location, callback) {
+    _AsyncUtils.loopAsync(transitionHooks.length, function (index, next, done) {
+      runTransitionHook(transitionHooks[index], location, function (result) {
+        if (result != null) {
+          done(result);
+        } else {
+          next();
+        }
+      });
+    }, function (message) {
+      if (getUserConfirmation && typeof message === 'string') {
+        getUserConfirmation(message, function (ok) {
+          callback(ok !== false);
+        });
+      } else {
+        callback(message !== false);
+      }
+    });
+  }
+
+  var pendingLocation = undefined;
+
+  function transitionTo(nextLocation) {
+    if (location && locationsAreEqual(location, nextLocation)) return; // Nothing to do.
+
+    _invariant2['default'](pendingLocation == null, 'transitionTo: Another transition is already in progress');
+
+    pendingLocation = nextLocation;
+
+    confirmTransitionTo(nextLocation, function (ok) {
+      pendingLocation = null;
+
+      if (ok) {
+        finishTransition(nextLocation);
+        updateLocation(nextLocation);
+      } else if (location && nextLocation.action === _Actions.POP) {
+        var prevIndex = allKeys.indexOf(location.key);
+        var nextIndex = allKeys.indexOf(nextLocation.key);
+
+        if (prevIndex !== -1 && nextIndex !== -1) go(prevIndex - nextIndex); // Restore the URL.
+      }
+    });
+  }
+
+  function pushState(state, path) {
+    transitionTo(_createLocation2['default'](path, state, _Actions.PUSH, createKey()));
+  }
+
+  function replaceState(state, path) {
+    transitionTo(_createLocation2['default'](path, state, _Actions.REPLACE, createKey()));
+  }
+
+  function setState(state) {
+    if (location) {
+      updateLocationState(location, state);
+      updateLocation(location);
+    } else {
+      updateLocationState(getCurrentLocation(), state);
+    }
+  }
+
+  function updateLocationState(location, state) {
+    location.state = _extends({}, location.state, state);
+    saveState(location.key, location.state);
+  }
+
+  function goBack() {
+    go(-1);
+  }
+
+  function goForward() {
+    go(1);
+  }
+
+  function createKey() {
+    return createRandomKey(keyLength);
+  }
+
+  function createPath(path) {
+    return path;
+  }
+
+  function createHref(path) {
+    return createPath(path);
+  }
+
+  return {
+    listen: listen,
+    registerTransitionHook: registerTransitionHook,
+    unregisterTransitionHook: unregisterTransitionHook,
+    transitionTo: transitionTo,
+    pushState: pushState,
+    replaceState: replaceState,
+    setState: setState,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    createKey: createKey,
+    createPath: createPath,
+    createHref: createHref
+  };
+}
+
+exports['default'] = createHistory;
+module.exports = exports['default'];
+},{"./Actions":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\Actions.js","./AsyncUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\AsyncUtils.js","./createLocation":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createLocation.js","deep-equal":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\deep-equal\\index.js","invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\invariant\\browser.js","warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\warning\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createLocation.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _Actions = require('./Actions');
+
+function extractPath(string) {
+  var match = string.match(/https?:\/\/[^\/]*/);
+
+  if (match == null) return string;
+
+  _warning2['default'](false, 'Location path must be pathname + query string only, not a fully qualified URL like "%s"', string);
+
+  return string.substring(match[0].length);
+}
+
+function createLocation() {
+  var path = arguments.length <= 0 || arguments[0] === undefined ? '/' : arguments[0];
+  var state = arguments.length <= 1 || arguments[1] === undefined ? null : arguments[1];
+  var action = arguments.length <= 2 || arguments[2] === undefined ? _Actions.POP : arguments[2];
+  var key = arguments.length <= 3 || arguments[3] === undefined ? null : arguments[3];
+
+  path = extractPath(path);
+
+  var pathname = path;
+  var search = '';
+  var hash = '';
+
+  var hashIndex = pathname.indexOf('#');
+  if (hashIndex !== -1) {
+    hash = pathname.substring(hashIndex);
+    pathname = pathname.substring(0, hashIndex);
+  }
+
+  var searchIndex = pathname.indexOf('?');
+  if (searchIndex !== -1) {
+    search = pathname.substring(searchIndex);
+    pathname = pathname.substring(0, searchIndex);
+  }
+
+  if (pathname === '') pathname = '/';
+
+  return {
+    pathname: pathname,
+    search: search,
+    hash: hash,
+    state: state,
+    action: action,
+    key: key
+  };
+}
+
+exports['default'] = createLocation;
+module.exports = exports['default'];
+},{"./Actions":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\Actions.js","warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\warning\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createMemoryHistory.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _invariant = require('invariant');
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _Actions = require('./Actions');
+
+var _createLocation = require('./createLocation');
+
+var _createLocation2 = _interopRequireDefault(_createLocation);
+
+var _createHistory = require('./createHistory');
+
+var _createHistory2 = _interopRequireDefault(_createHistory);
+
+function createStorage(entries) {
+  return entries.filter(function (entry) {
+    return entry.state;
+  }).reduce(function (memo, entry) {
+    memo[entry.key] = entry.state;
+    return memo;
+  }, {});
+}
+
+function createMemoryHistory() {
+  var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+
+  if (Array.isArray(options)) {
+    options = { entries: options };
+  } else if (typeof options === 'string') {
+    options = { entries: [options] };
+  }
+
+  var history = _createHistory2['default'](_extends({}, options, {
+    getCurrentLocation: getCurrentLocation,
+    finishTransition: finishTransition,
+    saveState: saveState,
+    go: go
+  }));
+
+  var _options = options;
+  var entries = _options.entries;
+  var current = _options.current;
+
+  if (typeof entries === 'string') {
+    entries = [entries];
+  } else if (!Array.isArray(entries)) {
+    entries = ['/'];
+  }
+
+  entries = entries.map(function (entry) {
+    var key = history.createKey();
+
+    if (typeof entry === 'string') return { pathname: entry, key: key };
+
+    if (typeof entry === 'object' && entry) return _extends({}, entry, { key: key });
+
+    _invariant2['default'](false, 'Unable to create history entry from %s', entry);
+  });
+
+  if (current == null) {
+    current = entries.length - 1;
+  } else {
+    _invariant2['default'](current >= 0 && current < entries.length, 'Current index must be >= 0 and < %s, was %s', entries.length, current);
+  }
+
+  var storage = createStorage(entries);
+
+  function saveState(key, state) {
+    storage[key] = state;
+  }
+
+  function readState(key) {
+    return storage[key];
+  }
+
+  function getCurrentLocation() {
+    var entry = entries[current];
+    var key = entry.key;
+    var pathname = entry.pathname;
+    var search = entry.search;
+
+    var path = pathname + (search || '');
+
+    var state = undefined;
+    if (key) {
+      state = readState(key);
+    } else {
+      state = null;
+      key = history.createKey();
+      entry.key = key;
+    }
+
+    return _createLocation2['default'](path, state, undefined, key);
+  }
+
+  function canGo(n) {
+    var index = current + n;
+    return index >= 0 && index < entries.length;
+  }
+
+  function go(n) {
+    if (n) {
+      _invariant2['default'](canGo(n), 'Cannot go(%s) there is not enough history', n);
+
+      current += n;
+
+      var currentLocation = getCurrentLocation();
+
+      // change action to POP
+      history.transitionTo(_extends({}, currentLocation, { action: _Actions.POP }));
+    }
+  }
+
+  function finishTransition(location) {
+    switch (location.action) {
+      case _Actions.PUSH:
+        current += 1;
+
+        // if we are not on the top of stack
+        // remove rest and push new
+        if (current < entries.length) {
+          entries.splice(current);
+        }
+
+        entries.push(location);
+        saveState(location.key, location.state);
+        break;
+      case _Actions.REPLACE:
+        entries[current] = location;
+        saveState(location.key, location.state);
+        break;
+    }
+  }
+
+  return history;
+}
+
+exports['default'] = createMemoryHistory;
+module.exports = exports['default'];
+},{"./Actions":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\Actions.js","./createHistory":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createHistory.js","./createLocation":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\createLocation.js","invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\invariant\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\lib\\useQueries.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var _qs = require('qs');
+
+var _qs2 = _interopRequireDefault(_qs);
+
+function defaultStringifyQuery(query) {
+  return _qs2['default'].stringify(query, { arrayFormat: 'brackets' });
+}
+
+function defaultParseQueryString(queryString) {
+  return _qs2['default'].parse(queryString);
+}
+
+/**
+ * Returns a new createHistory function that may be used to create
+ * history objects that know how to handle URL queries.
+ */
+function useQueries(createHistory) {
+  return function () {
+    var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+    var stringifyQuery = options.stringifyQuery;
+    var parseQueryString = options.parseQueryString;
+
+    var historyOptions = _objectWithoutProperties(options, ['stringifyQuery', 'parseQueryString']);
+
+    var history = createHistory(historyOptions);
+
+    if (typeof stringifyQuery !== 'function') stringifyQuery = defaultStringifyQuery;
+
+    if (typeof parseQueryString !== 'function') parseQueryString = defaultParseQueryString;
+
+    function listen(listener) {
+      return history.listen(function (location) {
+        if (!location.query) location.query = parseQueryString(location.search.substring(1));
+
+        listener(location);
+      });
+    }
+
+    function pushState(state, pathname, query) {
+      return history.pushState(state, createPath(pathname, query));
+    }
+
+    function replaceState(state, pathname, query) {
+      return history.replaceState(state, createPath(pathname, query));
+    }
+
+    function createPath(pathname, query) {
+      var queryString = undefined;
+      if (query == null || (queryString = stringifyQuery(query)) === '') return pathname;
+
+      return history.createPath(pathname + (pathname.indexOf('?') === -1 ? '?' : '&') + queryString);
+    }
+
+    function createHref(pathname, query) {
+      return history.createHref(createPath(pathname, query));
+    }
+
+    return _extends({}, history, {
+      listen: listen,
+      pushState: pushState,
+      replaceState: replaceState,
+      createPath: createPath,
+      createHref: createHref
+    });
+  };
+}
+
+exports['default'] = useQueries;
+module.exports = exports['default'];
+},{"qs":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\qs\\lib\\index.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\deep-equal\\index.js":[function(require,module,exports){
+var pSlice = Array.prototype.slice;
+var objectKeys = require('./lib/keys.js');
+var isArguments = require('./lib/is_arguments.js');
+
+var deepEqual = module.exports = function (actual, expected, opts) {
+  if (!opts) opts = {};
+  // 7.1. All identical values are equivalent, as determined by ===.
+  if (actual === expected) {
+    return true;
+
+  } else if (actual instanceof Date && expected instanceof Date) {
+    return actual.getTime() === expected.getTime();
+
+  // 7.3. Other pairs that do not both pass typeof value == 'object',
+  // equivalence is determined by ==.
+  } else if (!actual || !expected || typeof actual != 'object' && typeof expected != 'object') {
+    return opts.strict ? actual === expected : actual == expected;
+
+  // 7.4. For all other Object pairs, including Array objects, equivalence is
+  // determined by having the same number of owned properties (as verified
+  // with Object.prototype.hasOwnProperty.call), the same set of keys
+  // (although not necessarily the same order), equivalent values for every
+  // corresponding key, and an identical 'prototype' property. Note: this
+  // accounts for both named and indexed properties on Arrays.
+  } else {
+    return objEquiv(actual, expected, opts);
+  }
+}
+
+function isUndefinedOrNull(value) {
+  return value === null || value === undefined;
+}
+
+function isBuffer (x) {
+  if (!x || typeof x !== 'object' || typeof x.length !== 'number') return false;
+  if (typeof x.copy !== 'function' || typeof x.slice !== 'function') {
+    return false;
+  }
+  if (x.length > 0 && typeof x[0] !== 'number') return false;
+  return true;
+}
+
+function objEquiv(a, b, opts) {
+  var i, key;
+  if (isUndefinedOrNull(a) || isUndefinedOrNull(b))
+    return false;
+  // an identical 'prototype' property.
+  if (a.prototype !== b.prototype) return false;
+  //~~~I've managed to break Object.keys through screwy arguments passing.
+  //   Converting to array solves the problem.
+  if (isArguments(a)) {
+    if (!isArguments(b)) {
+      return false;
+    }
+    a = pSlice.call(a);
+    b = pSlice.call(b);
+    return deepEqual(a, b, opts);
+  }
+  if (isBuffer(a)) {
+    if (!isBuffer(b)) {
+      return false;
+    }
+    if (a.length !== b.length) return false;
+    for (i = 0; i < a.length; i++) {
+      if (a[i] !== b[i]) return false;
+    }
+    return true;
+  }
+  try {
+    var ka = objectKeys(a),
+        kb = objectKeys(b);
+  } catch (e) {//happens when one is a string literal and the other isn't
+    return false;
+  }
+  // having the same number of owned properties (keys incorporates
+  // hasOwnProperty)
+  if (ka.length != kb.length)
+    return false;
+  //the same set of keys (although not necessarily the same order),
+  ka.sort();
+  kb.sort();
+  //~~~cheap key test
+  for (i = ka.length - 1; i >= 0; i--) {
+    if (ka[i] != kb[i])
+      return false;
+  }
+  //equivalent values for every corresponding key, and
+  //~~~possibly expensive deep test
+  for (i = ka.length - 1; i >= 0; i--) {
+    key = ka[i];
+    if (!deepEqual(a[key], b[key], opts)) return false;
+  }
+  return typeof a === typeof b;
+}
+
+},{"./lib/is_arguments.js":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\deep-equal\\lib\\is_arguments.js","./lib/keys.js":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\deep-equal\\lib\\keys.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\deep-equal\\lib\\is_arguments.js":[function(require,module,exports){
+var supportsArgumentsClass = (function(){
+  return Object.prototype.toString.call(arguments)
+})() == '[object Arguments]';
+
+exports = module.exports = supportsArgumentsClass ? supported : unsupported;
+
+exports.supported = supported;
+function supported(object) {
+  return Object.prototype.toString.call(object) == '[object Arguments]';
 };
 
-},{}],87:[function(require,module,exports){
-module.exports = require('./lib/');
+exports.unsupported = unsupported;
+function unsupported(object){
+  return object &&
+    typeof object == 'object' &&
+    typeof object.length == 'number' &&
+    Object.prototype.hasOwnProperty.call(object, 'callee') &&
+    !Object.prototype.propertyIsEnumerable.call(object, 'callee') ||
+    false;
+};
 
-},{"./lib/":88}],88:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\deep-equal\\lib\\keys.js":[function(require,module,exports){
+exports = module.exports = typeof Object.keys === 'function'
+  ? Object.keys : shim;
+
+exports.shim = shim;
+function shim (obj) {
+  var keys = [];
+  for (var key in obj) keys.push(key);
+  return keys;
+}
+
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\qs\\lib\\index.js":[function(require,module,exports){
 // Load modules
 
 var Stringify = require('./stringify');
@@ -18565,7 +19011,7 @@ module.exports = {
     parse: Parse
 };
 
-},{"./parse":89,"./stringify":90}],89:[function(require,module,exports){
+},{"./parse":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\qs\\lib\\parse.js","./stringify":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\qs\\lib\\stringify.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\qs\\lib\\parse.js":[function(require,module,exports){
 // Load modules
 
 var Utils = require('./utils');
@@ -18577,7 +19023,10 @@ var internals = {
     delimiter: '&',
     depth: 5,
     arrayLimit: 20,
-    parameterLimit: 1000
+    parameterLimit: 1000,
+    strictNullHandling: false,
+    plainObjects: false,
+    allowPrototypes: false
 };
 
 
@@ -18592,16 +19041,16 @@ internals.parseValues = function (str, options) {
 
         if (pos === -1) {
             obj[Utils.decode(part)] = '';
+
+            if (options.strictNullHandling) {
+                obj[Utils.decode(part)] = null;
+            }
         }
         else {
             var key = Utils.decode(part.slice(0, pos));
             var val = Utils.decode(part.slice(pos + 1));
 
-            if (Object.prototype.hasOwnProperty(key)) {
-                continue;
-            }
-
-            if (!obj.hasOwnProperty(key)) {
+            if (!Object.prototype.hasOwnProperty.call(obj, key)) {
                 obj[key] = val;
             }
             else {
@@ -18622,12 +19071,13 @@ internals.parseObject = function (chain, val, options) {
 
     var root = chain.shift();
 
-    var obj = {};
+    var obj;
     if (root === '[]') {
         obj = [];
         obj = obj.concat(internals.parseObject(chain, val, options));
     }
     else {
+        obj = options.plainObjects ? Object.create(null) : {};
         var cleanRoot = root[0] === '[' && root[root.length - 1] === ']' ? root.slice(1, root.length - 1) : root;
         var index = parseInt(cleanRoot, 10);
         var indexString = '' + index;
@@ -18635,7 +19085,8 @@ internals.parseObject = function (chain, val, options) {
             root !== cleanRoot &&
             indexString === cleanRoot &&
             index >= 0 &&
-            index <= options.arrayLimit) {
+            (options.parseArrays &&
+             index <= options.arrayLimit)) {
 
             obj = [];
             obj[index] = internals.parseObject(chain, val, options);
@@ -18655,6 +19106,12 @@ internals.parseKeys = function (key, val, options) {
         return;
     }
 
+    // Transform dot notation to bracket notation
+
+    if (options.allowDots) {
+        key = key.replace(/\.([^\.\[]+)/g, '[$1]');
+    }
+
     // The regex chunks
 
     var parent = /^([^\[\]]*)/;
@@ -18664,16 +19121,20 @@ internals.parseKeys = function (key, val, options) {
 
     var segment = parent.exec(key);
 
-    // Don't allow them to overwrite object prototype properties
-
-    if (Object.prototype.hasOwnProperty(segment[1])) {
-        return;
-    }
-
     // Stash the parent if it exists
 
     var keys = [];
     if (segment[1]) {
+        // If we aren't using plain objects, optionally prefix keys
+        // that would overwrite object prototype properties
+        if (!options.plainObjects &&
+            Object.prototype.hasOwnProperty(segment[1])) {
+
+            if (!options.allowPrototypes) {
+                return;
+            }
+        }
+
         keys.push(segment[1]);
     }
 
@@ -18683,9 +19144,14 @@ internals.parseKeys = function (key, val, options) {
     while ((segment = child.exec(key)) !== null && i < options.depth) {
 
         ++i;
-        if (!Object.prototype.hasOwnProperty(segment[1].replace(/\[|\]/g, ''))) {
-            keys.push(segment[1]);
+        if (!options.plainObjects &&
+            Object.prototype.hasOwnProperty(segment[1].replace(/\[|\]/g, ''))) {
+
+            if (!options.allowPrototypes) {
+                continue;
+            }
         }
+        keys.push(segment[1]);
     }
 
     // If there's a remainder, just add whatever is left
@@ -18700,21 +19166,26 @@ internals.parseKeys = function (key, val, options) {
 
 module.exports = function (str, options) {
 
-    if (str === '' ||
-        str === null ||
-        typeof str === 'undefined') {
-
-        return {};
-    }
-
     options = options || {};
     options.delimiter = typeof options.delimiter === 'string' || Utils.isRegExp(options.delimiter) ? options.delimiter : internals.delimiter;
     options.depth = typeof options.depth === 'number' ? options.depth : internals.depth;
     options.arrayLimit = typeof options.arrayLimit === 'number' ? options.arrayLimit : internals.arrayLimit;
+    options.parseArrays = options.parseArrays !== false;
+    options.allowDots = options.allowDots !== false;
+    options.plainObjects = typeof options.plainObjects === 'boolean' ? options.plainObjects : internals.plainObjects;
+    options.allowPrototypes = typeof options.allowPrototypes === 'boolean' ? options.allowPrototypes : internals.allowPrototypes;
     options.parameterLimit = typeof options.parameterLimit === 'number' ? options.parameterLimit : internals.parameterLimit;
+    options.strictNullHandling = typeof options.strictNullHandling === 'boolean' ? options.strictNullHandling : internals.strictNullHandling;
+
+    if (str === '' ||
+        str === null ||
+        typeof str === 'undefined') {
+
+        return options.plainObjects ? Object.create(null) : {};
+    }
 
     var tempObj = typeof str === 'string' ? internals.parseValues(str, options) : str;
-    var obj = {};
+    var obj = options.plainObjects ? Object.create(null) : {};
 
     // Iterate over the keys and setup the new object
 
@@ -18722,13 +19193,13 @@ module.exports = function (str, options) {
     for (var i = 0, il = keys.length; i < il; ++i) {
         var key = keys[i];
         var newObj = internals.parseKeys(key, tempObj[key], options);
-        obj = Utils.merge(obj, newObj);
+        obj = Utils.merge(obj, newObj, options);
     }
 
     return Utils.compact(obj);
 };
 
-},{"./utils":91}],90:[function(require,module,exports){
+},{"./utils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\qs\\lib\\utils.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\qs\\lib\\stringify.js":[function(require,module,exports){
 // Load modules
 
 var Utils = require('./utils');
@@ -18740,27 +19211,38 @@ var internals = {
     delimiter: '&',
     arrayPrefixGenerators: {
         brackets: function (prefix, key) {
+
             return prefix + '[]';
         },
         indices: function (prefix, key) {
+
             return prefix + '[' + key + ']';
         },
         repeat: function (prefix, key) {
+
             return prefix;
         }
-    }
+    },
+    strictNullHandling: false
 };
 
 
-internals.stringify = function (obj, prefix, generateArrayPrefix) {
+internals.stringify = function (obj, prefix, generateArrayPrefix, strictNullHandling, filter) {
 
-    if (Utils.isBuffer(obj)) {
+    if (typeof filter === 'function') {
+        obj = filter(prefix, obj);
+    }
+    else if (Utils.isBuffer(obj)) {
         obj = obj.toString();
     }
     else if (obj instanceof Date) {
         obj = obj.toISOString();
     }
     else if (obj === null) {
+        if (strictNullHandling) {
+            return Utils.encode(prefix);
+        }
+
         obj = '';
     }
 
@@ -18768,7 +19250,7 @@ internals.stringify = function (obj, prefix, generateArrayPrefix) {
         typeof obj === 'number' ||
         typeof obj === 'boolean') {
 
-        return [encodeURIComponent(prefix) + '=' + encodeURIComponent(obj)];
+        return [Utils.encode(prefix) + '=' + Utils.encode(obj)];
     }
 
     var values = [];
@@ -18777,14 +19259,15 @@ internals.stringify = function (obj, prefix, generateArrayPrefix) {
         return values;
     }
 
-    var objKeys = Object.keys(obj);
+    var objKeys = Array.isArray(filter) ? filter : Object.keys(obj);
     for (var i = 0, il = objKeys.length; i < il; ++i) {
         var key = objKeys[i];
+
         if (Array.isArray(obj)) {
-            values = values.concat(internals.stringify(obj[key], generateArrayPrefix(prefix, key), generateArrayPrefix));
+            values = values.concat(internals.stringify(obj[key], generateArrayPrefix(prefix, key), generateArrayPrefix, strictNullHandling, filter));
         }
         else {
-            values = values.concat(internals.stringify(obj[key], prefix + '[' + key + ']', generateArrayPrefix));
+            values = values.concat(internals.stringify(obj[key], prefix + '[' + key + ']', generateArrayPrefix, strictNullHandling, filter));
         }
     }
 
@@ -18796,6 +19279,16 @@ module.exports = function (obj, options) {
 
     options = options || {};
     var delimiter = typeof options.delimiter === 'undefined' ? internals.delimiter : options.delimiter;
+    var strictNullHandling = typeof options.strictNullHandling === 'boolean' ? options.strictNullHandling : internals.strictNullHandling;
+    var objKeys;
+    var filter;
+    if (typeof options.filter === 'function') {
+        filter = options.filter;
+        obj = filter('', obj);
+    }
+    else if (Array.isArray(options.filter)) {
+        objKeys = filter = options.filter;
+    }
 
     var keys = [];
 
@@ -18818,27 +19311,33 @@ module.exports = function (obj, options) {
 
     var generateArrayPrefix = internals.arrayPrefixGenerators[arrayFormat];
 
-    var objKeys = Object.keys(obj);
+    if (!objKeys) {
+        objKeys = Object.keys(obj);
+    }
     for (var i = 0, il = objKeys.length; i < il; ++i) {
         var key = objKeys[i];
-        keys = keys.concat(internals.stringify(obj[key], key, generateArrayPrefix));
+        keys = keys.concat(internals.stringify(obj[key], key, generateArrayPrefix, strictNullHandling, filter));
     }
 
     return keys.join(delimiter);
 };
 
-},{"./utils":91}],91:[function(require,module,exports){
+},{"./utils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\qs\\lib\\utils.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\history\\node_modules\\qs\\lib\\utils.js":[function(require,module,exports){
 // Load modules
 
 
 // Declare internals
 
 var internals = {};
+internals.hexTable = new Array(256);
+for (var h = 0; h < 256; ++h) {
+    internals.hexTable[h] = '%' + ((h < 16 ? '0' : '') + h.toString(16)).toUpperCase();
+}
 
 
-exports.arrayToObject = function (source) {
+exports.arrayToObject = function (source, options) {
 
-    var obj = {};
+    var obj = options.plainObjects ? Object.create(null) : {};
     for (var i = 0, il = source.length; i < il; ++i) {
         if (typeof source[i] !== 'undefined') {
 
@@ -18850,7 +19349,7 @@ exports.arrayToObject = function (source) {
 };
 
 
-exports.merge = function (target, source) {
+exports.merge = function (target, source, options) {
 
     if (!source) {
         return target;
@@ -18860,8 +19359,11 @@ exports.merge = function (target, source) {
         if (Array.isArray(target)) {
             target.push(source);
         }
-        else {
+        else if (typeof target === 'object') {
             target[source] = true;
+        }
+        else {
+            target = [target, source];
         }
 
         return target;
@@ -18875,7 +19377,7 @@ exports.merge = function (target, source) {
     if (Array.isArray(target) &&
         !Array.isArray(source)) {
 
-        target = exports.arrayToObject(target);
+        target = exports.arrayToObject(target, options);
     }
 
     var keys = Object.keys(source);
@@ -18883,11 +19385,11 @@ exports.merge = function (target, source) {
         var key = keys[k];
         var value = source[key];
 
-        if (!target[key]) {
+        if (!Object.prototype.hasOwnProperty.call(target, key)) {
             target[key] = value;
         }
         else {
-            target[key] = exports.merge(target[key], value);
+            target[key] = exports.merge(target[key], value, options);
         }
     }
 
@@ -18904,6 +19406,56 @@ exports.decode = function (str) {
     }
 };
 
+exports.encode = function (str) {
+
+    // This code was originally written by Brian White (mscdex) for the io.js core querystring library.
+    // It has been adapted here for stricter adherence to RFC 3986
+    if (str.length === 0) {
+        return str;
+    }
+
+    if (typeof str !== 'string') {
+        str = '' + str;
+    }
+
+    var out = '';
+    for (var i = 0, il = str.length; i < il; ++i) {
+        var c = str.charCodeAt(i);
+
+        if (c === 0x2D || // -
+            c === 0x2E || // .
+            c === 0x5F || // _
+            c === 0x7E || // ~
+            (c >= 0x30 && c <= 0x39) || // 0-9
+            (c >= 0x41 && c <= 0x5A) || // a-z
+            (c >= 0x61 && c <= 0x7A)) { // A-Z
+
+            out += str[i];
+            continue;
+        }
+
+        if (c < 0x80) {
+            out += internals.hexTable[c];
+            continue;
+        }
+
+        if (c < 0x800) {
+            out += internals.hexTable[0xC0 | (c >> 6)] + internals.hexTable[0x80 | (c & 0x3F)];
+            continue;
+        }
+
+        if (c < 0xD800 || c >= 0xE000) {
+            out += internals.hexTable[0xE0 | (c >> 12)] + internals.hexTable[0x80 | ((c >> 6) & 0x3F)] + internals.hexTable[0x80 | (c & 0x3F)];
+            continue;
+        }
+
+        ++i;
+        c = 0x10000 + (((c & 0x3FF) << 10) | (str.charCodeAt(i) & 0x3FF));
+        out += internals.hexTable[0xF0 | (c >> 18)] + internals.hexTable[0x80 | ((c >> 12) & 0x3F)] + internals.hexTable[0x80 | ((c >> 6) & 0x3F)] + internals.hexTable[0x80 | (c & 0x3F)];
+    }
+
+    return out;
+};
 
 exports.compact = function (obj, refs) {
 
@@ -18944,6 +19496,7 @@ exports.compact = function (obj, refs) {
 
 
 exports.isRegExp = function (obj) {
+
     return Object.prototype.toString.call(obj) === '[object RegExp]';
 };
 
@@ -18957,11 +19510,132 @@ exports.isBuffer = function (obj) {
     }
 
     return !!(obj.constructor &&
-        obj.constructor.isBuffer &&
-        obj.constructor.isBuffer(obj));
+              obj.constructor.isBuffer &&
+              obj.constructor.isBuffer(obj));
 };
 
-},{}],92:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\invariant\\browser.js":[function(require,module,exports){
+(function (process){
+/**
+ * Copyright 2013-2015, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule invariant
+ */
+
+'use strict';
+
+/**
+ * Use invariant() to assert state which your program assumes to be true.
+ *
+ * Provide sprintf-style format (only %s is supported) and arguments
+ * to provide information about what broke and what you were
+ * expecting.
+ *
+ * The invariant message will be stripped in production, but the invariant
+ * will remain to ensure logic does not differ in production.
+ */
+
+var invariant = function(condition, format, a, b, c, d, e, f) {
+  if (process.env.NODE_ENV !== 'production') {
+    if (format === undefined) {
+      throw new Error('invariant requires an error message argument');
+    }
+  }
+
+  if (!condition) {
+    var error;
+    if (format === undefined) {
+      error = new Error(
+        'Minified exception occurred; use the non-minified dev environment ' +
+        'for the full error message and additional helpful warnings.'
+      );
+    } else {
+      var args = [a, b, c, d, e, f];
+      var argIndex = 0;
+      error = new Error(
+        'Invariant Violation: ' +
+        format.replace(/%s/g, function() { return args[argIndex++]; })
+      );
+    }
+
+    error.framesToPop = 1; // we don't care about invariant's own frame
+    throw error;
+  }
+};
+
+module.exports = invariant;
+
+}).call(this,require('_process'))
+},{"_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react-router\\node_modules\\warning\\browser.js":[function(require,module,exports){
+(function (process){
+/**
+ * Copyright 2014-2015, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+
+'use strict';
+
+/**
+ * Similar to invariant but only logs a warning if the condition is not met.
+ * This can be used to log issues in development environments in critical
+ * paths. Removing the logging code for production environments will keep the
+ * same logic and follow the same code paths.
+ */
+
+var warning = function() {};
+
+if (process.env.NODE_ENV !== 'production') {
+  warning = function(condition, format, args) {
+    var len = arguments.length;
+    args = new Array(len > 2 ? len - 2 : 0);
+    for (var key = 2; key < len; key++) {
+      args[key - 2] = arguments[key];
+    }
+    if (format === undefined) {
+      throw new Error(
+        '`warning(condition, format, ...args)` requires a warning ' +
+        'message argument'
+      );
+    }
+
+    if (format.length < 10 || (/^[s\W]*$/).test(format)) {
+      throw new Error(
+        'The warning format should be able to uniquely identify this ' +
+        'warning. Please, use a more descriptive format than: ' + format
+      );
+    }
+
+    if (!condition) {
+      var argIndex = 0;
+      var message = 'Warning: ' +
+        format.replace(/%s/g, function() {
+          return args[argIndex++];
+        });
+      if (typeof console !== 'undefined') {
+        console.error(message);
+      }
+      try {
+        // This error was thrown as a convenience so that you can use this stack
+        // to find the callsite that caused this warning to fire.
+        throw new Error(message);
+      } catch(x) {}
+    }
+  };
+}
+
+module.exports = warning;
+
+}).call(this,require('_process'))
+},{"_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\AutoFocusMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18988,7 +19662,7 @@ var AutoFocusMixin = {
 
 module.exports = AutoFocusMixin;
 
-},{"./focusNode":210}],93:[function(require,module,exports){
+},{"./focusNode":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\focusNode.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\BeforeInputEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015 Facebook, Inc.
  * All rights reserved.
@@ -19483,7 +20157,7 @@ var BeforeInputEventPlugin = {
 
 module.exports = BeforeInputEventPlugin;
 
-},{"./EventConstants":105,"./EventPropagators":110,"./ExecutionEnvironment":111,"./FallbackCompositionState":112,"./SyntheticCompositionEvent":184,"./SyntheticInputEvent":188,"./keyOf":232}],94:[function(require,module,exports){
+},{"./EventConstants":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js","./EventPropagators":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPropagators.js","./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js","./FallbackCompositionState":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\FallbackCompositionState.js","./SyntheticCompositionEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticCompositionEvent.js","./SyntheticInputEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticInputEvent.js","./keyOf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyOf.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\CSSProperty.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19608,7 +20282,7 @@ var CSSProperty = {
 
 module.exports = CSSProperty;
 
-},{}],95:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\CSSPropertyOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -19790,7 +20464,7 @@ var CSSPropertyOperations = {
 module.exports = CSSPropertyOperations;
 
 }).call(this,require('_process'))
-},{"./CSSProperty":94,"./ExecutionEnvironment":111,"./camelizeStyleName":199,"./dangerousStyleValue":204,"./hyphenateStyleName":224,"./memoizeStringOnly":234,"./warning":245,"_process":50}],96:[function(require,module,exports){
+},{"./CSSProperty":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\CSSProperty.js","./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js","./camelizeStyleName":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\camelizeStyleName.js","./dangerousStyleValue":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\dangerousStyleValue.js","./hyphenateStyleName":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\hyphenateStyleName.js","./memoizeStringOnly":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\memoizeStringOnly.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\CallbackQueue.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -19890,7 +20564,7 @@ PooledClass.addPoolingTo(CallbackQueue);
 module.exports = CallbackQueue;
 
 }).call(this,require('_process'))
-},{"./Object.assign":117,"./PooledClass":118,"./invariant":226,"_process":50}],97:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./PooledClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\PooledClass.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ChangeEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -20272,7 +20946,7 @@ var ChangeEventPlugin = {
 
 module.exports = ChangeEventPlugin;
 
-},{"./EventConstants":105,"./EventPluginHub":107,"./EventPropagators":110,"./ExecutionEnvironment":111,"./ReactUpdates":178,"./SyntheticEvent":186,"./isEventSupported":227,"./isTextInputElement":229,"./keyOf":232}],98:[function(require,module,exports){
+},{"./EventConstants":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js","./EventPluginHub":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginHub.js","./EventPropagators":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPropagators.js","./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js","./ReactUpdates":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdates.js","./SyntheticEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticEvent.js","./isEventSupported":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\isEventSupported.js","./isTextInputElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\isTextInputElement.js","./keyOf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyOf.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ClientReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -20297,7 +20971,7 @@ var ClientReactRootIndex = {
 
 module.exports = ClientReactRootIndex;
 
-},{}],99:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMChildrenOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -20435,7 +21109,7 @@ var DOMChildrenOperations = {
 module.exports = DOMChildrenOperations;
 
 }).call(this,require('_process'))
-},{"./Danger":102,"./ReactMultiChildUpdateTypes":163,"./invariant":226,"./setTextContent":240,"_process":50}],100:[function(require,module,exports){
+},{"./Danger":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Danger.js","./ReactMultiChildUpdateTypes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMultiChildUpdateTypes.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./setTextContent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\setTextContent.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMProperty.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -20734,7 +21408,7 @@ var DOMProperty = {
 module.exports = DOMProperty;
 
 }).call(this,require('_process'))
-},{"./invariant":226,"_process":50}],101:[function(require,module,exports){
+},{"./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMPropertyOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -20926,7 +21600,7 @@ var DOMPropertyOperations = {
 module.exports = DOMPropertyOperations;
 
 }).call(this,require('_process'))
-},{"./DOMProperty":100,"./quoteAttributeValueForBrowser":238,"./warning":245,"_process":50}],102:[function(require,module,exports){
+},{"./DOMProperty":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMProperty.js","./quoteAttributeValueForBrowser":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\quoteAttributeValueForBrowser.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Danger.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -21113,7 +21787,7 @@ var Danger = {
 module.exports = Danger;
 
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":111,"./createNodesFromMarkup":203,"./emptyFunction":205,"./getMarkupWrap":218,"./invariant":226,"_process":50}],103:[function(require,module,exports){
+},{"./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js","./createNodesFromMarkup":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\createNodesFromMarkup.js","./emptyFunction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyFunction.js","./getMarkupWrap":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getMarkupWrap.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DefaultEventPluginOrder.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -21152,7 +21826,7 @@ var DefaultEventPluginOrder = [
 
 module.exports = DefaultEventPluginOrder;
 
-},{"./keyOf":232}],104:[function(require,module,exports){
+},{"./keyOf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyOf.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EnterLeaveEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -21292,7 +21966,7 @@ var EnterLeaveEventPlugin = {
 
 module.exports = EnterLeaveEventPlugin;
 
-},{"./EventConstants":105,"./EventPropagators":110,"./ReactMount":161,"./SyntheticMouseEvent":190,"./keyOf":232}],105:[function(require,module,exports){
+},{"./EventConstants":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js","./EventPropagators":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPropagators.js","./ReactMount":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMount.js","./SyntheticMouseEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticMouseEvent.js","./keyOf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyOf.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -21364,7 +22038,7 @@ var EventConstants = {
 
 module.exports = EventConstants;
 
-},{"./keyMirror":231}],106:[function(require,module,exports){
+},{"./keyMirror":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyMirror.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventListener.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -21454,7 +22128,7 @@ var EventListener = {
 module.exports = EventListener;
 
 }).call(this,require('_process'))
-},{"./emptyFunction":205,"_process":50}],107:[function(require,module,exports){
+},{"./emptyFunction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyFunction.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginHub.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -21732,7 +22406,7 @@ var EventPluginHub = {
 module.exports = EventPluginHub;
 
 }).call(this,require('_process'))
-},{"./EventPluginRegistry":108,"./EventPluginUtils":109,"./accumulateInto":196,"./forEachAccumulated":211,"./invariant":226,"_process":50}],108:[function(require,module,exports){
+},{"./EventPluginRegistry":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginRegistry.js","./EventPluginUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginUtils.js","./accumulateInto":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\accumulateInto.js","./forEachAccumulated":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\forEachAccumulated.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginRegistry.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -22012,7 +22686,7 @@ var EventPluginRegistry = {
 module.exports = EventPluginRegistry;
 
 }).call(this,require('_process'))
-},{"./invariant":226,"_process":50}],109:[function(require,module,exports){
+},{"./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginUtils.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -22233,7 +22907,7 @@ var EventPluginUtils = {
 module.exports = EventPluginUtils;
 
 }).call(this,require('_process'))
-},{"./EventConstants":105,"./invariant":226,"_process":50}],110:[function(require,module,exports){
+},{"./EventConstants":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPropagators.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -22375,7 +23049,7 @@ var EventPropagators = {
 module.exports = EventPropagators;
 
 }).call(this,require('_process'))
-},{"./EventConstants":105,"./EventPluginHub":107,"./accumulateInto":196,"./forEachAccumulated":211,"_process":50}],111:[function(require,module,exports){
+},{"./EventConstants":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js","./EventPluginHub":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginHub.js","./accumulateInto":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\accumulateInto.js","./forEachAccumulated":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\forEachAccumulated.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -22419,7 +23093,7 @@ var ExecutionEnvironment = {
 
 module.exports = ExecutionEnvironment;
 
-},{}],112:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\FallbackCompositionState.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -22510,7 +23184,7 @@ PooledClass.addPoolingTo(FallbackCompositionState);
 
 module.exports = FallbackCompositionState;
 
-},{"./Object.assign":117,"./PooledClass":118,"./getTextContentAccessor":221}],113:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./PooledClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\PooledClass.js","./getTextContentAccessor":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getTextContentAccessor.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\HTMLDOMPropertyConfig.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -22721,7 +23395,7 @@ var HTMLDOMPropertyConfig = {
 
 module.exports = HTMLDOMPropertyConfig;
 
-},{"./DOMProperty":100,"./ExecutionEnvironment":111}],114:[function(require,module,exports){
+},{"./DOMProperty":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMProperty.js","./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\LinkedValueUtils.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -22877,7 +23551,7 @@ var LinkedValueUtils = {
 module.exports = LinkedValueUtils;
 
 }).call(this,require('_process'))
-},{"./ReactPropTypes":169,"./invariant":226,"_process":50}],115:[function(require,module,exports){
+},{"./ReactPropTypes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPropTypes.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\LocalEventTrapMixin.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -22934,7 +23608,7 @@ var LocalEventTrapMixin = {
 module.exports = LocalEventTrapMixin;
 
 }).call(this,require('_process'))
-},{"./ReactBrowserEventEmitter":121,"./accumulateInto":196,"./forEachAccumulated":211,"./invariant":226,"_process":50}],116:[function(require,module,exports){
+},{"./ReactBrowserEventEmitter":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserEventEmitter.js","./accumulateInto":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\accumulateInto.js","./forEachAccumulated":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\forEachAccumulated.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\MobileSafariClickEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -22992,7 +23666,7 @@ var MobileSafariClickEventPlugin = {
 
 module.exports = MobileSafariClickEventPlugin;
 
-},{"./EventConstants":105,"./emptyFunction":205}],117:[function(require,module,exports){
+},{"./EventConstants":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js","./emptyFunction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyFunction.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -23041,7 +23715,7 @@ function assign(target, sources) {
 
 module.exports = assign;
 
-},{}],118:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\PooledClass.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -23157,7 +23831,7 @@ var PooledClass = {
 module.exports = PooledClass;
 
 }).call(this,require('_process'))
-},{"./invariant":226,"_process":50}],119:[function(require,module,exports){
+},{"./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\React.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -23309,7 +23983,7 @@ React.version = '0.13.3';
 module.exports = React;
 
 }).call(this,require('_process'))
-},{"./EventPluginUtils":109,"./ExecutionEnvironment":111,"./Object.assign":117,"./ReactChildren":123,"./ReactClass":124,"./ReactComponent":125,"./ReactContext":129,"./ReactCurrentOwner":130,"./ReactDOM":131,"./ReactDOMTextComponent":142,"./ReactDefaultInjection":145,"./ReactElement":148,"./ReactElementValidator":149,"./ReactInstanceHandles":157,"./ReactMount":161,"./ReactPerf":166,"./ReactPropTypes":169,"./ReactReconciler":172,"./ReactServerRendering":175,"./findDOMNode":208,"./onlyChild":235,"_process":50}],120:[function(require,module,exports){
+},{"./EventPluginUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginUtils.js","./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js","./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactChildren":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactChildren.js","./ReactClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js","./ReactComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactComponent.js","./ReactContext":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactContext.js","./ReactCurrentOwner":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactCurrentOwner.js","./ReactDOM":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOM.js","./ReactDOMTextComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMTextComponent.js","./ReactDefaultInjection":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDefaultInjection.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactElementValidator":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElementValidator.js","./ReactInstanceHandles":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceHandles.js","./ReactMount":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMount.js","./ReactPerf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPerf.js","./ReactPropTypes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPropTypes.js","./ReactReconciler":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactReconciler.js","./ReactServerRendering":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactServerRendering.js","./findDOMNode":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\findDOMNode.js","./onlyChild":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\onlyChild.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserComponentMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -23340,7 +24014,7 @@ var ReactBrowserComponentMixin = {
 
 module.exports = ReactBrowserComponentMixin;
 
-},{"./findDOMNode":208}],121:[function(require,module,exports){
+},{"./findDOMNode":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\findDOMNode.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserEventEmitter.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -23693,7 +24367,7 @@ var ReactBrowserEventEmitter = assign({}, ReactEventEmitterMixin, {
 
 module.exports = ReactBrowserEventEmitter;
 
-},{"./EventConstants":105,"./EventPluginHub":107,"./EventPluginRegistry":108,"./Object.assign":117,"./ReactEventEmitterMixin":152,"./ViewportMetrics":195,"./isEventSupported":227}],122:[function(require,module,exports){
+},{"./EventConstants":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js","./EventPluginHub":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginHub.js","./EventPluginRegistry":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginRegistry.js","./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactEventEmitterMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactEventEmitterMixin.js","./ViewportMetrics":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ViewportMetrics.js","./isEventSupported":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\isEventSupported.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactChildReconciler.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -23820,7 +24494,7 @@ var ReactChildReconciler = {
 
 module.exports = ReactChildReconciler;
 
-},{"./ReactReconciler":172,"./flattenChildren":209,"./instantiateReactComponent":225,"./shouldUpdateReactComponent":242}],123:[function(require,module,exports){
+},{"./ReactReconciler":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactReconciler.js","./flattenChildren":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\flattenChildren.js","./instantiateReactComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\instantiateReactComponent.js","./shouldUpdateReactComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\shouldUpdateReactComponent.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -23973,7 +24647,7 @@ var ReactChildren = {
 module.exports = ReactChildren;
 
 }).call(this,require('_process'))
-},{"./PooledClass":118,"./ReactFragment":154,"./traverseAllChildren":244,"./warning":245,"_process":50}],124:[function(require,module,exports){
+},{"./PooledClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\PooledClass.js","./ReactFragment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactFragment.js","./traverseAllChildren":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\traverseAllChildren.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -24919,7 +25593,7 @@ var ReactClass = {
 module.exports = ReactClass;
 
 }).call(this,require('_process'))
-},{"./Object.assign":117,"./ReactComponent":125,"./ReactCurrentOwner":130,"./ReactElement":148,"./ReactErrorUtils":151,"./ReactInstanceMap":158,"./ReactLifeCycle":159,"./ReactPropTypeLocationNames":167,"./ReactPropTypeLocations":168,"./ReactUpdateQueue":177,"./invariant":226,"./keyMirror":231,"./keyOf":232,"./warning":245,"_process":50}],125:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactComponent.js","./ReactCurrentOwner":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactCurrentOwner.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactErrorUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactErrorUtils.js","./ReactInstanceMap":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceMap.js","./ReactLifeCycle":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactLifeCycle.js","./ReactPropTypeLocationNames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPropTypeLocations.js","./ReactUpdateQueue":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdateQueue.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./keyMirror":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyMirror.js","./keyOf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyOf.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -25073,7 +25747,7 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = ReactComponent;
 
 }).call(this,require('_process'))
-},{"./ReactUpdateQueue":177,"./invariant":226,"./warning":245,"_process":50}],126:[function(require,module,exports){
+},{"./ReactUpdateQueue":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdateQueue.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactComponentBrowserEnvironment.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -25120,7 +25794,7 @@ var ReactComponentBrowserEnvironment = {
 
 module.exports = ReactComponentBrowserEnvironment;
 
-},{"./ReactDOMIDOperations":135,"./ReactMount":161}],127:[function(require,module,exports){
+},{"./ReactDOMIDOperations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMIDOperations.js","./ReactMount":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMount.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactComponentEnvironment.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -25181,7 +25855,7 @@ var ReactComponentEnvironment = {
 module.exports = ReactComponentEnvironment;
 
 }).call(this,require('_process'))
-},{"./invariant":226,"_process":50}],128:[function(require,module,exports){
+},{"./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactCompositeComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -26094,7 +26768,7 @@ var ReactCompositeComponent = {
 module.exports = ReactCompositeComponent;
 
 }).call(this,require('_process'))
-},{"./Object.assign":117,"./ReactComponentEnvironment":127,"./ReactContext":129,"./ReactCurrentOwner":130,"./ReactElement":148,"./ReactElementValidator":149,"./ReactInstanceMap":158,"./ReactLifeCycle":159,"./ReactNativeComponent":164,"./ReactPerf":166,"./ReactPropTypeLocationNames":167,"./ReactPropTypeLocations":168,"./ReactReconciler":172,"./ReactUpdates":178,"./emptyObject":206,"./invariant":226,"./shouldUpdateReactComponent":242,"./warning":245,"_process":50}],129:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactComponentEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactComponentEnvironment.js","./ReactContext":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactContext.js","./ReactCurrentOwner":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactCurrentOwner.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactElementValidator":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElementValidator.js","./ReactInstanceMap":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceMap.js","./ReactLifeCycle":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactLifeCycle.js","./ReactNativeComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactNativeComponent.js","./ReactPerf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPerf.js","./ReactPropTypeLocationNames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPropTypeLocations.js","./ReactReconciler":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactReconciler.js","./ReactUpdates":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdates.js","./emptyObject":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyObject.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./shouldUpdateReactComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\shouldUpdateReactComponent.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactContext.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -26172,7 +26846,7 @@ var ReactContext = {
 module.exports = ReactContext;
 
 }).call(this,require('_process'))
-},{"./Object.assign":117,"./emptyObject":206,"./warning":245,"_process":50}],130:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./emptyObject":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyObject.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactCurrentOwner.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26206,7 +26880,7 @@ var ReactCurrentOwner = {
 
 module.exports = ReactCurrentOwner;
 
-},{}],131:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOM.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -26385,7 +27059,7 @@ var ReactDOM = mapObject({
 module.exports = ReactDOM;
 
 }).call(this,require('_process'))
-},{"./ReactElement":148,"./ReactElementValidator":149,"./mapObject":233,"_process":50}],132:[function(require,module,exports){
+},{"./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactElementValidator":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElementValidator.js","./mapObject":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\mapObject.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMButton.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26449,7 +27123,7 @@ var ReactDOMButton = ReactClass.createClass({
 
 module.exports = ReactDOMButton;
 
-},{"./AutoFocusMixin":92,"./ReactBrowserComponentMixin":120,"./ReactClass":124,"./ReactElement":148,"./keyMirror":231}],133:[function(require,module,exports){
+},{"./AutoFocusMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\AutoFocusMixin.js","./ReactBrowserComponentMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserComponentMixin.js","./ReactClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./keyMirror":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyMirror.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -26959,7 +27633,7 @@ ReactDOMComponent.injection = {
 module.exports = ReactDOMComponent;
 
 }).call(this,require('_process'))
-},{"./CSSPropertyOperations":95,"./DOMProperty":100,"./DOMPropertyOperations":101,"./Object.assign":117,"./ReactBrowserEventEmitter":121,"./ReactComponentBrowserEnvironment":126,"./ReactMount":161,"./ReactMultiChild":162,"./ReactPerf":166,"./escapeTextContentForBrowser":207,"./invariant":226,"./isEventSupported":227,"./keyOf":232,"./warning":245,"_process":50}],134:[function(require,module,exports){
+},{"./CSSPropertyOperations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\CSSPropertyOperations.js","./DOMProperty":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMProperty.js","./DOMPropertyOperations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMPropertyOperations.js","./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactBrowserEventEmitter":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserEventEmitter.js","./ReactComponentBrowserEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactComponentBrowserEnvironment.js","./ReactMount":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMount.js","./ReactMultiChild":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMultiChild.js","./ReactPerf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPerf.js","./escapeTextContentForBrowser":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\escapeTextContentForBrowser.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./isEventSupported":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\isEventSupported.js","./keyOf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyOf.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMForm.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27008,7 +27682,7 @@ var ReactDOMForm = ReactClass.createClass({
 
 module.exports = ReactDOMForm;
 
-},{"./EventConstants":105,"./LocalEventTrapMixin":115,"./ReactBrowserComponentMixin":120,"./ReactClass":124,"./ReactElement":148}],135:[function(require,module,exports){
+},{"./EventConstants":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js","./LocalEventTrapMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\LocalEventTrapMixin.js","./ReactBrowserComponentMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserComponentMixin.js","./ReactClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMIDOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27176,7 +27850,7 @@ ReactPerf.measureMethods(ReactDOMIDOperations, 'ReactDOMIDOperations', {
 module.exports = ReactDOMIDOperations;
 
 }).call(this,require('_process'))
-},{"./CSSPropertyOperations":95,"./DOMChildrenOperations":99,"./DOMPropertyOperations":101,"./ReactMount":161,"./ReactPerf":166,"./invariant":226,"./setInnerHTML":239,"_process":50}],136:[function(require,module,exports){
+},{"./CSSPropertyOperations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\CSSPropertyOperations.js","./DOMChildrenOperations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMChildrenOperations.js","./DOMPropertyOperations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMPropertyOperations.js","./ReactMount":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMount.js","./ReactPerf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPerf.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./setInnerHTML":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\setInnerHTML.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMIframe.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27221,7 +27895,7 @@ var ReactDOMIframe = ReactClass.createClass({
 
 module.exports = ReactDOMIframe;
 
-},{"./EventConstants":105,"./LocalEventTrapMixin":115,"./ReactBrowserComponentMixin":120,"./ReactClass":124,"./ReactElement":148}],137:[function(require,module,exports){
+},{"./EventConstants":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js","./LocalEventTrapMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\LocalEventTrapMixin.js","./ReactBrowserComponentMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserComponentMixin.js","./ReactClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMImg.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27267,7 +27941,7 @@ var ReactDOMImg = ReactClass.createClass({
 
 module.exports = ReactDOMImg;
 
-},{"./EventConstants":105,"./LocalEventTrapMixin":115,"./ReactBrowserComponentMixin":120,"./ReactClass":124,"./ReactElement":148}],138:[function(require,module,exports){
+},{"./EventConstants":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js","./LocalEventTrapMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\LocalEventTrapMixin.js","./ReactBrowserComponentMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserComponentMixin.js","./ReactClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMInput.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27444,7 +28118,7 @@ var ReactDOMInput = ReactClass.createClass({
 module.exports = ReactDOMInput;
 
 }).call(this,require('_process'))
-},{"./AutoFocusMixin":92,"./DOMPropertyOperations":101,"./LinkedValueUtils":114,"./Object.assign":117,"./ReactBrowserComponentMixin":120,"./ReactClass":124,"./ReactElement":148,"./ReactMount":161,"./ReactUpdates":178,"./invariant":226,"_process":50}],139:[function(require,module,exports){
+},{"./AutoFocusMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\AutoFocusMixin.js","./DOMPropertyOperations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMPropertyOperations.js","./LinkedValueUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\LinkedValueUtils.js","./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactBrowserComponentMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserComponentMixin.js","./ReactClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactMount":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMount.js","./ReactUpdates":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdates.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMOption.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27496,7 +28170,7 @@ var ReactDOMOption = ReactClass.createClass({
 module.exports = ReactDOMOption;
 
 }).call(this,require('_process'))
-},{"./ReactBrowserComponentMixin":120,"./ReactClass":124,"./ReactElement":148,"./warning":245,"_process":50}],140:[function(require,module,exports){
+},{"./ReactBrowserComponentMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserComponentMixin.js","./ReactClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMSelect.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27674,7 +28348,7 @@ var ReactDOMSelect = ReactClass.createClass({
 
 module.exports = ReactDOMSelect;
 
-},{"./AutoFocusMixin":92,"./LinkedValueUtils":114,"./Object.assign":117,"./ReactBrowserComponentMixin":120,"./ReactClass":124,"./ReactElement":148,"./ReactUpdates":178}],141:[function(require,module,exports){
+},{"./AutoFocusMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\AutoFocusMixin.js","./LinkedValueUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\LinkedValueUtils.js","./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactBrowserComponentMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserComponentMixin.js","./ReactClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactUpdates":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdates.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMSelection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27887,7 +28561,7 @@ var ReactDOMSelection = {
 
 module.exports = ReactDOMSelection;
 
-},{"./ExecutionEnvironment":111,"./getNodeForCharacterOffset":219,"./getTextContentAccessor":221}],142:[function(require,module,exports){
+},{"./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js","./getNodeForCharacterOffset":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getNodeForCharacterOffset.js","./getTextContentAccessor":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getTextContentAccessor.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMTextComponent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -28004,7 +28678,7 @@ assign(ReactDOMTextComponent.prototype, {
 
 module.exports = ReactDOMTextComponent;
 
-},{"./DOMPropertyOperations":101,"./Object.assign":117,"./ReactComponentBrowserEnvironment":126,"./ReactDOMComponent":133,"./escapeTextContentForBrowser":207}],143:[function(require,module,exports){
+},{"./DOMPropertyOperations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMPropertyOperations.js","./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactComponentBrowserEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactComponentBrowserEnvironment.js","./ReactDOMComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMComponent.js","./escapeTextContentForBrowser":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\escapeTextContentForBrowser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMTextarea.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -28144,7 +28818,7 @@ var ReactDOMTextarea = ReactClass.createClass({
 module.exports = ReactDOMTextarea;
 
 }).call(this,require('_process'))
-},{"./AutoFocusMixin":92,"./DOMPropertyOperations":101,"./LinkedValueUtils":114,"./Object.assign":117,"./ReactBrowserComponentMixin":120,"./ReactClass":124,"./ReactElement":148,"./ReactUpdates":178,"./invariant":226,"./warning":245,"_process":50}],144:[function(require,module,exports){
+},{"./AutoFocusMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\AutoFocusMixin.js","./DOMPropertyOperations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMPropertyOperations.js","./LinkedValueUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\LinkedValueUtils.js","./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactBrowserComponentMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserComponentMixin.js","./ReactClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactUpdates":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdates.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDefaultBatchingStrategy.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -28217,7 +28891,7 @@ var ReactDefaultBatchingStrategy = {
 
 module.exports = ReactDefaultBatchingStrategy;
 
-},{"./Object.assign":117,"./ReactUpdates":178,"./Transaction":194,"./emptyFunction":205}],145:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactUpdates":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdates.js","./Transaction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Transaction.js","./emptyFunction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyFunction.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDefaultInjection.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -28376,7 +29050,7 @@ module.exports = {
 };
 
 }).call(this,require('_process'))
-},{"./BeforeInputEventPlugin":93,"./ChangeEventPlugin":97,"./ClientReactRootIndex":98,"./DefaultEventPluginOrder":103,"./EnterLeaveEventPlugin":104,"./ExecutionEnvironment":111,"./HTMLDOMPropertyConfig":113,"./MobileSafariClickEventPlugin":116,"./ReactBrowserComponentMixin":120,"./ReactClass":124,"./ReactComponentBrowserEnvironment":126,"./ReactDOMButton":132,"./ReactDOMComponent":133,"./ReactDOMForm":134,"./ReactDOMIDOperations":135,"./ReactDOMIframe":136,"./ReactDOMImg":137,"./ReactDOMInput":138,"./ReactDOMOption":139,"./ReactDOMSelect":140,"./ReactDOMTextComponent":142,"./ReactDOMTextarea":143,"./ReactDefaultBatchingStrategy":144,"./ReactDefaultPerf":146,"./ReactElement":148,"./ReactEventListener":153,"./ReactInjection":155,"./ReactInstanceHandles":157,"./ReactMount":161,"./ReactReconcileTransaction":171,"./SVGDOMPropertyConfig":179,"./SelectEventPlugin":180,"./ServerReactRootIndex":181,"./SimpleEventPlugin":182,"./createFullPageComponent":202,"_process":50}],146:[function(require,module,exports){
+},{"./BeforeInputEventPlugin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\BeforeInputEventPlugin.js","./ChangeEventPlugin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ChangeEventPlugin.js","./ClientReactRootIndex":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ClientReactRootIndex.js","./DefaultEventPluginOrder":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DefaultEventPluginOrder.js","./EnterLeaveEventPlugin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EnterLeaveEventPlugin.js","./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js","./HTMLDOMPropertyConfig":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\HTMLDOMPropertyConfig.js","./MobileSafariClickEventPlugin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\MobileSafariClickEventPlugin.js","./ReactBrowserComponentMixin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserComponentMixin.js","./ReactClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js","./ReactComponentBrowserEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactComponentBrowserEnvironment.js","./ReactDOMButton":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMButton.js","./ReactDOMComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMComponent.js","./ReactDOMForm":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMForm.js","./ReactDOMIDOperations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMIDOperations.js","./ReactDOMIframe":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMIframe.js","./ReactDOMImg":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMImg.js","./ReactDOMInput":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMInput.js","./ReactDOMOption":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMOption.js","./ReactDOMSelect":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMSelect.js","./ReactDOMTextComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMTextComponent.js","./ReactDOMTextarea":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMTextarea.js","./ReactDefaultBatchingStrategy":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDefaultBatchingStrategy.js","./ReactDefaultPerf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDefaultPerf.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactEventListener":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactEventListener.js","./ReactInjection":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInjection.js","./ReactInstanceHandles":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceHandles.js","./ReactMount":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMount.js","./ReactReconcileTransaction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactReconcileTransaction.js","./SVGDOMPropertyConfig":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SVGDOMPropertyConfig.js","./SelectEventPlugin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SelectEventPlugin.js","./ServerReactRootIndex":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ServerReactRootIndex.js","./SimpleEventPlugin":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SimpleEventPlugin.js","./createFullPageComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\createFullPageComponent.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDefaultPerf.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -28642,7 +29316,7 @@ var ReactDefaultPerf = {
 
 module.exports = ReactDefaultPerf;
 
-},{"./DOMProperty":100,"./ReactDefaultPerfAnalysis":147,"./ReactMount":161,"./ReactPerf":166,"./performanceNow":237}],147:[function(require,module,exports){
+},{"./DOMProperty":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMProperty.js","./ReactDefaultPerfAnalysis":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDefaultPerfAnalysis.js","./ReactMount":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMount.js","./ReactPerf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPerf.js","./performanceNow":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\performanceNow.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDefaultPerfAnalysis.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -28848,7 +29522,7 @@ var ReactDefaultPerfAnalysis = {
 
 module.exports = ReactDefaultPerfAnalysis;
 
-},{"./Object.assign":117}],148:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -29156,7 +29830,7 @@ ReactElement.isValidElement = function(object) {
 module.exports = ReactElement;
 
 }).call(this,require('_process'))
-},{"./Object.assign":117,"./ReactContext":129,"./ReactCurrentOwner":130,"./warning":245,"_process":50}],149:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactContext":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactContext.js","./ReactCurrentOwner":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactCurrentOwner.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElementValidator.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -29621,7 +30295,7 @@ var ReactElementValidator = {
 module.exports = ReactElementValidator;
 
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":130,"./ReactElement":148,"./ReactFragment":154,"./ReactNativeComponent":164,"./ReactPropTypeLocationNames":167,"./ReactPropTypeLocations":168,"./getIteratorFn":217,"./invariant":226,"./warning":245,"_process":50}],150:[function(require,module,exports){
+},{"./ReactCurrentOwner":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactCurrentOwner.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactFragment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactFragment.js","./ReactNativeComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactNativeComponent.js","./ReactPropTypeLocationNames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPropTypeLocations.js","./getIteratorFn":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getIteratorFn.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactEmptyComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -29716,7 +30390,7 @@ var ReactEmptyComponent = {
 module.exports = ReactEmptyComponent;
 
 }).call(this,require('_process'))
-},{"./ReactElement":148,"./ReactInstanceMap":158,"./invariant":226,"_process":50}],151:[function(require,module,exports){
+},{"./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactInstanceMap":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceMap.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactErrorUtils.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -29748,7 +30422,7 @@ var ReactErrorUtils = {
 
 module.exports = ReactErrorUtils;
 
-},{}],152:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactEventEmitterMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -29798,7 +30472,7 @@ var ReactEventEmitterMixin = {
 
 module.exports = ReactEventEmitterMixin;
 
-},{"./EventPluginHub":107}],153:[function(require,module,exports){
+},{"./EventPluginHub":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginHub.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactEventListener.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -29981,7 +30655,7 @@ var ReactEventListener = {
 
 module.exports = ReactEventListener;
 
-},{"./EventListener":106,"./ExecutionEnvironment":111,"./Object.assign":117,"./PooledClass":118,"./ReactInstanceHandles":157,"./ReactMount":161,"./ReactUpdates":178,"./getEventTarget":216,"./getUnboundedScrollPosition":222}],154:[function(require,module,exports){
+},{"./EventListener":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventListener.js","./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js","./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./PooledClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\PooledClass.js","./ReactInstanceHandles":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceHandles.js","./ReactMount":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMount.js","./ReactUpdates":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdates.js","./getEventTarget":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventTarget.js","./getUnboundedScrollPosition":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getUnboundedScrollPosition.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactFragment.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -30166,7 +30840,7 @@ var ReactFragment = {
 module.exports = ReactFragment;
 
 }).call(this,require('_process'))
-},{"./ReactElement":148,"./warning":245,"_process":50}],155:[function(require,module,exports){
+},{"./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInjection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -30208,7 +30882,7 @@ var ReactInjection = {
 
 module.exports = ReactInjection;
 
-},{"./DOMProperty":100,"./EventPluginHub":107,"./ReactBrowserEventEmitter":121,"./ReactClass":124,"./ReactComponentEnvironment":127,"./ReactDOMComponent":133,"./ReactEmptyComponent":150,"./ReactNativeComponent":164,"./ReactPerf":166,"./ReactRootIndex":174,"./ReactUpdates":178}],156:[function(require,module,exports){
+},{"./DOMProperty":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMProperty.js","./EventPluginHub":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginHub.js","./ReactBrowserEventEmitter":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserEventEmitter.js","./ReactClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js","./ReactComponentEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactComponentEnvironment.js","./ReactDOMComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMComponent.js","./ReactEmptyComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactEmptyComponent.js","./ReactNativeComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactNativeComponent.js","./ReactPerf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPerf.js","./ReactRootIndex":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactRootIndex.js","./ReactUpdates":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdates.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInputSelection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -30343,7 +31017,7 @@ var ReactInputSelection = {
 
 module.exports = ReactInputSelection;
 
-},{"./ReactDOMSelection":141,"./containsNode":200,"./focusNode":210,"./getActiveElement":212}],157:[function(require,module,exports){
+},{"./ReactDOMSelection":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactDOMSelection.js","./containsNode":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\containsNode.js","./focusNode":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\focusNode.js","./getActiveElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getActiveElement.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceHandles.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -30679,7 +31353,7 @@ var ReactInstanceHandles = {
 module.exports = ReactInstanceHandles;
 
 }).call(this,require('_process'))
-},{"./ReactRootIndex":174,"./invariant":226,"_process":50}],158:[function(require,module,exports){
+},{"./ReactRootIndex":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactRootIndex.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceMap.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -30728,7 +31402,7 @@ var ReactInstanceMap = {
 
 module.exports = ReactInstanceMap;
 
-},{}],159:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactLifeCycle.js":[function(require,module,exports){
 /**
  * Copyright 2015, Facebook, Inc.
  * All rights reserved.
@@ -30765,7 +31439,7 @@ var ReactLifeCycle = {
 
 module.exports = ReactLifeCycle;
 
-},{}],160:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMarkupChecksum.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -30813,7 +31487,7 @@ var ReactMarkupChecksum = {
 
 module.exports = ReactMarkupChecksum;
 
-},{"./adler32":197}],161:[function(require,module,exports){
+},{"./adler32":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\adler32.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMount.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -31704,7 +32378,7 @@ ReactPerf.measureMethods(ReactMount, 'ReactMount', {
 module.exports = ReactMount;
 
 }).call(this,require('_process'))
-},{"./DOMProperty":100,"./ReactBrowserEventEmitter":121,"./ReactCurrentOwner":130,"./ReactElement":148,"./ReactElementValidator":149,"./ReactEmptyComponent":150,"./ReactInstanceHandles":157,"./ReactInstanceMap":158,"./ReactMarkupChecksum":160,"./ReactPerf":166,"./ReactReconciler":172,"./ReactUpdateQueue":177,"./ReactUpdates":178,"./containsNode":200,"./emptyObject":206,"./getReactRootElementInContainer":220,"./instantiateReactComponent":225,"./invariant":226,"./setInnerHTML":239,"./shouldUpdateReactComponent":242,"./warning":245,"_process":50}],162:[function(require,module,exports){
+},{"./DOMProperty":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMProperty.js","./ReactBrowserEventEmitter":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserEventEmitter.js","./ReactCurrentOwner":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactCurrentOwner.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactElementValidator":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElementValidator.js","./ReactEmptyComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactEmptyComponent.js","./ReactInstanceHandles":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceHandles.js","./ReactInstanceMap":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceMap.js","./ReactMarkupChecksum":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMarkupChecksum.js","./ReactPerf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPerf.js","./ReactReconciler":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactReconciler.js","./ReactUpdateQueue":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdateQueue.js","./ReactUpdates":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdates.js","./containsNode":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\containsNode.js","./emptyObject":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyObject.js","./getReactRootElementInContainer":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getReactRootElementInContainer.js","./instantiateReactComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\instantiateReactComponent.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./setInnerHTML":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\setInnerHTML.js","./shouldUpdateReactComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\shouldUpdateReactComponent.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMultiChild.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -32134,7 +32808,7 @@ var ReactMultiChild = {
 
 module.exports = ReactMultiChild;
 
-},{"./ReactChildReconciler":122,"./ReactComponentEnvironment":127,"./ReactMultiChildUpdateTypes":163,"./ReactReconciler":172}],163:[function(require,module,exports){
+},{"./ReactChildReconciler":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactChildReconciler.js","./ReactComponentEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactComponentEnvironment.js","./ReactMultiChildUpdateTypes":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMultiChildUpdateTypes.js","./ReactReconciler":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactReconciler.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMultiChildUpdateTypes.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -32167,7 +32841,7 @@ var ReactMultiChildUpdateTypes = keyMirror({
 
 module.exports = ReactMultiChildUpdateTypes;
 
-},{"./keyMirror":231}],164:[function(require,module,exports){
+},{"./keyMirror":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyMirror.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactNativeComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -32274,7 +32948,7 @@ var ReactNativeComponent = {
 module.exports = ReactNativeComponent;
 
 }).call(this,require('_process'))
-},{"./Object.assign":117,"./invariant":226,"_process":50}],165:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactOwner.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -32386,7 +33060,7 @@ var ReactOwner = {
 module.exports = ReactOwner;
 
 }).call(this,require('_process'))
-},{"./invariant":226,"_process":50}],166:[function(require,module,exports){
+},{"./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPerf.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -32490,7 +33164,7 @@ function _noMeasure(objName, fnName, func) {
 module.exports = ReactPerf;
 
 }).call(this,require('_process'))
-},{"_process":50}],167:[function(require,module,exports){
+},{"_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPropTypeLocationNames.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -32518,7 +33192,7 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = ReactPropTypeLocationNames;
 
 }).call(this,require('_process'))
-},{"_process":50}],168:[function(require,module,exports){
+},{"_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPropTypeLocations.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -32542,7 +33216,7 @@ var ReactPropTypeLocations = keyMirror({
 
 module.exports = ReactPropTypeLocations;
 
-},{"./keyMirror":231}],169:[function(require,module,exports){
+},{"./keyMirror":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyMirror.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPropTypes.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -32891,7 +33565,7 @@ function getPreciseType(propValue) {
 
 module.exports = ReactPropTypes;
 
-},{"./ReactElement":148,"./ReactFragment":154,"./ReactPropTypeLocationNames":167,"./emptyFunction":205}],170:[function(require,module,exports){
+},{"./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactFragment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactFragment.js","./ReactPropTypeLocationNames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPropTypeLocationNames.js","./emptyFunction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyFunction.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPutListenerQueue.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -32947,7 +33621,7 @@ PooledClass.addPoolingTo(ReactPutListenerQueue);
 
 module.exports = ReactPutListenerQueue;
 
-},{"./Object.assign":117,"./PooledClass":118,"./ReactBrowserEventEmitter":121}],171:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./PooledClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\PooledClass.js","./ReactBrowserEventEmitter":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserEventEmitter.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactReconcileTransaction.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -33123,7 +33797,7 @@ PooledClass.addPoolingTo(ReactReconcileTransaction);
 
 module.exports = ReactReconcileTransaction;
 
-},{"./CallbackQueue":96,"./Object.assign":117,"./PooledClass":118,"./ReactBrowserEventEmitter":121,"./ReactInputSelection":156,"./ReactPutListenerQueue":170,"./Transaction":194}],172:[function(require,module,exports){
+},{"./CallbackQueue":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\CallbackQueue.js","./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./PooledClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\PooledClass.js","./ReactBrowserEventEmitter":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactBrowserEventEmitter.js","./ReactInputSelection":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInputSelection.js","./ReactPutListenerQueue":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPutListenerQueue.js","./Transaction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Transaction.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactReconciler.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -33247,7 +33921,7 @@ var ReactReconciler = {
 module.exports = ReactReconciler;
 
 }).call(this,require('_process'))
-},{"./ReactElementValidator":149,"./ReactRef":173,"_process":50}],173:[function(require,module,exports){
+},{"./ReactElementValidator":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElementValidator.js","./ReactRef":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactRef.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactRef.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -33318,7 +33992,7 @@ ReactRef.detachRefs = function(instance, element) {
 
 module.exports = ReactRef;
 
-},{"./ReactOwner":165}],174:[function(require,module,exports){
+},{"./ReactOwner":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactOwner.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -33349,7 +34023,7 @@ var ReactRootIndex = {
 
 module.exports = ReactRootIndex;
 
-},{}],175:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactServerRendering.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -33431,7 +34105,7 @@ module.exports = {
 };
 
 }).call(this,require('_process'))
-},{"./ReactElement":148,"./ReactInstanceHandles":157,"./ReactMarkupChecksum":160,"./ReactServerRenderingTransaction":176,"./emptyObject":206,"./instantiateReactComponent":225,"./invariant":226,"_process":50}],176:[function(require,module,exports){
+},{"./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactInstanceHandles":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceHandles.js","./ReactMarkupChecksum":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMarkupChecksum.js","./ReactServerRenderingTransaction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactServerRenderingTransaction.js","./emptyObject":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyObject.js","./instantiateReactComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\instantiateReactComponent.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactServerRenderingTransaction.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -33544,7 +34218,7 @@ PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 module.exports = ReactServerRenderingTransaction;
 
-},{"./CallbackQueue":96,"./Object.assign":117,"./PooledClass":118,"./ReactPutListenerQueue":170,"./Transaction":194,"./emptyFunction":205}],177:[function(require,module,exports){
+},{"./CallbackQueue":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\CallbackQueue.js","./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./PooledClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\PooledClass.js","./ReactPutListenerQueue":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPutListenerQueue.js","./Transaction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Transaction.js","./emptyFunction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyFunction.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdateQueue.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -33843,7 +34517,7 @@ var ReactUpdateQueue = {
 module.exports = ReactUpdateQueue;
 
 }).call(this,require('_process'))
-},{"./Object.assign":117,"./ReactCurrentOwner":130,"./ReactElement":148,"./ReactInstanceMap":158,"./ReactLifeCycle":159,"./ReactUpdates":178,"./invariant":226,"./warning":245,"_process":50}],178:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactCurrentOwner":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactCurrentOwner.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactInstanceMap":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceMap.js","./ReactLifeCycle":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactLifeCycle.js","./ReactUpdates":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdates.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactUpdates.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -34125,7 +34799,7 @@ var ReactUpdates = {
 module.exports = ReactUpdates;
 
 }).call(this,require('_process'))
-},{"./CallbackQueue":96,"./Object.assign":117,"./PooledClass":118,"./ReactCurrentOwner":130,"./ReactPerf":166,"./ReactReconciler":172,"./Transaction":194,"./invariant":226,"./warning":245,"_process":50}],179:[function(require,module,exports){
+},{"./CallbackQueue":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\CallbackQueue.js","./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./PooledClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\PooledClass.js","./ReactCurrentOwner":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactCurrentOwner.js","./ReactPerf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactPerf.js","./ReactReconciler":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactReconciler.js","./Transaction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Transaction.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SVGDOMPropertyConfig.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -34219,7 +34893,7 @@ var SVGDOMPropertyConfig = {
 
 module.exports = SVGDOMPropertyConfig;
 
-},{"./DOMProperty":100}],180:[function(require,module,exports){
+},{"./DOMProperty":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\DOMProperty.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SelectEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -34414,7 +35088,7 @@ var SelectEventPlugin = {
 
 module.exports = SelectEventPlugin;
 
-},{"./EventConstants":105,"./EventPropagators":110,"./ReactInputSelection":156,"./SyntheticEvent":186,"./getActiveElement":212,"./isTextInputElement":229,"./keyOf":232,"./shallowEqual":241}],181:[function(require,module,exports){
+},{"./EventConstants":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js","./EventPropagators":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPropagators.js","./ReactInputSelection":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInputSelection.js","./SyntheticEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticEvent.js","./getActiveElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getActiveElement.js","./isTextInputElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\isTextInputElement.js","./keyOf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyOf.js","./shallowEqual":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\shallowEqual.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ServerReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -34445,7 +35119,7 @@ var ServerReactRootIndex = {
 
 module.exports = ServerReactRootIndex;
 
-},{}],182:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SimpleEventPlugin.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -34873,7 +35547,7 @@ var SimpleEventPlugin = {
 module.exports = SimpleEventPlugin;
 
 }).call(this,require('_process'))
-},{"./EventConstants":105,"./EventPluginUtils":109,"./EventPropagators":110,"./SyntheticClipboardEvent":183,"./SyntheticDragEvent":185,"./SyntheticEvent":186,"./SyntheticFocusEvent":187,"./SyntheticKeyboardEvent":189,"./SyntheticMouseEvent":190,"./SyntheticTouchEvent":191,"./SyntheticUIEvent":192,"./SyntheticWheelEvent":193,"./getEventCharCode":213,"./invariant":226,"./keyOf":232,"./warning":245,"_process":50}],183:[function(require,module,exports){
+},{"./EventConstants":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventConstants.js","./EventPluginUtils":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPluginUtils.js","./EventPropagators":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\EventPropagators.js","./SyntheticClipboardEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticClipboardEvent.js","./SyntheticDragEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticDragEvent.js","./SyntheticEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticEvent.js","./SyntheticFocusEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticFocusEvent.js","./SyntheticKeyboardEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticKeyboardEvent.js","./SyntheticMouseEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticMouseEvent.js","./SyntheticTouchEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticTouchEvent.js","./SyntheticUIEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticUIEvent.js","./SyntheticWheelEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticWheelEvent.js","./getEventCharCode":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventCharCode.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./keyOf":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyOf.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticClipboardEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -34918,7 +35592,7 @@ SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 
 module.exports = SyntheticClipboardEvent;
 
-},{"./SyntheticEvent":186}],184:[function(require,module,exports){
+},{"./SyntheticEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticEvent.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticCompositionEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -34963,7 +35637,7 @@ SyntheticEvent.augmentClass(
 
 module.exports = SyntheticCompositionEvent;
 
-},{"./SyntheticEvent":186}],185:[function(require,module,exports){
+},{"./SyntheticEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticEvent.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticDragEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35002,7 +35676,7 @@ SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 
 module.exports = SyntheticDragEvent;
 
-},{"./SyntheticMouseEvent":190}],186:[function(require,module,exports){
+},{"./SyntheticMouseEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticMouseEvent.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35168,7 +35842,7 @@ PooledClass.addPoolingTo(SyntheticEvent, PooledClass.threeArgumentPooler);
 
 module.exports = SyntheticEvent;
 
-},{"./Object.assign":117,"./PooledClass":118,"./emptyFunction":205,"./getEventTarget":216}],187:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./PooledClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\PooledClass.js","./emptyFunction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyFunction.js","./getEventTarget":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventTarget.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticFocusEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35207,7 +35881,7 @@ SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 
 module.exports = SyntheticFocusEvent;
 
-},{"./SyntheticUIEvent":192}],188:[function(require,module,exports){
+},{"./SyntheticUIEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticUIEvent.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticInputEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35253,7 +35927,7 @@ SyntheticEvent.augmentClass(
 
 module.exports = SyntheticInputEvent;
 
-},{"./SyntheticEvent":186}],189:[function(require,module,exports){
+},{"./SyntheticEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticEvent.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticKeyboardEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35340,7 +36014,7 @@ SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 
 module.exports = SyntheticKeyboardEvent;
 
-},{"./SyntheticUIEvent":192,"./getEventCharCode":213,"./getEventKey":214,"./getEventModifierState":215}],190:[function(require,module,exports){
+},{"./SyntheticUIEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticUIEvent.js","./getEventCharCode":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventCharCode.js","./getEventKey":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventKey.js","./getEventModifierState":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventModifierState.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticMouseEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35421,7 +36095,7 @@ SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 
 module.exports = SyntheticMouseEvent;
 
-},{"./SyntheticUIEvent":192,"./ViewportMetrics":195,"./getEventModifierState":215}],191:[function(require,module,exports){
+},{"./SyntheticUIEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticUIEvent.js","./ViewportMetrics":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ViewportMetrics.js","./getEventModifierState":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventModifierState.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticTouchEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35469,7 +36143,7 @@ SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 
 module.exports = SyntheticTouchEvent;
 
-},{"./SyntheticUIEvent":192,"./getEventModifierState":215}],192:[function(require,module,exports){
+},{"./SyntheticUIEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticUIEvent.js","./getEventModifierState":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventModifierState.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticUIEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35531,7 +36205,7 @@ SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 
 module.exports = SyntheticUIEvent;
 
-},{"./SyntheticEvent":186,"./getEventTarget":216}],193:[function(require,module,exports){
+},{"./SyntheticEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticEvent.js","./getEventTarget":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventTarget.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticWheelEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35592,7 +36266,7 @@ SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 
 module.exports = SyntheticWheelEvent;
 
-},{"./SyntheticMouseEvent":190}],194:[function(require,module,exports){
+},{"./SyntheticMouseEvent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\SyntheticMouseEvent.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Transaction.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -35833,7 +36507,7 @@ var Transaction = {
 module.exports = Transaction;
 
 }).call(this,require('_process'))
-},{"./invariant":226,"_process":50}],195:[function(require,module,exports){
+},{"./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ViewportMetrics.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35862,7 +36536,7 @@ var ViewportMetrics = {
 
 module.exports = ViewportMetrics;
 
-},{}],196:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\accumulateInto.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -35928,7 +36602,7 @@ function accumulateInto(current, next) {
 module.exports = accumulateInto;
 
 }).call(this,require('_process'))
-},{"./invariant":226,"_process":50}],197:[function(require,module,exports){
+},{"./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\adler32.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35962,7 +36636,7 @@ function adler32(data) {
 
 module.exports = adler32;
 
-},{}],198:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\camelize.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35994,7 +36668,7 @@ function camelize(string) {
 
 module.exports = camelize;
 
-},{}],199:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\camelizeStyleName.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -36036,7 +36710,7 @@ function camelizeStyleName(string) {
 
 module.exports = camelizeStyleName;
 
-},{"./camelize":198}],200:[function(require,module,exports){
+},{"./camelize":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\camelize.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\containsNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36080,7 +36754,7 @@ function containsNode(outerNode, innerNode) {
 
 module.exports = containsNode;
 
-},{"./isTextNode":230}],201:[function(require,module,exports){
+},{"./isTextNode":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\isTextNode.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\createArrayFromMixed.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36166,7 +36840,7 @@ function createArrayFromMixed(obj) {
 
 module.exports = createArrayFromMixed;
 
-},{"./toArray":243}],202:[function(require,module,exports){
+},{"./toArray":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\toArray.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\createFullPageComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -36228,7 +36902,7 @@ function createFullPageComponent(tag) {
 module.exports = createFullPageComponent;
 
 }).call(this,require('_process'))
-},{"./ReactClass":124,"./ReactElement":148,"./invariant":226,"_process":50}],203:[function(require,module,exports){
+},{"./ReactClass":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactClass.js","./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\createNodesFromMarkup.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -36318,7 +36992,7 @@ function createNodesFromMarkup(markup, handleScript) {
 module.exports = createNodesFromMarkup;
 
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":111,"./createArrayFromMixed":201,"./getMarkupWrap":218,"./invariant":226,"_process":50}],204:[function(require,module,exports){
+},{"./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js","./createArrayFromMixed":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\createArrayFromMixed.js","./getMarkupWrap":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getMarkupWrap.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\dangerousStyleValue.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36376,7 +37050,7 @@ function dangerousStyleValue(name, value) {
 
 module.exports = dangerousStyleValue;
 
-},{"./CSSProperty":94}],205:[function(require,module,exports){
+},{"./CSSProperty":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\CSSProperty.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyFunction.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36410,7 +37084,7 @@ emptyFunction.thatReturnsArgument = function(arg) { return arg; };
 
 module.exports = emptyFunction;
 
-},{}],206:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyObject.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -36434,7 +37108,7 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = emptyObject;
 
 }).call(this,require('_process'))
-},{"_process":50}],207:[function(require,module,exports){
+},{"_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\escapeTextContentForBrowser.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36474,7 +37148,7 @@ function escapeTextContentForBrowser(text) {
 
 module.exports = escapeTextContentForBrowser;
 
-},{}],208:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\findDOMNode.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -36547,7 +37221,7 @@ function findDOMNode(componentOrElement) {
 module.exports = findDOMNode;
 
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":130,"./ReactInstanceMap":158,"./ReactMount":161,"./invariant":226,"./isNode":228,"./warning":245,"_process":50}],209:[function(require,module,exports){
+},{"./ReactCurrentOwner":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactCurrentOwner.js","./ReactInstanceMap":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceMap.js","./ReactMount":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactMount.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./isNode":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\isNode.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\flattenChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -36605,7 +37279,7 @@ function flattenChildren(children) {
 module.exports = flattenChildren;
 
 }).call(this,require('_process'))
-},{"./traverseAllChildren":244,"./warning":245,"_process":50}],210:[function(require,module,exports){
+},{"./traverseAllChildren":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\traverseAllChildren.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\focusNode.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -36634,7 +37308,7 @@ function focusNode(node) {
 
 module.exports = focusNode;
 
-},{}],211:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\forEachAccumulated.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36665,7 +37339,7 @@ var forEachAccumulated = function(arr, cb, scope) {
 
 module.exports = forEachAccumulated;
 
-},{}],212:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getActiveElement.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36694,7 +37368,7 @@ function getActiveElement() /*?DOMElement*/ {
 
 module.exports = getActiveElement;
 
-},{}],213:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventCharCode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36746,7 +37420,7 @@ function getEventCharCode(nativeEvent) {
 
 module.exports = getEventCharCode;
 
-},{}],214:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventKey.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36851,7 +37525,7 @@ function getEventKey(nativeEvent) {
 
 module.exports = getEventKey;
 
-},{"./getEventCharCode":213}],215:[function(require,module,exports){
+},{"./getEventCharCode":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventCharCode.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventModifierState.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36898,7 +37572,7 @@ function getEventModifierState(nativeEvent) {
 
 module.exports = getEventModifierState;
 
-},{}],216:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getEventTarget.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36929,7 +37603,7 @@ function getEventTarget(nativeEvent) {
 
 module.exports = getEventTarget;
 
-},{}],217:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getIteratorFn.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36973,7 +37647,7 @@ function getIteratorFn(maybeIterable) {
 
 module.exports = getIteratorFn;
 
-},{}],218:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getMarkupWrap.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -37092,7 +37766,7 @@ function getMarkupWrap(nodeName) {
 module.exports = getMarkupWrap;
 
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":111,"./invariant":226,"_process":50}],219:[function(require,module,exports){
+},{"./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getNodeForCharacterOffset.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37167,7 +37841,7 @@ function getNodeForCharacterOffset(root, offset) {
 
 module.exports = getNodeForCharacterOffset;
 
-},{}],220:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getReactRootElementInContainer.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37202,7 +37876,7 @@ function getReactRootElementInContainer(container) {
 
 module.exports = getReactRootElementInContainer;
 
-},{}],221:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getTextContentAccessor.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37239,7 +37913,7 @@ function getTextContentAccessor() {
 
 module.exports = getTextContentAccessor;
 
-},{"./ExecutionEnvironment":111}],222:[function(require,module,exports){
+},{"./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getUnboundedScrollPosition.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37279,7 +37953,7 @@ function getUnboundedScrollPosition(scrollable) {
 
 module.exports = getUnboundedScrollPosition;
 
-},{}],223:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\hyphenate.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37312,7 +37986,7 @@ function hyphenate(string) {
 
 module.exports = hyphenate;
 
-},{}],224:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\hyphenateStyleName.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37353,7 +38027,7 @@ function hyphenateStyleName(string) {
 
 module.exports = hyphenateStyleName;
 
-},{"./hyphenate":223}],225:[function(require,module,exports){
+},{"./hyphenate":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\hyphenate.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\instantiateReactComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -37491,7 +38165,7 @@ function instantiateReactComponent(node, parentCompositeType) {
 module.exports = instantiateReactComponent;
 
 }).call(this,require('_process'))
-},{"./Object.assign":117,"./ReactCompositeComponent":128,"./ReactEmptyComponent":150,"./ReactNativeComponent":164,"./invariant":226,"./warning":245,"_process":50}],226:[function(require,module,exports){
+},{"./Object.assign":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\Object.assign.js","./ReactCompositeComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactCompositeComponent.js","./ReactEmptyComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactEmptyComponent.js","./ReactNativeComponent":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactNativeComponent.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -37548,7 +38222,7 @@ var invariant = function(condition, format, a, b, c, d, e, f) {
 module.exports = invariant;
 
 }).call(this,require('_process'))
-},{"_process":50}],227:[function(require,module,exports){
+},{"_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\isEventSupported.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37613,7 +38287,7 @@ function isEventSupported(eventNameSuffix, capture) {
 
 module.exports = isEventSupported;
 
-},{"./ExecutionEnvironment":111}],228:[function(require,module,exports){
+},{"./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\isNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37640,7 +38314,7 @@ function isNode(object) {
 
 module.exports = isNode;
 
-},{}],229:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\isTextInputElement.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37683,7 +38357,7 @@ function isTextInputElement(elem) {
 
 module.exports = isTextInputElement;
 
-},{}],230:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\isTextNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37708,7 +38382,7 @@ function isTextNode(object) {
 
 module.exports = isTextNode;
 
-},{"./isNode":228}],231:[function(require,module,exports){
+},{"./isNode":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\isNode.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyMirror.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -37763,7 +38437,7 @@ var keyMirror = function(obj) {
 module.exports = keyMirror;
 
 }).call(this,require('_process'))
-},{"./invariant":226,"_process":50}],232:[function(require,module,exports){
+},{"./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\keyOf.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37799,7 +38473,7 @@ var keyOf = function(oneKeyObj) {
 
 module.exports = keyOf;
 
-},{}],233:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\mapObject.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37852,7 +38526,7 @@ function mapObject(object, callback, context) {
 
 module.exports = mapObject;
 
-},{}],234:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\memoizeStringOnly.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37885,7 +38559,7 @@ function memoizeStringOnly(callback) {
 
 module.exports = memoizeStringOnly;
 
-},{}],235:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\onlyChild.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -37925,7 +38599,7 @@ function onlyChild(children) {
 module.exports = onlyChild;
 
 }).call(this,require('_process'))
-},{"./ReactElement":148,"./invariant":226,"_process":50}],236:[function(require,module,exports){
+},{"./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\performance.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37953,7 +38627,7 @@ if (ExecutionEnvironment.canUseDOM) {
 
 module.exports = performance || {};
 
-},{"./ExecutionEnvironment":111}],237:[function(require,module,exports){
+},{"./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\performanceNow.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -37981,7 +38655,7 @@ var performanceNow = performance.now.bind(performance);
 
 module.exports = performanceNow;
 
-},{"./performance":236}],238:[function(require,module,exports){
+},{"./performance":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\performance.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\quoteAttributeValueForBrowser.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -38009,7 +38683,7 @@ function quoteAttributeValueForBrowser(value) {
 
 module.exports = quoteAttributeValueForBrowser;
 
-},{"./escapeTextContentForBrowser":207}],239:[function(require,module,exports){
+},{"./escapeTextContentForBrowser":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\escapeTextContentForBrowser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\setInnerHTML.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -38098,7 +38772,7 @@ if (ExecutionEnvironment.canUseDOM) {
 
 module.exports = setInnerHTML;
 
-},{"./ExecutionEnvironment":111}],240:[function(require,module,exports){
+},{"./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\setTextContent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -38140,7 +38814,7 @@ if (ExecutionEnvironment.canUseDOM) {
 
 module.exports = setTextContent;
 
-},{"./ExecutionEnvironment":111,"./escapeTextContentForBrowser":207,"./setInnerHTML":239}],241:[function(require,module,exports){
+},{"./ExecutionEnvironment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ExecutionEnvironment.js","./escapeTextContentForBrowser":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\escapeTextContentForBrowser.js","./setInnerHTML":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\setInnerHTML.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\shallowEqual.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -38184,7 +38858,7 @@ function shallowEqual(objA, objB) {
 
 module.exports = shallowEqual;
 
-},{}],242:[function(require,module,exports){
+},{}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\shouldUpdateReactComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -38288,7 +38962,7 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 module.exports = shouldUpdateReactComponent;
 
 }).call(this,require('_process'))
-},{"./warning":245,"_process":50}],243:[function(require,module,exports){
+},{"./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\toArray.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -38360,7 +39034,7 @@ function toArray(obj) {
 module.exports = toArray;
 
 }).call(this,require('_process'))
-},{"./invariant":226,"_process":50}],244:[function(require,module,exports){
+},{"./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\traverseAllChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -38613,7 +39287,7 @@ function traverseAllChildren(children, callback, traverseContext) {
 module.exports = traverseAllChildren;
 
 }).call(this,require('_process'))
-},{"./ReactElement":148,"./ReactFragment":154,"./ReactInstanceHandles":157,"./getIteratorFn":217,"./invariant":226,"./warning":245,"_process":50}],245:[function(require,module,exports){
+},{"./ReactElement":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactElement.js","./ReactFragment":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactFragment.js","./ReactInstanceHandles":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\ReactInstanceHandles.js","./getIteratorFn":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\getIteratorFn.js","./invariant":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\invariant.js","./warning":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\warning.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -38676,7 +39350,7 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = warning;
 
 }).call(this,require('_process'))
-},{"./emptyFunction":205,"_process":50}],246:[function(require,module,exports){
+},{"./emptyFunction":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\emptyFunction.js","_process":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js":[function(require,module,exports){
 module.exports = require('./lib/React');
 
-},{"./lib/React":119}]},{},[32]);
+},{"./lib/React":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\lib\\React.js"}]},{},["c:\\projects\\privat\\react-plugins\\mdl-reactjs\\docs\\src\\app.jsx"]);
