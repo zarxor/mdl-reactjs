@@ -2,40 +2,41 @@
 <blockquote>
 <p>Material Design Lite for React JS lets you add a Material Design look and feel to your websites using the React framework.</p>
 </blockquote>
-<p><strong>This project is under development and will be breaking.<br />
-Do not use in production!</strong></p>
-<p><a href="https://zarxor.github.io/mdl-reactjs/docs/">You can find documentation and examples here</a></p>
+<p><a href="https://zarxor.github.io/mdl-reactjs/docs/build/">You can find documentation and examples here</a></p>
 <h2 id="usage">Usage</h2>
 <p>To install run</p>
 <pre><code class="lang-jsx">npm install mdl-reactjs
 </code></pre>
-<p>Then include by using</p>
+<p>How to include in project</p>
 <pre><code class="lang-jsx">var MDL = require(&#39;mdl-reactjs&#39;);
+var Button = MDL.Button;
+var Card = MDL.Card;
 </code></pre>
 <p>Include the MDL css and js in your project</p>
-<pre><code>&lt;!-- Material design lite stylesheet --&gt;
-&lt;!-- You can generate your own at (http://www.getmdl.io/customize/index.html) --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;//storage.googleapis.com/code.getmdl.io/1.0.3/material.indigo-pink.min.css&quot;&gt;
-
-&lt;!-- Material design lite icons --&gt;
+<pre><code>&lt;!-- Material design lite stylesheet, icons and javascript --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;//storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;//fonts.googleapis.com/icon?family=Material+Icons&quot;&gt;
-
-&lt;!-- Material design lite script --&gt;
-&lt;script src=&quot;//storage.googleapis.com/code.getmdl.io/1.0.3/material.min.js&quot;&gt;&lt;/script&gt;
-</code></pre><h3 id="components-list-todo">Components list / Todo</h3>
+&lt;script src=&quot;//storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js&quot;&gt;&lt;/script&gt;
+</code></pre><h3 id="how-to-run-the-demo-documentation">How to run the demo / documentation</h3>
+<pre><code>npm install
+gulp
+// Open http://localhost:8080/
+</code></pre><h2 id="project-status">Project status</h2>
+<p>The project is still under development and will be adding features and functions</p>
+<h3 id="components-list-todo">Components list / Todo</h3>
 <ul>
-<li>[x] Badge [<a href="https://zarxor.github.io/mdl-reactjs/docs/#/badges">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#badges-section">getmdl.io</a>]</li>
-<li>[x] Buttons [<a href="https://zarxor.github.io/mdl-reactjs/docs/#/buttons">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#buttons-section">getmdl.io</a>]</li>
-<li>Loading [<a href="https://zarxor.github.io/mdl-reactjs/docs/#/loading">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#loading-section">getmdl.io</a>]<ul>
+<li>[x] Badge [<a href="https://zarxor.github.io/mdl-reactjs/docs/build/#/badges">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#badges-section">getmdl.io</a>]</li>
+<li>[x] Buttons [<a href="https://zarxor.github.io/mdl-reactjs/docs/build/#/buttons">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#buttons-section">getmdl.io</a>]</li>
+<li>Loading [<a href="https://zarxor.github.io/mdl-reactjs/docs/build/#/loading">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#loading-section">getmdl.io</a>]<ul>
 <li>[x] Progress</li>
 <li>[x] Spinner</li>
 </ul>
 </li>
-<li>[x] Sliders [<a href="https://zarxor.github.io/mdl-reactjs/docs/#/sliders">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#sliders-section">getmdl.io</a>]</li>
+<li>[x] Sliders [<a href="https://zarxor.github.io/mdl-reactjs/docs/build/#/sliders">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#sliders-section">getmdl.io</a>]</li>
 <li>[x] Icon [Docs]</li>
-<li>[x] Textfields [<a href="https://zarxor.github.io/mdl-reactjs/docs/#/textfields">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#textfields-section">getmdl.io</a>]</li>
-<li>[x] Cards [<a href="https://zarxor.github.io/mdl-reactjs/docs/#/cards">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#cards-section">getmdl.io</a>]</li>
-<li>Layout [Docs] [<a href="http://www.getmdl.io/components/index.html#layout-section">getmdl.io</a>]<ul>
+<li>[x] Textfields [<a href="https://zarxor.github.io/mdl-reactjs/docs/build/#/textfields">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#textfields-section">getmdl.io</a>]</li>
+<li>[x] Cards [<a href="https://zarxor.github.io/mdl-reactjs/docs/build/#/cards">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#cards-section">getmdl.io</a>]</li>
+<li>Layout [<a href="https://zarxor.github.io/mdl-reactjs/docs/build/#/layout">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#layout-section">getmdl.io</a>]<ul>
 <li>[x] Header + Rows</li>
 <li>[x] Drawer</li>
 <li>[x] Title</li>
@@ -43,9 +44,9 @@ Do not use in production!</strong></p>
 <li>[x] Navigation + Links</li>
 <li>[x] Grid</li>
 <li>[ ] Layout Tabs</li>
-<li>[ ] Tabs</li>
+<li>[x] Tabs</li>
 <li>[ ] Footer</li>
 </ul>
 </li>
-<li>[x] Menus [<a href="https://zarxor.github.io/mdl-reactjs/docs/#/menus">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#menus-section">getmdl.io</a>]</li>
+<li>[x] Menus [<a href="https://zarxor.github.io/mdl-reactjs/docs/build/#/menus">Docs</a>] [<a href="http://www.getmdl.io/components/index.html#menus-section">getmdl.io</a>]</li>
 </ul>

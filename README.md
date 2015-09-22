@@ -2,7 +2,7 @@
 
 > Material Design Lite for React JS lets you add a Material Design look and feel to your websites using the React framework.
 
-[You can find documentation and examples here](https://zarxor.github.io/mdl-reactjs/docs/)
+[You can find documentation and examples here](https://zarxor.github.io/mdl-reactjs/docs/build/)
 
 ## Usage ##
 To install run
@@ -34,16 +34,16 @@ gulp
 The project is still under development and will be adding features and functions
 
 ### Components list / Todo
-- [x] Badge [[Docs](https://zarxor.github.io/mdl-reactjs/docs/#/badges)] [[getmdl.io](http://www.getmdl.io/components/index.html#badges-section)]
-- [x] Buttons [[Docs](https://zarxor.github.io/mdl-reactjs/docs/#/buttons)] [[getmdl.io](http://www.getmdl.io/components/index.html#buttons-section)]
-- Loading [[Docs](https://zarxor.github.io/mdl-reactjs/docs/#/loading)] [[getmdl.io](http://www.getmdl.io/components/index.html#loading-section)]
+- [x] Badge [[Docs](https://zarxor.github.io/mdl-reactjs/docs/build/#/badges)] [[getmdl.io](http://www.getmdl.io/components/index.html#badges-section)]
+- [x] Buttons [[Docs](https://zarxor.github.io/mdl-reactjs/docs/build/#/buttons)] [[getmdl.io](http://www.getmdl.io/components/index.html#buttons-section)]
+- Loading [[Docs](https://zarxor.github.io/mdl-reactjs/docs/build/#/loading)] [[getmdl.io](http://www.getmdl.io/components/index.html#loading-section)]
 	- [x] Progress
 	- [x] Spinner
-- [x] Sliders [[Docs](https://zarxor.github.io/mdl-reactjs/docs/#/sliders)] [[getmdl.io](http://www.getmdl.io/components/index.html#sliders-section)]
+- [x] Sliders [[Docs](https://zarxor.github.io/mdl-reactjs/docs/build/#/sliders)] [[getmdl.io](http://www.getmdl.io/components/index.html#sliders-section)]
 - [x] Icon [Docs]
-- [x] Textfields [[Docs](https://zarxor.github.io/mdl-reactjs/docs/#/textfields)] [[getmdl.io](http://www.getmdl.io/components/index.html#textfields-section)]
-- [x] Cards [[Docs](https://zarxor.github.io/mdl-reactjs/docs/#/cards)] [[getmdl.io](http://www.getmdl.io/components/index.html#cards-section)]
-- Layout [[Docs](https://zarxor.github.io/mdl-reactjs/docs/#/layout)] [[getmdl.io](http://www.getmdl.io/components/index.html#layout-section)]
+- [x] Textfields [[Docs](https://zarxor.github.io/mdl-reactjs/docs/build/#/textfields)] [[getmdl.io](http://www.getmdl.io/components/index.html#textfields-section)]
+- [x] Cards [[Docs](https://zarxor.github.io/mdl-reactjs/docs/build/#/cards)] [[getmdl.io](http://www.getmdl.io/components/index.html#cards-section)]
+- Layout [[Docs](https://zarxor.github.io/mdl-reactjs/docs/build/#/layout)] [[getmdl.io](http://www.getmdl.io/components/index.html#layout-section)]
 	- [x] Header + Rows
 	- [x] Drawer
 	- [x] Title
@@ -53,4 +53,4 @@ The project is still under development and will be adding features and functions
 	- [ ] Layout Tabs
 	- [x] Tabs
 	- [ ] Footer
-- [x] Menus [[Docs](https://zarxor.github.io/mdl-reactjs/docs/#/menus)] [[getmdl.io](http://www.getmdl.io/components/index.html#menus-section)]
+- [x] Menus [[Docs](https://zarxor.github.io/mdl-reactjs/docs/build/#/menus)] [[getmdl.io](http://www.getmdl.io/components/index.html#menus-section)]
