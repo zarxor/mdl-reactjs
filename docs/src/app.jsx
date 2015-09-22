@@ -73,7 +73,6 @@ var routes = (<Route path="/" component={App} >
 	})}
 </Route>);
 
-	console.log(routes);
 React.render((<Router>{routes}</Router>), document.body);
 
 /*
