@@ -3,11 +3,19 @@ var React = require("react");
 var cx = require('classnames');
 var _ = require('lodash');
 
-var _defaultProps =  {
+var _generalProps = {
+	colors: true,
 };
+var _defaultProps = __functions.makeDefaultProps({
+}, _generalProps);
+
+var _propTypes = __functions.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.Icon',
+
+	propTypes: _propTypes,
 
   getDefaultProps: function() {
 		return _defaultProps;
@@ -17,6 +25,9 @@ module.exports = React.createClass({
 		var classes = {
       'material-icons': true
 		};
+
+		classes = __functions.addGeneralClasses(classes, this.props);
+
 		return cx(classes);
 	},
 

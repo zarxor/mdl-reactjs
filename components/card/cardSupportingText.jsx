@@ -1,20 +1,29 @@
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash');
+
+var _generalProps = {
+  shadow: true,
+	colors: true
+};
+
+var _defaultProps = __functions.makeDefaultProps({
+	isExpand: false,
+	border: false,
+	shadow: 0
+}, _generalProps);
+
+var _propTypes = __functions.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.CardSupportingText',
 
-	propTypes: {
+	propTypes: _propTypes,
 
-	},
-
-  getDefaultProps: function() {
-		return {
-			isExpand: false,
-			border: false
-		};
+	getDefaultProps: function() {
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -23,22 +32,17 @@ module.exports = React.createClass({
 			'mdl-card--expand': this.props.isExpand,
 			'mdl-card--border': this.props.border
 		};
+    classes = __functions.addGeneralClasses(classes, this.props);
 		return cx(classes);
 	},
 
   _getElement: function() {
-  	return <div className={this.props.className || ''}>{this.props.children}</div>
+  	return <div>{this.props.children}</div>
   },
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			id : this.props.id,
-		};
+    var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },

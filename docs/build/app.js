@@ -212,7 +212,9 @@ var _defaultProps = {
 	error: "",
   onChange: null,
   autogrow: false,
-  rows: 1
+  rows: 1,
+  required: false,
+  disabled: false
 };
 
 module.exports = React.createClass({
@@ -261,7 +263,8 @@ module.exports = React.createClass({
 			pattern : this.props.pattern,
 			disabled : this.props.disabled,
       onChange : this.change,
-      ref: 'mdlTextfield'
+      ref: 'mdlTextfield',
+      required: this.props.required
 		}) });
 
 		if (this.props.label.length > 0) {
@@ -429,22 +432,31 @@ module.exports = React.createClass({
 });
 },{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardActions.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash');
+
+var _generalProps = {
+  shadow: true,
+	colors: true
+};
+
+var _defaultProps = __functions.makeDefaultProps({
+	isExpand: false,
+	border: false,
+	shadow: 0
+}, _generalProps);
+
+var _propTypes = __functions.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.CardActions',
 
-	propTypes: {
-
-	},
+	propTypes: _propTypes,
 
   getDefaultProps: function() {
-		return {
-			isExpand: false,
-			border: false
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -452,22 +464,17 @@ module.exports = React.createClass({
 			'mdl-card__actions': true,
 			'mdl-card--border': this.props.border
 		};
+    classes = __functions.addGeneralClasses(classes, this.props);
 		return cx(classes);
 	},
 
   _getElement: function() {
-		return React.createElement("div", {className: this.props.className || ''}, this.props.children)
+		return React.createElement("div", null, this.props.children)
   },
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			id : this.props.id,
-		};
+    var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -481,24 +488,33 @@ module.exports = React.createClass({
 
 },{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardMedia.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash');
+
+var _generalProps = {
+  shadow: true,
+	colors: true
+};
+
+var _defaultProps = __functions.makeDefaultProps({
+	isExpand: false,
+	imgSrc: '',
+	imgProps: {},
+	border: false,
+	shadow: 0
+}, _generalProps);
+
+var _propTypes = __functions.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.CardMedia',
 
-	propTypes: {
-
-	},
+	propTypes: _propTypes,
 
   getDefaultProps: function() {
-		return {
-			isExpand: false,
-			imgSrc: '',
-			imgProps: {},
-			border: false
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -507,6 +523,7 @@ module.exports = React.createClass({
 			'mdl-card--expand': this.props.isExpand,
 			'mdl-card--border': this.props.border
 		};
+    classes = __functions.addGeneralClasses(classes, this.props);
 		return cx(classes);
 	},
 
@@ -518,18 +535,12 @@ module.exports = React.createClass({
 			inner = this.props.children;
 		}
 
-		return React.createElement("div", {className: this.props.className || ''}, inner)
+		return React.createElement("div", null, inner)
   },
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			id : this.props.id,
-		};
+    var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -543,42 +554,46 @@ module.exports = React.createClass({
 
 },{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardMenu.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash');
+
+var _generalProps = {
+  shadow: true,
+	colors: true
+};
+
+var _defaultProps = __functions.makeDefaultProps({
+	shadow: 0
+}, _generalProps);
+
+var _propTypes = __functions.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
-	displayName : 'MDL.CardMedia',
+	displayName : 'MDL.CardMenu',
 
-	propTypes: {
-
-	},
+	propTypes: _propTypes,
 
   getDefaultProps: function() {
-		return {
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
 		var classes = {
 			'mdl-card__menu': true,
 		};
+    classes = __functions.addGeneralClasses(classes, this.props);
 		return cx(classes);
 	},
 
   _getElement: function() {
-		return React.createElement("div", {className: this.props.className || ''}, this.props.children)
+		return React.createElement("div", null, this.props.children)
   },
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			id : this.props.id,
-		};
+    var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -592,22 +607,31 @@ module.exports = React.createClass({
 
 },{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardSupportingText.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash');
+
+var _generalProps = {
+  shadow: true,
+	colors: true
+};
+
+var _defaultProps = __functions.makeDefaultProps({
+	isExpand: false,
+	border: false,
+	shadow: 0
+}, _generalProps);
+
+var _propTypes = __functions.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.CardSupportingText',
 
-	propTypes: {
+	propTypes: _propTypes,
 
-	},
-
-  getDefaultProps: function() {
-		return {
-			isExpand: false,
-			border: false
-		};
+	getDefaultProps: function() {
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -616,22 +640,17 @@ module.exports = React.createClass({
 			'mdl-card--expand': this.props.isExpand,
 			'mdl-card--border': this.props.border
 		};
+    classes = __functions.addGeneralClasses(classes, this.props);
 		return cx(classes);
 	},
 
   _getElement: function() {
-  	return React.createElement("div", {className: this.props.className || ''}, this.props.children)
+  	return React.createElement("div", null, this.props.children)
   },
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			id : this.props.id,
-		};
+    var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -643,24 +662,33 @@ module.exports = React.createClass({
 
 },{"classnames":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\projects\\privat\\react-plugins\\mdl-reactjs\\components\\card\\CardTitle.jsx":[function(require,module,exports){
 /** @jsx React.DOM */
-var React = require("react");
-var cx = require('classnames');
-var _ = require('lodash');
+var React = require("react"),
+    cx = require('classnames'),
+    _ = require('lodash');
+
+var _generalProps = {
+  shadow: true,
+	colors: true
+};
+
+var _defaultProps = __functions.makeDefaultProps({
+	useChild: false,
+	textTag: 'h2',
+	textTagOff: false,
+	border: false,
+	shadow: 0
+}, _generalProps);
+
+var _propTypes = __functions.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.CardTitle',
 
-	propTypes: {
-
-	},
+	propTypes: _propTypes,
 
   getDefaultProps: function() {
-		return {
-			useChild: false,
-			textTag: 'h2',
-			textTagOff: false,
-			border: false
-		};
+		return _defaultProps;
 	},
 
   _getClasses: function() {
@@ -669,6 +697,7 @@ module.exports = React.createClass({
 			'mdl-card--expand': this.props.expand,
 			'mdl-card--border': this.props.border
 		};
+    classes = __functions.addGeneralClasses(classes, this.props);
 		return cx(classes);
 	},
 
@@ -686,19 +715,13 @@ module.exports = React.createClass({
 			} else {
 				text = React.createElement(this.props.textTag, { children: this.props.children, className: "mdl-card__title-text" });
 			}
-      return React.createElement("div", {className: this.props.className || ''}, text)
+      return React.createElement("div", null, text)
     }
   },
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			id : this.props.id,
-		};
+    var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -715,7 +738,8 @@ var React = require("react"),
     _ = require('lodash');
 
 var _generalProps = {
-  shadow: true
+  shadow: true,
+	colors: true
 };
 
 var _defaultProps = __functions.makeDefaultProps({
@@ -753,19 +777,13 @@ module.exports = React.createClass({
     if (this.props.useChild && child && !_.isString(child)) {
       return child;
     } else {
-      return React.createElement("div", {className: this.props.className || ''}, this.props.children)
+      return React.createElement("div", null, this.props.children)
     }
   },
 
   render: function () {
     var element = this._getElement();
-    var classname = element.props.className || '';
-
-    var newProps = {
-			className : classname + ' ' + this._getClasses(),
-			style : _.extend(element.props.style || {}, this.props.style),
-			id : this.props.id,
-		};
+    var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },
@@ -872,10 +890,7 @@ module.exports = React.createClass({
 	},
 
   _getElement: function() {
-		var element = React.createElement(this.props.tag, {
-			children: this.props.children
-		});;
-
+		var element = React.createElement(this.props.tag, {}, this.props.children);
 		return element;
   },
 
@@ -896,11 +911,19 @@ var React = require("react");
 var cx = require('classnames');
 var _ = require('lodash');
 
-var _defaultProps =  {
+var _generalProps = {
+	colors: true,
 };
+var _defaultProps = __functions.makeDefaultProps({
+}, _generalProps);
+
+var _propTypes = __functions.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.Icon',
+
+	propTypes: _propTypes,
 
   getDefaultProps: function() {
 		return _defaultProps;
@@ -910,6 +933,9 @@ module.exports = React.createClass({
 		var classes = {
       'material-icons': true
 		};
+
+		classes = __functions.addGeneralClasses(classes, this.props);
+
 		return cx(classes);
 	},
 
@@ -1017,7 +1043,7 @@ global.__functions = {
       shadow: false,
     }, settings);
 
-    _colors = ['', 'red','pink','purple','deep-purple','indigo','blue','light-blue','cyan','teal','green','light-green','lime','yellow','amber','orange','deep-orange','brown','grey','blue-grey'];
+    _colors = ['', 'white', 'black', 'red','pink','purple','deep-purple','indigo','blue','light-blue','cyan','teal','green','light-green','lime','yellow','amber','orange','deep-orange','brown','grey','blue-grey'];
     _spectrums = ['', 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 'A100', 'A200', 'A400', 'A700'];
 
     props = settings.colors ? _.assign({
@@ -1028,7 +1054,7 @@ global.__functions = {
     }, props) : props;
 
     props = settings.shadow ? _.assign({
-      shadow: React.PropTypes.oneOf([ 2, 3, 4, 6, 8, 16 ]),
+      shadow: React.PropTypes.oneOf([ 0, 2, 3, 4, 6, 8, 16 ]),
     }, props) : props;
 
     return props;
@@ -2022,7 +2048,6 @@ var routes = (React.createElement(Route, {path: "/", component: App},
 	})
 ));
 
-	console.log(routes);
 React.render((React.createElement(Router, null, routes)), document.body);
 
 /*
@@ -2576,12 +2601,12 @@ module.exports = React.createClass({displayName: "exports",
 
 					React.createElement(DOCS.DocCode, {title: "Image card"}, 
 						
-							'Comming...'
+							'See docs source code..'
 						
 					), 
 					React.createElement(DOCS.DocCode, {title: "Event card"}, 
 						
-							'Comming...'
+							'See docs source code..'
 						
 					), 
 
@@ -3010,10 +3035,10 @@ module.exports = React.createClass({displayName: "exports",
 					), 
 
 					React.createElement(DOCS.DocCode, {title: "Lower left"}, 
-						'Comming...'
+						'See docs source code..'
 					), 
 					React.createElement(DOCS.DocCode, {title: "Lower right"}, 
-						'Comming...'
+						'See docs source code..'
 					), 
 
 					/*
@@ -3045,10 +3070,10 @@ module.exports = React.createClass({displayName: "exports",
 					), 
 
 					React.createElement(DOCS.DocCode, {title: "Top left"}, 
-						'Comming...'
+						'See docs source code..'
 					), 
 					React.createElement(DOCS.DocCode, {title: "Top right"}, 
-						'Comming...'
+						'See docs source code..'
 					), 
 
 					/*
@@ -3217,7 +3242,7 @@ module.exports = React.createClass({displayName: "exports",
 					), 
 
 					React.createElement(DOCS.DocCode, {title: "Table"}, 
-						'Comming...'
+						'See docs source code..'
 					), 
 
 					/*
