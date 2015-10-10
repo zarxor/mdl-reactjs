@@ -3,16 +3,22 @@ var React = require("react"),
 	cx = require('classnames'),
 	_ = require('lodash');
 
-var _defaultProps = {
-	tag: 'div'
+var _generalProps = {
+	colors: true,
 };
+
+var _defaultProps = __functions.makeDefaultProps({
+	tag: 'div',
+	'no-spacing': false
+}, _generalProps);
+
+var _propTypes = __functions.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.Grid',
 
-	propTypes: {
-
-	},
+	propTypes: _propTypes,
 
   getDefaultProps: function() {
 		return _defaultProps;
@@ -21,7 +27,11 @@ module.exports = React.createClass({
   _getClasses: function() {
 		var classes = {
 			'mdl-grid': true,
+			'mdl-grid--no-spacing': this.props['no-spacing']
 		};
+
+		classes = __functions.addGeneralClasses(classes, this.props);
+
 		return cx(classes);
 	},
 

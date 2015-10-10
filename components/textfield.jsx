@@ -4,6 +4,7 @@ var React = require("react"),
     _ = require('lodash');
 
 var _defaultProps = {
+	type: "text",
 	floatingLabel: false,
 	expandable: false,
 	multiline: false,
@@ -59,7 +60,7 @@ module.exports = React.createClass({
 			id : this.props.id,
 			name : this.props.id,
 			rows : this.props.rows,
-			type : "text",
+			type : this.props.type,
 			pattern : this.props.pattern,
 			disabled : this.props.disabled,
       onChange : this.change,

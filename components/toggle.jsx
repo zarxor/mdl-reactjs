@@ -40,12 +40,13 @@ module.exports = React.createClass({
 	},
 
 	_handleChange: function () {
-		this.setState({ isChecked: !this.state.isChecked });
-		console.log(!this.state.isChecked);
-		if (!this.state.isChecked) {
-			// todo: implement onChecked event
-		} else {
-			// todo: implement onUnchecked event
+		var node = React.findDOMNode(this.refs.toggleInput)
+		this.setState({ isChecked: node.checked });
+
+		if (node.checked && typeof(this.props.onChecked) == 'function') {
+			this.props.onChecked();
+		} else if (!node.checked && typeof(this.props.onUnchecked) == 'function') {
+			this.props.onUnchecked()
 		}
 	},
 
@@ -70,7 +71,7 @@ module.exports = React.createClass({
 
     return (
 			<label htmlFor={_id}>
-			  <input name={_name} type={_type} id={_id} className={_inputClassname} defaultChecked={this.props.checked} defaultValue={this.props.defaultValue} onChange={this._handleChange}/>
+			  <input ref="toggleInput" name={_name} type={_type} id={_id} className={_inputClassname} defaultChecked={this.props.checked} defaultValue={this.props.defaultValue} onChange={this._handleChange}/>
 				{ React.createElement(_labelTag, { className: _labelClassname, children: (this.props.label || this.props.children) }) }
 			</label>
     );

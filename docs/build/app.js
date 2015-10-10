@@ -204,6 +204,7 @@ var React = require("react"),
     _ = require('lodash');
 
 var _defaultProps = {
+	type: "text",
 	floatingLabel: false,
 	expandable: false,
 	multiline: false,
@@ -259,7 +260,7 @@ module.exports = React.createClass({
 			id : this.props.id,
 			name : this.props.id,
 			rows : this.props.rows,
-			type : "text",
+			type : this.props.type,
 			pattern : this.props.pattern,
 			disabled : this.props.disabled,
       onChange : this.change,
@@ -798,16 +799,22 @@ var React = require("react"),
 	cx = require('classnames'),
 	_ = require('lodash');
 
-var _defaultProps = {
-	tag: 'div'
+var _generalProps = {
+	colors: true,
 };
+
+var _defaultProps = __functions.makeDefaultProps({
+	tag: 'div',
+	'no-spacing': false
+}, _generalProps);
+
+var _propTypes = __functions.makeDefaultPropTypes({
+}, _generalProps);
 
 module.exports = React.createClass({
 	displayName : 'MDL.Grid',
 
-	propTypes: {
-
-	},
+	propTypes: _propTypes,
 
   getDefaultProps: function() {
 		return _defaultProps;
@@ -816,7 +823,11 @@ module.exports = React.createClass({
   _getClasses: function() {
 		var classes = {
 			'mdl-grid': true,
+			'mdl-grid--no-spacing': this.props['no-spacing']
 		};
+
+		classes = __functions.addGeneralClasses(classes, this.props);
+
 		return cx(classes);
 	},
 
@@ -1924,12 +1935,12 @@ module.exports = React.createClass({
 	},
 
 	_handleChange: function () {
-		this.setState({ isChecked: !this.state.isChecked });
-		console.log(!this.state.isChecked);
-		if (!this.state.isChecked) {
-			// todo: implement onChecked event
-		} else {
-			// todo: implement onUnchecked event
+		this.setState({ isChecked: this.refs.toggleInput.checked });
+		
+		if (!this.state.isChecked && typeof(this.props.onChecked) == 'function') {
+			this.props.onChecked();
+		} else if (typeof(this.props.onUnchecked) == 'function') {
+			this.props.onChecked()
 		}
 	},
 
@@ -1954,7 +1965,7 @@ module.exports = React.createClass({
 
     return (
 			React.createElement("label", {htmlFor: _id}, 
-			  React.createElement("input", {name: _name, type: _type, id: _id, className: _inputClassname, defaultChecked: this.props.checked, defaultValue: this.props.defaultValue, onChange: this._handleChange}), 
+			  React.createElement("input", {ref: "toggleInput", name: _name, type: _type, id: _id, className: _inputClassname, defaultChecked: this.props.checked, defaultValue: this.props.defaultValue, onChange: this._handleChange}), 
 				 React.createElement(_labelTag, { className: _labelClassname, children: (this.props.label || this.props.children) }) 
 			)
     );
