@@ -51,10 +51,11 @@ module.exports = React.createClass({
   },
 
   _getElement: function() {
-		var children = {};
+		var children = [];
 		var tag = this.props.multiline ? 'textarea' : 'input';
 
-		children =_.extend(children, { 'input': React.createElement(tag, {
+    _(children).push(React.createElement(tag, {
+      key: "input",
 			className : "mdl-textfield__input",
 			defaultValue : this.props.defaultValue,
 			id : this.props.id,
@@ -66,21 +67,21 @@ module.exports = React.createClass({
       onChange : this.change,
       ref: 'mdlTextfield',
       required: this.props.required
-		}) });
+		})).commit();
 
 		if (this.props.label.length > 0) {
-			children =_.extend(children, { 'label': <label className="mdl-textfield__label" htmlFor={this.props.id}>{this.props.label}</label>});
+      _(children).push(<label key="label" className="mdl-textfield__label" htmlFor={this.props.id}>{this.props.label}</label>).commit();
 		}
 
 		if (this.props.error.length > 0) {
-			children =_.extend(children, { 'error': <label className="mdl-textfield__error">{this.props.error}</label>});
+      _(children).push(<label key="error" className="mdl-textfield__error">{this.props.error}</label>).commit();
 		}
 
 		if (this.props.expandable > 0) {
-			children = {
-				'icon': <label className="mdl-button mdl-js-button mdl-button--icon" htmlFor={this.props.id}><i className="material-icons">{this.props.icon}</i></label>,
-				'holder': <div className="mdl-textfield__expandable-holder">{children}</div>
-			};
+			children = [
+        <label key="icon" className="mdl-button mdl-js-button mdl-button--icon" htmlFor={this.props.id}><i className="material-icons">{this.props.icon}</i></label>,
+        <div key="holder" className="mdl-textfield__expandable-holder">{children}</div>
+      ];
 		}
 
 		return <div>{children}</div>

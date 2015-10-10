@@ -18,7 +18,7 @@ var _defaultProps = __functions.makeDefaultProps({
 	primary: false,
 	accent: false,
 
-	children: {}
+	children: null
 }, _generalProps);
 
 var _propTypes = __functions.makeDefaultPropTypes({
@@ -56,6 +56,8 @@ module.exports = React.createClass({
 	},
 
   _getElement: function() {
+    //var children = _.isEmpty(this.props.children) ? null : this.props.children;
+
     var child = this.props.children instanceof Array
 					? this.props.children[0]
 					: this.props.children;

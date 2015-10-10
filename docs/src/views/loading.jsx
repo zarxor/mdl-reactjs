@@ -30,13 +30,13 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Default">
-							<MDL.Progress progress={44} />
+							<MDL.Progress progress={44} id="progress_one" />
               {/*<MDL.Button style={{marginTop: 20}} raised onClick={this.setProgressOne}>Set progress to 44</MDL.Button>*/}
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Default">
-						{'<MDL.Progress progress={44} />'}
+						{'<MDL.Progress progress={44} id="progress_one" />'}
 					</DOCS.DocCode>
 
 					{/*
@@ -44,12 +44,12 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Indeterminate">
-							<MDL.Progress indeterminate />
+							<MDL.Progress indeterminate id="progress_two" />
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Indeterminate">
-						{'<MDL.Progress indeterminate />'}
+						{'<MDL.Progress indeterminate id="progress_two" />'}
 					</DOCS.DocCode>
 
 					{/*
@@ -57,12 +57,12 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Buffering">
-							<MDL.Progress progress={33} buffer={87} />
+							<MDL.Progress progress={33} buffer={87} id="progress_three" />
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Buffering">
-						{'<MDL.Progress progress={33} buffer={87} />'}
+						{'<MDL.Progress progress={33} buffer={87} id="progress_three" />'}
 					</DOCS.DocCode>
 
 					{/*
@@ -105,19 +105,19 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Default">
-              <MDL.Spinner active />
+              <MDL.Spinner active id="spinner_one" />
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="Single color">
-              <MDL.Spinner active singleColor />
+              <MDL.Spinner active singleColor id="spinner_two" />
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 
 					<DOCS.DocCode title="Default active spinner">
-						{'<MDL.Spinner active />'}
+						{'<MDL.Spinner active id="spinner_one" />'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Active single color spinner">
-						{'<MDL.Spinner active singleColor />'}
+						{'<MDL.Spinner active singleColor id="spinner_two" />'}
 					</DOCS.DocCode>
 
 					{/*

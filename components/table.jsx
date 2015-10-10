@@ -1,5 +1,6 @@
 /** @jsx React.DOM */
 var React = require("react"),
+    ReactDOM = require("react-dom"),
     cx = require('classnames'),
     _ = require('lodash');
 
@@ -110,7 +111,7 @@ module.exports = React.createClass({
   componentDidMount: function() {
 		componentHandler.upgradeDom();
     if (this.props.selectable) {
-      var elem = React.findDOMNode(this);
+      var elem = ReactDOM.findDOMNode(this);
       var selectBoxes = this._findElementsByClass(elem, "mdl-checkbox__input");
       for (var i = 0; i < selectBoxes.length; i++) {
         selectBoxes[i].addEventListener("change", this.props.onChange);

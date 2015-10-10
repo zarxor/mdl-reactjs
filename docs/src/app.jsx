@@ -1,6 +1,7 @@
 "use strict";
 
 var React = require('react'),
+		ReactDOM = require('react-dom'),
 		ReactRouter = require('react-router'),
 		Router = ReactRouter.Router,
 		Route = ReactRouter.Route,
@@ -73,7 +74,7 @@ var routes = (<Route path="/" component={App} >
 	})}
 </Route>);
 
-React.render(<Router>{routes}</Router>, document.body);
+ReactDOM.render(<Router>{routes}</Router>, document.getElementById('render'));
 
 /*
 Router.create({
