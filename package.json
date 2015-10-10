@@ -40,18 +40,18 @@
     "react": "~0.13.3"
   },
   "devDependencies": {
+    "browserify": "~11.1.0",
     "gulp": "~3.9.0",
     "gulp-connect": "~2.2.0",
-    "gulp-react": "~3.0.1",
-    "gulp-util": "~3.0.6",
-    "gulp-rename": "~1.2.2",
-    "gulp-replace": "~0.5.4",
     "gulp-markdown": "~1.0.0",
+    "gulp-react": "~3.0.1",
+    "gulp-rename": "~1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-util": "~3.0.6",
     "react-router": "~1.0.0-rc1",
+    "reactify": "~1.1.1",
     "vinyl-source-stream2": "*",
-    "browserify": "~11.1.0",
-    "watchify": "~3.4.0",
-    "reactify": "~1.1.1"
+    "watchify": "~3.4.0"
   },
   "directories": {
     "doc": "docs"
