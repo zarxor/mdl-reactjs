@@ -1,12 +1,11 @@
 "use strict";
 
-var React = require('react');
-
-var ReactRouter = require('react-router');
-var Router = ReactRouter.Router;
-var Route = ReactRouter.Route;
-var IndexRoute = ReactRouter.IndexRoute;
-var Link = ReactRouter.Link;
+var React = require('react'),
+		ReactRouter = require('react-router'),
+		Router = ReactRouter.Router,
+		Route = ReactRouter.Route,
+		IndexRoute = ReactRouter.IndexRoute,
+		Link = ReactRouter.Link;
 
 var MDL = require('../../components/');
 var _ = require('lodash');
@@ -30,6 +29,7 @@ var navRoutes = [
 ];
 
 var App = React.createClass({
+	displayName: 'app',
 	getNav: function () {
 		return (<MDL.Navigation id="docs-navigation">
 			{navRoutes.map(function (item, i) {
@@ -73,7 +73,7 @@ var routes = (<Route path="/" component={App} >
 	})}
 </Route>);
 
-React.render((<Router>{routes}</Router>), document.body);
+React.render(<Router>{routes}</Router>, document.body);
 
 /*
 Router.create({
