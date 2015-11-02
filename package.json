@@ -1,6 +1,6 @@
 {
   "name": "mdl-reactjs",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "React implementation of googles Material Design Lite (http://getmdl.io)",
   "main": "./lib",
   "keywords": [

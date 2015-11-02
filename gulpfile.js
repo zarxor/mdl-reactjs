@@ -17,7 +17,9 @@ function build(path, dest, name, isWatch) {
 	var opts = assign({}, watchify.args, {
 		entries : path,
 		transform : [reactify],
-    cache: {}, packageCache: {}, fullPaths: true // Requirement of watchify
+    cache: {},
+    packageCache: {},
+    fullPaths: true // Requirement of watchify
 	});
 
 	var b = browserify(opts);
