@@ -33,11 +33,11 @@ var App = React.createClass({
 	getNav: function () {
 		return (<MDL.Navigation id="docs-navigation">
 			{navRoutes.map(function (item, i) {
-	    	return (
+				return (
 					<Link className="mdl-navigation__link" to={item.to} key={i}>
 						<MDL.Button icon={item.icon} colored fab style={{marginRight: 10}} size="mini" /> {item.text}
 					</Link>
-	    	);
+				);
 			})}
 		</MDL.Navigation>);
 	},

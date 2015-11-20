@@ -18,7 +18,7 @@ var _defaultProps = __functions.makeDefaultProps({
 	primary: false,
 	accent: false,
 
-	children: {}
+	children: []
 }, _generalProps);
 
 var _propTypes = __functions.makeDefaultPropTypes({
@@ -44,7 +44,7 @@ module.exports = React.createClass({
 			'mdl-button--accent': this.props.accent,
 			'mdl-button--primary': this.props.primary,
 
-      'mdl-button--icon': (this.props.icon.length > 0 && !this.props.fab),
+      		'mdl-button--icon': (this.props.icon.length > 0 && !this.props.fab),
 
 			'mdl-js-button': true,
 			'mdl-js-ripple-effect': this.props.ripple
@@ -56,22 +56,22 @@ module.exports = React.createClass({
 	},
 
   _getElement: function() {
-    var child = this.props.children instanceof Array
-					? this.props.children[0]
-					: this.props.children;
 
     if (this.props.useChild && child && !_.isString(child)) {
-      return child;
+		var child = this.props.children instanceof Array
+						? this.props.children[0]
+						: this.props.children;
+      	return child;
     } else if (this.props.icon.length > 0) {
-      return <button><i className="material-icons">{this.props.icon}</i>{this.props.children}</button>
-		} else {
-      return <button>{this.props.children}</button>
+		return (<button><i className="material-icons">{this.props.icon}</i>{this.props.children}</button>);
+	} else {
+		return (<button>{this.props.children}</button>);
     }
   },
 
   render: function () {
     var element = this._getElement();
-		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+	var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
     return React.cloneElement(element, newProps);
   },

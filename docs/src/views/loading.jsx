@@ -22,7 +22,7 @@ module.exports = React.createClass({
 					<div className="docs-text">
 						<h1>Loading</h1>
 						<p>Indicate loading and progress states.</p>
-            <h2>Progress bar</h2>
+            			<h2>Progress bar</h2>
 					</div>
 
 					{/*
@@ -30,13 +30,13 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Default">
-							<MDL.Progress progress={44} />
+							<MDL.Progress id="prog_1" progress={44} />
               {/*<MDL.Button style={{marginTop: 20}} raised onClick={this.setProgressOne}>Set progress to 44</MDL.Button>*/}
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Default">
-						{'<MDL.Progress progress={44} />'}
+						{'<MDL.Progress id="prog_1" progress={44} />'}
 					</DOCS.DocCode>
 
 					{/*
@@ -44,12 +44,12 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Indeterminate">
-							<MDL.Progress indeterminate />
+							<MDL.Progress id="prog_2" indeterminate />
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Indeterminate">
-						{'<MDL.Progress indeterminate />'}
+						{'<MDL.Progress id="prog_2" indeterminate />'}
 					</DOCS.DocCode>
 
 					{/*
@@ -57,12 +57,12 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Buffering">
-							<MDL.Progress progress={33} buffer={87} />
+							<MDL.Progress id="prog_3" progress={33} buffer={87} />
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 					<DOCS.DocCode title="Buffering">
-						{'<MDL.Progress progress={33} buffer={87} />'}
+						{'<MDL.Progress id="prog_3" progress={33} buffer={87} />'}
 					</DOCS.DocCode>
 
 					{/*
@@ -97,7 +97,7 @@ module.exports = React.createClass({
             */}
 
 					<div className="docs-text">
-            <h2>Spinner</h2>
+            		<h2>Spinner</h2>
 					</div>
 
 					{/*
@@ -105,19 +105,19 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Default">
-              <MDL.Spinner active />
+              				<MDL.Spinner id="spinner_1" active />
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="Single color">
-              <MDL.Spinner active singleColor />
+              				<MDL.Spinner id="spinner_2" active singleColor />
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
 
 					<DOCS.DocCode title="Default active spinner">
-						{'<MDL.Spinner active />'}
+						{'<MDL.Spinner id="spinner_1" active />'}
 					</DOCS.DocCode>
 					<DOCS.DocCode title="Active single color spinner">
-						{'<MDL.Spinner active singleColor />'}
+						{'<MDL.Spinner id="spinner_2" active singleColor />'}
 					</DOCS.DocCode>
 
 					{/*
