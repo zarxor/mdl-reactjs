@@ -353,81 +353,82 @@ var React = require("react"),
     _ = require('lodash');
 
 var _generalProps = {
-	colors: true,
+    colors: true,
 };
 
 var _defaultProps = __functions.makeDefaultProps({
-	ripple: false,
-	fab: false,
-	size: false,
-	icon: '',
-	useChild: false,
-	colored: false,
-	raised: false,
-	primary: false,
-	accent: false,
+    ripple: false,
+    fab: false,
+    size: false,
+    icon: '',
+    useChild: false,
+    colored: false,
+    raised: false,
+    primary: false,
+    accent: false,
 
-	children: []
+    children: []
 }, _generalProps);
 
 var _propTypes = __functions.makeDefaultPropTypes({
 }, _generalProps);
 
 module.exports = React.createClass({
-	displayName : 'MDL.Button',
+    displayName: 'MDL.Button',
 
-	propTypes: _propTypes,
+    propTypes: _propTypes,
 
-  getDefaultProps: function() {
-		return _defaultProps;
-	},
+    getDefaultProps: function () {
+        return _defaultProps;
+    },
 
-  _getClasses: function() {
-		var classes = {
-			'mdl-button': true,
-			'mdl-button--fab': this.props.fab,
-			'mdl-button--mini-fab': (this.props.fab && this.props.size == "mini"),
+    _getClasses: function () {
+        var classes = {
+            'mdl-button': true,
+            'mdl-button--fab': this.props.fab,
+            'mdl-button--mini-fab': (this.props.fab && this.props.size == "mini"),
 
-			'mdl-button--raised': this.props.raised,
-			'mdl-button--colored': this.props.colored,
-			'mdl-button--accent': this.props.accent,
-			'mdl-button--primary': this.props.primary,
+            'mdl-button--raised': this.props.raised,
+            'mdl-button--colored': this.props.colored,
+            'mdl-button--accent': this.props.accent,
+            'mdl-button--primary': this.props.primary,
 
-      		'mdl-button--icon': (this.props.icon.length > 0 && !this.props.fab),
+            'mdl-button--icon': (this.props.icon.length > 0 && !this.props.fab),
 
-			'mdl-js-button': true,
-			'mdl-js-ripple-effect': this.props.ripple
-		};
+            'mdl-js-button': true,
+            'mdl-js-ripple-effect': this.props.ripple
+        };
 
-		classes = __functions.addGeneralClasses(classes, this.props);
+        classes = __functions.addGeneralClasses(classes, this.props);
 
-		return cx(classes);
-	},
+        return cx(classes);
+    },
 
-  _getElement: function() {
+    _getElement: function () {
 
-    if (this.props.useChild && child && !_.isString(child)) {
-		var child = this.props.children instanceof Array
-						? this.props.children[0]
-						: this.props.children;
-      	return child;
-    } else if (this.props.icon.length > 0) {
-		return (React.createElement("button", null, React.createElement("i", {className: "material-icons"}, this.props.icon), this.props.children));
-	} else {
-		return (React.createElement("button", null, this.props.children));
+        var child = this.props.children instanceof Array
+                        ? this.props.children[0]
+                        : this.props.children;
+
+        if (this.props.useChild && child && !_.isString(child)) {
+            return child;
+        } else if (this.props.icon.length > 0) {
+            return (React.createElement("button", null, React.createElement("i", {className: "material-icons"}, this.props.icon), this.props.children));
+        } else {
+            return (React.createElement("button", null, this.props.children));
+        }
+    },
+
+    render: function () {
+        var element = this._getElement();
+        var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+
+        return React.cloneElement(element, newProps);
+    },
+
+    componentDidMount: function () {
+        componentHandler.upgradeDom();
     }
-  },
-
-  render: function () {
-    var element = this._getElement();
-	var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
-
-    return React.cloneElement(element, newProps);
-  },
-
-  componentDidMount: function() {
-		componentHandler.upgradeDom();
-	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\card\\CardActions.jsx":[function(require,module,exports){
 /** @jsx React.DOM */

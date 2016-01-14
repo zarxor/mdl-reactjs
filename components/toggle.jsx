@@ -4,87 +4,88 @@ var cx = require('classnames');
 var _ = require('lodash');
 
 var _defaultProps = {
-	ripple: false,
-	checked: false,
-  label: null,
-  id: null, // Sets in getDefaultProps
-	type: 'checkbox',
-	name: null,
-	defaultValue: null,
+    ripple: false,
+    checked: false,
+    label: null,
+    id: null, // Sets in getDefaultProps
+    type: 'checkbox',
+    name: null,
+    defaultValue: null,
+    required: false
 };
 
 module.exports = React.createClass({
-	displayName : 'MDL.Toggle',
+    displayName: 'MDL.Toggle',
 
-	propTypes: {
-    type: React.PropTypes.oneOf(['checkbox','icon-toggle','radio','switch']),
-  },
+    propTypes: {
+        type: React.PropTypes.oneOf(['checkbox', 'icon-toggle', 'radio', 'switch']),
+    },
 
-	getInitialState: function() {
-    return { isChecked: this.props.checked };
-  },
+    getInitialState: function () {
+        return { isChecked: this.props.checked };
+    },
 
-  getDefaultProps: function() {
-		return _defaultProps;
-	},
+    getDefaultProps: function () {
+        return _defaultProps;
+    },
 
-  _getClasses: function() {
-		var classes = {
-			'mdl-js-ripple-effect': this.props.ripple,
-		};
+    _getClasses: function () {
+        var classes = {
+            'mdl-js-ripple-effect': this.props.ripple,
+        };
 
-		classes['mdl-' + this.props.type] = true;
-		classes['mdl-js-' + this.props.type] = true;
+        classes['mdl-' + this.props.type] = true;
+        classes['mdl-js-' + this.props.type] = true;
 
-		return cx(classes);
-	},
+        return cx(classes);
+    },
 
-	_handleChange: function () {
-		var node = React.findDOMNode(this.refs.toggleInput)
-		this.setState({ isChecked: node.checked });
+    _handleChange: function () {
+        var node = React.findDOMNode(this.refs.toggleInput)
+        this.setState({ isChecked: node.checked });
 
-		if (node.checked && typeof(this.props.onChecked) == 'function') {
-			this.props.onChecked();
-		} else if (!node.checked && typeof(this.props.onUnchecked) == 'function') {
-			this.props.onUnchecked()
-		}
-	},
+        if (node.checked && typeof (this.props.onChecked) == 'function') {
+            this.props.onChecked();
+        } else if (!node.checked && typeof (this.props.onUnchecked) == 'function') {
+            this.props.onUnchecked()
+        }
+    },
 
-  _getElement: function() {
-		var _id = this.props.id || ('toggle' + Math.floor((Math.random() * 10000) + 1000));
-		var _name = this.props.name || _id;
-		var _type = this.props.type == "radio" ? "radio" : "checkbox";
+    _getElement: function () {
+        var _id = this.props.id || ('toggle' + Math.floor((Math.random() * 10000) + 1000));
+        var _name = this.props.name || _id;
+        var _type = this.props.type == "radio" ? "radio" : "checkbox";
 
-		var _inputClassname = "mdl-" + this.props.type + "__input";
-		var _labelClassname = "mdl-" + this.props.type + "__label";
-	 	var _labelTag = "span";
+        var _inputClassname = "mdl-" + this.props.type + "__input";
+        var _labelClassname = "mdl-" + this.props.type + "__label";
+        var _labelTag = "span";
 
-		switch (this.props.type) {
-			case 'radio':
-				_inputClassname = "mdl-" + this.props.type + "__button";
-				break;
-			case 'icon-toggle':
-				_labelTag = "i";
-				_labelClassname += " material-icons";
-				break;
-		}
+        switch (this.props.type) {
+            case 'radio':
+                _inputClassname = "mdl-" + this.props.type + "__button";
+                break;
+            case 'icon-toggle':
+                _labelTag = "i";
+                _labelClassname += " material-icons";
+                break;
+        }
 
-    return (
+        return (
 			<label htmlFor={_id}>
-			  <input ref="toggleInput" name={_name} type={_type} id={_id} className={_inputClassname} defaultChecked={this.props.checked} defaultValue={this.props.defaultValue} onChange={this._handleChange}/>
-				{ React.createElement(_labelTag, { className: _labelClassname, children: (this.props.label || this.props.children) }) }
+			  <input required={this.props.required} ref="toggleInput" name={_name} type={_type} id={_id} className={_inputClassname} defaultChecked={this.props.checked} defaultValue={this.props.defaultValue} onChange={this._handleChange} />
+			    { React.createElement(_labelTag, { className: _labelClassname, children: (this.props.label || this.props.children) }) }
 			</label>
     );
-  },
+    },
 
-  render: function () {
-    var element = this._getElement();
-		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+    render: function () {
+        var element = this._getElement();
+        var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
-    return React.cloneElement(element, newProps);
-  },
+        return React.cloneElement(element, newProps);
+    },
 
-  componentDidMount: function() {
-		componentHandler.upgradeDom();
-	}
+    componentDidMount: function () {
+        componentHandler.upgradeDom();
+    }
 });
