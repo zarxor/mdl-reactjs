@@ -2002,7 +2002,7 @@ var navRoutes = [
 	{ name: "textfields", to: "/textfields", 	text: "Text fields (partial)", icon: "font_download", 			view: Views.Textfields },
 	//{ name: "", 					to: "/", 			text: "Tooltips (todo)", 	icon: "beenhere" },
 
-	{ name: "benchmark", 	to: "/benchmark", 			text: "Benchmark", 	icon: "beenhere", view: Views.Benchmark },
+	//{ name: "benchmark", 	to: "/benchmark", 			text: "Benchmark", 	icon: "beenhere", view: Views.Benchmark },
 ];
 
 var App = React.createClass({
