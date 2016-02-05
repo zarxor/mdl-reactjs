@@ -75,8 +75,9 @@ module.exports = React.createClass({
 	},
 
   componentDidMount: function() {
+      __functions.updateComponents();
+			
 		var element = React.findDOMNode(this);
-		componentHandler.upgradeDom();
 		this._refreshProgress();
 	}
 });
@@ -139,7 +140,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\Spinner.jsx":[function(require,module,exports){
@@ -191,7 +192,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\Textfield.jsx":[function(require,module,exports){
@@ -283,7 +284,7 @@ module.exports = React.createClass({
 
 		return React.createElement("div", null, children);
   },
-	
+
 	render: function () {
 		var element = this._getElement();
 		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
@@ -291,7 +292,7 @@ module.exports = React.createClass({
 	},
 
 	componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\badge.jsx":[function(require,module,exports){
@@ -343,7 +344,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\button.jsx":[function(require,module,exports){
@@ -427,7 +428,7 @@ module.exports = React.createClass({
     },
 
     componentDidMount: function () {
-        componentHandler.upgradeDom();
+        __functions.updateComponents();
     }
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\card\\CardActions.jsx":[function(require,module,exports){
@@ -480,9 +481,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
-
-		//componentHandler.upgradeElement();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\card\\CardMedia.jsx":[function(require,module,exports){
@@ -545,9 +544,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
-
-		//componentHandler.upgradeElement();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\card\\CardMenu.jsx":[function(require,module,exports){
@@ -597,9 +594,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
-
-		//componentHandler.upgradeElement();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\card\\CardSupportingText.jsx":[function(require,module,exports){
@@ -653,7 +648,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\card\\CardTitle.jsx":[function(require,module,exports){
@@ -723,7 +718,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\card\\card.jsx":[function(require,module,exports){
@@ -784,7 +779,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\grid\\grid.jsx":[function(require,module,exports){
@@ -837,7 +832,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\grid\\gridCell.jsx":[function(require,module,exports){
@@ -907,7 +902,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\icon.jsx":[function(require,module,exports){
@@ -956,7 +951,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		//componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\index.js":[function(require,module,exports){
@@ -965,6 +960,10 @@ var React = require("react"),
 		_ = require('lodash');
 
 global.__functions = {
+	updateComponents: _.debounce(function () {
+		componentHandler.upgradeDom();
+	}, 1),
+
   objDiff: function (obj1, obj2) {
     var _keysObj1 = _.keys(obj1);
 		var _keysObj2 = _.keys(obj2);
@@ -1155,7 +1154,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\layout\\LayoutSpacer.jsx":[function(require,module,exports){
@@ -1198,7 +1197,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\layout\\LayoutTitle.jsx":[function(require,module,exports){
@@ -1250,7 +1249,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\layout\\layout.jsx":[function(require,module,exports){
@@ -1298,7 +1297,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\layout\\layoutContent.jsx":[function(require,module,exports){
@@ -1341,7 +1340,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\layout\\layoutDrawer.jsx":[function(require,module,exports){
@@ -1386,7 +1385,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\layout\\layoutHeader.jsx":[function(require,module,exports){
@@ -1439,7 +1438,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\menu.jsx":[function(require,module,exports){
@@ -1494,7 +1493,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		//componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\menuItem.jsx":[function(require,module,exports){
@@ -1536,7 +1535,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		//componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\navigation\\navigation.jsx":[function(require,module,exports){
@@ -1580,7 +1579,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\navigation\\navigationLink.jsx":[function(require,module,exports){
@@ -1627,7 +1626,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\table.jsx":[function(require,module,exports){
@@ -1719,7 +1718,7 @@ module.exports = React.createClass({
                 );
               }.bind(this))
             )
-          ) 
+          )
           : null, 
         
         React.createElement("tbody", null, 
@@ -1746,7 +1745,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
     if (this.props.selectable && !this.props['no-head']) {
       var elem = React.findDOMNode(this);
       var selectBoxes = this._findElementsByClass(elem, "mdl-checkbox__input");
@@ -1833,7 +1832,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\tabs\\tabsPanel.jsx":[function(require,module,exports){
@@ -1878,7 +1877,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
 	}
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\components\\toggle.jsx":[function(require,module,exports){
@@ -1888,89 +1887,90 @@ var cx = require('classnames');
 var _ = require('lodash');
 
 var _defaultProps = {
-	ripple: false,
-	checked: false,
-  label: null,
-  id: null, // Sets in getDefaultProps
-	type: 'checkbox',
-	name: null,
-	defaultValue: null,
+    ripple: false,
+    checked: false,
+    label: null,
+    id: null, // Sets in getDefaultProps
+    type: 'checkbox',
+    name: null,
+    defaultValue: null,
+    required: false
 };
 
 module.exports = React.createClass({
-	displayName : 'MDL.Toggle',
+    displayName: 'MDL.Toggle',
 
-	propTypes: {
-    type: React.PropTypes.oneOf(['checkbox','icon-toggle','radio','switch']),
-  },
+    propTypes: {
+        type: React.PropTypes.oneOf(['checkbox', 'icon-toggle', 'radio', 'switch']),
+    },
 
-	getInitialState: function() {
-    return { isChecked: this.props.checked };
-  },
+    getInitialState: function () {
+        return { isChecked: this.props.checked };
+    },
 
-  getDefaultProps: function() {
-		return _defaultProps;
-	},
+    getDefaultProps: function () {
+        return _defaultProps;
+    },
 
-  _getClasses: function() {
-		var classes = {
-			'mdl-js-ripple-effect': this.props.ripple,
-		};
+    _getClasses: function () {
+        var classes = {
+            'mdl-js-ripple-effect': this.props.ripple,
+        };
 
-		classes['mdl-' + this.props.type] = true;
-		classes['mdl-js-' + this.props.type] = true;
+        classes['mdl-' + this.props.type] = true;
+        classes['mdl-js-' + this.props.type] = true;
 
-		return cx(classes);
-	},
+        return cx(classes);
+    },
 
-	_handleChange: function () {
-		var node = React.findDOMNode(this.refs.toggleInput)
-		this.setState({ isChecked: node.checked });
+    _handleChange: function () {
+        var node = React.findDOMNode(this.refs.toggleInput)
+        this.setState({ isChecked: node.checked });
 
-		if (node.checked && typeof(this.props.onChecked) == 'function') {
-			this.props.onChecked();
-		} else if (!node.checked && typeof(this.props.onUnchecked) == 'function') {
-			this.props.onUnchecked()
-		}
-	},
+        if (node.checked && typeof (this.props.onChecked) == 'function') {
+            this.props.onChecked();
+        } else if (!node.checked && typeof (this.props.onUnchecked) == 'function') {
+            this.props.onUnchecked()
+        }
+    },
 
-  _getElement: function() {
-		var _id = this.props.id || ('toggle' + Math.floor((Math.random() * 10000) + 1000));
-		var _name = this.props.name || _id;
-		var _type = this.props.type == "radio" ? "radio" : "checkbox";
+    _getElement: function () {
+        var _id = this.props.id || ('toggle' + Math.floor((Math.random() * 10000) + 1000));
+        var _name = this.props.name || _id;
+        var _type = this.props.type == "radio" ? "radio" : "checkbox";
 
-		var _inputClassname = "mdl-" + this.props.type + "__input";
-		var _labelClassname = "mdl-" + this.props.type + "__label";
-	 	var _labelTag = "span";
+        var _inputClassname = "mdl-" + this.props.type + "__input";
+        var _labelClassname = "mdl-" + this.props.type + "__label";
+        var _labelTag = "span";
 
-		switch (this.props.type) {
-			case 'radio':
-				_inputClassname = "mdl-" + this.props.type + "__button";
-				break;
-			case 'icon-toggle':
-				_labelTag = "i";
-				_labelClassname += " material-icons";
-				break;
-		}
+        switch (this.props.type) {
+            case 'radio':
+                _inputClassname = "mdl-" + this.props.type + "__button";
+                break;
+            case 'icon-toggle':
+                _labelTag = "i";
+                _labelClassname += " material-icons";
+                break;
+        }
 
-    return (
+        return (
 			React.createElement("label", {htmlFor: _id}, 
-			  React.createElement("input", {ref: "toggleInput", name: _name, type: _type, id: _id, className: _inputClassname, defaultChecked: this.props.checked, defaultValue: this.props.defaultValue, onChange: this._handleChange}), 
-				 React.createElement(_labelTag, { className: _labelClassname, children: (this.props.label || this.props.children) }) 
+			  React.createElement("input", {required: this.props.required, ref: "toggleInput", name: _name, type: _type, id: _id, className: _inputClassname, defaultChecked: this.props.checked, defaultValue: this.props.defaultValue, onChange: this._handleChange}), 
+			     React.createElement(_labelTag, { className: _labelClassname, children: (this.props.label || this.props.children) }) 
 			)
     );
-  },
+    },
 
-  render: function () {
-    var element = this._getElement();
-		var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
+    render: function () {
+        var element = this._getElement();
+        var newProps = __functions.joinProps(_defaultProps, this.props, element.props, this._getClasses());
 
-    return React.cloneElement(element, newProps);
-  },
+        return React.cloneElement(element, newProps);
+    },
 
-  componentDidMount: function() {
-		componentHandler.upgradeDom();
-	}
+    componentDidMount: function () {
+        __functions.updateComponents();
+    }
 });
 },{"classnames":"c:\\dev\\mdl-reactjs\\node_modules\\classnames\\index.js","lodash":"c:\\dev\\mdl-reactjs\\node_modules\\lodash\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\docs\\src\\app.jsx":[function(require,module,exports){
 "use strict";
@@ -2001,6 +2001,8 @@ var navRoutes = [
 	{ name: "tables", 		to: "/tables", 			text: "Tables (todo)", 		icon: "view_list", view: Views.Tables },
 	{ name: "textfields", to: "/textfields", 	text: "Text fields (partial)", icon: "font_download", 			view: Views.Textfields },
 	//{ name: "", 					to: "/", 			text: "Tooltips (todo)", 	icon: "beenhere" },
+
+	{ name: "benchmark", 	to: "/benchmark", 			text: "Benchmark", 	icon: "beenhere", view: Views.Benchmark },
 ];
 
 var App = React.createClass({
@@ -2205,7 +2207,56 @@ module.exports = React.createClass({displayName: "exports",
 		);
 	},
 });
-},{"../../../components/":"c:\\dev\\mdl-reactjs\\components\\index.js","../components":"c:\\dev\\mdl-reactjs\\docs\\src\\components\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\docs\\src\\views\\buttons.jsx":[function(require,module,exports){
+},{"../../../components/":"c:\\dev\\mdl-reactjs\\components\\index.js","../components":"c:\\dev\\mdl-reactjs\\docs\\src\\components\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\docs\\src\\views\\benchmark.jsx":[function(require,module,exports){
+
+"use strict";
+
+var React = require('react'),
+		MDL = require('../../../components/');
+
+module.exports = React.createClass({displayName: "exports",
+	getInitialState: function() {
+    return {
+      readme: '',
+    };
+  },
+
+	componentWillMount: function () {
+		this.renderStart = new Date().getTime();
+	},
+
+	componentDidMount: function() {
+		var elapsed = new Date().getTime()-this.renderStart;
+		console.log(elapsed);
+  },
+
+	render: function() {
+		var benchMarkItems = [];
+		for (var x = 0; x < 1000; x++) {
+			benchMarkItems.push(React.createElement(MDL.GridCell, {key: x}, 
+				React.createElement(MDL.Card, null, 
+					React.createElement(MDL.CardTitle, null, "asdf"), 
+					React.createElement(MDL.CardActions, null, 
+						React.createElement(MDL.Toggle, null), 
+						React.createElement(MDL.Button, null, "1"), 
+						React.createElement(MDL.Button, null, "2"), 
+						React.createElement(MDL.Button, null, "3"), 
+						React.createElement(MDL.Button, null, "4"), 
+						React.createElement(MDL.Button, null, "5"), 
+						React.createElement(MDL.Button, null, "6")
+					)
+				)
+			));
+		}
+
+		return (
+			React.createElement(MDL.Grid, null, 
+				benchMarkItems
+			)
+		);
+	},
+});
+},{"../../../components/":"c:\\dev\\mdl-reactjs\\components\\index.js","react":"c:\\dev\\mdl-reactjs\\node_modules\\react\\react.js"}],"c:\\dev\\mdl-reactjs\\docs\\src\\views\\buttons.jsx":[function(require,module,exports){
 
 "use strict";
 
@@ -2649,8 +2700,9 @@ module.exports = {
   Tables: require('./tables.jsx'),
   Toggles: require('./toggles.jsx'),
   Textfields: require('./textfields.jsx'),
+  Benchmark: require('./benchmark.jsx'),
 };
-},{"./badges.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\badges.jsx","./buttons.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\buttons.jsx","./cards.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\cards.jsx","./layout.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\layout.jsx","./loading.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\loading.jsx","./menus.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\menus.jsx","./sliders.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\sliders.jsx","./start.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\start.jsx","./tables.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\tables.jsx","./textfields.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\textfields.jsx","./toggles.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\toggles.jsx"}],"c:\\dev\\mdl-reactjs\\docs\\src\\views\\layout.jsx":[function(require,module,exports){
+},{"./badges.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\badges.jsx","./benchmark.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\benchmark.jsx","./buttons.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\buttons.jsx","./cards.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\cards.jsx","./layout.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\layout.jsx","./loading.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\loading.jsx","./menus.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\menus.jsx","./sliders.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\sliders.jsx","./start.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\start.jsx","./tables.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\tables.jsx","./textfields.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\textfields.jsx","./toggles.jsx":"c:\\dev\\mdl-reactjs\\docs\\src\\views\\toggles.jsx"}],"c:\\dev\\mdl-reactjs\\docs\\src\\views\\layout.jsx":[function(require,module,exports){
 
 "use strict";
 

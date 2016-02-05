@@ -86,7 +86,7 @@ module.exports = React.createClass({
                 );
               }.bind(this))}
             </tr>
-          </thead> 
+          </thead>
           : null
         }
         <tbody>
@@ -113,7 +113,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-		componentHandler.upgradeDom();
+      __functions.updateComponents();
     if (this.props.selectable && !this.props['no-head']) {
       var elem = React.findDOMNode(this);
       var selectBoxes = this._findElementsByClass(elem, "mdl-checkbox__input");

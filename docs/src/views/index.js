@@ -10,4 +10,5 @@ module.exports = {
   Tables: require('./tables.jsx'),
   Toggles: require('./toggles.jsx'),
   Textfields: require('./textfields.jsx'),
+  Benchmark: require('./benchmark.jsx'),
 };

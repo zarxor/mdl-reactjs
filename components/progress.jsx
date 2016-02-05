@@ -74,8 +74,9 @@ module.exports = React.createClass({
 	},
 
   componentDidMount: function() {
+      __functions.updateComponents();
+			
 		var element = React.findDOMNode(this);
-		componentHandler.upgradeDom();
 		this._refreshProgress();
 	}
 });

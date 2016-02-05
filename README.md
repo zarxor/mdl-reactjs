@@ -19,9 +19,9 @@ var Card = MDL.Card;
 Include the MDL css and js in your project
 ```
 <!-- Material design lite stylesheet, icons and javascript -->
-<link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+<link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.1.1/material.indigo-pink.min.css">
 <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-<script src="//storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+<script src="//storage.googleapis.com/code.getmdl.io/1.1.1/material.min.js"></script>
 ```
 
 ### How to run the demo / documentation ###
