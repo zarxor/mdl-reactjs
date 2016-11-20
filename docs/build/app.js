@@ -76,7 +76,7 @@ module.exports = React.createClass({
 
   componentDidMount: function() {
       __functions.updateComponents();
-			
+
 		var element = React.findDOMNode(this);
 		this._refreshProgress();
 	}
@@ -1707,11 +1707,11 @@ module.exports = React.createClass({
 
   _getElement: function() {
     return (
-      React.createElement("table", null, 
-        
+      React.createElement("table", null,
+
           !this.props['no-head']
-          ? React.createElement("thead", null, 
-            React.createElement("tr", null, 
+          ? React.createElement("thead", null,
+            React.createElement("tr", null,
               this.props.columns.map(function (column) {
                 return (
                   React.createElement("th", {key: column.key, className: this._getCellClasses(column), style: column.style}, column.label)
@@ -1719,12 +1719,12 @@ module.exports = React.createClass({
               }.bind(this))
             )
           )
-          : null, 
-        
-        React.createElement("tbody", null, 
+          : null,
+
+        React.createElement("tbody", null,
           this.props.data.map(function (row, i) {
             return (
-              React.createElement("tr", {key: i, className: this._getRowClasses(row)}, 
+              React.createElement("tr", {key: i, className: this._getRowClasses(row)},
                   this.props.columns.map(function (column) {
                     return (
                       React.createElement("td", {key: column.key, className: this._getCellClasses(column)}, column.prefix, row[column.key], column.suffix)
@@ -1954,9 +1954,9 @@ module.exports = React.createClass({
         }
 
         return (
-			React.createElement("label", {htmlFor: _id}, 
-			  React.createElement("input", {required: this.props.required, ref: "toggleInput", name: _name, type: _type, id: _id, className: _inputClassname, defaultChecked: this.props.checked, defaultValue: this.props.defaultValue, onChange: this._handleChange}), 
-			     React.createElement(_labelTag, { className: _labelClassname, children: (this.props.label || this.props.children) }) 
+			React.createElement("label", {htmlFor: _id},
+			  React.createElement("input", {required: this.props.required, ref: "toggleInput", name: _name, type: _type, id: _id, className: _inputClassname, defaultChecked: this.props.checked, defaultValue: this.props.defaultValue, onChange: this._handleChange}),
+			     React.createElement(_labelTag, { className: _labelClassname, children: (this.props.label || this.props.children) })
 			)
     );
     },
@@ -2008,10 +2008,10 @@ var navRoutes = [
 var App = React.createClass({
 	displayName: 'app',
 	getNav: function () {
-		return (React.createElement(MDL.Navigation, {id: "docs-navigation"}, 
+		return (React.createElement(MDL.Navigation, {id: "docs-navigation"},
 			navRoutes.map(function (item, i) {
 				return (
-					React.createElement(Link, {className: "mdl-navigation__link", to: item.to, key: i}, 
+					React.createElement(Link, {className: "mdl-navigation__link", to: item.to, key: i},
 						React.createElement(MDL.Button, {icon: item.icon, colored: true, fab: true, style: {marginRight: 10}, size: "mini"}), " ", item.text
 					)
 				);
@@ -2021,19 +2021,19 @@ var App = React.createClass({
 
 	render : function() {
 		return (
-			React.createElement(MDL.Layout, {isFixedDrawer: true, className: "docs-layout"}, 
-				React.createElement(MDL.LayoutHeader, null, 
-					React.createElement(MDL.LayoutHeaderRow, null, 
-						React.createElement(MDL.LayoutTitle, null, 
+			React.createElement(MDL.Layout, {isFixedDrawer: true, className: "docs-layout"},
+				React.createElement(MDL.LayoutHeader, null,
+					React.createElement(MDL.LayoutHeaderRow, null,
+						React.createElement(MDL.LayoutTitle, null,
 							"Material Design Lite components for ReactJS"
 						)
 					)
-				), 
-				React.createElement(MDL.LayoutDrawer, null, 
-					React.createElement(MDL.LayoutTitle, null, "MDL-REACTJS"), 
+				),
+				React.createElement(MDL.LayoutDrawer, null,
+					React.createElement(MDL.LayoutTitle, null, "MDL-REACTJS"),
 					this.getNav()
-				), 
-				React.createElement(MDL.LayoutContent, null, 
+				),
+				React.createElement(MDL.LayoutContent, null,
 					this.props.children
 				)
 			)
@@ -2041,8 +2041,8 @@ var App = React.createClass({
 	},
 });
 
-var routes = (React.createElement(Route, {path: "/", component: App}, 
-	React.createElement(IndexRoute, {key: "default", name: navRoutes[0].name, component: navRoutes[0].view}), 
+var routes = (React.createElement(Route, {path: "/", component: App},
+	React.createElement(IndexRoute, {key: "default", name: navRoutes[0].name, component: navRoutes[0].view}),
 	_.map(navRoutes, function (route) {
 		if (route.to.length > 0) {
 			return React.createElement(Route, {key: route.name, name: route.name, path: route.to, component: route.view})
@@ -2078,9 +2078,9 @@ module.exports = React.createClass({displayName: "exports",
 	},
 
   render: function () {
-    return  React.createElement("pre", {className: "docs-view-code"}, 
-              React.createElement("h2", {className: "docs-view-code__title"}, this.props.title), 
-    					React.createElement("code", {className: "language-" + this.props.language}, 
+    return  React.createElement("pre", {className: "docs-view-code"},
+              React.createElement("h2", {className: "docs-view-code__title"}, this.props.title),
+    					React.createElement("code", {className: "language-" + this.props.language},
     						this.props.children
     					)
 				    )
@@ -2103,11 +2103,11 @@ module.exports = React.createClass({displayName: "exports",
 	},
 
   render: function () {
-    return  React.createElement("div", {className: "docs-component"}, 
-  						React.createElement("div", {className: "docs-component__body"}, 
+    return  React.createElement("div", {className: "docs-component"},
+  						React.createElement("div", {className: "docs-component__body"},
                 this.props.children
-  						), 
-              React.createElement("p", {className: "docs-component__caption"}, 
+  						),
+              React.createElement("p", {className: "docs-component__caption"},
                 this.props.caption
               )
   					)
@@ -2128,7 +2128,7 @@ module.exports = React.createClass({displayName: "exports",
 	},
 
   render: function () {
-    return  React.createElement("div", {className: "docs-components"}, 
+    return  React.createElement("div", {className: "docs-components"},
   						this.props.children
   					)
   },
@@ -2153,51 +2153,51 @@ var DOCS = require('../components');
 module.exports = React.createClass({displayName: "exports",
 	render: function() {
 		return (
-		    React.createElement("div", {className: "docs-view"}, 
-					React.createElement("div", {className: "docs-text"}, 
-						React.createElement("h1", null, "Badges"), 
+		    React.createElement("div", {className: "docs-view"},
+					React.createElement("div", {className: "docs-text"},
+						React.createElement("h1", null, "Badges"),
 						React.createElement("p", null, "Small status descriptors for UI elements.")
-					), 
+					),
 					/*
 						Colored FAB
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Number"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Number"},
 							React.createElement(MDL.Badge, {isIcon: true, data: "1"}, "account_box")
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Icon"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Icon"},
 							React.createElement(MDL.Badge, {isIcon: true, data: "♥"}, "account_box")
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Number badge on icon"}, 
+					React.createElement(DOCS.DocCode, {title: "Number badge on icon"},
 						'<MDL.Badge isIcon data="1">account_box</MDL.Badge>'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Icon badge on icon"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Icon badge on icon"},
 						'<MDL.Badge isIcon data="♥">account_box</MDL.Badge>'
-					), 
+					),
 
 					/*
 						Documentation text
 						*/
 
-					React.createElement("div", {className: "docs-text--centred"}, 
-						React.createElement("h2", null, "CONFIGURATION OPTIONS"), 
-						React.createElement("p", null, 
+					React.createElement("div", {className: "docs-text--centred"},
+						React.createElement("h2", null, "CONFIGURATION OPTIONS"),
+						React.createElement("p", null,
 							"Down below you can find all the attributes that can be applied to the component"
-						), 
-						React.createElement("table", {style: {width:"100%"}}, 
-							React.createElement("thead", null, 
-								React.createElement("tr", null, 
-									React.createElement("th", null, "Attribute"), 
-									React.createElement("th", null, "Effect"), 
+						),
+						React.createElement("table", {style: {width:"100%"}},
+							React.createElement("thead", null,
+								React.createElement("tr", null,
+									React.createElement("th", null, "Attribute"),
+									React.createElement("th", null, "Effect"),
 									React.createElement("th", null, "Values")
 								)
-							), 
-							React.createElement("tbody", null, 
-								React.createElement("tr", null, 
-									React.createElement("td", null, "Attribute"), 
-									React.createElement("td", null, "Effect"), 
+							),
+							React.createElement("tbody", null,
+								React.createElement("tr", null,
+									React.createElement("td", null, "Attribute"),
+									React.createElement("td", null, "Effect"),
 									React.createElement("td", null, "Values")
 								)
 							)
@@ -2233,16 +2233,16 @@ module.exports = React.createClass({displayName: "exports",
 	render: function() {
 		var benchMarkItems = [];
 		for (var x = 0; x < 1000; x++) {
-			benchMarkItems.push(React.createElement(MDL.GridCell, {key: x}, 
-				React.createElement(MDL.Card, null, 
-					React.createElement(MDL.CardTitle, null, "asdf"), 
-					React.createElement(MDL.CardActions, null, 
-						React.createElement(MDL.Toggle, null), 
-						React.createElement(MDL.Button, null, "1"), 
-						React.createElement(MDL.Button, null, "2"), 
-						React.createElement(MDL.Button, null, "3"), 
-						React.createElement(MDL.Button, null, "4"), 
-						React.createElement(MDL.Button, null, "5"), 
+			benchMarkItems.push(React.createElement(MDL.GridCell, {key: x},
+				React.createElement(MDL.Card, null,
+					React.createElement(MDL.CardTitle, null, "asdf"),
+					React.createElement(MDL.CardActions, null,
+						React.createElement(MDL.Toggle, null),
+						React.createElement(MDL.Button, null, "1"),
+						React.createElement(MDL.Button, null, "2"),
+						React.createElement(MDL.Button, null, "3"),
+						React.createElement(MDL.Button, null, "4"),
+						React.createElement(MDL.Button, null, "5"),
 						React.createElement(MDL.Button, null, "6")
 					)
 				)
@@ -2250,7 +2250,7 @@ module.exports = React.createClass({displayName: "exports",
 		}
 
 		return (
-			React.createElement(MDL.Grid, null, 
+			React.createElement(MDL.Grid, null,
 				benchMarkItems
 			)
 		);
@@ -2267,210 +2267,210 @@ var DOCS = require('../components');
 module.exports = React.createClass({displayName: "exports",
 	render: function() {
 		return (
-		    React.createElement("div", {className: "docs-view"}, 
-					React.createElement("div", {className: "docs-text"}, 
-						React.createElement("h1", null, "Buttons"), 
+		    React.createElement("div", {className: "docs-view"},
+					React.createElement("div", {className: "docs-text"},
+						React.createElement("h1", null, "Buttons"),
 						React.createElement("p", null, "Variations on Material Design buttons.")
-					), 
+					),
 
 					/*
 						Colored FAB
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Colored FAB"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Colored FAB"},
 							React.createElement(MDL.Button, {fab: true, colored: true, icon: "add"})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "With ripple"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "With ripple"},
 							React.createElement(MDL.Button, {fab: true, colored: true, ripple: true, icon: "add"})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Colored FAB button"}, 
+					React.createElement(DOCS.DocCode, {title: "Colored FAB button"},
 						'<MDL.Button fab colored icon="add" />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Colored FAB button with ripple"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Colored FAB button with ripple"},
 						'<MDL.Button fab colored ripple icon="add" />'
-					), 
+					),
 
 					/*
 						Plain FAB
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Plain FAB"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Plain FAB"},
 							React.createElement(MDL.Button, {fab: true, icon: "add"})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "With ripple"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "With ripple"},
 							React.createElement(MDL.Button, {fab: true, ripple: true, icon: "add"})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Disabled"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Disabled"},
 							React.createElement(MDL.Button, {fab: true, ripple: true, icon: "add", disabled: true})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "FAB button"}, 
+					React.createElement(DOCS.DocCode, {title: "FAB button"},
 						'<MDL.Button fab icon="add" />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "FAB button with ripple"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "FAB button with ripple"},
 						'<MDL.Button fab ripple icon="add" />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Disabled FAB button"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Disabled FAB button"},
 						'<MDL.Button fab ripple icon="add" disabled />'
-					), 
+					),
 
 					/*
 						Raised Buttons
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Raised button"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Raised button"},
 							React.createElement(MDL.Button, {raised: true}, "Button")
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "With ripple"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "With ripple"},
 							React.createElement(MDL.Button, {raised: true, ripple: true}, "Button")
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Disabled"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Disabled"},
 							React.createElement(MDL.Button, {raised: true, ripple: true, disabled: true}, "Button")
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Raised button"}, 
+					React.createElement(DOCS.DocCode, {title: "Raised button"},
 						'<MDL.Button raised>Button</MDL.Button>'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Raised button with ripple"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Raised button with ripple"},
 						'<MDL.Button raised ripple>Button</MDL.Button>'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Raised disabled button"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Raised disabled button"},
 						'<MDL.Button raised ripple disabled>Button</MDL.Button>'
-					), 
+					),
 
 					/*
 						Raised Buttons
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Raised button"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Raised button"},
 							React.createElement(MDL.Button, {raised: true, colored: true}, "Button")
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Accent color"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Accent color"},
 							React.createElement(MDL.Button, {raised: true, colored: true, accent: true}, "Button")
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "With ripple"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "With ripple"},
 							React.createElement(MDL.Button, {raised: true, colored: true, accent: true, ripple: true}, "Button")
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Colored raised button"}, 
+					React.createElement(DOCS.DocCode, {title: "Colored raised button"},
 						'<MDL.Button raised colored>Button</MDL.Button>'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Accent-colored raised button"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Accent-colored raised button"},
 						'<MDL.Button raised colored accent>Button</MDL.Button>'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Accent-colored raised button with ripple"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Accent-colored raised button with ripple"},
 						'<MDL.Button raised colored accent ripple>Button</MDL.Button>'
-					), 
+					),
 
 					/*
 						Flat Buttons
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Flat button"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Flat button"},
 							React.createElement(MDL.Button, null, "Button")
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "With ripple"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "With ripple"},
 							React.createElement(MDL.Button, {ripple: true}, "Button")
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Disabled"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Disabled"},
 							React.createElement(MDL.Button, {disabled: true}, "Button")
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Flat button"}, 
+					React.createElement(DOCS.DocCode, {title: "Flat button"},
 						'<MDL.Button>Button</MDL.Button>'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Flat button with ripple"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Flat button with ripple"},
 						'<MDL.Button ripple>Button</MDL.Button>'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Disabled flat button"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Disabled flat button"},
 						'<MDL.Button disabled>Button</MDL.Button>'
-					), 
+					),
 
 					/*
 						Flat colored Buttons
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Primary colored flat"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Primary colored flat"},
 							React.createElement(MDL.Button, {primary: true}, "Button")
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Accent colored flat"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Accent colored flat"},
 							React.createElement(MDL.Button, {accent: true}, "Button")
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Primary-colored flat button"}, 
+					React.createElement(DOCS.DocCode, {title: "Primary-colored flat button"},
 						'<MDL.Button primary>Button</MDL.Button>'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Accent-colored flat button"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Accent-colored flat button"},
 						'<MDL.Button accent>Button</MDL.Button>'
-					), 
+					),
 
 					/*
 						Icon buttons
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Icon button"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Icon button"},
 							React.createElement(MDL.Button, {icon: "mood"})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Colored"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Colored"},
 							React.createElement(MDL.Button, {colored: true, icon: "mood"})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Icon button"}, 
+					React.createElement(DOCS.DocCode, {title: "Icon button"},
 						'<MDL.Button icon="mood" />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Colored icon button"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Colored icon button"},
 						'<MDL.Button colored icon="mood" />'
-					), 
+					),
 
 					/*
 						Mini fab buttons
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Mini FAB"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Mini FAB"},
 							React.createElement(MDL.Button, {fab: true, size: "mini", icon: "add"})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Colored"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Colored"},
 							React.createElement(MDL.Button, {fab: true, size: "mini", colored: true, icon: "add"})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Mini FAB button"}, 
+					React.createElement(DOCS.DocCode, {title: "Mini FAB button"},
 						'<MDL.Button fab size="mini" icon="add" />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Colored mini FAB button"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Colored mini FAB button"},
 						'<MDL.Button fab size="mini" colored icon="add" />'
-					), 
+					),
 
-					React.createElement("div", {className: "docs-text--centred"}, 
-						React.createElement("h2", null, "CONFIGURATION OPTIONS"), 
-						React.createElement("p", null, 
+					React.createElement("div", {className: "docs-text--centred"},
+						React.createElement("h2", null, "CONFIGURATION OPTIONS"),
+						React.createElement("p", null,
 							"Down below you can find all the attributes that can be applied to the ", React.createElement("code", null, "<button />"), " component"
-						), 
-						React.createElement("table", {style: {width:"100%"}}, 
-							React.createElement("thead", null, 
-								React.createElement("tr", null, 
-									React.createElement("th", null, "Attribute"), 
-									React.createElement("th", null, "Effect"), 
+						),
+						React.createElement("table", {style: {width:"100%"}},
+							React.createElement("thead", null,
+								React.createElement("tr", null,
+									React.createElement("th", null, "Attribute"),
+									React.createElement("th", null, "Effect"),
 									React.createElement("th", null, "Values")
 								)
-							), 
-							React.createElement("tbody", null, 
-								React.createElement("tr", null, 
-									React.createElement("td", null, "ripple"), 
-									React.createElement("td", null, "Applies ripple display effect"), 
+							),
+							React.createElement("tbody", null,
+								React.createElement("tr", null,
+									React.createElement("td", null, "ripple"),
+									React.createElement("td", null, "Applies ripple display effect"),
 									React.createElement("td", null, "boolean")
-								), 
-								React.createElement("tr", null, 
-									React.createElement("td", null, "fab"), 
-									React.createElement("td", null, "Applies fab (circular) display effect"), 
+								),
+								React.createElement("tr", null,
+									React.createElement("td", null, "fab"),
+									React.createElement("td", null, "Applies fab (circular) display effect"),
 									React.createElement("td", null, "boolean")
 								)
 							)
@@ -2491,41 +2491,41 @@ var DOCS = require('../components');
 module.exports = React.createClass({displayName: "exports",
 	render: function() {
 		return (
-		    React.createElement("div", {className: "docs-view"}, 
-					React.createElement("div", {className: "docs-text"}, 
-						React.createElement("h1", null, "Cards"), 
+		    React.createElement("div", {className: "docs-view"},
+					React.createElement("div", {className: "docs-text"},
+						React.createElement("h1", null, "Cards"),
 						React.createElement("p", null, "Self-contained pieces of paper with data.")
-					), 
+					),
 
 					/*
 						Wide
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Wide"}, 
-							React.createElement(MDL.Card, {style: {width: 517}}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Wide"},
+							React.createElement(MDL.Card, {style: {width: 517}},
 								React.createElement(MDL.CardTitle, {style: {
 									height: 140,
 									background: "url('img/bg_1.png')",
 									color: 'white',
-								}}, 
+								}},
 									"Welcome"
-								), 
-								React.createElement(MDL.CardSupportingText, null, 
+								),
+								React.createElement(MDL.CardSupportingText, null,
 									"Lorem ipsum dolor sit amet, consectetur adipiscing elit." + ' ' +
     							"Mauris sagittis pellentesque lacus eleifend lacinia..."
-								), 
-								React.createElement(MDL.CardActions, {border: true}, 
+								),
+								React.createElement(MDL.CardActions, {border: true},
 									React.createElement(MDL.Button, null, "Get started")
-								), 
-								React.createElement(MDL.CardMenu, {style: {color: 'white'}}, 
+								),
+								React.createElement(MDL.CardMenu, {style: {color: 'white'}},
 									React.createElement(MDL.Button, {icon: "share"})
 								)
 							)
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Wide card"}, 
-						
+					React.createElement(DOCS.DocCode, {title: "Wide card"},
+
 							'<MDL.Card style={{width: 517}}>\n' +
 							'	<MDL.CardTitle style={{\n' +
 							'		height: 140,\n' +
@@ -2545,37 +2545,37 @@ module.exports = React.createClass({displayName: "exports",
 							'		<MDL.Button icon="share" />\n' +
 							'	</MDL.CardMenu>\n' +
 							'</MDL.Card>'
-						
-					), 
+
+					),
 
 					/*
 						Square
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Square"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Square"},
 							React.createElement(MDL.Card, {style: {
 								height: 320,
 								width: 320
-							}}, 
+							}},
 								React.createElement(MDL.CardTitle, {style: {
 									background: "url('img/bg_1.png')",
 									color: 'white',
 									height: 200
-								}}, 
+								}},
 									"Update"
-								), 
-								React.createElement(MDL.CardSupportingText, null, 
+								),
+								React.createElement(MDL.CardSupportingText, null,
 									"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-								), 
-								React.createElement(MDL.CardActions, {border: true}, 
+								),
+								React.createElement(MDL.CardActions, {border: true},
 									React.createElement(MDL.Button, null, "View updates")
 								)
 							)
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Square card"}, 
-						
+					React.createElement(DOCS.DocCode, {title: "Square card"},
+
 							'<MDL.Card style={{>\n' +
 							'	height: 320,\n' +
 							'	width: 320\n' +
@@ -2594,90 +2594,90 @@ module.exports = React.createClass({displayName: "exports",
 							'		<MDL.Button>View updates</MDL.Button>\n' +
 							'	</MDL.CardActions>\n' +
 							'</MDL.Card>'
-						
-					), 
+
+					),
 
 					/*
 						Square
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Image"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Image"},
 							React.createElement(MDL.Card, {style: {
 								height: 256,
 								width: 256,
 								background: 'url(\'img/bg_1.png\')'
-							}, shadow: 2}, 
-								React.createElement(MDL.CardTitle, {expand: true}), 
+							}, shadow: 2},
+								React.createElement(MDL.CardTitle, {expand: true}),
 								React.createElement(MDL.CardActions, {border: true, style: {
 										background: 'rgba(0, 0, 0, 0.2)',
 										padding: 16,
 										color: '#FFF'
-									}}, 
+									}},
 									"Image.jpg"
 								)
 							)
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Event"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Event"},
 							React.createElement(MDL.Card, {style: {
 								height: 256,
 								width: 256,
 								background: '#3E4EB8',
 								color: '#fff'
-							}, shadow: 2}, 
-								React.createElement(MDL.CardTitle, {expand: true, style: {alignItems: 'flex-start'}}, 
-									React.createElement("h4", {style: {color: '#FFF', padding: 10, margin: 0}}, 
-										"Featured event:", React.createElement("br", null), 
-							      "May 24, 2016", React.createElement("br", null), 
+							}, shadow: 2},
+								React.createElement(MDL.CardTitle, {expand: true, style: {alignItems: 'flex-start'}},
+									React.createElement("h4", {style: {color: '#FFF', padding: 10, margin: 0}},
+										"Featured event:", React.createElement("br", null),
+							      "May 24, 2016", React.createElement("br", null),
 							      "7-11pm"
 									)
-								), 
+								),
 								React.createElement(MDL.CardActions, {border: true, style: {
 										display: 'flex',
 										boxSizing: 'border-box',
 										alignItems: 'center'
-									}}, 
-									React.createElement(MDL.Button, {colored: true, ripple: true, style: {color: '#fff'}}, 
+									}},
+									React.createElement(MDL.Button, {colored: true, ripple: true, style: {color: '#fff'}},
 										"Add to calendar"
-									), 
-									React.createElement(MDL.LayoutSpacer, null), 
+									),
+									React.createElement(MDL.LayoutSpacer, null),
 									React.createElement(MDL.Icon, null, "event")
 								)
 							)
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Image card"}, 
-						
+					React.createElement(DOCS.DocCode, {title: "Image card"},
+
 							'See docs source code..'
-						
-					), 
-					React.createElement(DOCS.DocCode, {title: "Event card"}, 
-						
+
+					),
+					React.createElement(DOCS.DocCode, {title: "Event card"},
+
 							'See docs source code..'
-						
-					), 
+
+					),
 
 					/*
 						Documentation text
 						*/
 
-					React.createElement("div", {className: "docs-text--centred"}, 
-						React.createElement("h2", null, "CONFIGURATION OPTIONS"), 
-						React.createElement("p", null, 
+					React.createElement("div", {className: "docs-text--centred"},
+						React.createElement("h2", null, "CONFIGURATION OPTIONS"),
+						React.createElement("p", null,
 							"Down below you can find all the attributes that can be applied to the component"
-						), 
-						React.createElement("table", {style: {width:"100%"}}, 
-							React.createElement("thead", null, 
-								React.createElement("tr", null, 
-									React.createElement("th", null, "Attribute"), 
-									React.createElement("th", null, "Effect"), 
+						),
+						React.createElement("table", {style: {width:"100%"}},
+							React.createElement("thead", null,
+								React.createElement("tr", null,
+									React.createElement("th", null, "Attribute"),
+									React.createElement("th", null, "Effect"),
 									React.createElement("th", null, "Values")
 								)
-							), 
-							React.createElement("tbody", null, 
-								React.createElement("tr", null, 
-									React.createElement("td", null, "Attribute"), 
-									React.createElement("td", null, "Effect"), 
+							),
+							React.createElement("tbody", null,
+								React.createElement("tr", null,
+									React.createElement("td", null, "Attribute"),
+									React.createElement("td", null, "Effect"),
 									React.createElement("td", null, "Values")
 								)
 							)
@@ -2719,147 +2719,147 @@ module.exports = React.createClass({displayName: "exports",
   },
 	render: function() {
 		return (
-	    React.createElement("div", {className: "docs-view"}, 
-				React.createElement("div", {className: "docs-text"}, 
-					React.createElement("h1", null, "Layout"), 
-					React.createElement("p", null, "Building blocks for constructing a page layout."), 
+	    React.createElement("div", {className: "docs-view"},
+				React.createElement("div", {className: "docs-text"},
+					React.createElement("h1", null, "Layout"),
+					React.createElement("p", null, "Building blocks for constructing a page layout."),
 					React.createElement("h2", null, "Grid")
-				), 
+				),
 				/*
 
 					*/
-				React.createElement(MDL.Grid, null, 
-					React.createElement(MDL.GridCell, null, "1"), 
-					React.createElement(MDL.GridCell, null, "1"), 
-					React.createElement(MDL.GridCell, null, "1"), 
-					React.createElement(MDL.GridCell, null, "1"), 
-					React.createElement(MDL.GridCell, null, "1"), 
-					React.createElement(MDL.GridCell, null, "1"), 
-					React.createElement(MDL.GridCell, null, "1"), 
-					React.createElement(MDL.GridCell, null, "1"), 
-					React.createElement(MDL.GridCell, null, "1"), 
-					React.createElement(MDL.GridCell, null, "1"), 
-					React.createElement(MDL.GridCell, null, "1"), 
+				React.createElement(MDL.Grid, null,
+					React.createElement(MDL.GridCell, null, "1"),
+					React.createElement(MDL.GridCell, null, "1"),
+					React.createElement(MDL.GridCell, null, "1"),
+					React.createElement(MDL.GridCell, null, "1"),
+					React.createElement(MDL.GridCell, null, "1"),
+					React.createElement(MDL.GridCell, null, "1"),
+					React.createElement(MDL.GridCell, null, "1"),
+					React.createElement(MDL.GridCell, null, "1"),
+					React.createElement(MDL.GridCell, null, "1"),
+					React.createElement(MDL.GridCell, null, "1"),
+					React.createElement(MDL.GridCell, null, "1"),
 					React.createElement(MDL.GridCell, null, "1")
-				), 
-				React.createElement(MDL.Grid, null, 
-					React.createElement(MDL.GridCell, {col: 4}, "4"), 
-					React.createElement(MDL.GridCell, {col: 4}, "4"), 
+				),
+				React.createElement(MDL.Grid, null,
+					React.createElement(MDL.GridCell, {col: 4}, "4"),
+					React.createElement(MDL.GridCell, {col: 4}, "4"),
 					React.createElement(MDL.GridCell, {col: 4}, "4")
-				), 
-				React.createElement(MDL.Grid, null, 
-					React.createElement(MDL.GridCell, {col: 6}, "6"), 
-					React.createElement(MDL.GridCell, {col: 4}, "4"), 
+				),
+				React.createElement(MDL.Grid, null,
+					React.createElement(MDL.GridCell, {col: 6}, "6"),
+					React.createElement(MDL.GridCell, {col: 4}, "4"),
 					React.createElement(MDL.GridCell, {col: 2}, "2")
-				), 
-				React.createElement(MDL.Grid, null, 
-					React.createElement(MDL.GridCell, {col: 6, colTablet: 8}, "6 (8 tablet)"), 
-					React.createElement(MDL.GridCell, {col: 4, colTablet: 6}, "4 (6 tablet)"), 
+				),
+				React.createElement(MDL.Grid, null,
+					React.createElement(MDL.GridCell, {col: 6, colTablet: 8}, "6 (8 tablet)"),
+					React.createElement(MDL.GridCell, {col: 4, colTablet: 6}, "4 (6 tablet)"),
 					React.createElement(MDL.GridCell, {col: 2, colPhone: 4}, "2 (4 phone)")
-				), 
+				),
 
-				React.createElement(DOCS.DocCode, {title: "Grid"}, 
-				'	<MDL.Grid>', '\n', 
-				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell>1</MDL.GridCell>', '\n', 
-				'	<MDL.Grid>', '\n', 
-				'	</MDL.Grid>', '\n', 
-				'		<MDL.GridCell col={4}>4</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell col={4}>4</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell col={4}>4</MDL.GridCell>', '\n', 
-				'	</MDL.Grid>', '\n', 
-				'	<MDL.Grid>', '\n', 
-				'		<MDL.GridCell col={6}>6</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell col={4}>4</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell col={2}>2</MDL.GridCell>', '\n', 
-				'	</MDL.Grid>', '\n', 
-				'	<MDL.Grid>', '\n', 
-				'		<MDL.GridCell col={6} colTablet={8}>6 (8 tablet)</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell col={4} colTablet={6}>4 (6 tablet)</MDL.GridCell>', '\n', 
-				'		<MDL.GridCell col={2} colPhone={4}>2 (4 phone)</MDL.GridCell>', '\n', 
+				React.createElement(DOCS.DocCode, {title: "Grid"},
+				'	<MDL.Grid>', '\n',
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n',
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n',
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n',
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n',
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n',
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n',
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n',
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n',
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n',
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n',
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n',
+				'		<MDL.GridCell>1</MDL.GridCell>', '\n',
+				'	<MDL.Grid>', '\n',
+				'	</MDL.Grid>', '\n',
+				'		<MDL.GridCell col={4}>4</MDL.GridCell>', '\n',
+				'		<MDL.GridCell col={4}>4</MDL.GridCell>', '\n',
+				'		<MDL.GridCell col={4}>4</MDL.GridCell>', '\n',
+				'	</MDL.Grid>', '\n',
+				'	<MDL.Grid>', '\n',
+				'		<MDL.GridCell col={6}>6</MDL.GridCell>', '\n',
+				'		<MDL.GridCell col={4}>4</MDL.GridCell>', '\n',
+				'		<MDL.GridCell col={2}>2</MDL.GridCell>', '\n',
+				'	</MDL.Grid>', '\n',
+				'	<MDL.Grid>', '\n',
+				'		<MDL.GridCell col={6} colTablet={8}>6 (8 tablet)</MDL.GridCell>', '\n',
+				'		<MDL.GridCell col={4} colTablet={6}>4 (6 tablet)</MDL.GridCell>', '\n',
+				'		<MDL.GridCell col={2} colPhone={4}>2 (4 phone)</MDL.GridCell>', '\n',
 				'	</MDL.Grid>'
-				), 
+				),
 
 				/*
 					Documentation text
 					*/
 
-				React.createElement("div", {className: "docs-text--centred"}, 
-					React.createElement("h2", null, "CONFIGURATION OPTIONS"), 
-					React.createElement("p", null, 
+				React.createElement("div", {className: "docs-text--centred"},
+					React.createElement("h2", null, "CONFIGURATION OPTIONS"),
+					React.createElement("p", null,
 						"Down below you can find all the attributes that can be applied to the component GridCell"
-					), 
-					React.createElement("table", {style: {width:"100%"}}, 
-						React.createElement("thead", null, 
-							React.createElement("tr", null, 
-								React.createElement("th", null, "Attribute"), 
-								React.createElement("th", null, "Effect"), 
+					),
+					React.createElement("table", {style: {width:"100%"}},
+						React.createElement("thead", null,
+							React.createElement("tr", null,
+								React.createElement("th", null, "Attribute"),
+								React.createElement("th", null, "Effect"),
 								React.createElement("th", null, "Values")
 							)
-						), 
-						React.createElement("tbody", null, 
-							React.createElement("tr", null, 
-								React.createElement("td", null, "col"), 
-								React.createElement("td", null, "Sets the column size for the cell"), 
+						),
+						React.createElement("tbody", null,
+							React.createElement("tr", null,
+								React.createElement("td", null, "col"),
+								React.createElement("td", null, "Sets the column size for the cell"),
 								React.createElement("td", null, "INT [1-12]")
-							), 
-							React.createElement("tr", null, 
-								React.createElement("td", null, "colDesktop"), 
-								React.createElement("td", null, "Sets the column size for the cell for desktop mode only"), 
+							),
+							React.createElement("tr", null,
+								React.createElement("td", null, "colDesktop"),
+								React.createElement("td", null, "Sets the column size for the cell for desktop mode only"),
 								React.createElement("td", null, "INT [1-12]")
-							), 
-							React.createElement("tr", null, 
-								React.createElement("td", null, "colTablet"), 
-								React.createElement("td", null, "Sets the column size for the cell for tablet mode only"), 
+							),
+							React.createElement("tr", null,
+								React.createElement("td", null, "colTablet"),
+								React.createElement("td", null, "Sets the column size for the cell for tablet mode only"),
 								React.createElement("td", null, "INT [1-12]")
-							), 
-							React.createElement("tr", null, 
-								React.createElement("td", null, "colPhone"), 
-								React.createElement("td", null, "Sets the column size for the cell for phone mode only"), 
+							),
+							React.createElement("tr", null,
+								React.createElement("td", null, "colPhone"),
+								React.createElement("td", null, "Sets the column size for the cell for phone mode only"),
 								React.createElement("td", null, "INT [1-12]")
-							), 
-							React.createElement("tr", null, 
-								React.createElement("td", null, "hideDesktop"), 
-								React.createElement("td", null, "Hides the cell when in desktop mode"), 
+							),
+							React.createElement("tr", null,
+								React.createElement("td", null, "hideDesktop"),
+								React.createElement("td", null, "Hides the cell when in desktop mode"),
 								React.createElement("td", null, "boolean")
-							), 
-							React.createElement("tr", null, 
-								React.createElement("td", null, "hideTablet"), 
-								React.createElement("td", null, "Hides the cell when in tablet mode"), 
+							),
+							React.createElement("tr", null,
+								React.createElement("td", null, "hideTablet"),
+								React.createElement("td", null, "Hides the cell when in tablet mode"),
 								React.createElement("td", null, "boolean")
-							), 
-							React.createElement("tr", null, 
-								React.createElement("td", null, "hidePhone"), 
-								React.createElement("td", null, "Hides the cell when in phone mode"), 
+							),
+							React.createElement("tr", null,
+								React.createElement("td", null, "hidePhone"),
+								React.createElement("td", null, "Hides the cell when in phone mode"),
 								React.createElement("td", null, "boolean")
-							), 
-							React.createElement("tr", null, 
-								React.createElement("td", null, "stretch"), 
-								React.createElement("td", null, "Stretches the cell vertically to fill the parent"), 
+							),
+							React.createElement("tr", null,
+								React.createElement("td", null, "stretch"),
+								React.createElement("td", null, "Stretches the cell vertically to fill the parent"),
 								React.createElement("td", null, "boolean")
-							), 
-							React.createElement("tr", null, 
-								React.createElement("td", null, "align"), 
-								React.createElement("td", null, "Defines tow the cell alignes to the parent"), 
+							),
+							React.createElement("tr", null,
+								React.createElement("td", null, "align"),
+								React.createElement("td", null, "Defines tow the cell alignes to the parent"),
 								React.createElement("td", null, "[left/right/top/bottom]")
 							)
 						)
 					)
-				), 
+				),
 
-				React.createElement("div", {className: "docs-text"}, 
+				React.createElement("div", {className: "docs-text"},
 					React.createElement("h2", null, "Tabs")
-				), 
+				),
 				/*
 
 					*/
@@ -2867,13 +2867,13 @@ module.exports = React.createClass({displayName: "exports",
 					/*
 						Wide
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Tabs with content"}, 
-							React.createElement(MDL.Tabs, null, 
-								React.createElement(MDL.TabsPanel, {id: "content-tab-1", title: "ContentTab 1", style: {padding: '10px 0'}, active: true}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Tabs with content"},
+							React.createElement(MDL.Tabs, null,
+								React.createElement(MDL.TabsPanel, {id: "content-tab-1", title: "ContentTab 1", style: {padding: '10px 0'}, active: true},
 									"This is the content of the first tab!"
-								), 
-								React.createElement(MDL.TabsPanel, {id: "content-tab-2", title: "ContentTab 2", style: {padding: '10px 0'}}, 
+								),
+								React.createElement(MDL.TabsPanel, {id: "content-tab-2", title: "ContentTab 2", style: {padding: '10px 0'}},
 									"And here you have the content of the second tab..."
 								)
 							)
@@ -2905,129 +2905,129 @@ module.exports = React.createClass({displayName: "exports",
 
 	render: function() {
 		return (
-		    React.createElement("div", {className: "docs-view"}, 
-					React.createElement("div", {className: "docs-text"}, 
-						React.createElement("h1", null, "Loading"), 
-						React.createElement("p", null, "Indicate loading and progress states."), 
+		    React.createElement("div", {className: "docs-view"},
+					React.createElement("div", {className: "docs-text"},
+						React.createElement("h1", null, "Loading"),
+						React.createElement("p", null, "Indicate loading and progress states."),
             			React.createElement("h2", null, "Progress bar")
-					), 
+					),
 
 					/*
 						Default
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Default"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Default"},
 							React.createElement(MDL.Progress, {id: "prog_1", progress: 44})
               /*<MDL.Button style={{marginTop: 20}} raised onClick={this.setProgressOne}>Set progress to 44</MDL.Button>*/
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Default"}, 
+					React.createElement(DOCS.DocCode, {title: "Default"},
 						'<MDL.Progress id="prog_1" progress={44} />'
-					), 
+					),
 
 					/*
 						Default
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Indeterminate"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Indeterminate"},
 							React.createElement(MDL.Progress, {id: "prog_2", indeterminate: true})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Indeterminate"}, 
+					React.createElement(DOCS.DocCode, {title: "Indeterminate"},
 						'<MDL.Progress id="prog_2" indeterminate />'
-					), 
+					),
 
 					/*
 						Default
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Buffering"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Buffering"},
 							React.createElement(MDL.Progress, {id: "prog_3", progress: 33, buffer: 87})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Buffering"}, 
+					React.createElement(DOCS.DocCode, {title: "Buffering"},
 						'<MDL.Progress id="prog_3" progress={33} buffer={87} />'
-					), 
+					),
 
 					/*
 						Documentation text
 						*/
 
-					React.createElement("div", {className: "docs-text--centred"}, 
-						React.createElement("h2", null, "CONFIGURATION OPTIONS"), 
-						React.createElement("p", null, 
+					React.createElement("div", {className: "docs-text--centred"},
+						React.createElement("h2", null, "CONFIGURATION OPTIONS"),
+						React.createElement("p", null,
 							"Down below you can find all the attributes that can be applied to the component"
-						), 
-						React.createElement("table", {style: {width:"100%"}}, 
-							React.createElement("thead", null, 
-								React.createElement("tr", null, 
-									React.createElement("th", null, "Attribute"), 
-									React.createElement("th", null, "Effect"), 
+						),
+						React.createElement("table", {style: {width:"100%"}},
+							React.createElement("thead", null,
+								React.createElement("tr", null,
+									React.createElement("th", null, "Attribute"),
+									React.createElement("th", null, "Effect"),
 									React.createElement("th", null, "Values")
 								)
-							), 
-							React.createElement("tbody", null, 
-								React.createElement("tr", null, 
-									React.createElement("td", null, "Attribute"), 
-									React.createElement("td", null, "Effect"), 
+							),
+							React.createElement("tbody", null,
+								React.createElement("tr", null,
+									React.createElement("td", null, "Attribute"),
+									React.createElement("td", null, "Effect"),
 									React.createElement("td", null, "Values")
 								)
 							)
 						)
-					), 
+					),
 
           /*
             Titles
             */
 
-					React.createElement("div", {className: "docs-text"}, 
+					React.createElement("div", {className: "docs-text"},
             		React.createElement("h2", null, "Spinner")
-					), 
+					),
 
 					/*
 						Default
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Default"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Default"},
               				React.createElement(MDL.Spinner, {id: "spinner_1", active: true})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Single color"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Single color"},
               				React.createElement(MDL.Spinner, {id: "spinner_2", active: true, singleColor: true})
 						)
-					), 
+					),
 
 
-					React.createElement(DOCS.DocCode, {title: "Default active spinner"}, 
+					React.createElement(DOCS.DocCode, {title: "Default active spinner"},
 						'<MDL.Spinner id="spinner_1" active />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Active single color spinner"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Active single color spinner"},
 						'<MDL.Spinner id="spinner_2" active singleColor />'
-					), 
+					),
 
 					/*
 						Documentation text
 						*/
 
-					React.createElement("div", {className: "docs-text--centred"}, 
-						React.createElement("h2", null, "CONFIGURATION OPTIONS"), 
-						React.createElement("p", null, 
+					React.createElement("div", {className: "docs-text--centred"},
+						React.createElement("h2", null, "CONFIGURATION OPTIONS"),
+						React.createElement("p", null,
 							"Down below you can find all the attributes that can be applied to the component"
-						), 
-						React.createElement("table", {style: {width:"100%"}}, 
-							React.createElement("thead", null, 
-								React.createElement("tr", null, 
-									React.createElement("th", null, "Attribute"), 
-									React.createElement("th", null, "Effect"), 
+						),
+						React.createElement("table", {style: {width:"100%"}},
+							React.createElement("thead", null,
+								React.createElement("tr", null,
+									React.createElement("th", null, "Attribute"),
+									React.createElement("th", null, "Effect"),
 									React.createElement("th", null, "Values")
 								)
-							), 
-							React.createElement("tbody", null, 
-								React.createElement("tr", null, 
-									React.createElement("td", null, "Attribute"), 
-									React.createElement("td", null, "Effect"), 
+							),
+							React.createElement("tbody", null,
+								React.createElement("tr", null,
+									React.createElement("td", null, "Attribute"),
+									React.createElement("td", null, "Effect"),
 									React.createElement("td", null, "Values")
 								)
 							)
@@ -3048,102 +3048,102 @@ var DOCS = require('../components');
 module.exports = React.createClass({displayName: "exports",
 	render: function() {
 		return (
-		    React.createElement("div", {className: "docs-view"}, 
-					React.createElement("div", {className: "docs-text"}, 
-						React.createElement("h1", null, "Menus"), 
+		    React.createElement("div", {className: "docs-view"},
+					React.createElement("div", {className: "docs-text"},
+						React.createElement("h1", null, "Menus"),
 						React.createElement("p", null, "Lists of clickable actions.")
-					), 
+					),
 					/*
 						Colored FAB
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Lower left"}, 
-							React.createElement("div", {className: "mdl-shadow--2dp", style: {background: '#C2185B', height: 200, width: 200}}, 
-                React.createElement(MDL.Button, {style: {color: '#FFF'}, icon: "more_vert", id: "docs-menu-lower-left-button"}), 
-                React.createElement(MDL.Menu, {htmlFor: "docs-menu-lower-left-button"}, 
-                  React.createElement(MDL.MenuItem, null, "Some action"), 
-                  React.createElement(MDL.MenuItem, null, "Another action"), 
-                  React.createElement(MDL.MenuItem, {disabled: true}, "Disabled action"), 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Lower left"},
+							React.createElement("div", {className: "mdl-shadow--2dp", style: {background: '#C2185B', height: 200, width: 200}},
+                React.createElement(MDL.Button, {style: {color: '#FFF'}, icon: "more_vert", id: "docs-menu-lower-left-button"}),
+                React.createElement(MDL.Menu, {htmlFor: "docs-menu-lower-left-button"},
+                  React.createElement(MDL.MenuItem, null, "Some action"),
+                  React.createElement(MDL.MenuItem, null, "Another action"),
+                  React.createElement(MDL.MenuItem, {disabled: true}, "Disabled action"),
                   React.createElement(MDL.MenuItem, null, "Yet another action")
                 )
 							)
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Lower right"}, 
-							React.createElement("div", {className: "mdl-shadow--2dp", style: {background: '#C2185B', height: 200, width: 200, position: 'relative', textAlign: 'right'}}, 
-                React.createElement(MDL.Button, {style: {color: '#FFF'}, icon: "more_vert", id: "docs-menu-lower-right-button"}), 
-                React.createElement(MDL.Menu, {position: "bottom-right", htmlFor: "docs-menu-lower-right-button"}, 
-                  React.createElement(MDL.MenuItem, null, "Some action"), 
-                  React.createElement(MDL.MenuItem, null, "Another action"), 
-                  React.createElement(MDL.MenuItem, {disabled: true}, "Disabled action"), 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Lower right"},
+							React.createElement("div", {className: "mdl-shadow--2dp", style: {background: '#C2185B', height: 200, width: 200, position: 'relative', textAlign: 'right'}},
+                React.createElement(MDL.Button, {style: {color: '#FFF'}, icon: "more_vert", id: "docs-menu-lower-right-button"}),
+                React.createElement(MDL.Menu, {position: "bottom-right", htmlFor: "docs-menu-lower-right-button"},
+                  React.createElement(MDL.MenuItem, null, "Some action"),
+                  React.createElement(MDL.MenuItem, null, "Another action"),
+                  React.createElement(MDL.MenuItem, {disabled: true}, "Disabled action"),
                   React.createElement(MDL.MenuItem, null, "Yet another action")
                 )
 							)
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Lower left"}, 
+					React.createElement(DOCS.DocCode, {title: "Lower left"},
 						'See docs source code..'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Lower right"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Lower right"},
 						'See docs source code..'
-					), 
+					),
 
 					/*
 						Colored FAB
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Top left"}, 
-							React.createElement("div", {className: "mdl-shadow--2dp", style: {background: '#C2185B', height: 200, width: 200, position: 'relative'}}, 
-                React.createElement(MDL.Button, {style: {color: '#FFF',position: 'absolute', bottom: 0, left: 0}, icon: "more_vert", id: "docs-menu-top-left-button"}), 
-                React.createElement(MDL.Menu, {position: "top-left", htmlFor: "docs-menu-top-left-button"}, 
-                  React.createElement(MDL.MenuItem, null, "Some action"), 
-                  React.createElement(MDL.MenuItem, null, "Another action"), 
-                  React.createElement(MDL.MenuItem, {disabled: true}, "Disabled action"), 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Top left"},
+							React.createElement("div", {className: "mdl-shadow--2dp", style: {background: '#C2185B', height: 200, width: 200, position: 'relative'}},
+                React.createElement(MDL.Button, {style: {color: '#FFF',position: 'absolute', bottom: 0, left: 0}, icon: "more_vert", id: "docs-menu-top-left-button"}),
+                React.createElement(MDL.Menu, {position: "top-left", htmlFor: "docs-menu-top-left-button"},
+                  React.createElement(MDL.MenuItem, null, "Some action"),
+                  React.createElement(MDL.MenuItem, null, "Another action"),
+                  React.createElement(MDL.MenuItem, {disabled: true}, "Disabled action"),
                   React.createElement(MDL.MenuItem, null, "Yet another action")
                 )
 							)
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Top right"}, 
-							React.createElement("div", {className: "mdl-shadow--2dp", style: {background: '#C2185B', height: 200, width: 200, position: 'relative', textAlign: 'right'}}, 
-                React.createElement(MDL.Button, {style: {color: '#FFF', position: 'absolute', bottom: 0, right: 0}, icon: "more_vert", id: "docs-menu-top-right-button"}), 
-                React.createElement(MDL.Menu, {position: "top-right", htmlFor: "docs-menu-top-right-button"}, 
-                  React.createElement(MDL.MenuItem, null, "Some action"), 
-                  React.createElement(MDL.MenuItem, null, "Another action"), 
-                  React.createElement(MDL.MenuItem, {disabled: true}, "Disabled action"), 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Top right"},
+							React.createElement("div", {className: "mdl-shadow--2dp", style: {background: '#C2185B', height: 200, width: 200, position: 'relative', textAlign: 'right'}},
+                React.createElement(MDL.Button, {style: {color: '#FFF', position: 'absolute', bottom: 0, right: 0}, icon: "more_vert", id: "docs-menu-top-right-button"}),
+                React.createElement(MDL.Menu, {position: "top-right", htmlFor: "docs-menu-top-right-button"},
+                  React.createElement(MDL.MenuItem, null, "Some action"),
+                  React.createElement(MDL.MenuItem, null, "Another action"),
+                  React.createElement(MDL.MenuItem, {disabled: true}, "Disabled action"),
                   React.createElement(MDL.MenuItem, null, "Yet another action")
                 )
 							)
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Top left"}, 
+					React.createElement(DOCS.DocCode, {title: "Top left"},
 						'See docs source code..'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Top right"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Top right"},
 						'See docs source code..'
-					), 
+					),
 
 					/*
 						Documentation text
 						*/
 
-					React.createElement("div", {className: "docs-text--centred"}, 
-						React.createElement("h2", null, "CONFIGURATION OPTIONS"), 
-						React.createElement("p", null, 
+					React.createElement("div", {className: "docs-text--centred"},
+						React.createElement("h2", null, "CONFIGURATION OPTIONS"),
+						React.createElement("p", null,
 							"Down below you can find all the attributes that can be applied to the component"
-						), 
-						React.createElement("table", {style: {width:"100%"}}, 
-							React.createElement("thead", null, 
-								React.createElement("tr", null, 
-									React.createElement("th", null, "Attribute"), 
-									React.createElement("th", null, "Effect"), 
+						),
+						React.createElement("table", {style: {width:"100%"}},
+							React.createElement("thead", null,
+								React.createElement("tr", null,
+									React.createElement("th", null, "Attribute"),
+									React.createElement("th", null, "Effect"),
 									React.createElement("th", null, "Values")
 								)
-							), 
-							React.createElement("tbody", null, 
-								React.createElement("tr", null, 
-									React.createElement("td", null, "Attribute"), 
-									React.createElement("td", null, "Effect"), 
+							),
+							React.createElement("tbody", null,
+								React.createElement("tr", null,
+									React.createElement("td", null, "Attribute"),
+									React.createElement("td", null, "Effect"),
 									React.createElement("td", null, "Values")
 								)
 							)
@@ -3164,51 +3164,51 @@ var DOCS = require('../components');
 module.exports = React.createClass({displayName: "exports",
 	render: function() {
 		return (
-		    React.createElement("div", {className: "docs-view"}, 
-					React.createElement("div", {className: "docs-text"}, 
-						React.createElement("h1", null, "SLIDERS"), 
+		    React.createElement("div", {className: "docs-view"},
+					React.createElement("div", {className: "docs-text"},
+						React.createElement("h1", null, "SLIDERS"),
 						React.createElement("p", null, "Selecting a value out of a range.")
-					), 
+					),
 					/*
 						Colored FAB
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Default slider"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Default slider"},
 							React.createElement(MDL.Slider, {min: 0, max: 100, defaultValue: 0})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Starting value"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Starting value"},
 							React.createElement(MDL.Slider, {min: 0, max: 100, defaultValue: 25})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Default slider"}, 
+					React.createElement(DOCS.DocCode, {title: "Default slider"},
 						'<MDL.Slider min={0} max={100} defaultValue={0} />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Slider with Starting Value"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Slider with Starting Value"},
 						'<MDL.Slider min={0} max={100} defaultValue={25} />'
-					), 
+					),
 
 					/*
 						Documentation text
 						*/
 
-					React.createElement("div", {className: "docs-text--centred"}, 
-						React.createElement("h2", null, "CONFIGURATION OPTIONS"), 
-						React.createElement("p", null, 
+					React.createElement("div", {className: "docs-text--centred"},
+						React.createElement("h2", null, "CONFIGURATION OPTIONS"),
+						React.createElement("p", null,
 							"Down below you can find all the attributes that can be applied to the component"
-						), 
-						React.createElement("table", {style: {width:"100%"}}, 
-							React.createElement("thead", null, 
-								React.createElement("tr", null, 
-									React.createElement("th", null, "Attribute"), 
-									React.createElement("th", null, "Effect"), 
+						),
+						React.createElement("table", {style: {width:"100%"}},
+							React.createElement("thead", null,
+								React.createElement("tr", null,
+									React.createElement("th", null, "Attribute"),
+									React.createElement("th", null, "Effect"),
 									React.createElement("th", null, "Values")
 								)
-							), 
-							React.createElement("tbody", null, 
-								React.createElement("tr", null, 
-									React.createElement("td", null, "Attribute"), 
-									React.createElement("td", null, "Effect"), 
+							),
+							React.createElement("tbody", null,
+								React.createElement("tr", null,
+									React.createElement("td", null, "Attribute"),
+									React.createElement("td", null, "Effect"),
 									React.createElement("td", null, "Values")
 								)
 							)
@@ -3244,7 +3244,7 @@ module.exports = React.createClass({displayName: "exports",
 
 	render: function() {
 		return (
-		    React.createElement("div", {className: "docs-view"}, 
+		    React.createElement("div", {className: "docs-view"},
 					React.createElement("div", {className: "docs-text", dangerouslySetInnerHTML: {__html: this.state.readme}})
 		    )
 		);
@@ -3264,16 +3264,16 @@ module.exports = React.createClass({displayName: "exports",
 	},
 	render: function() {
 		return (
-		    React.createElement("div", {className: "docs-view"}, 
-					React.createElement("div", {className: "docs-text"}, 
-						React.createElement("h1", null, "Tables"), 
+		    React.createElement("div", {className: "docs-view"},
+					React.createElement("div", {className: "docs-text"},
+						React.createElement("h1", null, "Tables"),
 						React.createElement("p", null, "Choose between states.")
-					), 
+					),
 					/*
 
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Table"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Table"},
 							React.createElement(MDL.Table, {columns: [
 			                  { label: 'Material', key: 'material', isNumeric: false },
 			                  { label: 'Quantity', key: 'qty', isNumeric: true },
@@ -3283,8 +3283,8 @@ module.exports = React.createClass({displayName: "exports",
 			                  { material: "Plywood (Birch)", qty: 50, price: 1.25 },
 			                  { material: "Laminate (Gold on Blue)", qty: 10, price: 2.35 },
 			                ], selectable: true, onChange: this.handleEvent})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Table no header"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Table no header"},
 							React.createElement(MDL.Table, {columns: [
 			                  { label: 'Material', key: 'material', isNumeric: false },
 			                  { label: 'Quantity', key: 'qty', isNumeric: true },
@@ -3295,33 +3295,33 @@ module.exports = React.createClass({displayName: "exports",
 			                  { material: "Laminate (Gold on Blue)", qty: 10, price: 2.35 },
 			                ], onChange: this.handleEvent, "no-head": true})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Table"}, 
+					React.createElement(DOCS.DocCode, {title: "Table"},
 						'See docs source code..'
-					), 
+					),
 
 					/*
 						Documentation text
 						*/
 
-					React.createElement("div", {className: "docs-text--centred"}, 
-						React.createElement("h2", null, "CONFIGURATION OPTIONS"), 
-						React.createElement("p", null, 
+					React.createElement("div", {className: "docs-text--centred"},
+						React.createElement("h2", null, "CONFIGURATION OPTIONS"),
+						React.createElement("p", null,
 							"Down below you can find all the attributes that can be applied to the component"
-						), 
-						React.createElement("table", {style: {width:"100%"}}, 
-							React.createElement("thead", null, 
-								React.createElement("tr", null, 
-									React.createElement("th", null, "Attribute"), 
-									React.createElement("th", null, "Effect"), 
+						),
+						React.createElement("table", {style: {width:"100%"}},
+							React.createElement("thead", null,
+								React.createElement("tr", null,
+									React.createElement("th", null, "Attribute"),
+									React.createElement("th", null, "Effect"),
 									React.createElement("th", null, "Values")
 								)
-							), 
-							React.createElement("tbody", null, 
-								React.createElement("tr", null, 
-									React.createElement("td", null, "Attribute"), 
-									React.createElement("td", null, "Effect"), 
+							),
+							React.createElement("tbody", null,
+								React.createElement("tr", null,
+									React.createElement("td", null, "Attribute"),
+									React.createElement("td", null, "Effect"),
 									React.createElement("td", null, "Values")
 								)
 							)
@@ -3342,90 +3342,90 @@ var DOCS = require('../components');
 module.exports = React.createClass({displayName: "exports",
 	render: function() {
 		return (
-		    React.createElement("div", {className: "docs-view"}, 
-					React.createElement("div", {className: "docs-text"}, 
-						React.createElement("h1", null, "TEXT FIELDS"), 
+		    React.createElement("div", {className: "docs-view"},
+					React.createElement("div", {className: "docs-text"},
+						React.createElement("h1", null, "TEXT FIELDS"),
 						React.createElement("p", null, "Textual input components.")
-					), 
+					),
 					/*
 
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Text"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Text"},
 							React.createElement(MDL.Textfield, {label: "Text..."})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Numeric"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Numeric"},
 							React.createElement(MDL.Textfield, {label: "Number...", pattern: "-?[0-9]*(\\.[0-9]+)?", error: "Input is not a number!", id: "text_sample_2"})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Simple textfield"}, 
+					React.createElement(DOCS.DocCode, {title: "Simple textfield"},
 						'<MDL.Textfield label="Text..." />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Numeric textfield"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Numeric textfield"},
 						'<MDL.Textfield label="Number..." pattern="-?[0-9]*(\.[0-9]+)?" error="Input is not a number!" id="text_sample_2" />'
-					), 
+					),
 
 					/*
 
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Text with floating label"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Text with floating label"},
 							React.createElement(MDL.Textfield, {label: "Text...", floatingLabel: true})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Numeric with floating label"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Numeric with floating label"},
 							React.createElement(MDL.Textfield, {label: "Number...", pattern: "-?[0-9]*(\\.[0-9]+)?", error: "Input is not a number!", id: "text_sample_2", floatingLabel: true})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Text with floating label"}, 
+					React.createElement(DOCS.DocCode, {title: "Text with floating label"},
 						'<MDL.Textfield label="Text..." floatingLabel />'
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Numeric with floating label"}, 
+					React.createElement(DOCS.DocCode, {title: "Numeric with floating label"},
 						'<MDL.Textfield label="Number..." pattern="-?[0-9]*(\.[0-9]+)?" error="Input is not a number!" id="text_sample_2" floatingLabel />'
-					), 
+					),
 
 					/*
 
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Multiple lines"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Multiple lines"},
 							React.createElement(MDL.Textfield, {label: "Text...", multiline: true, rows: 3, autogrow: true})
-						), 
-							React.createElement(DOCS.DocComponent, {caption: "Expandable"}, 
+						),
+							React.createElement(DOCS.DocComponent, {caption: "Expandable"},
 								React.createElement(MDL.Textfield, {label: "Text...", icon: "search", expandable: true, id: "sample_expand"})
 							)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Text with floating label"}, 
+					React.createElement(DOCS.DocCode, {title: "Text with floating label"},
 						'<MDL.Textfield label="Text..." multiline rows={3} />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Expandable with icon"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Expandable with icon"},
 						'<MDL.Textfield label="Text..." icon="search" expandable id="sample_expand" />'
-					), 
+					),
 
 					/*
 						Documentation text
 						*/
 
-					React.createElement("div", {className: "docs-text--centred"}, 
-						React.createElement("h2", null, "CONFIGURATION OPTIONS"), 
-						React.createElement("p", null, 
+					React.createElement("div", {className: "docs-text--centred"},
+						React.createElement("h2", null, "CONFIGURATION OPTIONS"),
+						React.createElement("p", null,
 							"Down below you can find all the attributes that can be applied to the component"
-						), 
-						React.createElement("table", {style: {width:"100%"}}, 
-							React.createElement("thead", null, 
-								React.createElement("tr", null, 
-									React.createElement("th", null, "Attribute"), 
-									React.createElement("th", null, "Effect"), 
+						),
+						React.createElement("table", {style: {width:"100%"}},
+							React.createElement("thead", null,
+								React.createElement("tr", null,
+									React.createElement("th", null, "Attribute"),
+									React.createElement("th", null, "Effect"),
 									React.createElement("th", null, "Values")
 								)
-							), 
-							React.createElement("tbody", null, 
-								React.createElement("tr", null, 
-									React.createElement("td", null, "Attribute"), 
-									React.createElement("td", null, "Effect"), 
+							),
+							React.createElement("tbody", null,
+								React.createElement("tr", null,
+									React.createElement("td", null, "Attribute"),
+									React.createElement("td", null, "Effect"),
 									React.createElement("td", null, "Values")
 								)
 							)
@@ -3452,109 +3452,109 @@ module.exports = React.createClass({displayName: "exports",
   },
 	render: function() {
 		return (
-		    React.createElement("div", {className: "docs-view"}, 
-					React.createElement("div", {className: "docs-text"}, 
-						React.createElement("h1", null, "TOGGLES"), 
-						React.createElement("p", null, "Choose between states."), 
+		    React.createElement("div", {className: "docs-view"},
+					React.createElement("div", {className: "docs-text"},
+						React.createElement("h1", null, "TOGGLES"),
+						React.createElement("p", null, "Choose between states."),
 						React.createElement("h2", null, "Checkbox")
-					), 
+					),
 					/*
 
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Check on"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Check on"},
 							React.createElement(MDL.Toggle, {type: "checkbox", label: "Checkbox", ripple: true, checked: true})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Check off"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Check off"},
 							React.createElement(MDL.Toggle, {type: "checkbox", label: "Checkbox", ripple: true})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Check on"}, 
+					React.createElement(DOCS.DocCode, {title: "Check on"},
 						'<MDL.Toggle type="checkbox" label="Checkbox" ripple checked />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Check off"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Check off"},
 						'<MDL.Toggle type="checkbox" label="Checkbox" ripple />'
-					), 
+					),
 
 					/*
 
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Radio on"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Radio on"},
 							React.createElement(MDL.Toggle, {type: "radio", label: "First", name: "options", ripple: true, checked: true})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Radio off"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Radio off"},
 							React.createElement(MDL.Toggle, {type: "radio", label: "Second", name: "options", ripple: true})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Radio on"}, 
+					React.createElement(DOCS.DocCode, {title: "Radio on"},
 						'<MDL.Toggle type="radio" label="First" name="options" ripple checked />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Radio off"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Radio off"},
 						'<MDL.Toggle type="radio" label="First" name="options" ripple />'
-					), 
+					),
 
 					/*
 
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Icon on"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Icon on"},
 							React.createElement(MDL.Toggle, {type: "icon-toggle", ripple: true, checked: true}, "format_bold")
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Icon off"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Icon off"},
 							React.createElement(MDL.Toggle, {type: "icon-toggle", ripple: true}, "format_italic")
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Icon on"}, 
+					React.createElement(DOCS.DocCode, {title: "Icon on"},
 						'<MDL.Toggle type="icon-toggle" ripple checked>format_bold</MDL.Toggle>'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Icon off"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Icon off"},
 						'<MDL.Toggle type="icon-toggle" ripple>format_italic</MDL.Toggle>'
-					), 
+					),
 
 					/*
 
 						*/
-					React.createElement(DOCS.DocComponents, null, 
-						React.createElement(DOCS.DocComponent, {caption: "Switch on"}, 
+					React.createElement(DOCS.DocComponents, null,
+						React.createElement(DOCS.DocComponent, {caption: "Switch on"},
 							React.createElement(MDL.Toggle, {type: "switch", ripple: true, checked: true})
-						), 
-						React.createElement(DOCS.DocComponent, {caption: "Switch off"}, 
+						),
+						React.createElement(DOCS.DocComponent, {caption: "Switch off"},
 							React.createElement(MDL.Toggle, {type: "switch", ripple: true})
 						)
-					), 
+					),
 
-					React.createElement(DOCS.DocCode, {title: "Switch on"}, 
+					React.createElement(DOCS.DocCode, {title: "Switch on"},
 						'<MDL.Toggle type="switch" ripple checked />'
-					), 
-					React.createElement(DOCS.DocCode, {title: "Switch off"}, 
+					),
+					React.createElement(DOCS.DocCode, {title: "Switch off"},
 						'<MDL.Toggle type="switch" ripple />'
-					), 
+					),
 
 					/*
 						Documentation text
 						*/
 
-					React.createElement("div", {className: "docs-text--centred"}, 
-						React.createElement("h2", null, "CONFIGURATION OPTIONS"), 
-						React.createElement("p", null, 
+					React.createElement("div", {className: "docs-text--centred"},
+						React.createElement("h2", null, "CONFIGURATION OPTIONS"),
+						React.createElement("p", null,
 							"Down below you can find all the attributes that can be applied to the component"
-						), 
-						React.createElement("table", {style: {width:"100%"}}, 
-							React.createElement("thead", null, 
-								React.createElement("tr", null, 
-									React.createElement("th", null, "Attribute"), 
-									React.createElement("th", null, "Effect"), 
+						),
+						React.createElement("table", {style: {width:"100%"}},
+							React.createElement("thead", null,
+								React.createElement("tr", null,
+									React.createElement("th", null, "Attribute"),
+									React.createElement("th", null, "Effect"),
 									React.createElement("th", null, "Values")
 								)
-							), 
-							React.createElement("tbody", null, 
-								React.createElement("tr", null, 
-									React.createElement("td", null, "Attribute"), 
-									React.createElement("td", null, "Effect"), 
+							),
+							React.createElement("tbody", null,
+								React.createElement("tr", null,
+									React.createElement("td", null, "Attribute"),
+									React.createElement("td", null, "Effect"),
 									React.createElement("td", null, "Values")
 								)
 							)
@@ -18902,7 +18902,7 @@ function createRouteFromReactElement(element) {
  * nested.
  *
  *   import { Route, createRoutesFromReactChildren } from 'react-router'
- *   
+ *
  *   const routes = createRoutesFromReactChildren(
  *     <Route component={App}>
  *       <Route path="home" component={Dashboard}/>
