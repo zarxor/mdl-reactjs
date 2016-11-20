@@ -1,26 +1,17 @@
+import React from 'react';
+import MDL from '../../../lib/';
 
-"use strict";
-
-var React = require('react'),
-		MDL = require('../../../components/');
-
-module.exports = React.createClass({
-	getInitialState: function() {
-    return {
-      readme: '',
-    };
-  },
-
-	componentWillMount: function () {
+export default class BenchmarkView extends React.Component {
+	componentWillMount() {
 		this.renderStart = new Date().getTime();
-	},
+	}
 
-	componentDidMount: function() {
+	componentDidMount() {
 		var elapsed = new Date().getTime()-this.renderStart;
 		console.log(elapsed);
-  },
+  }
 
-	render: function() {
+	render() {
 		var benchMarkItems = [];
 		for (var x = 0; x < 1000; x++) {
 			benchMarkItems.push(<MDL.GridCell key={x}>
@@ -44,5 +35,5 @@ module.exports = React.createClass({
 				{benchMarkItems}
 			</MDL.Grid>
 		);
-	},
-});
+	}
+}

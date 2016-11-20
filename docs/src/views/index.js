@@ -1,14 +1,28 @@
+import StartView from './startView';
+
+import BadgesView from './badgesView';
+import BenchmarkView from './benchmarkView';
+import ButtonsView from './buttonsView';
+import CardsView from './cardsView';
+import LayoutView from './layoutView';
+import LoadingView from './loadingView';
+import MenusView from './menusView';
+import SlidersView from './slidersView';
+import TablesView from './tablesView';
+import TextfieldsView from './textfieldsView';
+import TogglesView from './togglesView';
+
 module.exports = {
-  Start: require('./start.jsx'),
-  Badges: require('./badges.jsx'),
-  Buttons: require('./buttons.jsx'),
-  Cards: require('./cards.jsx'),
-  Layout: require('./layout.jsx'),
-  Loading: require('./loading.jsx'),
-  Menus: require('./menus.jsx'),
-  Sliders: require('./sliders.jsx'),
-  Tables: require('./tables.jsx'),
-  Toggles: require('./toggles.jsx'),
-  Textfields: require('./textfields.jsx'),
-  Benchmark: require('./benchmark.jsx'),
+  StartView: StartView,
+  BadgesView: BadgesView,
+  BenchmarkView: BenchmarkView,
+  ButtonsView: ButtonsView,
+  CardsView: CardsView,
+  LayoutView: LayoutView,
+  LoadingView: LoadingView,
+  MenusView: MenusView,
+  SlidersView: SlidersView,
+  TablesView: TablesView,
+  TextfieldsView: TextfieldsView,
+  TogglesView: TogglesView
 };

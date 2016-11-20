@@ -1,18 +1,17 @@
+import React from 'react';
+import MDL from '../../../lib/';
+import DOCS from '../components';
 
-"use strict";
+export default class LayoutView extends React.Component {
+	// handleChange(name, e) {
+    // 	console.log('change');
+  	// }
 
-var React = require('react');
-var MDL = require('../../../components/');
-var DOCS = require('../components');
+	// handleEvent(e) {
+    // 	console.log(e);
+	// }
 
-module.exports = React.createClass({
-	handleChange: function (name, e) {
-    console.log('change');
-  },
-	handleEvent: function (e) {
-    console.log(e);
-  },
-	render: function() {
+	render() {
 		return (
 	    <div className="docs-view">
 				<div className="docs-text">
@@ -177,5 +176,5 @@ module.exports = React.createClass({
 
 	    </div>
 		);
-	},
-});
+	}
+}

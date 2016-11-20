@@ -1,5 +1,5 @@
 module.exports = {
-  DocCode: require('./docCode.jsx'),
-  DocComponent: require('./docComponent.jsx'),
-  DocComponents: require('./docComponents.jsx'),
+  DocCode: require('./docCode'),
+  DocComponent: require('./docComponent'),
+  DocComponents: require('./docComponents'),
 };

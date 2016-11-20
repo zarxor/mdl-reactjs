@@ -1,16 +1,18 @@
+import React from 'react';
+import MDL from '../../../lib/';
+import DOCS from '../components';
 
-"use strict";
-
-var React = require('react');
-var MDL = require('../../../components/');
-var DOCS = require('../components');
-
-module.exports = React.createClass({
-	render: function() {
+export default class BadgesView extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+		};
+	}
+	render() {
 		return (
 		    <div className="docs-view">
 					<div className="docs-text">
-						<h1>Badges</h1>
+						<h1>Badges!</h1>
 						<p>Small status descriptors for UI elements.</p>
 					</div>
 					{/*
@@ -60,5 +62,5 @@ module.exports = React.createClass({
 					</div>
 		    </div>
 		);
-	},
-});
+	}
+}

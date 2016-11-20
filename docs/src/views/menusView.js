@@ -1,12 +1,9 @@
+import React from 'react';
+import MDL from '../../../lib/';
+import DOCS from '../components';
 
-"use strict";
-
-var React = require('react');
-var MDL = require('../../../components/');
-var DOCS = require('../components');
-
-module.exports = React.createClass({
-	render: function() {
+export default class MenusView extends React.Component {
+	render() {
 		return (
 		    <div className="docs-view">
 					<div className="docs-text">
@@ -111,5 +108,5 @@ module.exports = React.createClass({
 					</div>
 		    </div>
 		);
-	},
-});
+	}
+}

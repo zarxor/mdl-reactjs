@@ -1,12 +1,9 @@
+import React from 'react';
+import MDL from '../../../lib/';
+import DOCS from '../components';
 
-"use strict";
-
-var React = require('react');
-var MDL = require('../../../components/');
-var DOCS = require('../components');
-
-module.exports = React.createClass({
-	render: function() {
+export default class SlidersView extends React.Component {
+	render() {
 		return (
 		    <div className="docs-view">
 					<div className="docs-text">
@@ -15,10 +12,10 @@ module.exports = React.createClass({
 					</div>
 					{/*
 						Colored FAB
-						*/}
+					*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Default slider">
-							<MDL.Slider min={0} max={100} defaultValue={0} />
+							<MDL.Slider ref={(x) => this.defaultSlider = x} min={0} max={100} defaultValue={0} />
 						</DOCS.DocComponent>
 						<DOCS.DocComponent caption="Starting value">
 							<MDL.Slider min={0} max={100} defaultValue={25} />
@@ -34,7 +31,7 @@ module.exports = React.createClass({
 
 					{/*
 						Documentation text
-						*/}
+					*/}
 
 					<div className="docs-text--centred">
 						<h2>CONFIGURATION OPTIONS</h2>
@@ -60,5 +57,5 @@ module.exports = React.createClass({
 					</div>
 		    </div>
 		);
-	},
-});
+	}
+}

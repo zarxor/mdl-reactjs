@@ -1,6 +1,5 @@
 # Material Design Lite for React JS
-
-> Material Design Lite for React JS lets you add a Material Design look and feel to your websites using the React framework.
+Material Design Lite for React JS lets you add a Material Design look and feel to your websites using the React framework.
 
 [You can find documentation and examples here](https://zarxor.github.io/mdl-reactjs/docs/build/)
 
@@ -19,15 +18,15 @@ var Card = MDL.Card;
 Include the MDL css and js in your project
 ```
 <!-- Material design lite stylesheet, icons and javascript -->
-<link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.1.1/material.indigo-pink.min.css">
-<link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-<script src="//storage.googleapis.com/code.getmdl.io/1.1.1/material.min.js"></script>
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 ```
 
 ### How to run the demo / documentation ###
 ```
 npm install
-gulp
+npm run dev-server
 // Open http://localhost:8080/
 ```
 ## Project status ##
@@ -50,7 +49,7 @@ The project is still under development and will be adding features and functions
 	- [x] Content
 	- [x] Navigation + Links
 	- [x] Grid
-	- [ ] Layout Tabs
+	- [x] Layout Tabs
 	- [x] Tabs
 	- [ ] Footer
 - [x] Menus [[Docs](https://zarxor.github.io/mdl-reactjs/docs/build/#/menus)] [[getmdl.io](http://www.getmdl.io/components/index.html#menus-section)]

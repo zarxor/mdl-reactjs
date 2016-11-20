@@ -1,22 +1,20 @@
+import React from 'react';
+import MDL from '../../../lib/';
+import DOCS from '../components';
 
-"use strict";
+export default class LoadingView extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+      		progressOne: 11
+		};
+	}
 
-var React = require('react');
-var MDL = require('../../../components/');
-var DOCS = require('../components');
+	setProgressOne() {
+		this.setState({progressOne: 44});
+	}
 
-module.exports = React.createClass({
-  getInitialState: function() {
-    return {
-      progressOne: 11,
-    };
-  },
-
-  setProgressOne: function () {
-    this.setState({progressOne: 44});
-  },
-
-	render: function() {
+	render() {
 		return (
 		    <div className="docs-view">
 					<div className="docs-text">
@@ -30,8 +28,8 @@ module.exports = React.createClass({
 						*/}
 					<DOCS.DocComponents>
 						<DOCS.DocComponent caption="Default">
-							<MDL.Progress id="prog_1" progress={44} />
-              {/*<MDL.Button style={{marginTop: 20}} raised onClick={this.setProgressOne}>Set progress to 44</MDL.Button>*/}
+							<MDL.Progress ref={(x) => this.progressOne = x} id="prog_1" progress={this.state.progressOne} />
+              				<MDL.Button style={{marginTop: 20}} raised onClick={() => this.setState({progressOne: 44}) }>Set progress to 44</MDL.Button>
 						</DOCS.DocComponent>
 					</DOCS.DocComponents>
 
@@ -148,5 +146,5 @@ module.exports = React.createClass({
 					</div>
 		    </div>
 		);
-	},
-});
+	}
+}
